@@ -1,4 +1,4 @@
-﻿# Python-Tensorflow-1.x-2.x
+﻿# Python-Tensorflow-Lite-DEMO
  
  一般用法 : Python3 app.py --display 1
 
