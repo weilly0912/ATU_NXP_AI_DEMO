@@ -1,0 +1,4 @@
+rock
+paper 
+scissors
+None
