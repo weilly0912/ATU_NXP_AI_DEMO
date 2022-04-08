@@ -1,13 +1,14 @@
 
 # WPI Confidential Proprietary
 #--------------------------------------------------------------------------------------
-# Copyright (c) 2020 Freescale Semiconductor
-# Copyright 2020 WPI
+# Copyright (c) 2021 Freescale Semiconductor
+# Copyright 2021 WPI
 # All Rights Reserved
 ##--------------------------------------------------------------------------------------
-# * Code Ver : 1.0
-# * Code Date: 2021/7/30
+# * Code Ver : 2.0
+# * Code Date: 2021/12/30
 # * Author   : Weilly Li
+# * Non-qunt Model*
 #--------------------------------------------------------------------------------------
 # THIS SOFTWARE IS PROVIDED BY WPI-TW "AS IS" AND ANY EXPRESSED OR
 # IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
@@ -31,14 +32,25 @@ import cv2
 import time
 import numpy as np
 import argparse
-from tflite_runtime.interpreter import Interpreter
+import tflite_runtime.interpreter as tflite
 
 # --------------------------------------------------------------------------------------------------------------
 # API
 # --------------------------------------------------------------------------------------------------------------
-def StyleEncoder( TFLitePath, ImagePath ) :
+def InferenceDelegate( model, delegate ):
+    ext_delegate = [ tflite.load_delegate("/usr/lib/libvx_delegate.so") ]
+    if (delegate=="vx") :
+        interpreter = tflite.Interpreter(model, experimental_delegates=ext_delegate)
+    elif(delegate=="xnnpack"):
+        interpreter = tflite.Interpreter(model)
+    else :
+        print("ERROR : Deleget Input Fault")
+        return 0
+    return interpreter
+
+def StyleEncoder( TFLitePath, ImagePath, delegate ) :
     # load tflite
-    interpreter_style = Interpreter(TFLitePath)
+    interpreter_style = InferenceDelegate(TFLitePath , delegate )
     interpreter_style.allocate_tensors()
     style_input_details  = interpreter_style.get_input_details()
     style_output_details = interpreter_style.get_output_details()
@@ -86,21 +98,22 @@ def main():
   parser.add_argument("--display", default="0")
   parser.add_argument("--save", default="1")
   parser.add_argument("--time", default="0")
+  parser.add_argument('--delegate' , default="xnnpack", help = 'Please Input nnapi or xnnpack')
   parser.add_argument("--test_img", default="belfry.jpg")
   args = parser.parse_args()
 
   # (1) 讓解譯器學習各種風格
-  style_bottleneck_style23   = StyleEncoder("magenta_arbitrary-image-stylization-v1-256_int8_prediction_1.tflite", "StyleDataSets/style23.jpg")
-  style_bottleneck_VanGogh   = StyleEncoder("magenta_arbitrary-image-stylization-v1-256_int8_prediction_1.tflite", "StyleDataSets/VanGogh_Star.jpg")
-  style_bottleneck_sketch    = StyleEncoder("magenta_arbitrary-image-stylization-v1-256_int8_prediction_1.tflite", "StyleDataSets/sketch.jpg")
-  style_bottleneck_waterpaint= StyleEncoder("magenta_arbitrary-image-stylization-v1-256_int8_prediction_1.tflite", "StyleDataSets/waterpaint.jpg")
-  style_bottleneck_colpencil = StyleEncoder("magenta_arbitrary-image-stylization-v1-256_int8_prediction_1.tflite", "StyleDataSets/towers_1916_sq.jpg")
+  style_bottleneck_style23   = StyleEncoder("magenta_arbitrary-image-stylization-v1-256_int8_prediction_1.tflite", "StyleDataSets/style23.jpg",args.delegate)
+  style_bottleneck_VanGogh   = StyleEncoder("magenta_arbitrary-image-stylization-v1-256_int8_prediction_1.tflite", "StyleDataSets/VanGogh_Star.jpg",args.delegate)
+  style_bottleneck_sketch    = StyleEncoder("magenta_arbitrary-image-stylization-v1-256_int8_prediction_1.tflite", "StyleDataSets/sketch.jpg",args.delegate)
+  style_bottleneck_waterpaint= StyleEncoder("magenta_arbitrary-image-stylization-v1-256_int8_prediction_1.tflite", "StyleDataSets/waterpaint.jpg",args.delegate)
+  style_bottleneck_colpencil = StyleEncoder("magenta_arbitrary-image-stylization-v1-256_int8_prediction_1.tflite", "StyleDataSets/towers_1916_sq.jpg",args.delegate)
 
   # (2) 調用任一已學習風格的解譯器
   style_bottleneck = style_bottleneck_VanGogh 
 
   # (3) 解析解譯器資訊
-  interpreter_transfer = Interpreter("magenta_arbitrary-image-stylization-v1-256_int8_transfer_1.tflite")
+  interpreter_transfer = InferenceDelegate("magenta_arbitrary-image-stylization-v1-256_int8_transfer_1.tflite",args.delegate)
   interpreter_transfer.allocate_tensors()
   transfer_input_details  = interpreter_transfer.get_input_details()
   transfer_output_details = interpreter_transfer.get_output_details()
@@ -126,7 +139,7 @@ def main():
       frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB) # Acquire frame and resize to expected shape [1xHxWx3]
 
     # 詢問操作者是否繼續轉換?
-    update = input('\n Updata Frame from Your Camera input [y or n]:')
+    update = input('\n Updata Frame from Your loop input [y or n]:')
     if update =="y" :
 
       style = input('Updata Style from Your Camera input [0-4]: \n'+\
@@ -158,7 +171,7 @@ def main():
     # 顯示結果
     if args.save == "True" or args.save == "1" :
       cv2.imwrite( APP_NAME + "-" + args.test_img[:len(args.test_img)-4] +'_result.jpg', result.astype("uint8"))
-      print("Save Reuslt Image Success , " + APP_NAME + '_result.jpg')
+      print("Save Reuslt Image Success , " + APP_NAME + "-" +  args.test_img[:len(args.test_img)-4] + '_result.jpg')
 
     if args.display =="True" or args.display == "1" :
       cv2.imshow('result', result.astype("uint8"))

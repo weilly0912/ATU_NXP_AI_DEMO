@@ -1,10 +1,10 @@
 # WPI Confidential Proprietary
 #--------------------------------------------------------------------------------------
-# Copyright (c) 2020 Freescale Semiconductor
-# Copyright 2020 WPI
+# Copyright (c) 2021 Freescale Semiconductor
+# Copyright 2021 WPI
 # All Rights Reserved
 ##--------------------------------------------------------------------------------------
-# * Code Ver : 1.0
+# * Code Ver : 2.0
 # * Code Date: 2021/7/30
 # * Author   : Weilly Li
 #--------------------------------------------------------------------------------------
@@ -31,7 +31,7 @@ import argparse
 import numpy as np
 import colorsys
 import random
-from tflite_runtime.interpreter import Interpreter 
+import tflite_runtime.interpreter as tflite
 
 # --------------------------------------------------------------------------------------------------------------
 # API
@@ -62,6 +62,17 @@ def generate_colors(labels):
   random.seed(None)
   return colors
 
+def InferenceDelegate( model, delegate ):
+    ext_delegate = [ tflite.load_delegate("/usr/lib/libvx_delegate.so") ]
+    if (delegate=="vx") :
+        interpreter = tflite.Interpreter(model, experimental_delegates=ext_delegate)
+    elif(delegate=="xnnpack"):
+        interpreter = tflite.Interpreter(model)
+    else :
+        print("ERROR : Deleget Input Fault")
+        return 0
+    return interpreter
+
 # --------------------------------------------------------------------------------------------------------------
 # 主程式
 # --------------------------------------------------------------------------------------------------------------
@@ -74,7 +85,8 @@ def main():
     parser.add_argument("--camera", default="0")
     parser.add_argument("--display", default="0")
     parser.add_argument("--save", default="1")
-    parser.add_argument("--time", default="0")    
+    parser.add_argument("--time", default="0")  
+    parser.add_argument('--delegate' , default="vx", help = 'Please Input nnapi or xnnpack')  
     parser.add_argument('--model'   , default="detect.tflite", help='File path of .tflite file.')
     parser.add_argument('--labels'  , default="coco_labels.txt", help='File path of labels file.')
     parser.add_argument('--test_img', default="CarPeople.jpg", help='File path of labels file.')
@@ -88,7 +100,7 @@ def main():
     colors = generate_colors(labels)
 
     # 解析解譯器資訊
-    interpreter = Interpreter(args.model)
+    interpreter = InferenceDelegate(args.model,args.delegate)
     interpreter.allocate_tensors()
     input_details  = interpreter.get_input_details()
     output_details = interpreter.get_output_details()
@@ -192,7 +204,7 @@ def main():
       # 顯示輸出結果
       if args.save == "True" or args.save == "1" :
           cv2.imwrite( APP_NAME + "-" + args.test_img[:len(args.test_img)-4] +'_result.jpg', frame.astype("uint8"))
-          print("Save Reuslt Image Success , " + APP_NAME + '_result.jpg')
+          print("Save Reuslt Image Success , " + APP_NAME + "-" +  args.test_img[:len(args.test_img)-4] + '_result.jpg')
 
       if args.display =="True" or args.display == "1" :
           cv2.imshow('frame', frame.astype('uint8'))

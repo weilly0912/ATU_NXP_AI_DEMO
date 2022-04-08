@@ -1,7 +1,7 @@
 # WPI Confidential Proprietary
 #--------------------------------------------------------------------------------------
-# Copyright (c) 2020 Freescale Semiconductor
-# Copyright 2020 WPI
+# Copyright (c) 2021 Freescale Semiconductor
+# Copyright 2021 WPI
 # All Rights Reserved
 ##--------------------------------------------------------------------------------------
 # * Code Ver : 1.0
@@ -28,15 +28,18 @@ import time
 import argparse
 import numpy as np
 from tflite_runtime.interpreter import Interpreter 
+import tflite_runtime.interpreter as tflite
 
-interpreter = Interpreter(model_path='posenet_mobilenet_v1_075_721_1281_quant_decoder.tflite')
+ext_delegate = [ tflite.load_delegate("/usr/lib/libvx_delegate.so") ]
+#interpreter = Interpreter(model_path='Cartoonization.tflite', experimental_delegates=ext_delegate)
+interpreter = Interpreter(model_path='Cartoonization.tflite')
 interpreter.allocate_tensors() 
 input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
 width = input_details[0]['shape'][2]
 height = input_details[0]['shape'][1]
 nChannel = input_details[0]['shape'][3]
-interpreter.set_tensor(input_details[0]['index'], np.zeros((1,height,width,nChannel)).astype("uint8") )
+interpreter.set_tensor(input_details[0]['index'], np.zeros((1,height,width,nChannel)).astype("float32") )
 interpreter.invoke()
 
 interpreter_time_start = time.time()

@@ -1,12 +1,12 @@
 
 # WPI Confidential Proprietary
 #--------------------------------------------------------------------------------------
-# Copyright (c) 2020 Freescale Semiconductor
-# Copyright 2020 WPI
+# Copyright (c) 2021 Freescale Semiconductor
+# Copyright 2021 WPI
 # All Rights Reserved
 ##--------------------------------------------------------------------------------------
-# * Code Ver : 1.0
-# * Code Date: 2021/7/30
+# * Code Ver : 2.0
+# * Code Date: 2021/12/30
 # * Author   : Weilly Li
 #--------------------------------------------------------------------------------------
 # THIS SOFTWARE IS PROVIDED BY WPI-TW "AS IS" AND ANY EXPRESSED OR
@@ -35,7 +35,7 @@ import cv2
 import time
 import argparse
 import numpy as np
-from tflite_runtime.interpreter import Interpreter
+import tflite_runtime.interpreter as tflite
 
 # --------------------------------------------------------------------------------------------------------------
 # Define
@@ -214,6 +214,17 @@ def get_mouth_countours_image( mesh_points, image_shape) :
 
     return mask, pts
 
+def InferenceDelegate( model, delegate ):
+    ext_delegate = [ tflite.load_delegate("/usr/lib/libvx_delegate.so") ]
+    if (delegate=="vx") :
+        interpreter = tflite.Interpreter(model, experimental_delegates=ext_delegate)
+    elif(delegate=="xnnpack"):
+        interpreter = tflite.Interpreter(model)
+    else :
+        print("ERROR : Deleget Input Fault")
+        return 0
+    return interpreter
+
 # --------------------------------------------------------------------------------------------------------------
 # 主程式
 # --------------------------------------------------------------------------------------------------------------
@@ -226,6 +237,7 @@ def main():
     parser.add_argument("--display", default="0")
     parser.add_argument("--save", default="1")
     parser.add_argument("--time", default="0")
+    parser.add_argument('--delegate' , default="vx", help = 'Please Input nnapi or xnnpack')
     parser.add_argument("--point_size", default="1")
     parser.add_argument("--IoU", default="0.6")
     parser.add_argument("--model", default="facemesh_weight_int8.tflite", help="Using facemesh_weight_flot.tflite can be accucy result")
@@ -234,7 +246,7 @@ def main():
     args = parser.parse_args()
 
     # 解析解譯器資訊 (人臉位置檢測)
-    interpreterFaceExtractor = Interpreter(model_path='mobilenetssd_facedetect_uint8_quant.tflite')
+    interpreterFaceExtractor = InferenceDelegate('mobilenetssd_facedetect_uint8_quant.tflite',args.delegate)
     interpreterFaceExtractor.allocate_tensors() 
     interpreterFaceExtractor_input_details  = interpreterFaceExtractor.get_input_details()
     interpreterFaceExtractor_output_details = interpreterFaceExtractor.get_output_details()
@@ -245,7 +257,7 @@ def main():
     interpreterFaceExtractor.invoke()
 
     # 解析解譯器資訊 (面網檢測)
-    interpreterFaceMesh = Interpreter(model_path=args.model)
+    interpreterFaceMesh = InferenceDelegate(args.model,args.delegate)
     interpreterFaceMesh.allocate_tensors() 
     interpreterFaceMesh_input_details  = interpreterFaceMesh.get_input_details()
     interpreterFaceMesh_output_details = interpreterFaceMesh.get_output_details()
@@ -355,7 +367,11 @@ def main():
           face_input_data   = (face_input_data-0.5)/0.5 # [-0.5,0.5] -> [-1, 1]
           face_input_data   = np.expand_dims(face_input_data, axis=0)
           interpreterFaceMesh.set_tensor(interpreterFaceMesh_input_details[0]['index'], face_input_data) 
+          interpreter_time_start = time.time()
           interpreterFaceMesh.invoke()
+          interpreter_time_end   = time.time()
+          if args.time =="True" or args.time == "1" :
+              print( APP_NAME + " Inference Time = ", (interpreter_time_end - interpreter_time_start)*1000 , " ms" )
           mesh_point_sample = interpreterFaceMesh.get_tensor(interpreterFaceMesh_output_details[0]['index']).reshape(468, 3)
 
           # 面具分割圖
@@ -386,7 +402,7 @@ def main():
       # 顯示輸出結果
       if args.save == "True" or args.save == "1" :
           cv2.imwrite( APP_NAME + "-" + args.test_img[:len(args.test_img)-4] +'_result.jpg', frame.astype("uint8"))
-          print("Save Reuslt Image Success , " + APP_NAME + '_result.jpg')
+          print("Save Reuslt Image Success , " + APP_NAME + "-" +  args.test_img[:len(args.test_img)-4] + '_result.jpg')
 
       if args.display =="True" or args.display == "1" :
           cv2.imshow('frame', frame.astype('uint8'))

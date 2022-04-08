@@ -1,11 +1,11 @@
 # WPI Confidential Proprietary
 #--------------------------------------------------------------------------------------
-# Copyright (c) 2020 Freescale Semiconductor
-# Copyright 2020 WPI
+# Copyright (c) 2021 Freescale Semiconductor
+# Copyright 2021 WPI
 # All Rights Reserved
 ##--------------------------------------------------------------------------------------
-# * Code Ver : 1.0
-# * Code Date: 2021/7/30
+# * Code Ver : 2.0
+# * Code Date: 2021/12/30
 # * Author   : Weilly Li
 #--------------------------------------------------------------------------------------
 # THIS SOFTWARE IS PROVIDED BY WPI-TW "AS IS" AND ANY EXPRESSED OR
@@ -26,7 +26,7 @@ import cv2
 import time
 import argparse
 import numpy as np
-from tflite_runtime.interpreter import Interpreter 
+import tflite_runtime.interpreter as tflite
 
 # --------------------------------------------------------------------------------------------------------------
 # Define
@@ -81,6 +81,17 @@ def nms(boxes, scores, Nt):
 
     return picked_boxes, picked_scores
 
+def InferenceDelegate( model, delegate ):
+    ext_delegate = [ tflite.load_delegate("/usr/lib/libvx_delegate.so") ]
+    if (delegate=="vx") :
+        interpreter = tflite.Interpreter(model, experimental_delegates=ext_delegate)
+    elif(delegate=="xnnpack"):
+        interpreter = tflite.Interpreter(model)
+    else :
+        print("ERROR : Deleget Input Fault")
+        return 0
+    return interpreter
+
 # --------------------------------------------------------------------------------------------------------------
 # 主程式
 # --------------------------------------------------------------------------------------------------------------
@@ -93,12 +104,13 @@ def main():
     parser.add_argument("--display", default="0")
     parser.add_argument("--save", default="1")
     parser.add_argument("--time", default="0")
+    parser.add_argument('--delegate' , default="vx", help = 'Please Input nnapi or xnnpack')
     parser.add_argument("--IoU", default="0.6")
     parser.add_argument("--test_img", default="Gesture_Hand.jpg")
     args = parser.parse_args()
 
     # 解析解譯器資訊 (手部)
-    interpreterHandDetector    = Interpreter(model_path='hand_detect_20000.tflite')
+    interpreterHandDetector = InferenceDelegate('hand_detect_20000.tflite',args.delegate)
     interpreterHandDetector.allocate_tensors() 
     iHandDetect_input_details  = interpreterHandDetector.get_input_details()
     iHandDetect_output_details = interpreterHandDetector.get_output_details()
@@ -109,7 +121,7 @@ def main():
     interpreterHandDetector.invoke()# 先行進行暖開機
 
     # 解析解譯器資訊
-    interpreterGestureDetector    = Interpreter(model_path='Gesture_LanguageMNIST.tflite')
+    interpreterGestureDetector = InferenceDelegate('Gesture_LanguageMNIST.tflite',args.delegate)
     interpreterGestureDetector.allocate_tensors() 
     iGestureDetect_input_details  = interpreterGestureDetector.get_input_details()
     iGestureDetect_output_details = interpreterGestureDetector.get_output_details()
@@ -150,7 +162,7 @@ def main():
       interpreterHandDetector.invoke()
       interpreterHandDetector_time_end   = time.time()
       if args.time =="True" or args.time == "1" :
-          print( APP_NAME + " Detect Inference Time = ", (interpreterHandDetector_time_end - interpreterHandDetector_time_start)*1000 , " ms" )
+          print( APP_NAME + " Inference Time (Hand Detect)= ", (interpreterHandDetector_time_end - interpreterHandDetector_time_start)*1000 , " ms" )
 
       # 取得解譯器的預測結果
       detection_boxes   = interpreterHandDetector.get_tensor(iHandDetect_output_details[0]['index'])
@@ -200,7 +212,7 @@ def main():
             interpreterGestureDetector.invoke()
             interpreterGestureDetector_time_end   = time.time()
             if args.time =="True" or args.time == "1" :
-                print( APP_NAME + " Gesture Inference Time = ", (interpreterGestureDetector_time_end - interpreterGestureDetector_time_start)*1000 , " ms" )
+                print( APP_NAME + " Inference Time (Gesture) = ", (interpreterGestureDetector_time_end - interpreterGestureDetector_time_start)*1000 , " ms" )
                 
             # 處理輸出
             predict = interpreterGestureDetector.get_tensor(iGestureDetect_output_details[0]['index'])
@@ -216,7 +228,7 @@ def main():
       # 顯示輸出結果
       if args.save == "True" or args.save == "1" :
           cv2.imwrite( APP_NAME + "-" + args.test_img[:len(args.test_img)-4] +'_result.jpg', frame.astype("uint8"))
-          print("Save Reuslt Image Success , " + APP_NAME + '_result.jpg')
+          print("Save Reuslt Image Success , " + APP_NAME + "-" +  args.test_img[:len(args.test_img)-4] + '_result.jpg')
 
       if args.display =="True" or args.display == "1" :
           cv2.imshow('frame', frame.astype('uint8'))

@@ -1,11 +1,11 @@
 # WPI Confidential Proprietary
 #--------------------------------------------------------------------------------------
-# Copyright (c) 2020 Freescale Semiconductor
-# Copyright 2020 WPI
+# Copyright (c) 2021 Freescale Semiconductor
+# Copyright 2021 WPI
 # All Rights Reserved
 ##--------------------------------------------------------------------------------------
-# * Code Ver : 1.0
-# * Code Date: 2021/7/30
+# * Code Ver : 2.0
+# * Code Date: 2021/12/30
 # * Author   : Weilly Li
 #--------------------------------------------------------------------------------------
 # THIS SOFTWARE IS PROVIDED BY WPI-TW "AS IS" AND ANY EXPRESSED OR
@@ -30,7 +30,7 @@ import cv2
 import time
 import argparse
 import numpy as np
-from tflite_runtime.interpreter import Interpreter 
+import tflite_runtime.interpreter as tflite
 
 # --------------------------------------------------------------------------------------------------------------
 # API
@@ -38,6 +38,17 @@ from tflite_runtime.interpreter import Interpreter
 def normalization(data):
     _range = np.max(data) - np.min(data)
     return (data - np.min(data)) / _range
+
+def InferenceDelegate( model, delegate ):
+    ext_delegate = [ tflite.load_delegate("/usr/lib/libvx_delegate.so") ]
+    if (delegate=="vx") :
+        interpreter = tflite.Interpreter(model, experimental_delegates=ext_delegate)
+    elif(delegate=="xnnpack"):
+        interpreter = tflite.Interpreter(model)
+    else :
+        print("ERROR : Deleget Input Fault")
+        return 0
+    return interpreter
 
 # --------------------------------------------------------------------------------------------------------------
 # 主程式
@@ -51,6 +62,8 @@ def main():
     parser.add_argument("--display", default="0")
     parser.add_argument("--save", default="1")
     parser.add_argument("--time", default="0")
+    parser.add_argument('--delegate' , default="vx", help = 'Please Input nnapi or xnnpack')
+    parser.add_argument('--model' , default="bodypix_concrete.tflite", help='File path of .tflite file.')
     parser.add_argument("--test_img", default="bodypix_test.png")
     parser.add_argument("--backgorund", default="London.jpg")
     parser.add_argument("--seg_threshold", default="245", help ="may should setting value is 200")
@@ -60,7 +73,7 @@ def main():
     backgorund_img = cv2.imread(args.backgorund)
 
     # 解析解譯器資訊
-    interpreter    = Interpreter(model_path='bodypix_concrete.tflite')
+    interpreter = InferenceDelegate(args.model,args.delegate)
     interpreter.allocate_tensors() 
     input_details  = interpreter.get_input_details()
     output_details = interpreter.get_output_details()

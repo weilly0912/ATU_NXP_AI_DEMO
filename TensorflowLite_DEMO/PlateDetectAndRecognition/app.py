@@ -1,11 +1,11 @@
 # WPI Confidential Proprietary
 #--------------------------------------------------------------------------------------
-# Copyright (c) 2020 Freescale Semiconductor
-# Copyright 2020 WPI
+# Copyright (c) 2021 Freescale Semiconductor
+# Copyright 2021 WPI
 # All Rights Reserved
 ##--------------------------------------------------------------------------------------
-# * Code Ver : 1.0
-# * Code Date: 2021/7/30
+# * Code Ver : 2.0
+# * Code Date: 2021/12/30
 # * Author   : Weilly Li
 #--------------------------------------------------------------------------------------
 # THIS SOFTWARE IS PROVIDED BY WPI-TW "AS IS" AND ANY EXPRESSED OR
@@ -28,7 +28,7 @@ import cv2
 import time
 import argparse
 import numpy as np
-from tflite_runtime.interpreter import Interpreter 
+import tflite_runtime.interpreter as tflite
 from local_utils import reconstruct
 
 # --------------------------------------------------------------------------------------------------------------
@@ -51,6 +51,17 @@ def sort_contours(cnts,reverse = False):
                                         key=lambda b: b[1][i], reverse=reverse))
     return cnts
 
+def InferenceDelegate( model, delegate ):
+    ext_delegate = [ tflite.load_delegate("/usr/lib/libvx_delegate.so") ]
+    if (delegate=="vx") :
+        interpreter = tflite.Interpreter(model, experimental_delegates=ext_delegate)
+    elif(delegate=="xnnpack"):
+        interpreter = tflite.Interpreter(model)
+    else :
+        print("ERROR : Deleget Input Fault")
+        return 0
+    return interpreter
+
 # --------------------------------------------------------------------------------------------------------------
 # 主程式
 # --------------------------------------------------------------------------------------------------------------
@@ -63,11 +74,12 @@ def main():
     parser.add_argument("--display", default="0")
     parser.add_argument("--save", default="1")
     parser.add_argument("--time", default="0")
+    parser.add_argument('--delegate' , default="vx", help = 'Please Input nnapi or xnnpack')
     parser.add_argument("--test_img", default="germany_car_plate.jpg")
     args = parser.parse_args()
 
     # 解析解譯器資訊 (車牌偵測)
-    interpreterPlateDetection    = Interpreter(model_path='platedetect.tflite')
+    interpreterPlateDetection = InferenceDelegate('platedetect.tflite',args.delegate)
     interpreterPlateDetection.allocate_tensors() 
     PlateDetection_input_details  = interpreterPlateDetection.get_input_details()
     PlateDetection_output_details = interpreterPlateDetection.get_output_details()
@@ -78,7 +90,7 @@ def main():
     interpreterPlateDetection.invoke()
 
     # 解析解譯器資訊 (車牌識別)
-    interpreterLicenseRecognition  = Interpreter(model_path='license_recognition.tflite')
+    interpreterLicenseRecognition = InferenceDelegate('license_recognition.tflite',args.delegate)
     interpreterLicenseRecognition.allocate_tensors() 
     LicenseRecognition_input_details  = interpreterLicenseRecognition.get_input_details()
     LicenseRecognition_output_details = interpreterLicenseRecognition.get_output_details()
@@ -123,7 +135,7 @@ def main():
       interpreterPlateDetection.invoke()
       interpreterPlateDetection_time_end   = time.time()
       if args.time =="True" or args.time == "1" :
-          print( APP_NAME + " Inference Time = ", (interpreterPlateDetection_time_end - interpreterPlateDetection_time_start)*1000 , " ms" )
+          print( APP_NAME + " Inference Time (Plate Detection) = ", (interpreterPlateDetection_time_end - interpreterPlateDetection_time_start)*1000 , " ms" )
 
       # 取得解譯器的預測結果 (車牌偵測)
       Features   = interpreterPlateDetection.get_tensor(PlateDetection_output_details[0]['index'])
@@ -183,7 +195,7 @@ def main():
                         interpreterLicenseRecognition.invoke()
                         interpreterLicenseRecognition_time_end   = time.time()
                         if args.time =="True" or args.time == "1" :
-                            print( APP_NAME + " Inference Time = ", (interpreterLicenseRecognition_time_end - interpreterLicenseRecognition_time_start)*1000 , " ms" )
+                            print( APP_NAME + " Inference Time (Text Detection) = ", (interpreterLicenseRecognition_time_end - interpreterLicenseRecognition_time_start)*1000 , " ms" )
 
                         # 取得解譯器的預測結果 (車牌識別)
                         text_info = interpreterLicenseRecognition.get_tensor(LicenseRecognition_output_details[0]['index'])
@@ -199,7 +211,7 @@ def main():
       # 顯示輸出結果
       if args.save == "True" or args.save == "1" :
           cv2.imwrite( APP_NAME + "-" + args.test_img[:len(args.test_img)-4] +'_result.jpg', image_result.astype("uint8"))
-          print("Save Reuslt Image Success , " + APP_NAME + '_result.jpg')
+          print("Save Reuslt Image Success , " + APP_NAME + "-" +  args.test_img[:len(args.test_img)-4] + '_result.jpg')
 
       if args.display =="True" or args.display == "1" :
           cv2.imshow('frame', frame.astype('uint8'))

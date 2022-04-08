@@ -1,12 +1,12 @@
 
 # WPI Confidential Proprietary
 #--------------------------------------------------------------------------------------
-# Copyright (c) 2020 Freescale Semiconductor
-# Copyright 2020 WPI
+# Copyright (c) 2021 Freescale Semiconductor
+# Copyright 2021 WPI
 # All Rights Reserved
 ##--------------------------------------------------------------------------------------
-# * Code Ver : 1.0
-# * Code Date: 2021/8/26
+# * Code Ver : 2.0
+# * Code Date: 2021/12/30
 # * Author   : Weilly Li
 #--------------------------------------------------------------------------------------
 # THIS SOFTWARE IS PROVIDED BY WPI-TW "AS IS" AND ANY EXPRESSED OR
@@ -28,7 +28,7 @@ import cv2
 import time
 import argparse
 import numpy as np
-from tflite_runtime.interpreter import Interpreter 
+import tflite_runtime.interpreter as tflite
 
 # --------------------------------------------------------------------------------------------------------------
 # Define
@@ -47,6 +47,17 @@ labels_facemask =  {0: 'Mask', 1: 'NoMask'}
 # --------------------------------------------------------------------------------------------------------------
 # API For NXP
 # --------------------------------------------------------------------------------------------------------------
+def InferenceDelegate( model, delegate ):
+    ext_delegate = [ tflite.load_delegate("/usr/lib/libvx_delegate.so") ]
+    if (delegate=="vx") :
+        interpreter = tflite.Interpreter(model, experimental_delegates=ext_delegate)
+    elif(delegate=="xnnpack"):
+        interpreter = tflite.Interpreter(model)
+    else :
+        print("ERROR : Deleget Input Fault")
+        return 0
+    return interpreter
+    
 def pad_input_image(img):
     """pad image to suitable shape"""
     img_h, img_w, _ = img.shape
@@ -162,15 +173,16 @@ def main():
     parser.add_argument("--display", default="0")
     parser.add_argument("--save", default="1")
     parser.add_argument("--time", default="0")
+    parser.add_argument('--delegate' , default="vx", help = 'Please Input nnapi or xnnpack')
     parser.add_argument("--IoU", default="0.6")
-    parser.add_argument("--test_img", default="demo5.jpg")
+    parser.add_argument("--test_img", default="crowd.jpg")
     parser.add_argument("--social_distance", default="1")
     parser.add_argument("--mask_detector", default="1")
     parser.add_argument("--fontsize", default="1.5")
     args = parser.parse_args()
 
     # 解析解譯器資訊 (人臉位置檢測)
-    interpreterPersonExtractor = Interpreter(model_path='mobilenet_ssd_v2_coco_quant_postprocess.tflite')
+    interpreterPersonExtractor = InferenceDelegate('mobilenet_ssd_v2_coco_quant_postprocess.tflite',args.delegate)
     interpreterPersonExtractor.allocate_tensors() 
     interpreterPersonExtractor_input_details  = interpreterPersonExtractor.get_input_details()
     interpreterPersonExtractor_output_details = interpreterPersonExtractor.get_output_details()
@@ -181,7 +193,7 @@ def main():
     interpreterPersonExtractor.invoke()
 
     # 解析解譯器資訊 (面網檢測)
-    interpreterMaskDetector = Interpreter(model_path="facemask_int8.tflite")
+    interpreterMaskDetector = InferenceDelegate('facemask_int8.tflite',args.delegate)
     interpreterMaskDetector.allocate_tensors() 
     interpreterMaskDetector_input_details  = interpreterMaskDetector.get_input_details()
     interpreterMaskDetector_output_details = interpreterMaskDetector.get_output_details()
@@ -231,7 +243,7 @@ def main():
           interpreterPersonExtractor.invoke()
           interpreter_time_end   = time.time()
           if args.time =="True" or args.time == "1" :
-              print( APP_NAME + " Person Extractor Inference Time = ", (interpreter_time_end - interpreter_time_start)*1000 , " ms" )  
+              print( APP_NAME + " Inference Time (Person Extractor) = ", (interpreter_time_end - interpreter_time_start)*1000 , " ms" )  
 
           # 取得解譯器的預測結果 (行人位置檢測)
           detection_boxes   = interpreterPersonExtractor.get_tensor(interpreterPersonExtractor_output_details[0]['index'])
@@ -316,7 +328,7 @@ def main():
         interpreterMaskDetector.invoke()
         interpreter_time_end   = time.time()
         if args.time =="True" or args.time == "1" :
-            print( APP_NAME + " Mask Detector Inference Time = ", (interpreter_time_end - interpreter_time_start)*1000 , " ms" )  
+            print( APP_NAME + " Inference Time (Mask Detector)= ", (interpreter_time_end - interpreter_time_start)*1000 , " ms" )  
 
         # 取得解譯器的預測結果 (面網檢測)
         predictions = interpreterMaskDetector.get_tensor(interpreterMaskDetector_output_details[0]['index'])
@@ -350,7 +362,7 @@ def main():
       # 顯示輸出結果
       if args.save == "True" or args.save == "1" :
           cv2.imwrite( APP_NAME + "-" + args.test_img[:len(args.test_img)-4] +'_result.jpg', result.astype("uint8"))
-          print("Save Reuslt Image Success , " + APP_NAME + '_result.jpg')
+          print("Save Reuslt Image Success , " + APP_NAME + "-" +  args.test_img[:len(args.test_img)-4] + '_result.jpg')
 
       if args.display =="True" or args.display == "1" :
           cv2.imshow('frame', result.astype('uint8'))
