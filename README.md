@@ -1,16 +1,21 @@
 ﻿﻿# Python-Tensorflow Lite-DEMO 
- 
-一般用法 : python3 app.py --display 1
+  
+使用情境 : NXP i.MX8M Plus Platform with VerSlicon Vivante NPU [官網](https://www.verisilicon.com/en/IPPortfolio/VivanteNPUIP)
 
-攝鏡頭用法 : python3 app.py --display 1 --save 0 --camera 1
+* 用法一 (影像輸入) : python3 app.py --display 1 --delegate "vx"
+
+* 用法二 (攝鏡頭輸入)  : python3 app.py --display 1 --save 0 --camera 1 --delegate "vx"
+
+
+使用情境 : NXP i.MX 93 Platform with ARM NPU [官網](https://www.arm.com/zh-TW/products/silicon-ip-cpu/ethos/ethos-u65)
+
+* 用法一 (影像輸入) : python3 app.py --display 1 --delegate "ethous"
+
+* 用法二 (攝鏡頭輸入)  : python3 app.py --display 1 --save 0 --camera 1 --delegate "ethous"
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-使用平台 :
-
-NXP i.MX8M Plus Platform
-
-BSP Version L5.10.52
+Yocto BSP Base on Version L6.1.1.1.0.0
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
