@@ -5,8 +5,8 @@
 # Copyright 2020 WPI
 # All Rights Reserved
 ##--------------------------------------------------------------------------------------
-# * Code Ver : 3.0
-# * Code Date: 2022/04/08
+# * Code Ver : 4.0
+# * Code Date: 2023/04/26
 # * Author   : Weilly Li
 #--------------------------------------------------------------------------------------
 # THIS SOFTWARE IS PROVIDED BY WPI-TW "AS IS" AND ANY EXPRESSED OR
@@ -88,9 +88,10 @@ def nms(boxes, scores, Nt):
     return picked_boxes, picked_scores
 
 def InferenceDelegate( model, delegate ):
-    ext_delegate = [ tflite.load_delegate("/usr/lib/libvx_delegate.so") ]
     if (delegate=="vx") :
-        interpreter = tflite.Interpreter(model, experimental_delegates=ext_delegate)
+        interpreter = tflite.Interpreter(model, experimental_delegates=[ tflite.load_delegate("/usr/lib/libvx_delegate.so") ])
+    elif(delegate=="ethosu"):
+        interpreter = tflite.Interpreter(model, experimental_delegates=[tflite.load_delegate("/usr/lib/libethosu_delegate.so")])
     elif(delegate=="xnnpack"):
         interpreter = tflite.Interpreter(model)
     else :
@@ -106,12 +107,14 @@ def main():
     # 解析外部資訊
     APP_NAME = "FacialKeyPoint"
     parser = argparse.ArgumentParser()
-    parser.add_argument("--camera", default="0")
+    parser.add_argument( '-c' ,"--camera", default="0")
     parser.add_argument("--camera_format", default="V4L2_YUV2_480p")
-    parser.add_argument("--display", default="0")
+    parser.add_argument( '-d' ,"--display", default="0")
     parser.add_argument("--save", default="1")
-    parser.add_argument("--time", default="0")
-    parser.add_argument('--delegate' , default="vx", help = 'Please Input nnapi or xnnpack')
+    parser.add_argument( '-t', "--time", default="0")
+    parser.add_argument('--delegate' , default="ethosu", help = 'Please Input vx or xnnpack or ethosu') 
+    parser.add_argument("--model", default="mobilenetssd_facedetect_uint8_quant.tflite", help="Using facemesh_weight_flot.tflite can be accucy result")
+    parser.add_argument("--model_feature", default="facial_keypoint_detection_new.tflite", help="Using facemesh_weight_flot.tflite can be accucy result")
     parser.add_argument("--IoU", default="0.6")
     parser.add_argument("--test_img", default="yingying.jpg")
     
@@ -120,8 +123,13 @@ def main():
     if args.camera_format == "V4L2_YUV2_720p" : camera_format = V4L2_YUV2_720p
     if args.camera_format == "V4L2_H264_1080p" : camera_format = V4L2_H264_1080p
 
+    # vela(NPU) 路徑修正
+    if(args.delegate=="ethosu"): 
+        args.model = 'output/' + args.model[:-7] + '_vela.tflite'
+        args.model_feature = 'output/' + args.model_feature[:-7] + '_vela.tflite'
+
     # 解析解譯器資訊 (人臉位置檢測)
-    interpreterFaceExtractor = InferenceDelegate('mobilenetssd_facedetect_uint8_quant.tflite',args.delegate)
+    interpreterFaceExtractor = InferenceDelegate(args.model,args.delegate)
     interpreterFaceExtractor.allocate_tensors() 
     interpreterFaceExtractor_input_details  = interpreterFaceExtractor.get_input_details()
     interpreterFaceExtractor_output_details = interpreterFaceExtractor.get_output_details()
@@ -132,7 +140,7 @@ def main():
     interpreterFaceExtractor.invoke()
 
     # 解析解譯器資訊 (面部特徵檢測)
-    interpreterKeyPoint = InferenceDelegate('facial_keypoint_detection_new.tflite',args.delegate)
+    interpreterKeyPoint = InferenceDelegate(args.model_feature,args.delegate)
     interpreterKeyPoint.allocate_tensors() 
     interpreterKeyPoint_input_details  = interpreterKeyPoint.get_input_details()
     interpreterKeyPoint_output_details = interpreterKeyPoint.get_output_details()

@@ -4,8 +4,8 @@
 # Copyright 2020 WPI
 # All Rights Reserved
 ##--------------------------------------------------------------------------------------
-# * Code Ver : 3.0
-# * Code Date: 2022/04/08
+# * Code Ver : 4.0
+# * Code Date: 2023/04/26
 # * Author   : Weilly Li
 #--------------------------------------------------------------------------------------
 # THIS SOFTWARE IS PROVIDED BY WPI-TW "AS IS" AND ANY EXPRESSED OR
@@ -88,9 +88,10 @@ def nms(boxes, scores, Nt):
     return picked_boxes, picked_scores
 
 def InferenceDelegate( model, delegate ):
-    ext_delegate = [ tflite.load_delegate("/usr/lib/libvx_delegate.so") ]
     if (delegate=="vx") :
-        interpreter = tflite.Interpreter(model, experimental_delegates=ext_delegate)
+        interpreter = tflite.Interpreter(model, experimental_delegates=[ tflite.load_delegate("/usr/lib/libvx_delegate.so") ])
+    elif(delegate=="ethosu"):
+        interpreter = tflite.Interpreter(model, experimental_delegates=[tflite.load_delegate("/usr/lib/libethosu_delegate.so")])
     elif(delegate=="xnnpack"):
         interpreter = tflite.Interpreter(model)
     else :
@@ -106,13 +107,13 @@ def main():
     # 解析外部資訊
     APP_NAME = "BlazeFace"
     parser = argparse.ArgumentParser()
-    parser.add_argument("--camera", default="0")
+    parser.add_argument( '-c' ,"--camera", default="0")
     parser.add_argument("--camera_format", default="V4L2_YUV2_480p")
-    parser.add_argument("--display", default="0")
+    parser.add_argument( '-d' ,"--display", default="0")
     parser.add_argument("--save", default="1")
-    parser.add_argument("--time", default="0")
-    parser.add_argument('--delegate' , default="vx", help = 'Please Input nnapi or xnnpack')
-    parser.add_argument('--model' , default="blazeface.tflite", help='File path of .tflite file.')
+    parser.add_argument( '-t', "--time", default="0")
+    parser.add_argument('--delegate' , default="ethosu", help = 'Please Input vx or xnnpack or ethosu') 
+    parser.add_argument( '-m', '--model' , default="blazeface.tflite", help='File path of .tflite file.')
     parser.add_argument("--IoU", default="0.6")
     parser.add_argument("--test_img", default="blazeface_image.jpg")
     parser.add_argument("--score_threshold", default="0.5")
@@ -121,6 +122,9 @@ def main():
     if args.camera_format == "V4L2_YUV2_480p" : camera_format = V4L2_YUV2_480p
     if args.camera_format == "V4L2_YUV2_720p" : camera_format = V4L2_YUV2_720p
     if args.camera_format == "V4L2_H264_1080p" : camera_format = V4L2_H264_1080p
+    
+    # vela(NPU) 路徑修正
+    if(args.delegate=="ethosu"): args.model = 'output/' + args.model[:-7] + '_vela.tflite'
 
     # 解析解譯器資訊
     interpreter = InferenceDelegate(args.model,args.delegate)

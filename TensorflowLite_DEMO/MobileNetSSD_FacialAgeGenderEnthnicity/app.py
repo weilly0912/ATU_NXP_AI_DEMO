@@ -4,8 +4,8 @@
 # Copyright 2020 WPI
 # All Rights Reserved
 ##--------------------------------------------------------------------------------------
-# * Code Ver : 3.0
-# * Code Date: 2022/04/08
+# * Code Ver : 4.0
+# * Code Date: 2023/04/26
 # * Author   : Weilly Li
 #--------------------------------------------------------------------------------------
 # THIS SOFTWARE IS PROVIDED BY WPI-TW "AS IS" AND ANY EXPRESSED OR
@@ -104,9 +104,10 @@ def nms(boxes, scores, Nt):
     return picked_boxes, picked_scores
 
 def InferenceDelegate( model, delegate ):
-    ext_delegate = [ tflite.load_delegate("/usr/lib/libvx_delegate.so") ]
     if (delegate=="vx") :
-        interpreter = tflite.Interpreter(model, experimental_delegates=ext_delegate)
+        interpreter = tflite.Interpreter(model, experimental_delegates=[ tflite.load_delegate("/usr/lib/libvx_delegate.so") ])
+    elif(delegate=="ethosu"):
+        interpreter = tflite.Interpreter(model, experimental_delegates=[tflite.load_delegate("/usr/lib/libethosu_delegate.so")])
     elif(delegate=="xnnpack"):
         interpreter = tflite.Interpreter(model)
     else :
@@ -129,12 +130,17 @@ def main():
     # 解析外部資訊
     APP_NAME = "FacialAgeGenderEnthnicity"
     parser = argparse.ArgumentParser()
-    parser.add_argument("--camera", default="0")
+    parser.add_argument( '-c' ,"--camera", default="0")
     parser.add_argument("--camera_format", default="V4L2_YUV2_480p")
-    parser.add_argument("--display", default="0")
+    parser.add_argument( '-d' ,"--display", default="0")
     parser.add_argument("--save", default="1")
-    parser.add_argument("--time", default="0")
-    parser.add_argument('--delegate' , default="vx", help = 'Please Input nnapi or xnnpack')
+    parser.add_argument( '-t', "--time", default="0")
+    parser.add_argument('--delegate' , default="ethosu", help = 'Please Input vx or xnnpack or ethosu') 
+    parser.add_argument("-m","--model", default="mobilenetssd_facedetect_uint8_quant.tflite", help="Using facemesh_weight_flot.tflite can be accucy result")
+    parser.add_argument("-mf1","--model_feature_1", default='facial_age_detection.tflite', help="Using facemesh_weight_flot.tflite can be accucy result")
+    parser.add_argument("-mf2","--model_feature_2", default='facial_gender_detection.tflite', help="Using facemesh_weight_flot.tflite can be accucy result")
+    parser.add_argument("-mf3","--model_feature_3", default='facial_ethnicity_detection.tflite', help="Using facemesh_weight_flot.tflite can be accucy result")
+    parser.add_argument("-mf4","--model_feature_4", default='facial_shape_detection.tflite', help="Using facemesh_weight_flot.tflite can be accucy result")
     parser.add_argument("--IoU", default="0.6")
     parser.add_argument("--test_img", default="Didy.png")
     parser.add_argument("--offset_y", default="-20")
@@ -144,8 +150,16 @@ def main():
     if args.camera_format == "V4L2_YUV2_720p" : camera_format = V4L2_YUV2_720p
     if args.camera_format == "V4L2_H264_1080p" : camera_format = V4L2_H264_1080p
 
+    # vela(NPU) 路徑修正
+    if(args.delegate=="ethosu"): 
+        args.model = 'output/' + args.model[:-7] + '_vela.tflite'
+        args.model_feature_1 = 'output/' + args.model_feature_1[:-7] + '_vela.tflite'
+        args.model_feature_2 = 'output/' + args.model_feature_2[:-7] + '_vela.tflite'
+        args.model_feature_3 = 'output/' + args.model_feature_3[:-7] + '_vela.tflite'
+        args.model_feature_4 = 'output/' + args.model_feature_4[:-7] + '_vela.tflite'
+
     # 解析解譯器資訊 (人臉位置檢測)
-    interpreterFaceExtractor = InferenceDelegate('mobilenetssd_facedetect_uint8_quant.tflite',args.delegate)
+    interpreterFaceExtractor = InferenceDelegate(args.model,args.delegate)
     interpreterFaceExtractor.allocate_tensors() 
     interpreterFaceExtractor_input_details  = interpreterFaceExtractor.get_input_details()
     interpreterFaceExtractor_output_details = interpreterFaceExtractor.get_output_details()
@@ -156,7 +170,7 @@ def main():
     interpreterFaceExtractor.invoke()
 
     # 解析解譯器資訊 (年齡)
-    interpreterAge = InferenceDelegate('facial_age_detection.tflite',args.delegate)
+    interpreterAge = InferenceDelegate(args.model_feature_1,args.delegate)
     interpreterAge.allocate_tensors() 
     interpreterAge_input_details  = interpreterAge.get_input_details()
     interpreterAge_output_details = interpreterAge.get_output_details()
@@ -166,7 +180,7 @@ def main():
     interpreterAge.invoke()
 
     # 解析解譯器資訊 (性別)
-    interpreterGender = InferenceDelegate('facial_gender_detection.tflite',args.delegate)
+    interpreterGender = InferenceDelegate(args.model_feature_2,args.delegate)
     interpreterGender.allocate_tensors() 
     interpreterGender_input_details  = interpreterGender.get_input_details()
     interpreterGender_output_details = interpreterGender.get_output_details()
@@ -176,7 +190,7 @@ def main():
     interpreterGender.invoke()
 
     # 解析解譯器資訊 (種族)
-    interpreterEthnicity = InferenceDelegate('facial_ethnicity_detection.tflite',args.delegate)
+    interpreterEthnicity = InferenceDelegate(args.model_feature_3,args.delegate)
     interpreterEthnicity.allocate_tensors() 
     interpreterEthnicity_input_details  = interpreterEthnicity.get_input_details()
     interpreterEthnicity_output_details = interpreterEthnicity.get_output_details()
@@ -186,7 +200,7 @@ def main():
     interpreterEthnicity.invoke()
 
     # 解析解譯器資訊 (臉型)
-    interpreterShape = InferenceDelegate('facial_shape_detection.tflite',args.delegate)
+    interpreterShape = InferenceDelegate(args.model_feature_4,args.delegate)
     interpreterShape.allocate_tensors() 
     interpreterShape_input_details  = interpreterShape.get_input_details()
     interpreterShape_output_details = interpreterShape.get_output_details()

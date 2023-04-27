@@ -5,8 +5,8 @@
 # Copyright 2020 WPI
 # All Rights Reserved
 ##--------------------------------------------------------------------------------------
-# * Code Ver : 3.0
-# * Code Date: 2022/04/08
+# * Code Ver : 4.0
+# * Code Date: 2023/04/26
 # * Author   : Weilly Li
 # * Non-qunt Model*
 #--------------------------------------------------------------------------------------
@@ -47,9 +47,10 @@ V4L2_H264_1080p = "v4l2src device=/dev/video3 ! video/x-h264, width=1920, height
 # API
 # --------------------------------------------------------------------------------------------------------------
 def InferenceDelegate( model, delegate ):
-    ext_delegate = [ tflite.load_delegate("/usr/lib/libvx_delegate.so") ]
     if (delegate=="vx") :
-        interpreter = tflite.Interpreter(model, experimental_delegates=ext_delegate)
+        interpreter = tflite.Interpreter(model, experimental_delegates=[ tflite.load_delegate("/usr/lib/libvx_delegate.so") ])
+    elif(delegate=="ethosu"):
+        interpreter = tflite.Interpreter(model, experimental_delegates=[tflite.load_delegate("/usr/lib/libethosu_delegate.so")])
     elif(delegate=="xnnpack"):
         interpreter = tflite.Interpreter(model)
     else :
@@ -103,12 +104,14 @@ def main():
   # 解析外部資訊
   APP_NAME = "StyleTrasfer"
   parser = argparse.ArgumentParser()
-  parser.add_argument("--camera", default="0")
+  parser.add_argument( '-c' ,"--camera", default="0")
   parser.add_argument("--camera_format", default="V4L2_YUV2_480p")
-  parser.add_argument("--display", default="0")
+  parser.add_argument( '-d' ,"--display", default="0")
   parser.add_argument("--save", default="1")
-  parser.add_argument("--time", default="0")
+  parser.add_argument( '-t', "--time", default="0")
   parser.add_argument('--delegate' , default="xnnpack", help = 'Please Input nnapi or xnnpack')
+  parser.add_argument( '-m', '--model' , default="magenta_arbitrary-image-stylization-v1-256_int8_transfer_1.tflite", help='File path of .tflite file.')
+  parser.add_argument( '-mf', '--model_feature' , default="magenta_arbitrary-image-stylization-v1-256_int8_prediction_1.tflite", help='File path of .tflite file.')
   parser.add_argument("--test_img", default="belfry.jpg")
   
   args = parser.parse_args()
@@ -116,18 +119,24 @@ def main():
   if args.camera_format == "V4L2_YUV2_720p" : camera_format = V4L2_YUV2_720p
   if args.camera_format == "V4L2_H264_1080p" : camera_format = V4L2_H264_1080p
 
+  # vela(NPU) 路徑修正
+  if(args.delegate=="ethosu"): 
+    args.model = 'output/' + args.model[:-7] + '_vela.tflite'
+    args.model_feature = 'output/' + args.model_feature[:-7] + '_vela.tflite'
+
+
   # (1) 讓解譯器學習各種風格
-  style_bottleneck_style23   = StyleEncoder("magenta_arbitrary-image-stylization-v1-256_int8_prediction_1.tflite", "StyleDataSets/style23.jpg",args.delegate)
-  style_bottleneck_VanGogh   = StyleEncoder("magenta_arbitrary-image-stylization-v1-256_int8_prediction_1.tflite", "StyleDataSets/VanGogh_Star.jpg",args.delegate)
-  style_bottleneck_sketch    = StyleEncoder("magenta_arbitrary-image-stylization-v1-256_int8_prediction_1.tflite", "StyleDataSets/sketch.jpg",args.delegate)
-  style_bottleneck_waterpaint= StyleEncoder("magenta_arbitrary-image-stylization-v1-256_int8_prediction_1.tflite", "StyleDataSets/waterpaint.jpg",args.delegate)
-  style_bottleneck_colpencil = StyleEncoder("magenta_arbitrary-image-stylization-v1-256_int8_prediction_1.tflite", "StyleDataSets/towers_1916_sq.jpg",args.delegate)
+  style_bottleneck_style23   = StyleEncoder(args.model_feature , "StyleDataSets/style23.jpg",args.delegate)
+  style_bottleneck_VanGogh   = StyleEncoder(args.model_feature , "StyleDataSets/VanGogh_Star.jpg",args.delegate)
+  style_bottleneck_sketch    = StyleEncoder(args.model_feature , "StyleDataSets/sketch.jpg",args.delegate)
+  style_bottleneck_waterpaint= StyleEncoder(args.model_feature , "StyleDataSets/waterpaint.jpg",args.delegate)
+  style_bottleneck_colpencil = StyleEncoder(args.model_feature , "StyleDataSets/towers_1916_sq.jpg",args.delegate)
 
   # (2) 調用任一已學習風格的解譯器
   style_bottleneck = style_bottleneck_VanGogh 
 
   # (3) 解析解譯器資訊
-  interpreter_transfer = InferenceDelegate("magenta_arbitrary-image-stylization-v1-256_int8_transfer_1.tflite",args.delegate)
+  interpreter_transfer = InferenceDelegate(args.model,args.delegate)
   interpreter_transfer.allocate_tensors()
   transfer_input_details  = interpreter_transfer.get_input_details()
   transfer_output_details = interpreter_transfer.get_output_details()

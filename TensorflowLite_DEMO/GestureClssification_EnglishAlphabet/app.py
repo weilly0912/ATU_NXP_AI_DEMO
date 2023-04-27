@@ -4,8 +4,8 @@
 # Copyright 2020 WPI
 # All Rights Reserved
 ##--------------------------------------------------------------------------------------
-# * Code Ver : 3.0
-# * Code Date: 2022/04/08
+# * Code Ver : 4.0
+# * Code Date: 2023/04/26
 # * Author   : Weilly Li
 #--------------------------------------------------------------------------------------
 # THIS SOFTWARE IS PROVIDED BY WPI-TW "AS IS" AND ANY EXPRESSED OR
@@ -41,9 +41,10 @@ V4L2_H264_1080p = "v4l2src device=/dev/video3 ! video/x-h264, width=1920, height
 # API
 # --------------------------------------------------------------------------------------------------------------
 def InferenceDelegate( model, delegate ):
-    ext_delegate = [ tflite.load_delegate("/usr/lib/libvx_delegate.so") ]
     if (delegate=="vx") :
-        interpreter = tflite.Interpreter(model, experimental_delegates=ext_delegate)
+        interpreter = tflite.Interpreter(model, experimental_delegates=[ tflite.load_delegate("/usr/lib/libvx_delegate.so") ])
+    elif(delegate=="ethosu"):
+        interpreter = tflite.Interpreter(model, experimental_delegates=[tflite.load_delegate("/usr/lib/libethosu_delegate.so")])
     elif(delegate=="xnnpack"):
         interpreter = tflite.Interpreter(model)
     else :
@@ -65,19 +66,22 @@ def main():
     APP_NAME = "GestureClssification_EnglishAlphabet"
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser = argparse.ArgumentParser()
-    parser.add_argument("--camera", default="0")
+    parser.add_argument( '-c' ,"--camera", default="0")
     parser.add_argument("--camera_format", default="V4L2_YUV2_480p")
-    parser.add_argument("--display", default="0")
+    parser.add_argument( '-d' ,"--display", default="0")
     parser.add_argument("--save", default="1")
-    parser.add_argument("--time", default="0")
-    parser.add_argument('--delegate' , default="vx", help = 'Please Input nnapi or xnnpack')
-    parser.add_argument('--model' , default="Gesture_LanguageMNIST.tflite", help='File path of .tflite file.')   
+    parser.add_argument( '-t', "--time", default="0")
+    parser.add_argument('--delegate' , default="ethosu", help = 'Please Input vx or xnnpack or ethosu') 
+    parser.add_argument( '-m', '--model' , default="Gesture_LanguageMNIST.tflite", help='File path of .tflite file.')   
     parser.add_argument('--test_img', default="Gesture_A.jpg", help='File path of labels file.')
     
     args = parser.parse_args()
     if args.camera_format == "V4L2_YUV2_480p" : camera_format = V4L2_YUV2_480p
     if args.camera_format == "V4L2_YUV2_720p" : camera_format = V4L2_YUV2_720p
     if args.camera_format == "V4L2_H264_1080p" : camera_format = V4L2_H264_1080p
+
+    # vela(NPU) 路徑修正
+    if(args.delegate=="ethosu"): args.model = 'output/' + args.model[:-7] + '_vela.tflite'
 
     # 解析解譯器資訊
     interpreter = InferenceDelegate(args.model,args.delegate)
@@ -153,48 +157,4 @@ def main():
 if __name__ == "__main__":
     main()
  
-
-
-
-
-
-
-
-
-# weilly
-'''
-# -> back ground method
-#gbg  = cv2.bgsegm.createBackgroundSubtractorMOG(history=30, nmixtures=20, backgroundRatio=0.3, noiseSigma=0)
-#fgbg  = cv2.createBackgroundSubtractorMOG2()
-#fgbg  = cv2.BackgroundSubtractorKNN()
-
-while(True):
-
-  #preprocess image
-  ret, frame = cap.read()
-  fgmask = fgbg.apply(frame)
-  fgmask_resized = cv2.resize(fgmask, (width, height))
-  fgmask_resized = cv2.dilate(fgmask_resized, np.ones((3,3), np.uint8), iterations = 2)
-  fgmask_resized = cv2.cvtColor(fgmask_resized, cv2.COLOR_GRAY2BGR)
-  input_data = np.expand_dims(fgmask_resized, axis=0)#input_data = np.expand_dims(input_data, axis=3)
-  interpreter.set_tensor(input_details[0]['index'], input_data) 
-  interpreter.invoke()
-
-  #predict
-  predict = interpreter.get_tensor(output_details[0]['index'])
-  predicted_label = class_names[np.argmax(predict)]
-  #print(predicted_label)
-
-  #draw on text
-  text = str(predicted_label)
-  cv2.putText(frame, text, (20, 40), cv2.FONT_HERSHEY_SIMPLEX,1, (0, 0, 255), 2, cv2.LINE_AA)
-
-  #imshow
-  fgmask_resized_show = cv2.resize(fgmask_resized, (frame.shape[1], frame.shape[0]))
-  image_show = np.concatenate((frame, fgmask_resized_show)) 
-  cv2.imshow('frame', image_show)
-  if cv2.waitKey(1) & 0xFF == ord('q'):
-    break
-
-'''
 

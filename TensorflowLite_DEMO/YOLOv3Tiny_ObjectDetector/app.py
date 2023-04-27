@@ -4,8 +4,8 @@
 # Copyright 2020 WPI
 # All Rights Reserved
 ##--------------------------------------------------------------------------------------
-# * Code Ver : 3.0
-# * Code Date: 2022/04/08
+# * Code Ver : 4.0
+# * Code Date: 2023/04/26
 # * Author   : Weilly Li
 #--------------------------------------------------------------------------------------
 # THIS SOFTWARE IS PROVIDED BY WPI-TW "AS IS" AND ANY EXPRESSED OR
@@ -52,9 +52,10 @@ def load_labels(path):
   return {int(num): text.strip() for num, text in lines}
 
 def InferenceDelegate( model, delegate ):
-    ext_delegate = [ tflite.load_delegate("/usr/lib/libvx_delegate.so") ]
     if (delegate=="vx") :
-        interpreter = tflite.Interpreter(model, experimental_delegates=ext_delegate)
+        interpreter = tflite.Interpreter(model, experimental_delegates=[ tflite.load_delegate("/usr/lib/libvx_delegate.so") ])
+    elif(delegate=="ethosu"):
+        interpreter = tflite.Interpreter(model, experimental_delegates=[tflite.load_delegate("/usr/lib/libethosu_delegate.so")])
     elif(delegate=="xnnpack"):
         interpreter = tflite.Interpreter(model)
     else :
@@ -71,13 +72,13 @@ def main():
     APP_NAME = "YoLov3_ObjectDetector"
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser = argparse.ArgumentParser()
-    parser.add_argument("--camera", default="0")
+    parser.add_argument( '-c' ,"--camera", default="0")
     parser.add_argument("--camera_format", default="V4L2_YUV2_480p")
-    parser.add_argument("--display", default="0")
+    parser.add_argument( '-d' ,"--display", default="0")
     parser.add_argument("--save", default="1")
-    parser.add_argument("--time", default="0")  
-    parser.add_argument('--delegate' , default="vx", help = 'Please Input nnapi or xnnpack') 
-    parser.add_argument('--model' , default="quant_coco-tiny-v3-relu.tflite", help='File path of .tflite file.')
+    parser.add_argument( '-t', "--time", default="0")  
+    parser.add_argument('--delegate' , default="ethosu", help = 'Please Input vx or xnnpack or ethosu')  
+    parser.add_argument( '-m', '--model' , default="quant_coco-tiny-v3-relu.tflite", help='File path of .tflite file.')
     parser.add_argument('--model_input_type' , default="uint8")
     parser.add_argument("--anchors" , default="coco_labels.txt", help="Anchors file.")
     parser.add_argument('--labels'  , default="coco_labels.txt", help='File path of labels file.')
@@ -88,6 +89,9 @@ def main():
     if args.camera_format == "V4L2_YUV2_480p" : camera_format = V4L2_YUV2_480p
     if args.camera_format == "V4L2_YUV2_720p" : camera_format = V4L2_YUV2_720p
     if args.camera_format == "V4L2_H264_1080p" : camera_format = V4L2_H264_1080p
+    
+    # vela(NPU) 路徑修正
+    if(args.delegate=="ethosu"): args.model = 'output/' + args.model[:-7] + '_vela.tflite'
 
     # 載入標籤
     labels  = load_labels(args.labels)
@@ -104,7 +108,6 @@ def main():
     height         = input_details[0]['shape'][1]
     nChannel       = input_details[0]['shape'][3]
     
-
     # 先行進行暖開機
     interpreter.set_tensor(input_details[0]['index'], np.zeros((1,height,width,nChannel)).astype(args.model_input_type) )
     interpreter.invoke()

@@ -5,8 +5,8 @@
 # Copyright 2020 WPI
 # All Rights Reserved
 ##--------------------------------------------------------------------------------------
-# * Code Ver : 3.0
-# * Code Date: 2022/04/08
+# * Code Ver : 4.0
+# * Code Date: 2023/04/26
 # * Author   : Weilly Li
 #--------------------------------------------------------------------------------------
 # THIS SOFTWARE IS PROVIDED BY WPI-TW "AS IS" AND ANY EXPRESSED OR
@@ -53,9 +53,10 @@ V4L2_H264_1080p = "v4l2src device=/dev/video3 ! video/x-h264, width=1920, height
 # API For NXP
 # --------------------------------------------------------------------------------------------------------------
 def InferenceDelegate( model, delegate ):
-    ext_delegate = [ tflite.load_delegate("/usr/lib/libvx_delegate.so") ]
     if (delegate=="vx") :
-        interpreter = tflite.Interpreter(model, experimental_delegates=ext_delegate)
+        interpreter = tflite.Interpreter(model, experimental_delegates=[ tflite.load_delegate("/usr/lib/libvx_delegate.so") ])
+    elif(delegate=="ethosu"):
+        interpreter = tflite.Interpreter(model, experimental_delegates=[tflite.load_delegate("/usr/lib/libethosu_delegate.so")])
     elif(delegate=="xnnpack"):
         interpreter = tflite.Interpreter(model)
     else :
@@ -174,12 +175,14 @@ def main():
     # 解析外部資訊
     APP_NAME = "MaskDetector"
     parser = argparse.ArgumentParser()
-    parser.add_argument("--camera", default="0")
+    parser.add_argument( '-c' ,"--camera", default="0")
     parser.add_argument("--camera_format", default="V4L2_YUV2_480p")
-    parser.add_argument("--display", default="0")
+    parser.add_argument( '-d' ,"--display", default="0")
     parser.add_argument("--save", default="1")
-    parser.add_argument("--time", default="0")
-    parser.add_argument('--delegate' , default="vx", help = 'Please Input nnapi or xnnpack')
+    parser.add_argument( '-t', "--time", default="0")
+    parser.add_argument('--delegate' , default="ethosu", help = 'Please Input vx or xnnpack or ethosu') 
+    parser.add_argument('-m',"--model", default="mobilenet_ssd_v2_coco_quant_postprocess.tflite")
+    parser.add_argument('-mf',"--model_feature", default="facemask_int8.tflite")
     parser.add_argument("--IoU", default="0.6")
     parser.add_argument("--test_img", default="crowd.jpg")
     parser.add_argument("--social_distance", default="1")
@@ -191,8 +194,11 @@ def main():
     if args.camera_format == "V4L2_YUV2_720p" : camera_format = V4L2_YUV2_720p
     if args.camera_format == "V4L2_H264_1080p" : camera_format = V4L2_H264_1080p
 
+    # vela(NPU) 路徑修正
+    if(args.delegate=="ethosu"): args.model = 'output/' + args.model[:-7] + '_vela.tflite'
+
     # 解析解譯器資訊 (人臉位置檢測)
-    interpreterPersonExtractor = InferenceDelegate('mobilenet_ssd_v2_coco_quant_postprocess.tflite',args.delegate)
+    interpreterPersonExtractor = InferenceDelegate(args.model,args.delegate)
     interpreterPersonExtractor.allocate_tensors() 
     interpreterPersonExtractor_input_details  = interpreterPersonExtractor.get_input_details()
     interpreterPersonExtractor_output_details = interpreterPersonExtractor.get_output_details()
@@ -203,7 +209,7 @@ def main():
     interpreterPersonExtractor.invoke()
 
     # 解析解譯器資訊 (面網檢測)
-    interpreterMaskDetector = InferenceDelegate('facemask_int8.tflite',args.delegate)
+    interpreterMaskDetector = InferenceDelegate(args.model_feature,args.delegate)
     interpreterMaskDetector.allocate_tensors() 
     interpreterMaskDetector_input_details  = interpreterMaskDetector.get_input_details()
     interpreterMaskDetector_output_details = interpreterMaskDetector.get_output_details()

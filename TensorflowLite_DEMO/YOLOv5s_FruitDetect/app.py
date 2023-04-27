@@ -4,8 +4,8 @@
 # Copyright 2021 WPI
 # All Rights Reserved
 ##--------------------------------------------------------------------------------------
-# * Code Ver : 1.0
-# * Code Date: 2023/02/20
+# * Code Ver : 2.0
+# * Code Date: 2023/04/26
 # * Author   : Weilly Li
 #--------------------------------------------------------------------------------------
 # THIS SOFTWARE IS PROVIDED BY WPI-TW "AS IS" AND ANY EXPRESSED OR
@@ -39,9 +39,10 @@ from plots import Annotator, colors
 # API
 # --------------------------------------------------------------------------------------------------------------
 def InferenceDelegate( model, delegate ):
-    ext_delegate = [ tflite.load_delegate("/usr/lib/libvx_delegate.so") ]
     if (delegate=="vx") :
-        interpreter = tflite.Interpreter(model, experimental_delegates=ext_delegate)
+        interpreter = tflite.Interpreter(model, experimental_delegates=[ tflite.load_delegate("/usr/lib/libvx_delegate.so") ])
+    elif(delegate=="ethosu"):
+        interpreter = tflite.Interpreter(model, experimental_delegates=[tflite.load_delegate("/usr/lib/libethosu_delegate.so")])
     elif(delegate=="xnnpack"):
         interpreter = tflite.Interpreter(model)
     else :
@@ -239,14 +240,17 @@ def main():
     # 解析外部資訊
     APP_NAME = "YOLOv5s-FruitDetect"
     parser = argparse.ArgumentParser()
-    parser.add_argument("--camera", default="0")
-    parser.add_argument("--display", default="0")
+    parser.add_argument( '-c' ,"--camera", default="0")
+    parser.add_argument( '-d' ,"--display", default="0")
     parser.add_argument("--save", default="1")
-    parser.add_argument("--time", default="0")
-    parser.add_argument('--delegate' , default="vx", help = 'Please Input nnapi or xnnpack') 
-    parser.add_argument('--model'   , default="fruitdetect_256_NXP.tflite", help='File path of .tflite file.')
+    parser.add_argument( '-t', "--time", default="0")
+    parser.add_argument('--delegate' , default="ethosu", help = 'Please Input vx or xnnpack or ethosu')  
+    parser.add_argument( '-m', '--model'   , default="fruitdetect_256_NXP.tflite", help='File path of .tflite file.')
     parser.add_argument("--test_img", default="fruits_test.jpg")
     args = parser.parse_args()
+
+    # vela(NPU) 路徑修正
+    if(args.delegate=="ethosu"): args.model = 'output/' + args.model[:-7] + '_vela.tflite'
 
     # 解析解譯器資訊
     interpreter = InferenceDelegate(args.model,args.delegate)

@@ -5,7 +5,7 @@
 # All Rights Reserved
 ##--------------------------------------------------------------------------------------
 # * Code Ver : 1.0
-# * Code Date: 2022/04/22
+# * Code Date: 2023/04/22
 # * Author   : Weilly Li
 # * Modify by DeeplabV3_SegmationObjection Project
 #--------------------------------------------------------------------------------------
@@ -203,12 +203,12 @@ def main():
     # 解析外部資訊
     APP_NAME = "ADAS_SegDetection"
     parser = argparse.ArgumentParser()
-    parser.add_argument("--camera", default="0")
+    parser.add_argument( '-c' ,"--camera", default="0")
     parser.add_argument("--camera_format", default="V4L2_YUV2_480p")
-    parser.add_argument("--display", default="0")
+    parser.add_argument( '-d' ,"--display", default="0")
     parser.add_argument("--save", default="1")
-    parser.add_argument("--time", default="0")
-    parser.add_argument('--delegate' , default="vx", help = 'Please Input nnapi or xnnpack')
+    parser.add_argument( '-t', "--time", default="0")
+    parser.add_argument('--delegate' , default="ethosu", help = 'Please Input vx or xnnpack or ethosu') 
     parser.add_argument("--test_img", default="car.jpg")
     
     args = parser.parse_args()
