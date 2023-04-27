@@ -1,11 +1,11 @@
 # WPI Confidential Proprietary
 #--------------------------------------------------------------------------------------
-# Copyright (c) 2021 Freescale Semiconductor
-# Copyright 2021 WPI
+# Copyright (c) 2020 Freescale Semiconductor
+# Copyright 2020 WPI
 # All Rights Reserved
 ##--------------------------------------------------------------------------------------
-# * Code Ver : 2.0
-# * Code Date: 2021/12/30
+# * Code Ver : 3.0
+# * Code Date: 2022/04/08
 # * Author   : Weilly Li
 #--------------------------------------------------------------------------------------
 # THIS SOFTWARE IS PROVIDED BY WPI-TW "AS IS" AND ANY EXPRESSED OR
@@ -41,6 +41,10 @@ License_dict = { 0: "0",  1: "1",  2: "2",  3: "3",  4: "4",  5: "5",  6: "6",  
                20: "K",  21: "L", 22: "M", 23: "N", 24: "O", 25: "P", 26: "Q", 27:"R", 28:"S", 29:"T",
                30: "U",  31: "V", 32: "W", 33: "X", 34: "Y", 35: "Z"}
 
+V4L2_YUV2_480p = "v4l2src device=/dev/video3 ! video/x-raw,format=YUY2,width=640,height=480, pixel-aspect-ratio=1/1, framerate=30/1! videoscale!videoconvert ! appsink" 
+V4L2_YUV2_720p = "v4l2src device=/dev/video3 ! video/x-raw,format=YUY2,width=1280,height=720, pixel-aspect-ratio=1/1, framerate=30/1! videoscale!videoconvert ! appsink"                           
+V4L2_H264_1080p = "v4l2src device=/dev/video3 ! video/x-h264, width=1920, height=1080, pixel-aspect-ratio=1/1, framerate=30/1 ! queue ! h264parse ! vpudec ! queue ! queue leaky=1 ! videoscale ! videoconvert ! appsink"
+
 # --------------------------------------------------------------------------------------------------------------
 # API
 # --------------------------------------------------------------------------------------------------------------
@@ -71,12 +75,17 @@ def main():
     APP_NAME = "PlateDetectAndRecognition"
     parser = argparse.ArgumentParser()
     parser.add_argument("--camera", default="0")
+    parser.add_argument("--camera_format", default="V4L2_YUV2_480p")
     parser.add_argument("--display", default="0")
     parser.add_argument("--save", default="1")
     parser.add_argument("--time", default="0")
     parser.add_argument('--delegate' , default="vx", help = 'Please Input nnapi or xnnpack')
     parser.add_argument("--test_img", default="germany_car_plate.jpg")
+    
     args = parser.parse_args()
+    if args.camera_format == "V4L2_YUV2_480p" : camera_format = V4L2_YUV2_480p
+    if args.camera_format == "V4L2_YUV2_720p" : camera_format = V4L2_YUV2_720p
+    if args.camera_format == "V4L2_H264_1080p" : camera_format = V4L2_H264_1080p
 
     # 解析解譯器資訊 (車牌偵測)
     interpreterPlateDetection = InferenceDelegate('platedetect.tflite',args.delegate)
@@ -102,7 +111,7 @@ def main():
 
     # 是否啟用攝鏡頭
     if args.camera =="True" or args.camera == "1" :
-        cap = cv2.VideoCapture("v4l2src device=/dev/video3 ! video/x-raw,format=YUY2,PlateDetection_width=1280,PlateDetection_height=720,framerate=30/1! videoscale!videoconvert ! appsink")
+        cap = cv2.VideoCapture(camera_format)
         if(cap.isOpened()==False) :
             print( "Open Camera Failure !!")
             sys.exit()

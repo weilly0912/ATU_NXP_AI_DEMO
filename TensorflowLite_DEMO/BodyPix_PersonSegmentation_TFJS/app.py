@@ -1,11 +1,11 @@
 # WPI Confidential Proprietary
 #--------------------------------------------------------------------------------------
-# Copyright (c) 2021 Freescale Semiconductor
-# Copyright 2021 WPI
+# Copyright (c) 2020 Freescale Semiconductor
+# Copyright 2020 WPI
 # All Rights Reserved
 ##--------------------------------------------------------------------------------------
-# * Code Ver : 2.0
-# * Code Date: 2021/12/30
+# * Code Ver : 3.0
+# * Code Date: 2022/04/08
 # * Author   : Weilly Li
 #--------------------------------------------------------------------------------------
 # THIS SOFTWARE IS PROVIDED BY WPI-TW "AS IS" AND ANY EXPRESSED OR
@@ -31,6 +31,13 @@ import time
 import argparse
 import numpy as np
 import tflite_runtime.interpreter as tflite
+
+# --------------------------------------------------------------------------------------------------------------
+# Define
+# --------------------------------------------------------------------------------------------------------------
+V4L2_YUV2_480p = "v4l2src device=/dev/video3 ! video/x-raw,format=YUY2,width=640,height=480, pixel-aspect-ratio=1/1, framerate=30/1! videoscale!videoconvert ! appsink" 
+V4L2_YUV2_720p = "v4l2src device=/dev/video3 ! video/x-raw,format=YUY2,width=1280,height=720, pixel-aspect-ratio=1/1, framerate=30/1! videoscale!videoconvert ! appsink"                           
+V4L2_H264_1080p = "v4l2src device=/dev/video3 ! video/x-h264, width=1920, height=1080, pixel-aspect-ratio=1/1, framerate=30/1 ! queue ! h264parse ! vpudec ! queue ! queue leaky=1 ! videoscale ! videoconvert ! appsink"                           
 
 # --------------------------------------------------------------------------------------------------------------
 # API
@@ -59,6 +66,7 @@ def main():
     APP_NAME = "BodyPix"
     parser = argparse.ArgumentParser()
     parser.add_argument("--camera", default="0")
+    parser.add_argument("--camera_format", default="V4L2_YUV2_480p")
     parser.add_argument("--display", default="0")
     parser.add_argument("--save", default="1")
     parser.add_argument("--time", default="0")
@@ -67,7 +75,11 @@ def main():
     parser.add_argument("--test_img", default="bodypix_test.png")
     parser.add_argument("--backgorund", default="London.jpg")
     parser.add_argument("--seg_threshold", default="245", help ="may should setting value is 200")
+    
     args = parser.parse_args()
+    if args.camera_format == "V4L2_YUV2_480p" : camera_format = V4L2_YUV2_480p
+    if args.camera_format == "V4L2_YUV2_720p" : camera_format = V4L2_YUV2_720p
+    if args.camera_format == "V4L2_H264_1080p" : camera_format = V4L2_H264_1080p
 
     # 載入背景影像
     backgorund_img = cv2.imread(args.backgorund)
@@ -87,7 +99,7 @@ def main():
 
     # 是否啟用攝鏡頭
     if args.camera =="True" or args.camera == "1" :
-        cap = cv2.VideoCapture("v4l2src device=/dev/video3 ! video/x-raw,format=YUY2,width=1280,height=720,framerate=30/1! videoscale!videoconvert ! appsink")
+        cap = cv2.VideoCapture(camera_format)
         if(cap.isOpened()==False) :
             print( "Open Camera Failure !!")
             sys.exit()

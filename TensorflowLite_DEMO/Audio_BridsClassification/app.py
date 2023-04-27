@@ -1,7 +1,7 @@
 # WPI Confidential Proprietary
 #--------------------------------------------------------------------------------------
-# Copyright (c) 2021 Freescale Semiconductor
-# Copyright 2021 WPI
+# Copyright (c) 2020 Freescale Semiconductor
+# Copyright 2020 WPI
 # All Rights Reserved
 ##--------------------------------------------------------------------------------------
 # * Code Ver : 1.0
@@ -61,11 +61,12 @@ def main():
     parser.add_argument("--display", default="0")
     parser.add_argument("--save", default="0")
     parser.add_argument("--time", default="0")
-    parser.add_argument('--delegate' , default="xnnpack", help = 'Please Input nnapi or xnnpack')
+    parser.add_argument('--delegate' , default="vx", help = 'Please Input nnapi or xnnpack')
     parser.add_argument('--model'   , default="my_birds_model.tflite", help='File path of .tflite file.')
     parser.add_argument('--labels'  , default="label.txt", help='File path of labels file.')
     parser.add_argument('--test_audio', default="XC563091.wav", help='File path of labels file.')
     args = parser.parse_args()
+    print("TFLite doesn't support complex and can't generate spectrogram using it.")
 
     # 載入標籤
     labels = load_labels(args.labels)

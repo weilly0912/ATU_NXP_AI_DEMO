@@ -1,11 +1,11 @@
 # WPI Confidential Proprietary
 #--------------------------------------------------------------------------------------
-# Copyright (c) 2021 Freescale Semiconductor
-# Copyright 2021 WPI
+# Copyright (c) 2020 Freescale Semiconductor
+# Copyright 2020 WPI
 # All Rights Reserved
 ##--------------------------------------------------------------------------------------
-# * Code Ver : 2.0
-# * Code Date: 2021/12/30
+# * Code Ver : 3.0
+# * Code Date: 2022/04/08
 # * Author   : Weilly Li
 #--------------------------------------------------------------------------------------
 # THIS SOFTWARE IS PROVIDED BY WPI-TW "AS IS" AND ANY EXPRESSED OR
@@ -32,6 +32,13 @@ import numpy as np
 import colorsys
 import random
 import tflite_runtime.interpreter as tflite
+
+# --------------------------------------------------------------------------------------------------------------
+# Define
+# --------------------------------------------------------------------------------------------------------------
+V4L2_YUV2_480p = "v4l2src device=/dev/video3 ! video/x-raw,format=YUY2,width=640,height=480, pixel-aspect-ratio=1/1, framerate=30/1! videoscale!videoconvert ! appsink" 
+V4L2_YUV2_720p = "v4l2src device=/dev/video3 ! video/x-raw,format=YUY2,width=1280,height=720, pixel-aspect-ratio=1/1, framerate=30/1! videoscale!videoconvert ! appsink"                           
+V4L2_H264_1080p = "v4l2src device=/dev/video3 ! video/x-h264, width=1920, height=1080, pixel-aspect-ratio=1/1, framerate=30/1 ! queue ! h264parse ! vpudec ! queue ! queue leaky=1 ! videoscale ! videoconvert ! appsink"
 
 # --------------------------------------------------------------------------------------------------------------
 # API
@@ -83,6 +90,7 @@ def main():
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser = argparse.ArgumentParser()
     parser.add_argument("--camera", default="0")
+    parser.add_argument("--camera_format", default="V4L2_YUV2_480p")
     parser.add_argument("--display", default="0")
     parser.add_argument("--save", default="1")
     parser.add_argument("--time", default="0")    
@@ -91,7 +99,11 @@ def main():
     parser.add_argument('--model_input_type'   , default="uint8")
     parser.add_argument('--labels'  , default="coco_labels.txt", help='File path of labels file.')
     parser.add_argument('--test_img', default="dog.bmp", help='File path of labels file.')
+    
     args = parser.parse_args()
+    if args.camera_format == "V4L2_YUV2_480p" : camera_format = V4L2_YUV2_480p
+    if args.camera_format == "V4L2_YUV2_720p" : camera_format = V4L2_YUV2_720p
+    if args.camera_format == "V4L2_H264_1080p" : camera_format = V4L2_H264_1080p
 
     # 載入標籤
     labels = load_labels(args.labels)
@@ -114,21 +126,20 @@ def main():
 
     # 是否啟用攝鏡頭
     if args.camera =="True" or args.camera == "1" :
-        cap = cv2.VideoCapture("v4l2src device=/dev/video3 ! video/x-raw,format=YUY2,width=1280,height=720,framerate=30/1! videoscale!videoconvert ! appsink")
+        cap = cv2.VideoCapture(camera_format)
         if(cap.isOpened()==False) :
             print( "Open Camera Failure !!")
             sys.exit()
         else :
             print( "Open Camera Success !!")
 
-    # 迴圈 / 重複推理       
+    # 迴圈 / 重複推理 
     while(True):
-      
+    
       # 視訊/影像資料來源
       if args.camera =="True" or args.camera == "1" :
           ret, frame    = cap.read()
           frame_resized = cv2.resize(frame, (width, height))
-
       else : 
           frame         = cv2.imread(args.test_img)
           frame_rgb     = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
@@ -137,20 +148,20 @@ def main():
       # 設置來源資料至解譯器
       input_data = np.expand_dims(frame_resized, axis=0)
       interpreter.set_tensor(input_details[0]['index'], input_data.astype(args.model_input_type)) 
-
+      
       # 解譯器進行推理
       interpreter_time_start = time.time()
       interpreter.invoke()
       interpreter_time_end   = time.time()
       if args.time =="True" or args.time == "1" :
-          print( APP_NAME + " Inference Time = ", (interpreter_time_end - interpreter_time_start)*1000 , " ms" )
-
+          #print( APP_NAME + " Inference Time = ", (interpreter_time_end - interpreter_time_start)*1000 , " ms" )
+          print( "Inference Time = ", (interpreter_time_end - interpreter_time_start)*1000 , " ms" )
 
       # 處理輸出
       positions = np.squeeze(interpreter.get_tensor(output_details[0]['index']))
       classes   = np.squeeze(interpreter.get_tensor(output_details[1]['index']))
       scores    = np.squeeze(interpreter.get_tensor(output_details[2]['index']))
-
+      
       # 建立輸出結果 
       # 建立輸出結果  - 整理成 list
       result = []
@@ -184,7 +195,7 @@ def main():
         cv2.rectangle(frame, (left, top), (right, bottom), colors[int(_id) % len(colors)], 6)
         cv2.rectangle(frame, (label_rect_left, label_rect_top),(label_rect_right, label_rect_bottom), colors[int(_id) % len(colors)], -1)
         cv2.putText(frame, labels[_id], (left, int(top - 4)),cv2.FONT_HERSHEY_COMPLEX, 0.5, (0, 255, 255) , 2)
-
+      
       # 顯示輸出結果
       if args.save == "True" or args.save == "1" :
           cv2.imwrite( APP_NAME + "-" + args.test_img[:len(args.test_img)-4] +'_result.jpg', frame.astype("uint8"))
@@ -195,7 +206,7 @@ def main():
           if cv2.waitKey(1) & 0xFF == ord('q'): break
 
       if (args.display =="False" or args.display == "0") and( args.camera =="False" or args.camera == "0" ) : sys.exit()
-
+      
     cap.release()
     cv2.destroyAllWindows()
 if __name__ == "__main__":

@@ -1,12 +1,12 @@
 
 # WPI Confidential Proprietary
 #--------------------------------------------------------------------------------------
-# Copyright (c) 2021 Freescale Semiconductor
-# Copyright 2021 WPI
+# Copyright (c) 2020 Freescale Semiconductor
+# Copyright 2020 WPI
 # All Rights Reserved
 ##--------------------------------------------------------------------------------------
-# * Code Ver : 2.0
-# * Code Date: 2021/12/30
+# * Code Ver : 3.0
+# * Code Date: 2022/04/08
 # * Author   : Weilly Li
 #--------------------------------------------------------------------------------------
 # THIS SOFTWARE IS PROVIDED BY WPI-TW "AS IS" AND ANY EXPRESSED OR
@@ -43,6 +43,11 @@ eye_slope = 60
 variances = [0.1, 0.2]
 priors = np.reshape(np.loadtxt('priors.txt'), (9949, 4))
 labels_facemask =  {0: 'Mask', 1: 'NoMask'}
+
+# CAMERA
+V4L2_YUV2_480p = "v4l2src device=/dev/video3 ! video/x-raw,format=YUY2,width=640,height=480, pixel-aspect-ratio=1/1, framerate=30/1! videoscale!videoconvert ! appsink" 
+V4L2_YUV2_720p = "v4l2src device=/dev/video3 ! video/x-raw,format=YUY2,width=1280,height=720, pixel-aspect-ratio=1/1, framerate=30/1! videoscale!videoconvert ! appsink"                           
+V4L2_H264_1080p = "v4l2src device=/dev/video3 ! video/x-h264, width=1920, height=1080, pixel-aspect-ratio=1/1, framerate=30/1 ! queue ! h264parse ! vpudec ! queue ! queue leaky=1 ! videoscale ! videoconvert ! appsink"
 
 # --------------------------------------------------------------------------------------------------------------
 # API For NXP
@@ -170,6 +175,7 @@ def main():
     APP_NAME = "MaskDetector"
     parser = argparse.ArgumentParser()
     parser.add_argument("--camera", default="0")
+    parser.add_argument("--camera_format", default="V4L2_YUV2_480p")
     parser.add_argument("--display", default="0")
     parser.add_argument("--save", default="1")
     parser.add_argument("--time", default="0")
@@ -179,7 +185,11 @@ def main():
     parser.add_argument("--social_distance", default="1")
     parser.add_argument("--mask_detector", default="1")
     parser.add_argument("--fontsize", default="1.5")
+    
     args = parser.parse_args()
+    if args.camera_format == "V4L2_YUV2_480p" : camera_format = V4L2_YUV2_480p
+    if args.camera_format == "V4L2_YUV2_720p" : camera_format = V4L2_YUV2_720p
+    if args.camera_format == "V4L2_H264_1080p" : camera_format = V4L2_H264_1080p
 
     # 解析解譯器資訊 (人臉位置檢測)
     interpreterPersonExtractor = InferenceDelegate('mobilenet_ssd_v2_coco_quant_postprocess.tflite',args.delegate)
@@ -205,7 +215,7 @@ def main():
 
     # 是否啟用攝鏡頭
     if args.camera =="True" or args.camera == "1" :
-        cap = cv2.VideoCapture("v4l2src device=/dev/video3 ! video/x-raw,format=YUY2,width=1280,height=720,framerate=30/1! videoscale!videoconvert ! appsink")
+        cap = cv2.VideoCapture(camera_format)
         if(cap.isOpened()==False) :
             print( "Open Camera Failure !!")
             sys.exit()
