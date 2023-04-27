@@ -249,6 +249,9 @@ def main():
     parser.add_argument("--test_img", default="zidane.jpg")
     args = parser.parse_args()
 
+    # vela(NPU) 路徑修正
+    if(args.delegate=="ethosu"): args.model = 'output/' + args.model[:-7] + '_vela.tflite'
+
     # 解析解譯器資訊
     interpreter = InferenceDelegate(args.model,args.delegate)
     interpreter.allocate_tensors() 
@@ -258,7 +261,6 @@ def main():
     height   = input_details[0]['shape'][1]
     nChannel = input_details[0]['shape'][3]
     scale, zero_point = input_details[0]['quantization']
-    #print(scale)
 
     # 先行進行暖開機
     if (input_details[0]['dtype']==np.uint8) : 
