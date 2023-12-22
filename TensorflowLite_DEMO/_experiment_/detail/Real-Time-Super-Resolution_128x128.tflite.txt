@@ -1,0 +1,45 @@
+Info: DEPTH_TO_SPACE 'Generator/pixel_shuffle_up_sampling_1/lambda_2/DepthToSpace;StatefulPartitionedCall/Generator/pixel_shuffle_up_sampling_1/lambda_2/DepthToSpace' is a CPU only op
+Info: DEPTH_TO_SPACE 'Generator/pixel_shuffle_up_sampling/lambda_1/DepthToSpace;StatefulPartitionedCall/Generator/pixel_shuffle_up_sampling/lambda_1/DepthToSpace' is a CPU only op
+Warning: DepthToSpace operation is unknown or unsupported, placing on CPU
+Warning: DepthToSpace operation is unknown or unsupported, placing on CPU
+
+Network summary for Real-Time-Super-Resolution_128x128
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                384.00 KiB
+Total DRAM used                              50407.12 KiB
+
+CPU operators = 2 (0.9%)
+NPU operators = 233 (99.1%)
+
+Average SRAM bandwidth                           0.71 GB/s
+Input   SRAM bandwidth                          22.72 MB/batch
+Weight  SRAM bandwidth                         371.66 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                         394.40 MB/batch
+Total   SRAM bandwidth            per input    394.40 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           1.75 GB/s
+Input   DRAM bandwidth                         631.91 MB/batch
+Weight  DRAM bandwidth                           1.21 MB/batch
+Output  DRAM bandwidth                         332.40 MB/batch
+Total   DRAM bandwidth                         965.52 MB/batch
+Total   DRAM bandwidth            per input    965.52 MB/inference (batch size 1)
+
+Neural network macs                       38671269888 MACs/batch
+Network Tops/s                                   0.14 Tops/s
+
+NPU cycles                                  284509246 cycles/batch
+SRAM Access cycles                            2425856 cycles/batch
+DRAM Access cycles                          508763921 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                553098954 cycles/batch
+
+Batch Inference time               553.10 ms,    1.81 inferences/s (batch size 1)
+

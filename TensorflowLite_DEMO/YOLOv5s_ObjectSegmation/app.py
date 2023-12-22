@@ -286,15 +286,17 @@ def main():
     parser.add_argument( '-d' ,"--display", default="0")
     parser.add_argument("--save", default="1")
     parser.add_argument( '-t', "--time", default="0")
-    parser.add_argument('--delegate' , default="ethosu", help = 'Please Input vx or xnnpack or ethosu')  
-    parser.add_argument( '-m', '--model'   , default="yolov5s-seg-int8.tflite", help='File path of .tflite file.')
-    parser.add_argument("--test_img", default="zidane.jpg")
+    parser.add_argument('--delegate' , default="vx", help = 'Please Input vx or xnnpack or ethosu')  
+    parser.add_argument( '-m', '--model'   , default="model/yolov5s-seg_quant.tflite", help='File path of .tflite file.')
+    parser.add_argument("--test_img", default="img/zidane.jpg")
     args = parser.parse_args()
 
     names = {0: 'person', 1: 'bicycle', 2: 'car', 3: 'motorcycle', 4: 'airplane', 5: 'bus', 6: 'train', 7: 'truck', 8: 'boat', 9: 'traffic light', 10: 'fire hydrant', 11: 'stop sign', 12: 'parking meter', 13: 'bench', 14: 'bird', 15: 'cat', 16: 'dog', 17: 'horse', 18: 'sheep', 19: 'cow', 20: 'elephant', 21: 'bear', 22: 'zebra', 23: 'giraffe', 24: 'backpack', 25: 'umbrella', 26: 'handbag', 27: 'tie', 28: 'suitcase', 29: 'frisbee', 30: 'skis', 31: 'snowboard', 32: 'sports ball', 33: 'kite', 34: 'baseball bat', 35: 'baseball glove', 36: 'skateboard', 37: 'surfboard', 38: 'tennis racket', 39: 'bottle', 40: 'wine glass', 41: 'cup', 42: 'fork', 43: 'knife', 44: 'spoon', 45: 'bowl', 46: 'banana', 47: 'apple', 48: 'sandwich', 49: 'orange', 50: 'broccoli', 51: 'carrot', 52: 'hot dog', 53: 'pizza', 54: 'donut', 55: 'cake', 56: 'chair', 57: 'couch', 58: 'potted plant', 59: 'bed', 60: 'dining table', 61: 'toilet', 62: 'tv', 63: 'laptop', 64: 'mouse', 65: 'remote', 66: 'keyboard', 67: 'cell phone', 68: 'microwave', 69: 'oven', 70: 'toaster', 71: 'sink', 72: 'refrigerator', 73: 'book', 74: 'clock', 75: 'vase', 76: 'scissors', 77: 'teddy bear', 78: 'hair drier', 79: 'toothbrush'}
 
-    # vela(NPU) 路徑修正
-    if(args.delegate=="ethosu"): args.model = 'output/' + args.model[:-7] + '_vela.tflite'
+    # vela(NPU) 預設路徑修正
+    if(args.delegate=="ethosu"): 
+        if(args.model[-11:]!='vela.tflite') :
+            args.model = args.model[:-7] + '_vela.tflite'
     
     # 解析解譯器資訊
     interpreter = InferenceDelegate(args.model,args.delegate)
@@ -402,8 +404,8 @@ def main():
 
       # 顯示輸出結果
       if args.save == "True" or args.save == "1" :
-          cv2.imwrite( APP_NAME + "-" + args.test_img[:len(args.test_img)-4] +'_result.jpg', frame.astype("uint8"))
-          print("Save Reuslt Image Success , " + APP_NAME + args.test_img[:len(args.test_img)-4] + '_result.jpg')
+          cv2.imwrite( "output/" + APP_NAME + "-" + args.test_img.split("/")[-1][:-4] +'_result.jpg', frame.astype("uint8"))
+          print("Save Reuslt Image Success , " + APP_NAME + args.test_img.split("/")[-1][:-4] + '_result.jpg')
 
       if args.display =="True" or args.display == "1" :
           cv2.imshow('frame', frame.astype('uint8'))

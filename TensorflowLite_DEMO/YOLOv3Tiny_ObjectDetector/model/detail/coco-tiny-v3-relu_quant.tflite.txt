@@ -1,0 +1,41 @@
+
+Network summary for coco-tiny-v3-relu_quant
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                379.75 KiB
+Total DRAM used                               8317.28 KiB
+
+CPU operators = 0 (0.0%)
+NPU operators = 30 (100.0%)
+
+Average SRAM bandwidth                           2.12 GB/s
+Input   SRAM bandwidth                          21.67 MB/batch
+Weight  SRAM bandwidth                          46.81 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                          68.51 MB/batch
+Total   SRAM bandwidth            per input     68.51 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           0.93 GB/s
+Input   DRAM bandwidth                          11.07 MB/batch
+Weight  DRAM bandwidth                           7.74 MB/batch
+Output  DRAM bandwidth                          11.27 MB/batch
+Total   DRAM bandwidth                          30.08 MB/batch
+Total   DRAM bandwidth            per input     30.08 MB/inference (batch size 1)
+
+Neural network macs                        2789618611 MACs/batch
+Network Tops/s                                   0.17 Tops/s
+
+NPU cycles                                   18997796 cycles/batch
+SRAM Access cycles                            1794344 cycles/batch
+DRAM Access cycles                           18034068 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                 32344132 cycles/batch
+
+Batch Inference time                32.34 ms,   30.92 inferences/s (batch size 1)
+

@@ -1,0 +1,128 @@
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'input_1_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: input_1
+Warning: Unsupported TensorFlow Lite semantics for STRIDED_SLICE 'depth_estimate/decoder/upscale_block/up1_upsampling2d/strided_slice;StatefulPartitionedCall/depth_estimate/decoder/upscale_block/up1_upsampling2d/strided_slice'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depth_estimate/decoder/upscale_block/up1_upsampling2d/Shape;StatefulPartitionedCall/depth_estimate/decoder/upscale_block/up1_upsampling2d/Shape, depth_estimate/decoder/upscale_block/up1_upsampling2d/strided_slice;StatefulPartitionedCall/depth_estimate/decoder/upscale_block/up1_upsampling2d/strided_slice
+Warning: Unsupported TensorFlow Lite semantics for MUL 'depth_estimate/decoder/upscale_block/up1_upsampling2d/mul;StatefulPartitionedCall/depth_estimate/decoder/upscale_block/up1_upsampling2d/mul'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depth_estimate/decoder/upscale_block/up1_upsampling2d/strided_slice;StatefulPartitionedCall/depth_estimate/decoder/upscale_block/up1_upsampling2d/strided_slice, depth_estimate/decoder/upscale_block_3/up4_upsampling2d/Const;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_3/up4_upsampling2d/Const, depth_estimate/decoder/upscale_block/up1_upsampling2d/mul;StatefulPartitionedCall/depth_estimate/decoder/upscale_block/up1_upsampling2d/mul
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'depth_estimate/decoder/upscale_block/up1_concat/concat;StatefulPartitionedCall/depth_estimate/decoder/upscale_block/up1_concat/concat'. Placing on CPU instead
+ - All Input dimensions must match OFM dimension in all axes except the one defined by the axis attribute
+   Op has axis=3, ofm_shape=[1, 30, 40, 1088] and the list of mismatching inputs are: Tensor 'depth_estimate/decoder/upscale_block/up1_upsampling2d/resize/ResizeBilinear;StatefulPartitionedCall/depth_estimate/decoder/upscale_block/up1_upsampling2d/resize/ResizeBilinear_requantized' has shape: [1, 1, 1, 832]
+Warning: Unsupported TensorFlow Lite semantics for STRIDED_SLICE 'depth_estimate/decoder/upscale_block_1/up2_upsampling2d/strided_slice;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_1/up2_upsampling2d/strided_slice'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depth_estimate/decoder/upscale_block_1/up2_upsampling2d/Shape;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_1/up2_upsampling2d/Shape, depth_estimate/decoder/upscale_block_1/up2_upsampling2d/strided_slice;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_1/up2_upsampling2d/strided_slice
+Warning: Unsupported TensorFlow Lite semantics for MUL 'depth_estimate/decoder/upscale_block_1/up2_upsampling2d/mul;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_1/up2_upsampling2d/mul'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depth_estimate/decoder/upscale_block_1/up2_upsampling2d/strided_slice;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_1/up2_upsampling2d/strided_slice, depth_estimate/decoder/upscale_block_3/up4_upsampling2d/Const;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_3/up4_upsampling2d/Const, depth_estimate/decoder/upscale_block_1/up2_upsampling2d/mul;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_1/up2_upsampling2d/mul
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'depth_estimate/decoder/upscale_block_1/up2_concat/concat;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_1/up2_concat/concat'. Placing on CPU instead
+ - All Input dimensions must match OFM dimension in all axes except the one defined by the axis attribute
+   Op has axis=3, ofm_shape=[1, 60, 80, 544] and the list of mismatching inputs are: Tensor 'depth_estimate/decoder/upscale_block_1/up2_upsampling2d/resize/ResizeBilinear;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_1/up2_upsampling2d/resize/ResizeBilinear_requantized' has shape: [1, 1, 1, 416]
+Warning: Unsupported TensorFlow Lite semantics for STRIDED_SLICE 'depth_estimate/decoder/upscale_block_2/up3_upsampling2d/strided_slice;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_2/up3_upsampling2d/strided_slice'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depth_estimate/decoder/upscale_block_2/up3_upsampling2d/Shape;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_2/up3_upsampling2d/Shape, depth_estimate/decoder/upscale_block_2/up3_upsampling2d/strided_slice;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_2/up3_upsampling2d/strided_slice
+Warning: Unsupported TensorFlow Lite semantics for MUL 'depth_estimate/decoder/upscale_block_2/up3_upsampling2d/mul;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_2/up3_upsampling2d/mul'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depth_estimate/decoder/upscale_block_2/up3_upsampling2d/strided_slice;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_2/up3_upsampling2d/strided_slice, depth_estimate/decoder/upscale_block_3/up4_upsampling2d/Const;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_3/up4_upsampling2d/Const, depth_estimate/decoder/upscale_block_2/up3_upsampling2d/mul;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_2/up3_upsampling2d/mul
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'depth_estimate/decoder/upscale_block_2/up3_concat/concat;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_2/up3_concat/concat'. Placing on CPU instead
+ - All Input dimensions must match OFM dimension in all axes except the one defined by the axis attribute
+   Op has axis=3, ofm_shape=[1, 120, 160, 272] and the list of mismatching inputs are: Tensor 'depth_estimate/decoder/upscale_block_2/up3_upsampling2d/resize/ResizeBilinear;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_2/up3_upsampling2d/resize/ResizeBilinear_requantized' has shape: [1, 1, 1, 208]
+Warning: Unsupported TensorFlow Lite semantics for STRIDED_SLICE 'depth_estimate/decoder/upscale_block_3/up4_upsampling2d/strided_slice;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_3/up4_upsampling2d/strided_slice2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depth_estimate/decoder/upscale_block_3/up4_upsampling2d/Shape;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_3/up4_upsampling2d/Shape, depth_estimate/decoder/upscale_block_3/up4_upsampling2d/strided_slice;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_3/up4_upsampling2d/strided_slice2
+Warning: Unsupported TensorFlow Lite semantics for MUL 'depth_estimate/decoder/upscale_block_3/up4_upsampling2d/mul;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_3/up4_upsampling2d/mul'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depth_estimate/decoder/upscale_block_3/up4_upsampling2d/strided_slice;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_3/up4_upsampling2d/strided_slice2, depth_estimate/decoder/upscale_block_3/up4_upsampling2d/Const;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_3/up4_upsampling2d/Const, depth_estimate/decoder/upscale_block_3/up4_upsampling2d/mul;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_3/up4_upsampling2d/mul
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'depth_estimate/decoder/upscale_block_3/up4_concat/concat;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_3/up4_concat/concat'. Placing on CPU instead
+ - All Input dimensions must match OFM dimension in all axes except the one defined by the axis attribute
+   Op has axis=3, ofm_shape=[1, 240, 320, 168] and the list of mismatching inputs are: Tensor 'depth_estimate/decoder/upscale_block_3/up4_upsampling2d/resize/ResizeBilinear;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_3/up4_upsampling2d/resize/ResizeBilinear_requantized' has shape: [1, 1, 1, 104]
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'Identity'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: Identity
+Warning: RESIZE_BILINEAR 'depth_estimate/decoder/upscale_block_3/up4_upsampling2d/resize/ResizeBilinear;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_3/up4_upsampling2d/resize/ResizeBilinear' is not supported on the NPU. Placing on CPU instead
+ - The width and height of the IFM and OFM must match one of the following criteria:
+        IFM W and H must both be 1
+        IFM must match OFM
+        W and H scaling must be equal and OFM W-1 and H-1 must be 2x/4x/8x IFM W-1 and H-1, if align_corners is True
+        W and H scaling must be equal and OFM W and H must be 2x/4x/8x IFM W and H, if align_corners is False
+   Op has ifm_shape=[1, 120, 160, 104], ofm_shape=[1, 1, 1, 104] and align_corners=False
+Warning: RESIZE_BILINEAR 'depth_estimate/decoder/upscale_block_2/up3_upsampling2d/resize/ResizeBilinear;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_2/up3_upsampling2d/resize/ResizeBilinear' is not supported on the NPU. Placing on CPU instead
+ - The width and height of the IFM and OFM must match one of the following criteria:
+        IFM W and H must both be 1
+        IFM must match OFM
+        W and H scaling must be equal and OFM W-1 and H-1 must be 2x/4x/8x IFM W-1 and H-1, if align_corners is True
+        W and H scaling must be equal and OFM W and H must be 2x/4x/8x IFM W and H, if align_corners is False
+   Op has ifm_shape=[1, 60, 80, 208], ofm_shape=[1, 1, 1, 208] and align_corners=False
+Warning: RESIZE_BILINEAR 'depth_estimate/decoder/upscale_block_1/up2_upsampling2d/resize/ResizeBilinear;StatefulPartitionedCall/depth_estimate/decoder/upscale_block_1/up2_upsampling2d/resize/ResizeBilinear' is not supported on the NPU. Placing on CPU instead
+ - The width and height of the IFM and OFM must match one of the following criteria:
+        IFM W and H must both be 1
+        IFM must match OFM
+        W and H scaling must be equal and OFM W-1 and H-1 must be 2x/4x/8x IFM W-1 and H-1, if align_corners is True
+        W and H scaling must be equal and OFM W and H must be 2x/4x/8x IFM W and H, if align_corners is False
+   Op has ifm_shape=[1, 30, 40, 416], ofm_shape=[1, 1, 1, 416] and align_corners=False
+Warning: RESIZE_BILINEAR 'depth_estimate/decoder/upscale_block/up1_upsampling2d/resize/ResizeBilinear;StatefulPartitionedCall/depth_estimate/decoder/upscale_block/up1_upsampling2d/resize/ResizeBilinear' is not supported on the NPU. Placing on CPU instead
+ - The width and height of the IFM and OFM must match one of the following criteria:
+        IFM W and H must both be 1
+        IFM must match OFM
+        W and H scaling must be equal and OFM W-1 and H-1 must be 2x/4x/8x IFM W-1 and H-1, if align_corners is True
+        W and H scaling must be equal and OFM W and H must be 2x/4x/8x IFM W and H, if align_corners is False
+   Op has ifm_shape=[1, 15, 20, 832], ofm_shape=[1, 1, 1, 832] and align_corners=False
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: ResizeBilinear operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: ResizeBilinear operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: ResizeBilinear operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: ResizeBilinear operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: StridedSlice operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: StridedSlice operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: StridedSlice operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: StridedSlice operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+
+Network summary for dense_depth_nyu_480x640_integer_quant
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                383.97 KiB
+Total DRAM used                              38508.52 KiB
+
+CPU operators = 18 (2.4%)
+NPU operators = 719 (97.6%)
+
+Average SRAM bandwidth                           1.06 GB/s
+Input   SRAM bandwidth                         423.36 MB/batch
+Weight  SRAM bandwidth                         389.96 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                         813.46 MB/batch
+Total   SRAM bandwidth            per input    813.46 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           1.73 GB/s
+Input   DRAM bandwidth                         669.52 MB/batch
+Weight  DRAM bandwidth                         223.78 MB/batch
+Output  DRAM bandwidth                         438.72 MB/batch
+Total   DRAM bandwidth                        1332.04 MB/batch
+Total   DRAM bandwidth            per input   1332.04 MB/inference (batch size 1)
+
+Neural network macs                       49413711640 MACs/batch
+Network Tops/s                                   0.13 Tops/s
+
+NPU cycles                                  433943789 cycles/batch
+SRAM Access cycles                           38852272 cycles/batch
+DRAM Access cycles                          669798837 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                769528929 cycles/batch
+
+Batch Inference time               769.53 ms,    1.30 inferences/s (batch size 1)
+

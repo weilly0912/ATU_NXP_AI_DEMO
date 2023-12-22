@@ -1,0 +1,223 @@
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'tfl.quantize'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: serving_default_input_image:0
+Warning: Unsupported TensorFlow Lite semantics for MEAN 'model/tf.math.reduce_mean/Mean'. Placing on CPU instead
+ - Axis indices must correspond to height and width axes
+   Axis is [-2]
+Warning: Unsupported TensorFlow Lite semantics for MEAN 'model/tf.math.reduce_mean_1/Mean'. Placing on CPU instead
+ - Axis indices must correspond to height and width axes
+   Axis is [-2]
+Warning: Unsupported TensorFlow Lite semantics for MEAN 'model/tf.math.reduce_mean_2/Mean'. Placing on CPU instead
+ - Axis indices must correspond to height and width axes
+   Axis is [-2]
+Warning: Unsupported TensorFlow Lite semantics for MEAN 'model/tf.math.reduce_mean_3/Mean'. Placing on CPU instead
+ - Axis indices must correspond to height and width axes
+   Axis is [-2]
+Warning: Unsupported TensorFlow Lite semantics for LESS_EQUAL 'model/tf.math.logical_not/LogicalNot;model/tf.math.greater/Greater'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf.math.logical_not/LogicalNot;model/tf.math.greater/Greater
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf.where/SelectV21'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf.where/SelectV21
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf.nn.max_pool2d_1/MaxPool2d1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf.nn.max_pool2d_1/MaxPool2d1
+Warning: Unsupported TensorFlow Lite semantics for NOT_EQUAL 'model/tf.math.logical_not_1/LogicalNot;model/tf.math.equal/Equal'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf.math.logical_not_1/LogicalNot;model/tf.math.equal/Equal
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'StatefulPartitionedCall:0'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: StatefulPartitionedCall:0
+Warning: Unsupported TensorFlow Lite semantics for MEAN 'model/tf.math.reduce_mean_7/Mean'. Placing on CPU instead
+ - Axis indices must correspond to height and width axes
+   Axis is [-2]
+Warning: Unsupported TensorFlow Lite semantics for MEAN 'model/tf.math.reduce_mean_8/Mean'. Placing on CPU instead
+ - Axis indices must correspond to height and width axes
+   Axis is [-2]
+Warning: Unsupported TensorFlow Lite semantics for MEAN 'model/tf.math.reduce_mean_9/Mean'. Placing on CPU instead
+ - Axis indices must correspond to height and width axes
+   Axis is [-2]
+Warning: Unsupported TensorFlow Lite semantics for TOPK_V2 'model/tf.math.top_k/TopKV2;StatefulPartitionedCall:3'. Placing on CPU instead
+ - Scalar Input tensors are only valid for op type: ADD, EXPAND_DIMS, MAXIMUM, MEAN, MINIMUM, MUL, QUANTIZE, SPLIT, SPLIT_V, SUB
+   Op has scalar input tensor(s): model/tf.math.top_k/TopKV2/k
+Warning: Unsupported TensorFlow Lite semantics for MEAN 'model/tf.math.reduce_mean_4/Mean'. Placing on CPU instead
+ - Axis indices must correspond to height and width axes
+   Axis is [-2]
+Warning: Unsupported TensorFlow Lite semantics for MEAN 'model/tf.math.reduce_mean_5/Mean'. Placing on CPU instead
+ - Axis indices must correspond to height and width axes
+   Axis is [-2]
+Warning: Unsupported TensorFlow Lite semantics for MEAN 'model/tf.math.reduce_mean_6/Mean'. Placing on CPU instead
+ - Axis indices must correspond to height and width axes
+   Axis is [-2]
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'tfl.dequantize'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: tfl.dequantize
+Warning: Unsupported TensorFlow Lite semantics for POW 'StatefulPartitionedCall:2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: StatefulPartitionedCall:2
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'StatefulPartitionedCall:1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: StatefulPartitionedCall:1
+Info: SELECT_V2 'StatefulPartitionedCall:01' is a CPU only op
+Info: SELECT_V2 'model/tf.where/SelectV2' is a CPU only op
+Warning: RESIZE_BILINEAR 'model/lambda_2/ResizeBilinear' is not supported on the NPU. Placing on CPU instead
+ - The width and height of the IFM and OFM must match one of the following criteria:
+        IFM W and H must both be 1
+        IFM must match OFM
+        W and H scaling must be equal and OFM W-1 and H-1 must be 2x/4x/8x IFM W-1 and H-1, if align_corners is True
+        W and H scaling must be equal and OFM W and H must be 2x/4x/8x IFM W and H, if align_corners is False
+   Op has ifm_shape=[1, 30, 40, 1], ofm_shape=[1, 240, 320, 1] and align_corners=True
+Warning: RESIZE_NEAREST_NEIGHBOR 'model/tf.image.resize/resize/ResizeNearestNeighbor' is not supported on the NPU. Placing on CPU instead
+ - The width and height of the IFM and OFM must match one of the following criteria:
+        IFM W and H must both be 1
+        IFM must match OFM
+        W and H scaling must be equal and OFM W-1 and H-1 must be 2x/4x/8x IFM W-1 and H-1, if align_corners is True
+        W and H scaling must be equal and OFM W and H must be 2x/4x/8x IFM W and H, if align_corners is False
+   Op has ifm_shape=[1, 8, 10, 128], ofm_shape=[1, 15, 20, 128] and align_corners=False
+Info: MIRROR_PAD 'model/tf.compat.v1.pad/MirrorPad' is a CPU only op
+Warning: RESIZE_BILINEAR 'model/lambda_7/ResizeBilinear' is not supported on the NPU. Placing on CPU instead
+ - The width and height of the IFM and OFM must match one of the following criteria:
+        IFM W and H must both be 1
+        IFM must match OFM
+        W and H scaling must be equal and OFM W-1 and H-1 must be 2x/4x/8x IFM W-1 and H-1, if align_corners is True
+        W and H scaling must be equal and OFM W and H must be 2x/4x/8x IFM W and H, if align_corners is False
+   Op has ifm_shape=[1, 30, 40, 20], ofm_shape=[1, 240, 320, 20] and align_corners=True
+Warning: RESIZE_NEAREST_NEIGHBOR 'model/tf.image.resize_2/resize/ResizeNearestNeighbor' is not supported on the NPU. Placing on CPU instead
+ - The width and height of the IFM and OFM must match one of the following criteria:
+        IFM W and H must both be 1
+        IFM must match OFM
+        W and H scaling must be equal and OFM W-1 and H-1 must be 2x/4x/8x IFM W-1 and H-1, if align_corners is True
+        W and H scaling must be equal and OFM W and H must be 2x/4x/8x IFM W and H, if align_corners is False
+   Op has ifm_shape=[1, 8, 10, 128], ofm_shape=[1, 15, 20, 128] and align_corners=False
+Warning: RESIZE_BILINEAR 'model/lambda_5/ResizeBilinear' is not supported on the NPU. Placing on CPU instead
+ - The width and height of the IFM and OFM must match one of the following criteria:
+        IFM W and H must both be 1
+        IFM must match OFM
+        W and H scaling must be equal and OFM W-1 and H-1 must be 2x/4x/8x IFM W-1 and H-1, if align_corners is True
+        W and H scaling must be equal and OFM W and H must be 2x/4x/8x IFM W and H, if align_corners is False
+   Op has ifm_shape=[1, 30, 40, 1], ofm_shape=[1, 240, 320, 1] and align_corners=True
+Warning: RESIZE_NEAREST_NEIGHBOR 'model/tf.image.resize_1/resize/ResizeNearestNeighbor' is not supported on the NPU. Placing on CPU instead
+ - The width and height of the IFM and OFM must match one of the following criteria:
+        IFM W and H must both be 1
+        IFM must match OFM
+        W and H scaling must be equal and OFM W-1 and H-1 must be 2x/4x/8x IFM W-1 and H-1, if align_corners is True
+        W and H scaling must be equal and OFM W and H must be 2x/4x/8x IFM W and H, if align_corners is False
+   Op has ifm_shape=[1, 8, 10, 128], ofm_shape=[1, 15, 20, 128] and align_corners=False
+Warning: RESIZE_BILINEAR 'model/lambda_3/ResizeBilinear' is not supported on the NPU. Placing on CPU instead
+ - The width and height of the IFM and OFM must match one of the following criteria:
+        IFM W and H must both be 1
+        IFM must match OFM
+        W and H scaling must be equal and OFM W-1 and H-1 must be 2x/4x/8x IFM W-1 and H-1, if align_corners is True
+        W and H scaling must be equal and OFM W and H must be 2x/4x/8x IFM W and H, if align_corners is False
+   Op has ifm_shape=[1, 30, 40, 2], ofm_shape=[1, 240, 320, 2] and align_corners=True
+Warning: SelectV2 operation is unknown or unsupported, placing on CPU
+Warning: NotEqual operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: SelectV2 operation is unknown or unsupported, placing on CPU
+Warning: LessEqual operation is unknown or unsupported, placing on CPU
+Warning: ResizeBilinear operation is unknown or unsupported, placing on CPU
+Warning: TopKV2 operation is unknown or unsupported, placing on CPU
+Warning: ResizeBilinear operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: ResizeNearestNeighbor operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Pow operation is unknown or unsupported, placing on CPU
+Warning: ResizeBilinear operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: ResizeNearestNeighbor operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: ResizeBilinear operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: ResizeNearestNeighbor operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+<nng.Tensor 'model/tf.math.reduce_mean/Mean_npu' shape=[1, 1, 1, 128] dtype=int8> adding consumer <nng.Operation 'model/tf.math.add_23/Add;model/conv2d_50/Conv2D;model/conv2d_16/Conv2D;model/tf.math.add_23/Add/y1_fc' type=FullyConnected>
+<nng.Tensor 'model/conv2d_16/Conv2D_reshape_npu' shape=[128, 128] dtype=int8> adding consumer <nng.Operation 'model/tf.math.add_23/Add;model/conv2d_50/Conv2D;model/conv2d_16/Conv2D;model/tf.math.add_23/Add/y1_fc' type=FullyConnected>
+<nng.Tensor 'model/tf.math.add_23/Add;model/conv2d_50/Conv2D;model/conv2d_16/Conv2D;model/tf.math.add_23/Add/y_reshape_npu' shape=[128] dtype=int32> adding consumer <nng.Operation 'model/tf.math.add_23/Add;model/conv2d_50/Conv2D;model/conv2d_16/Conv2D;model/tf.math.add_23/Add/y1_fc' type=FullyConnected>
+<nng.Tensor 'model/tf.math.sigmoid/Sigmoid_lut_sigmoid_values_0_npu' shape=[1, 1, 1, 256] dtype=int8> adding consumer <nng.Operation 'model/tf.math.add_23/Add;model/conv2d_50/Conv2D;model/conv2d_16/Conv2D;model/tf.math.add_23/Add/y1_fc' type=FullyConnected>
+<nng.Tensor 'model/leaky_re_lu_7/LeakyRelu_npu' shape=[1, 15, 20, 128] dtype=int8> adding consumer <nng.Operation 'model/tf.math.multiply_1/Mul' type=Mul>
+<nng.Tensor 'model/tf.math.sigmoid/Sigmoid' shape=[1, 1, 1, 128] dtype=int8> adding consumer <nng.Operation 'model/tf.math.multiply_1/Mul' type=Mul>
+<nng.Tensor 'model/tf.math.multiply_1/Mul' shape=[1, 15, 20, 128] dtype=int8> adding consumer <nng.Operation 'model/tf.math.add_36/Add' type=Add>
+<nng.Tensor 'model/leaky_re_lu_12/LeakyRelu_npu' shape=[1, 15, 20, 128] dtype=int8> adding consumer <nng.Operation 'model/tf.math.add_36/Add' type=Add>
+<nng.Tensor 'model/tf.math.add_36/Add' shape=[1, 15, 20, 128] dtype=int8> adding consumer <nng.Operation 'model/lambda_1/ResizeNearestNeighbor' type=ResizeNearestNeighbor>
+<nng.Tensor 'model/lambda_1/ResizeNearestNeighbor/size_npu' shape=[2] dtype=int32> adding consumer <nng.Operation 'model/lambda_1/ResizeNearestNeighbor' type=ResizeNearestNeighbor>
+<nng.Tensor 'model/lambda_1/ResizeNearestNeighbor' shape=[1, 30, 40, 128] dtype=int8> adding consumer <nng.Operation 'model/tf.math.add_37/Add;model/conv2d_50/Conv2D;model/conv2d_26/Conv2D;model/tf.math.add_37/Add/y1' type=Conv2DBias>
+<nng.Tensor 'model/conv2d_26/Conv2D_reshape_npu' shape=[3, 3, 128, 128] dtype=int8> adding consumer <nng.Operation 'model/tf.math.add_37/Add;model/conv2d_50/Conv2D;model/conv2d_26/Conv2D;model/tf.math.add_37/Add/y1' type=Conv2DBias>
+<nng.Tensor 'model/tf.math.add_37/Add;model/conv2d_50/Conv2D;model/conv2d_26/Conv2D;model/tf.math.add_37/Add/y_reshape_npu' shape=[128] dtype=int32> adding consumer <nng.Operation 'model/tf.math.add_37/Add;model/conv2d_50/Conv2D;model/conv2d_26/Conv2D;model/tf.math.add_37/Add/y1' type=Conv2DBias>
+<nng.Tensor 'model/leaky_re_lu_13/LeakyRelu_lut_lrelu_values_0_npu' shape=[1, 1, 1, 256] dtype=int8> adding consumer <nng.Operation 'model/tf.math.add_37/Add;model/conv2d_50/Conv2D;model/conv2d_26/Conv2D;model/tf.math.add_37/Add/y1' type=Conv2DBias>
+<nng.Tensor 'model/leaky_re_lu_13/LeakyRelu' shape=[1, 30, 40, 128] dtype=int8> adding consumer <nng.Operation 'model/tf.concat/concat1_avgpool' type=AvgPool>
+<nng.Tensor 'model/tf.math.reduce_mean_4/Mean_npu' shape=[1, 1, 1, 128] dtype=int8> adding consumer <nng.Operation 'model/tf.math.add_43/Add;model/conv2d_50/Conv2D;model/conv2d_35/Conv2D;model/tf.math.add_43/Add/y1_fc' type=FullyConnected>
+<nng.Tensor 'model/conv2d_35/Conv2D_reshape_npu' shape=[128, 128] dtype=int8> adding consumer <nng.Operation 'model/tf.math.add_43/Add;model/conv2d_50/Conv2D;model/conv2d_35/Conv2D;model/tf.math.add_43/Add/y1_fc' type=FullyConnected>
+<nng.Tensor 'model/tf.math.add_43/Add;model/conv2d_50/Conv2D;model/conv2d_35/Conv2D;model/tf.math.add_43/Add/y_reshape_npu' shape=[128] dtype=int32> adding consumer <nng.Operation 'model/tf.math.add_43/Add;model/conv2d_50/Conv2D;model/conv2d_35/Conv2D;model/tf.math.add_43/Add/y1_fc' type=FullyConnected>
+<nng.Tensor 'model/tf.math.sigmoid_4/Sigmoid_lut_sigmoid_values_0_npu' shape=[1, 1, 1, 256] dtype=int8> adding consumer <nng.Operation 'model/tf.math.add_43/Add;model/conv2d_50/Conv2D;model/conv2d_35/Conv2D;model/tf.math.add_43/Add/y1_fc' type=FullyConnected>
+<nng.Tensor 'model/leaky_re_lu_17/LeakyRelu_npu' shape=[1, 15, 20, 128] dtype=int8> adding consumer <nng.Operation 'model/tf.math.multiply_5/Mul' type=Mul>
+<nng.Tensor 'model/tf.math.sigmoid_4/Sigmoid' shape=[1, 1, 1, 128] dtype=int8> adding consumer <nng.Operation 'model/tf.math.multiply_5/Mul' type=Mul>
+<nng.Tensor 'model/tf.math.multiply_5/Mul' shape=[1, 15, 20, 128] dtype=int8> adding consumer <nng.Operation 'model/tf.math.add_48/Add' type=Add>
+<nng.Tensor 'model/leaky_re_lu_19/LeakyRelu_npu' shape=[1, 15, 20, 128] dtype=int8> adding consumer <nng.Operation 'model/tf.math.add_48/Add' type=Add>
+<nng.Tensor 'model/tf.math.add_48/Add' shape=[1, 15, 20, 128] dtype=int8> adding consumer <nng.Operation 'model/lambda_4/ResizeNearestNeighbor' type=ResizeNearestNeighbor>
+<nng.Tensor 'model/lambda_1/ResizeNearestNeighbor/size_npu' shape=[2] dtype=int32> adding consumer <nng.Operation 'model/lambda_4/ResizeNearestNeighbor' type=ResizeNearestNeighbor>
+<nng.Tensor 'model/lambda_4/ResizeNearestNeighbor' shape=[1, 30, 40, 128] dtype=int8> adding consumer <nng.Operation 'model/tf.math.add_49/Add;model/conv2d_50/Conv2D;model/conv2d_39/Conv2D;model/tf.math.add_49/Add/y1' type=Conv2DBias>
+<nng.Tensor 'model/conv2d_39/Conv2D_reshape_npu' shape=[3, 3, 128, 128] dtype=int8> adding consumer <nng.Operation 'model/tf.math.add_49/Add;model/conv2d_50/Conv2D;model/conv2d_39/Conv2D;model/tf.math.add_49/Add/y1' type=Conv2DBias>
+<nng.Tensor 'model/tf.math.add_49/Add;model/conv2d_50/Conv2D;model/conv2d_39/Conv2D;model/tf.math.add_49/Add/y_reshape_npu' shape=[128] dtype=int32> adding consumer <nng.Operation 'model/tf.math.add_49/Add;model/conv2d_50/Conv2D;model/conv2d_39/Conv2D;model/tf.math.add_49/Add/y1' type=Conv2DBias>
+<nng.Tensor 'model/leaky_re_lu_20/LeakyRelu_lut_lrelu_values_0_npu' shape=[1, 1, 1, 256] dtype=int8> adding consumer <nng.Operation 'model/tf.math.add_49/Add;model/conv2d_50/Conv2D;model/conv2d_39/Conv2D;model/tf.math.add_49/Add/y1' type=Conv2DBias>
+<nng.Tensor 'model/leaky_re_lu_20/LeakyRelu' shape=[1, 30, 40, 128] dtype=int8> adding consumer <nng.Operation 'model/tf.concat_1/concat1_avgpool' type=AvgPool>
+<nng.Tensor 'model/tf.math.reduce_mean_7/Mean_npu' shape=[1, 1, 1, 128] dtype=int8> adding consumer <nng.Operation 'model/tf.math.add_54/Add;model/conv2d_50/Conv2D;model/conv2d_46/Conv2D;model/tf.math.add_54/Add/y1_fc' type=FullyConnected>
+<nng.Tensor 'model/conv2d_46/Conv2D_reshape_npu' shape=[128, 128] dtype=int8> adding consumer <nng.Operation 'model/tf.math.add_54/Add;model/conv2d_50/Conv2D;model/conv2d_46/Conv2D;model/tf.math.add_54/Add/y1_fc' type=FullyConnected>
+<nng.Tensor 'model/tf.math.add_54/Add;model/conv2d_50/Conv2D;model/conv2d_46/Conv2D;model/tf.math.add_54/Add/y_reshape_npu' shape=[128] dtype=int32> adding consumer <nng.Operation 'model/tf.math.add_54/Add;model/conv2d_50/Conv2D;model/conv2d_46/Conv2D;model/tf.math.add_54/Add/y1_fc' type=FullyConnected>
+<nng.Tensor 'model/tf.math.sigmoid_8/Sigmoid_lut_sigmoid_values_0_npu' shape=[1, 1, 1, 256] dtype=int8> adding consumer <nng.Operation 'model/tf.math.add_54/Add;model/conv2d_50/Conv2D;model/conv2d_46/Conv2D;model/tf.math.add_54/Add/y1_fc' type=FullyConnected>
+<nng.Tensor 'model/leaky_re_lu_23/LeakyRelu_npu' shape=[1, 15, 20, 128] dtype=int8> adding consumer <nng.Operation 'model/tf.math.multiply_9/Mul' type=Mul>
+<nng.Tensor 'model/tf.math.sigmoid_8/Sigmoid' shape=[1, 1, 1, 128] dtype=int8> adding consumer <nng.Operation 'model/tf.math.multiply_9/Mul' type=Mul>
+<nng.Tensor 'model/tf.math.multiply_9/Mul' shape=[1, 15, 20, 128] dtype=int8> adding consumer <nng.Operation 'model/tf.math.add_59/Add' type=Add>
+<nng.Tensor 'model/leaky_re_lu_25/LeakyRelu_npu' shape=[1, 15, 20, 128] dtype=int8> adding consumer <nng.Operation 'model/tf.math.add_59/Add' type=Add>
+<nng.Tensor 'model/tf.math.add_59/Add' shape=[1, 15, 20, 128] dtype=int8> adding consumer <nng.Operation 'model/lambda_6/ResizeNearestNeighbor' type=ResizeNearestNeighbor>
+<nng.Tensor 'model/lambda_1/ResizeNearestNeighbor/size_npu' shape=[2] dtype=int32> adding consumer <nng.Operation 'model/lambda_6/ResizeNearestNeighbor' type=ResizeNearestNeighbor>
+<nng.Tensor 'model/lambda_6/ResizeNearestNeighbor' shape=[1, 30, 40, 128] dtype=int8> adding consumer <nng.Operation 'model/tf.math.add_60/Add;model/conv2d_50/Conv2D;model/tf.math.add_60/Add/y1' type=Conv2DBias>
+<nng.Tensor 'model/conv2d_50/Conv2D_reshape_npu' shape=[3, 3, 128, 128] dtype=int8> adding consumer <nng.Operation 'model/tf.math.add_60/Add;model/conv2d_50/Conv2D;model/tf.math.add_60/Add/y1' type=Conv2DBias>
+<nng.Tensor 'model/tf.math.add_60/Add;model/conv2d_50/Conv2D;model/tf.math.add_60/Add/y_reshape_npu' shape=[128] dtype=int32> adding consumer <nng.Operation 'model/tf.math.add_60/Add;model/conv2d_50/Conv2D;model/tf.math.add_60/Add/y1' type=Conv2DBias>
+<nng.Tensor 'model/leaky_re_lu_26/LeakyRelu_lut_lrelu_values_0_npu' shape=[1, 1, 1, 256] dtype=int8> adding consumer <nng.Operation 'model/tf.math.add_60/Add;model/conv2d_50/Conv2D;model/tf.math.add_60/Add/y1' type=Conv2DBias>
+<nng.Tensor 'model/leaky_re_lu_26/LeakyRelu' shape=[1, 30, 40, 128] dtype=int8> adding consumer <nng.Operation 'model/tf.concat_2/concat1_avgpool' type=AvgPool>
+
+Network summary for MGNet_quant
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                383.67 KiB
+Total DRAM used                              18455.14 KiB
+
+CPU operators = 30 (20.0%)
+NPU operators = 120 (80.0%)
+
+Average SRAM bandwidth                           1.73 GB/s
+Input   SRAM bandwidth                          21.04 MB/batch
+Weight  SRAM bandwidth                         102.62 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                         123.74 MB/batch
+Total   SRAM bandwidth            per input    123.74 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           1.10 GB/s
+Input   DRAM bandwidth                          39.38 MB/batch
+Weight  DRAM bandwidth                          15.84 MB/batch
+Output  DRAM bandwidth                          23.17 MB/batch
+Total   DRAM bandwidth                          78.43 MB/batch
+Total   DRAM bandwidth            per input     78.43 MB/inference (batch size 1)
+
+Neural network macs                        6979920816 MACs/batch
+Network Tops/s                                   0.20 Tops/s
+
+NPU cycles                                   43442908 cycles/batch
+SRAM Access cycles                            1703160 cycles/batch
+DRAM Access cycles                           53169544 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                 71351306 cycles/batch
+
+Batch Inference time                71.35 ms,   14.02 inferences/s (batch size 1)
+

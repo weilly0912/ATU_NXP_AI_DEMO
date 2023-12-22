@@ -80,20 +80,22 @@ def main():
     parser.add_argument( '-d' ,"--display", default="0")
     parser.add_argument("--save", default="1")
     parser.add_argument( '-t', "--time", default="0")
-    parser.add_argument('--delegate' , default="ethosu", help = 'Please Input vx or xnnpack or ethosu') 
-    parser.add_argument( '-m', '--model' , default="platedetect.tflite", help='File path of .tflite file.')
-    parser.add_argument( '-mf', '--model_feature' , default="license_recognition.tflite", help='File path of .tflite file.')
-    parser.add_argument("--test_img", default="germany_car_plate.jpg")
+    parser.add_argument('--delegate' , default="vx", help = 'Please Input vx or xnnpack or ethosu') 
+    parser.add_argument( '-m', '--model' , default="model/platedetect_quant.tflite", help='File path of .tflite file.')
+    parser.add_argument( '-mf', '--model_feature' , default="model/license_recognition_quant.tflite", help='File path of .tflite file.')
+    parser.add_argument("--test_img", default="img/germany_car_plate.jpg")
     
     args = parser.parse_args()
     if args.camera_format == "V4L2_YUV2_480p" : camera_format = V4L2_YUV2_480p
     if args.camera_format == "V4L2_YUV2_720p" : camera_format = V4L2_YUV2_720p
     if args.camera_format == "V4L2_H264_1080p" : camera_format = V4L2_H264_1080p
 
-    # vela(NPU) 路徑修正
+    # vela(NPU) 預設路徑修正
     if(args.delegate=="ethosu"): 
-        args.model = 'output/' + args.model[:-7] + '_vela.tflite'
-        args.model_feature = 'output/' + args.model_feature[:-7] + '_vela.tflite'
+        if(args.model[-11:]!='vela.tflite') :
+            args.model = args.model[:-7] + '_vela.tflite'
+        if(args.model_feature[-11:]!='vela.tflite') :
+            args.model_feature = args.model_feature[:-7] + '_vela.tflite'
 
     # 解析解譯器資訊 (車牌偵測)
     interpreterPlateDetection = InferenceDelegate(args.model,args.delegate)
@@ -227,8 +229,8 @@ def main():
 
       # 顯示輸出結果
       if args.save == "True" or args.save == "1" :
-          cv2.imwrite( APP_NAME + "-" + args.test_img[:len(args.test_img)-4] +'_result.jpg', image_result.astype("uint8"))
-          print("Save Reuslt Image Success , " + APP_NAME + "-" +  args.test_img[:len(args.test_img)-4] + '_result.jpg')
+          cv2.imwrite( "output/" + APP_NAME + "-" + args.test_img.split("/")[-1][:-4] +'_result.jpg', image_result.astype("uint8"))
+          print("Save Reuslt Image Success , " + APP_NAME + "-" +  args.test_img.split("/")[-1][:-4] + '_result.jpg')
 
       if args.display =="True" or args.display == "1" :
           cv2.imshow('frame', frame.astype('uint8'))

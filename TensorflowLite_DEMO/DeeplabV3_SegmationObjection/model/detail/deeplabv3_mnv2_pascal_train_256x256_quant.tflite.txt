@@ -1,0 +1,57 @@
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'tfl.quantize'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: MobilenetV2/MobilenetV2/input
+Warning: Unsupported TensorFlow Lite semantics for ARG_MAX 'ArgMax'. Placing on CPU instead
+ - Scalar Input tensors are only valid for op type: ADD, EXPAND_DIMS, MAXIMUM, MEAN, MINIMUM, MUL, QUANTIZE, SPLIT, SPLIT_V, SUB
+   Op has scalar input tensor(s): ArgMax/dimension
+Warning: RESIZE_BILINEAR 'ResizeBilinear_2' is not supported on the NPU. Placing on CPU instead
+ - The width and height of the IFM and OFM must match one of the following criteria:
+        IFM W and H must both be 1
+        IFM must match OFM
+        W and H scaling must be equal and OFM W-1 and H-1 must be 2x/4x/8x IFM W-1 and H-1, if align_corners is True
+        W and H scaling must be equal and OFM W and H must be 2x/4x/8x IFM W and H, if align_corners is False
+   Op has ifm_shape=[1, 32, 32, 21], ofm_shape=[1, 256, 256, 21] and align_corners=True
+Warning: ArgMax operation is unknown or unsupported, placing on CPU
+Warning: ResizeBilinear operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+
+Network summary for deeplabv3_mnv2_pascal_train_256x256_quant
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                371.92 KiB
+Total DRAM used                               4441.55 KiB
+
+CPU operators = 3 (4.2%)
+NPU operators = 69 (95.8%)
+
+Average SRAM bandwidth                           3.41 GB/s
+Input   SRAM bandwidth                          33.73 MB/batch
+Weight  SRAM bandwidth                          34.23 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                          68.13 MB/batch
+Total   SRAM bandwidth            per input     68.13 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           2.63 GB/s
+Input   DRAM bandwidth                          27.04 MB/batch
+Weight  DRAM bandwidth                           2.14 MB/batch
+Output  DRAM bandwidth                          23.47 MB/batch
+Total   DRAM bandwidth                          52.65 MB/batch
+Total   DRAM bandwidth            per input     52.65 MB/inference (batch size 1)
+
+Neural network macs                        2189852672 MACs/batch
+Network Tops/s                                   0.22 Tops/s
+
+NPU cycles                                   16661254 cycles/batch
+SRAM Access cycles                            3116224 cycles/batch
+DRAM Access cycles                           11748970 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                 19996241 cycles/batch
+
+Batch Inference time                20.00 ms,   50.01 inferences/s (batch size 1)
+

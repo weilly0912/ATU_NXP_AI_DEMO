@@ -1,0 +1,41 @@
+
+Network summary for posenet_mobilenet_v1_075_721_1281_quant
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                371.77 KiB
+Total DRAM used                              11410.59 KiB
+
+CPU operators = 0 (0.0%)
+NPU operators = 33 (100.0%)
+
+Average SRAM bandwidth                           2.48 GB/s
+Input   SRAM bandwidth                         139.68 MB/batch
+Weight  SRAM bandwidth                          27.21 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                         166.92 MB/batch
+Total   SRAM bandwidth            per input    166.92 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           2.80 GB/s
+Input   DRAM bandwidth                          54.53 MB/batch
+Weight  DRAM bandwidth                          55.16 MB/batch
+Output  DRAM bandwidth                          78.37 MB/batch
+Total   DRAM bandwidth                         188.10 MB/batch
+Total   DRAM bandwidth            per input    188.10 MB/inference (batch size 1)
+
+Neural network macs                        6575361552 MACs/batch
+Network Tops/s                                   0.20 Tops/s
+
+NPU cycles                                   52022452 cycles/batch
+SRAM Access cycles                           11802079 cycles/batch
+DRAM Access cycles                           52987434 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                 67178046 cycles/batch
+
+Batch Inference time                67.18 ms,   14.89 inferences/s (batch size 1)
+

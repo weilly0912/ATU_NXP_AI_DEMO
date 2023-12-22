@@ -1,0 +1,78 @@
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'tfl.quantize'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: serving_default_input_1:0
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'DeepLabV3_Plus/ASPP_concat/concat'. Placing on CPU instead
+ - All Input dimensions must match OFM dimension in all axes except the one defined by the axis attribute
+   Op has axis=3, ofm_shape=[1, 25, 50, 1280] and the list of mismatching inputs are: Tensor 'DeepLabV3_Plus/relu_3/Relu;DeepLabV3_Plus/bn_3/FusedBatchNormV3' has shape: [1, 1, 1, 256], Tensor 'DeepLabV3_Plus/relu_4/Relu;DeepLabV3_Plus/bn_4/FusedBatchNormV3' has shape: [1, 1, 1, 256], Tensor 'DeepLabV3_Plus/relu_5/Relu;DeepLabV3_Plus/bn_5/FusedBatchNormV3' has shape: [1, 1, 1, 256]
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'StatefulPartitionedCall:0'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: StatefulPartitionedCall:0
+Warning: RESIZE_BILINEAR 'DeepLabV3_Plus/activation_decoder_2_upsample/resize/ResizeBilinear' is not supported on the NPU. Placing on CPU instead
+ - Half_pixel_centers for resize bilinear requires that OFM W and H is 2x IFM W and H
+   Op has ifm_shape=[1, 100, 200, 256], ofm_shape=[1, 400, 800, 256] and half_pixel_centers=True
+Warning: RESIZE_BILINEAR 'DeepLabV3_Plus/relu_final_upsample/resize/ResizeBilinear' is not supported on the NPU. Placing on CPU instead
+ - Half_pixel_centers for resize bilinear requires that OFM W and H is 2x IFM W and H
+   Op has ifm_shape=[1, 25, 50, 256], ofm_shape=[1, 100, 200, 256] and half_pixel_centers=True
+Warning: RESIZE_BILINEAR 'DeepLabV3_Plus/relu_1_upsample/resize/ResizeBilinear' is not supported on the NPU. Placing on CPU instead
+ - Half_pixel_centers for resize bilinear requires that OFM W and H is 2x IFM W and H
+   Op has ifm_shape=[1, 1, 1, 256], ofm_shape=[1, 25, 50, 256] and half_pixel_centers=True
+Warning: AVERAGE_POOL_2D 'DeepLabV3_Plus/average_pooling/AvgPool' is not supported on the NPU. Placing on CPU instead
+ - Stride values for both width and height must be in the range [1, 3]
+   Op has stride WxH as: 50x25
+Info: BATCH_TO_SPACE_ND 'DeepLabV3_Plus/ASPP_conv2d_d6/BatchToSpaceND' is a CPU only op
+Info: SPACE_TO_BATCH_ND 'DeepLabV3_Plus/ASPP_conv2d_d6/SpaceToBatchND' is a CPU only op
+Info: BATCH_TO_SPACE_ND 'DeepLabV3_Plus/ASPP_conv2d_d12/BatchToSpaceND' is a CPU only op
+Info: SPACE_TO_BATCH_ND 'DeepLabV3_Plus/ASPP_conv2d_d12/SpaceToBatchND' is a CPU only op
+Info: BATCH_TO_SPACE_ND 'DeepLabV3_Plus/ASPP_conv2d_d18/BatchToSpaceND' is a CPU only op
+Info: SPACE_TO_BATCH_ND 'DeepLabV3_Plus/ASPP_conv2d_d18/SpaceToBatchND' is a CPU only op
+Warning: ResizeBilinear operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: ResizeBilinear operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: ResizeBilinear operation is unknown or unsupported, placing on CPU
+Warning: AvgPool operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+
+Network summary for deeplabv3_plus_400x800_quant
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                382.73 KiB
+Total DRAM used                             100715.36 KiB
+
+CPU operators = 11 (12.2%)
+NPU operators = 79 (87.8%)
+
+Average SRAM bandwidth                           0.59 GB/s
+Input   SRAM bandwidth                         205.33 MB/batch
+Weight  SRAM bandwidth                         236.66 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                         442.07 MB/batch
+Total   SRAM bandwidth            per input    442.07 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           1.75 GB/s
+Input   DRAM bandwidth                         799.76 MB/batch
+Weight  DRAM bandwidth                         345.56 MB/batch
+Output  DRAM bandwidth                         167.75 MB/batch
+Total   DRAM bandwidth                        1313.15 MB/batch
+Total   DRAM bandwidth            per input   1313.15 MB/inference (batch size 1)
+
+Neural network macs                       49532807424 MACs/batch
+Network Tops/s                                   0.13 Tops/s
+
+NPU cycles                                  315267557 cycles/batch
+SRAM Access cycles                           15473392 cycles/batch
+DRAM Access cycles                          715443226 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                749403181 cycles/batch
+
+Batch Inference time               749.40 ms,    1.33 inferences/s (batch size 1)
+

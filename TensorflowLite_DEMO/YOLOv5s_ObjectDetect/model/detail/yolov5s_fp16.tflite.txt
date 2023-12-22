@@ -1,0 +1,1423 @@
+Warning: Unsupported TensorFlow Lite semantics for PAD 'model/tf_conv/sequential/tf_pad/Pad'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: serving_default_input_1:0, model/tf_conv/sequential/tf_pad/Pad
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_conv/sequential/conv2d/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv/sequential/conv2d/Conv2D, model/tf_conv/sequential/conv2d/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_conv/sequential/conv2d/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv/sequential/conv2d/BiasAdd/ReadVariableOp, model/tf_conv/sequential/conv2d/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tf_conv/sequential/conv2d/BiasAdd;model/tfc3/tf_conv_3/conv2d_3/Conv2D;model/tf_conv/sequential/conv2d/Conv2D;model/tf_conv/sequential/conv2d/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv/sequential/tf_pad/Pad, model/tf_conv/sequential/conv2d/Conv2D1, model/tf_conv/sequential/conv2d/BiasAdd;model/tfc3/tf_conv_3/conv2d_3/Conv2D;model/tf_conv/sequential/conv2d/Conv2D;model/tf_conv/sequential/conv2d/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tf_conv/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv/sequential/conv2d/BiasAdd;model/tfc3/tf_conv_3/conv2d_3/Conv2D;model/tf_conv/sequential/conv2d/Conv2D;model/tf_conv/sequential/conv2d/BiasAdd/ReadVariableOp, model/tf_conv/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tf_conv/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv/sequential/conv2d/BiasAdd;model/tfc3/tf_conv_3/conv2d_3/Conv2D;model/tf_conv/sequential/conv2d/Conv2D;model/tf_conv/sequential/conv2d/BiasAdd/ReadVariableOp, model/tf_conv/Sigmoid, model/tf_conv/mul_1
+Warning: Unsupported TensorFlow Lite semantics for PAD 'model/tf_conv_1/sequential_1/tf_pad_1/Pad'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv/mul_1, model/tf_conv_1/sequential_1/tf_pad_1/Pad
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_conv_1/sequential_1/conv2d_1/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_1/sequential_1/conv2d_1/Conv2D, model/tf_conv_1/sequential_1/conv2d_1/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_conv_1/sequential_1/conv2d_1/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_1/sequential_1/conv2d_1/BiasAdd/ReadVariableOp, model/tf_conv_1/sequential_1/conv2d_1/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tf_conv_1/sequential_1/conv2d_1/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tf_conv_1/sequential_1/conv2d_1/Conv2D;model/tf_conv_1/sequential_1/conv2d_1/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_1/sequential_1/tf_pad_1/Pad, model/tf_conv_1/sequential_1/conv2d_1/Conv2D1, model/tf_conv_1/sequential_1/conv2d_1/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tf_conv_1/sequential_1/conv2d_1/Conv2D;model/tf_conv_1/sequential_1/conv2d_1/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tf_conv_1/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_1/sequential_1/conv2d_1/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tf_conv_1/sequential_1/conv2d_1/Conv2D;model/tf_conv_1/sequential_1/conv2d_1/BiasAdd/ReadVariableOp, model/tf_conv_1/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tf_conv_1/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_1/sequential_1/conv2d_1/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tf_conv_1/sequential_1/conv2d_1/Conv2D;model/tf_conv_1/sequential_1/conv2d_1/BiasAdd/ReadVariableOp, model/tf_conv_1/Sigmoid, model/tf_conv_1/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3/tf_conv_2/conv2d_2/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3/tf_conv_2/conv2d_2/Conv2D, model/tfc3/tf_conv_2/conv2d_2/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3/tf_conv_2/conv2d_2/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3/tf_conv_2/conv2d_2/BiasAdd/ReadVariableOp, model/tfc3/tf_conv_2/conv2d_2/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3/tf_conv_2/conv2d_2/BiasAdd;model/tfc3/tf_conv_3/conv2d_3/Conv2D;model/tfc3/tf_conv_2/conv2d_2/Conv2D;model/tfc3/tf_conv_2/conv2d_2/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_1/mul_1, model/tfc3/tf_conv_2/conv2d_2/Conv2D1, model/tfc3/tf_conv_2/conv2d_2/BiasAdd;model/tfc3/tf_conv_3/conv2d_3/Conv2D;model/tfc3/tf_conv_2/conv2d_2/Conv2D;model/tfc3/tf_conv_2/conv2d_2/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3/tf_conv_2/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3/tf_conv_2/conv2d_2/BiasAdd;model/tfc3/tf_conv_3/conv2d_3/Conv2D;model/tfc3/tf_conv_2/conv2d_2/Conv2D;model/tfc3/tf_conv_2/conv2d_2/BiasAdd/ReadVariableOp, model/tfc3/tf_conv_2/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3/tf_conv_2/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3/tf_conv_2/conv2d_2/BiasAdd;model/tfc3/tf_conv_3/conv2d_3/Conv2D;model/tfc3/tf_conv_2/conv2d_2/Conv2D;model/tfc3/tf_conv_2/conv2d_2/BiasAdd/ReadVariableOp, model/tfc3/tf_conv_2/Sigmoid, model/tfc3/tf_conv_2/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3/sequential_2/tf_bottleneck/tf_conv_5/conv2d_5/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3/sequential_2/tf_bottleneck/tf_conv_5/conv2d_5/Conv2D, model/tfc3/sequential_2/tf_bottleneck/tf_conv_5/conv2d_5/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3/sequential_2/tf_bottleneck/tf_conv_5/conv2d_5/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3/sequential_2/tf_bottleneck/tf_conv_5/conv2d_5/BiasAdd/ReadVariableOp, model/tfc3/sequential_2/tf_bottleneck/tf_conv_5/conv2d_5/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3/sequential_2/tf_bottleneck/tf_conv_5/conv2d_5/BiasAdd;model/tfc3/tf_conv_3/conv2d_3/Conv2D;model/tfc3/sequential_2/tf_bottleneck/tf_conv_5/conv2d_5/Conv2D;model/tfc3/sequential_2/tf_bottleneck/tf_conv_5/conv2d_5/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3/tf_conv_2/mul_1, model/tfc3/sequential_2/tf_bottleneck/tf_conv_5/conv2d_5/Conv2D1, model/tfc3/sequential_2/tf_bottleneck/tf_conv_5/conv2d_5/BiasAdd;model/tfc3/tf_conv_3/conv2d_3/Conv2D;model/tfc3/sequential_2/tf_bottleneck/tf_conv_5/conv2d_5/Conv2D;model/tfc3/sequential_2/tf_bottleneck/tf_conv_5/conv2d_5/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3/sequential_2/tf_bottleneck/tf_conv_5/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3/sequential_2/tf_bottleneck/tf_conv_5/conv2d_5/BiasAdd;model/tfc3/tf_conv_3/conv2d_3/Conv2D;model/tfc3/sequential_2/tf_bottleneck/tf_conv_5/conv2d_5/Conv2D;model/tfc3/sequential_2/tf_bottleneck/tf_conv_5/conv2d_5/BiasAdd/ReadVariableOp, model/tfc3/sequential_2/tf_bottleneck/tf_conv_5/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3/sequential_2/tf_bottleneck/tf_conv_5/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3/sequential_2/tf_bottleneck/tf_conv_5/conv2d_5/BiasAdd;model/tfc3/tf_conv_3/conv2d_3/Conv2D;model/tfc3/sequential_2/tf_bottleneck/tf_conv_5/conv2d_5/Conv2D;model/tfc3/sequential_2/tf_bottleneck/tf_conv_5/conv2d_5/BiasAdd/ReadVariableOp, model/tfc3/sequential_2/tf_bottleneck/tf_conv_5/Sigmoid, model/tfc3/sequential_2/tf_bottleneck/tf_conv_5/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3/sequential_2/tf_bottleneck/tf_conv_6/conv2d_6/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3/sequential_2/tf_bottleneck/tf_conv_6/conv2d_6/Conv2D, model/tfc3/sequential_2/tf_bottleneck/tf_conv_6/conv2d_6/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3/sequential_2/tf_bottleneck/tf_conv_6/conv2d_6/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3/sequential_2/tf_bottleneck/tf_conv_6/conv2d_6/BiasAdd/ReadVariableOp, model/tfc3/sequential_2/tf_bottleneck/tf_conv_6/conv2d_6/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3/sequential_2/tf_bottleneck/tf_conv_6/conv2d_6/BiasAdd;model/tfc3/tf_conv_3/conv2d_3/Conv2D;model/tfc3/sequential_2/tf_bottleneck/tf_conv_6/conv2d_6/Conv2D;model/tfc3/sequential_2/tf_bottleneck/tf_conv_6/conv2d_6/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3/sequential_2/tf_bottleneck/tf_conv_5/mul_1, model/tfc3/sequential_2/tf_bottleneck/tf_conv_6/conv2d_6/Conv2D1, model/tfc3/sequential_2/tf_bottleneck/tf_conv_6/conv2d_6/BiasAdd;model/tfc3/tf_conv_3/conv2d_3/Conv2D;model/tfc3/sequential_2/tf_bottleneck/tf_conv_6/conv2d_6/Conv2D;model/tfc3/sequential_2/tf_bottleneck/tf_conv_6/conv2d_6/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3/sequential_2/tf_bottleneck/tf_conv_6/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3/sequential_2/tf_bottleneck/tf_conv_6/conv2d_6/BiasAdd;model/tfc3/tf_conv_3/conv2d_3/Conv2D;model/tfc3/sequential_2/tf_bottleneck/tf_conv_6/conv2d_6/Conv2D;model/tfc3/sequential_2/tf_bottleneck/tf_conv_6/conv2d_6/BiasAdd/ReadVariableOp, model/tfc3/sequential_2/tf_bottleneck/tf_conv_6/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3/sequential_2/tf_bottleneck/tf_conv_6/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3/sequential_2/tf_bottleneck/tf_conv_6/conv2d_6/BiasAdd;model/tfc3/tf_conv_3/conv2d_3/Conv2D;model/tfc3/sequential_2/tf_bottleneck/tf_conv_6/conv2d_6/Conv2D;model/tfc3/sequential_2/tf_bottleneck/tf_conv_6/conv2d_6/BiasAdd/ReadVariableOp, model/tfc3/sequential_2/tf_bottleneck/tf_conv_6/Sigmoid, model/tfc3/sequential_2/tf_bottleneck/tf_conv_6/mul_1
+Warning: Unsupported TensorFlow Lite semantics for ADD 'model/tfc3/sequential_2/tf_bottleneck/add'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3/tf_conv_2/mul_1, model/tfc3/sequential_2/tf_bottleneck/tf_conv_6/mul_1, model/tfc3/sequential_2/tf_bottleneck/add
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3/tf_conv_3/conv2d_3/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3/tf_conv_3/conv2d_3/Conv2D, model/tfc3/tf_conv_3/conv2d_3/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3/tf_conv_3/conv2d_3/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3/tf_conv_3/conv2d_3/BiasAdd/ReadVariableOp, model/tfc3/tf_conv_3/conv2d_3/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3/tf_conv_3/conv2d_3/BiasAdd;model/tfc3/tf_conv_3/conv2d_3/Conv2D;model/tfc3/tf_conv_3/conv2d_3/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_1/mul_1, model/tfc3/tf_conv_3/conv2d_3/Conv2D1, model/tfc3/tf_conv_3/conv2d_3/BiasAdd;model/tfc3/tf_conv_3/conv2d_3/Conv2D;model/tfc3/tf_conv_3/conv2d_3/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3/tf_conv_3/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3/tf_conv_3/conv2d_3/BiasAdd;model/tfc3/tf_conv_3/conv2d_3/Conv2D;model/tfc3/tf_conv_3/conv2d_3/BiasAdd/ReadVariableOp, model/tfc3/tf_conv_3/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3/tf_conv_3/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3/tf_conv_3/conv2d_3/BiasAdd;model/tfc3/tf_conv_3/conv2d_3/Conv2D;model/tfc3/tf_conv_3/conv2d_3/BiasAdd/ReadVariableOp, model/tfc3/tf_conv_3/Sigmoid, model/tfc3/tf_conv_3/mul_1
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'model/tfc3/concat'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3/tf_conv_3/mul_1, model/tfc3/concat
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3/tf_conv_4/conv2d_4/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3/tf_conv_4/conv2d_4/Conv2D, model/tfc3/tf_conv_4/conv2d_4/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3/tf_conv_4/conv2d_4/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3/tf_conv_4/conv2d_4/BiasAdd/ReadVariableOp, model/tfc3/tf_conv_4/conv2d_4/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3/tf_conv_4/conv2d_4/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3/tf_conv_4/conv2d_4/Conv2D;model/tfc3/tf_conv_4/conv2d_4/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3/concat, model/tfc3/tf_conv_4/conv2d_4/Conv2D1, model/tfc3/tf_conv_4/conv2d_4/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3/tf_conv_4/conv2d_4/Conv2D;model/tfc3/tf_conv_4/conv2d_4/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3/tf_conv_4/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3/tf_conv_4/conv2d_4/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3/tf_conv_4/conv2d_4/Conv2D;model/tfc3/tf_conv_4/conv2d_4/BiasAdd/ReadVariableOp, model/tfc3/tf_conv_4/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3/tf_conv_4/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3/tf_conv_4/conv2d_4/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3/tf_conv_4/conv2d_4/Conv2D;model/tfc3/tf_conv_4/conv2d_4/BiasAdd/ReadVariableOp, model/tfc3/tf_conv_4/Sigmoid, model/tfc3/tf_conv_4/mul_1
+Warning: Unsupported TensorFlow Lite semantics for PAD 'model/tf_conv_7/sequential_3/tf_pad_2/Pad'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3/tf_conv_4/mul_1, model/tf_conv_7/sequential_3/tf_pad_2/Pad
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_conv_7/sequential_3/conv2d_7/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_7/sequential_3/conv2d_7/Conv2D, model/tf_conv_7/sequential_3/conv2d_7/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_conv_7/sequential_3/conv2d_7/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_7/sequential_3/conv2d_7/BiasAdd/ReadVariableOp, model/tf_conv_7/sequential_3/conv2d_7/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tf_conv_7/sequential_3/conv2d_7/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tf_conv_7/sequential_3/conv2d_7/Conv2D;model/tf_conv_7/sequential_3/conv2d_7/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_7/sequential_3/tf_pad_2/Pad, model/tf_conv_7/sequential_3/conv2d_7/Conv2D1, model/tf_conv_7/sequential_3/conv2d_7/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tf_conv_7/sequential_3/conv2d_7/Conv2D;model/tf_conv_7/sequential_3/conv2d_7/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tf_conv_7/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_7/sequential_3/conv2d_7/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tf_conv_7/sequential_3/conv2d_7/Conv2D;model/tf_conv_7/sequential_3/conv2d_7/BiasAdd/ReadVariableOp, model/tf_conv_7/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tf_conv_7/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_7/sequential_3/conv2d_7/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tf_conv_7/sequential_3/conv2d_7/Conv2D;model/tf_conv_7/sequential_3/conv2d_7/BiasAdd/ReadVariableOp, model/tf_conv_7/Sigmoid, model/tf_conv_7/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_1/tf_conv_8/conv2d_8/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/tf_conv_8/conv2d_8/Conv2D, model/tfc3_1/tf_conv_8/conv2d_8/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_1/tf_conv_8/conv2d_8/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/tf_conv_8/conv2d_8/BiasAdd/ReadVariableOp, model/tfc3_1/tf_conv_8/conv2d_8/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_1/tf_conv_8/conv2d_8/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_1/tf_conv_8/conv2d_8/Conv2D;model/tfc3_1/tf_conv_8/conv2d_8/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_7/mul_1, model/tfc3_1/tf_conv_8/conv2d_8/Conv2D1, model/tfc3_1/tf_conv_8/conv2d_8/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_1/tf_conv_8/conv2d_8/Conv2D;model/tfc3_1/tf_conv_8/conv2d_8/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_1/tf_conv_8/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/tf_conv_8/conv2d_8/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_1/tf_conv_8/conv2d_8/Conv2D;model/tfc3_1/tf_conv_8/conv2d_8/BiasAdd/ReadVariableOp, model/tfc3_1/tf_conv_8/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_1/tf_conv_8/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/tf_conv_8/conv2d_8/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_1/tf_conv_8/conv2d_8/Conv2D;model/tfc3_1/tf_conv_8/conv2d_8/BiasAdd/ReadVariableOp, model/tfc3_1/tf_conv_8/Sigmoid, model/tfc3_1/tf_conv_8/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_11/conv2d_11/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_11/conv2d_11/Conv2D, model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_11/conv2d_11/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_11/conv2d_11/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_11/conv2d_11/BiasAdd/ReadVariableOp, model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_11/conv2d_11/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_11/conv2d_11/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_11/conv2d_11/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_11/conv2d_11/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/tf_conv_8/mul_1, model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_11/conv2d_11/Conv2D1, model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_11/conv2d_11/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_11/conv2d_11/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_11/conv2d_11/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_11/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_11/conv2d_11/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_11/conv2d_11/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_11/conv2d_11/BiasAdd/ReadVariableOp, model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_11/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_11/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_11/conv2d_11/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_11/conv2d_11/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_11/conv2d_11/BiasAdd/ReadVariableOp, model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_11/Sigmoid, model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_11/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_12/conv2d_12/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_12/conv2d_12/Conv2D, model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_12/conv2d_12/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_12/conv2d_12/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_12/conv2d_12/BiasAdd/ReadVariableOp, model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_12/conv2d_12/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_12/conv2d_12/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_12/conv2d_12/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_12/conv2d_12/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_11/mul_1, model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_12/conv2d_12/Conv2D1, model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_12/conv2d_12/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_12/conv2d_12/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_12/conv2d_12/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_12/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_12/conv2d_12/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_12/conv2d_12/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_12/conv2d_12/BiasAdd/ReadVariableOp, model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_12/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_12/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_12/conv2d_12/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_12/conv2d_12/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_12/conv2d_12/BiasAdd/ReadVariableOp, model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_12/Sigmoid, model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_12/mul_1
+Warning: Unsupported TensorFlow Lite semantics for ADD 'model/tfc3_1/sequential_4/tf_bottleneck_1/add'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/tf_conv_8/mul_1, model/tfc3_1/sequential_4/tf_bottleneck_1/tf_conv_12/mul_1, model/tfc3_1/sequential_4/tf_bottleneck_1/add
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_13/conv2d_13/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_13/conv2d_13/Conv2D, model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_13/conv2d_13/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_13/conv2d_13/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_13/conv2d_13/BiasAdd/ReadVariableOp, model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_13/conv2d_13/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_13/conv2d_13/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_13/conv2d_13/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_13/conv2d_13/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/sequential_4/tf_bottleneck_1/add, model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_13/conv2d_13/Conv2D1, model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_13/conv2d_13/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_13/conv2d_13/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_13/conv2d_13/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_13/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_13/conv2d_13/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_13/conv2d_13/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_13/conv2d_13/BiasAdd/ReadVariableOp, model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_13/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_13/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_13/conv2d_13/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_13/conv2d_13/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_13/conv2d_13/BiasAdd/ReadVariableOp, model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_13/Sigmoid, model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_13/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_14/conv2d_14/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_14/conv2d_14/Conv2D, model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_14/conv2d_14/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_14/conv2d_14/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_14/conv2d_14/BiasAdd/ReadVariableOp, model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_14/conv2d_14/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_14/conv2d_14/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_14/conv2d_14/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_14/conv2d_14/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_13/mul_1, model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_14/conv2d_14/Conv2D1, model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_14/conv2d_14/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_14/conv2d_14/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_14/conv2d_14/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_14/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_14/conv2d_14/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_14/conv2d_14/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_14/conv2d_14/BiasAdd/ReadVariableOp, model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_14/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_14/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_14/conv2d_14/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_14/conv2d_14/Conv2D;model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_14/conv2d_14/BiasAdd/ReadVariableOp, model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_14/Sigmoid, model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_14/mul_1
+Warning: Unsupported TensorFlow Lite semantics for ADD 'model/tfc3_1/sequential_4/tf_bottleneck_2/add'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/sequential_4/tf_bottleneck_1/add, model/tfc3_1/sequential_4/tf_bottleneck_2/tf_conv_14/mul_1, model/tfc3_1/sequential_4/tf_bottleneck_2/add
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_1/tf_conv_9/conv2d_9/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/tf_conv_9/conv2d_9/Conv2D, model/tfc3_1/tf_conv_9/conv2d_9/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_1/tf_conv_9/conv2d_9/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/tf_conv_9/conv2d_9/BiasAdd/ReadVariableOp, model/tfc3_1/tf_conv_9/conv2d_9/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_1/tf_conv_9/conv2d_9/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_1/tf_conv_9/conv2d_9/Conv2D;model/tfc3_1/tf_conv_9/conv2d_9/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_7/mul_1, model/tfc3_1/tf_conv_9/conv2d_9/Conv2D1, model/tfc3_1/tf_conv_9/conv2d_9/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_1/tf_conv_9/conv2d_9/Conv2D;model/tfc3_1/tf_conv_9/conv2d_9/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_1/tf_conv_9/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/tf_conv_9/conv2d_9/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_1/tf_conv_9/conv2d_9/Conv2D;model/tfc3_1/tf_conv_9/conv2d_9/BiasAdd/ReadVariableOp, model/tfc3_1/tf_conv_9/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_1/tf_conv_9/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/tf_conv_9/conv2d_9/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_1/tf_conv_9/conv2d_9/Conv2D;model/tfc3_1/tf_conv_9/conv2d_9/BiasAdd/ReadVariableOp, model/tfc3_1/tf_conv_9/Sigmoid, model/tfc3_1/tf_conv_9/mul_1
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'model/tfc3_1/concat'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/tf_conv_9/mul_1, model/tfc3_1/concat
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_1/tf_conv_10/conv2d_10/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/tf_conv_10/conv2d_10/Conv2D, model/tfc3_1/tf_conv_10/conv2d_10/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_1/tf_conv_10/conv2d_10/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/tf_conv_10/conv2d_10/BiasAdd/ReadVariableOp, model/tfc3_1/tf_conv_10/conv2d_10/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_1/tf_conv_10/conv2d_10/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_1/tf_conv_10/conv2d_10/Conv2D;model/tfc3_1/tf_conv_10/conv2d_10/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/concat, model/tfc3_1/tf_conv_10/conv2d_10/Conv2D1, model/tfc3_1/tf_conv_10/conv2d_10/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_1/tf_conv_10/conv2d_10/Conv2D;model/tfc3_1/tf_conv_10/conv2d_10/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_1/tf_conv_10/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/tf_conv_10/conv2d_10/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_1/tf_conv_10/conv2d_10/Conv2D;model/tfc3_1/tf_conv_10/conv2d_10/BiasAdd/ReadVariableOp, model/tfc3_1/tf_conv_10/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_1/tf_conv_10/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/tf_conv_10/conv2d_10/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_1/tf_conv_10/conv2d_10/Conv2D;model/tfc3_1/tf_conv_10/conv2d_10/BiasAdd/ReadVariableOp, model/tfc3_1/tf_conv_10/Sigmoid, model/tfc3_1/tf_conv_10/mul_1
+Warning: Unsupported TensorFlow Lite semantics for PAD 'model/tf_conv_15/sequential_5/tf_pad_3/Pad'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/tf_conv_10/mul_1, model/tf_conv_15/sequential_5/tf_pad_3/Pad
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_conv_15/sequential_5/conv2d_15/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_15/sequential_5/conv2d_15/Conv2D, model/tf_conv_15/sequential_5/conv2d_15/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_conv_15/sequential_5/conv2d_15/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_15/sequential_5/conv2d_15/BiasAdd/ReadVariableOp, model/tf_conv_15/sequential_5/conv2d_15/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tf_conv_15/sequential_5/conv2d_15/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tf_conv_15/sequential_5/conv2d_15/Conv2D;model/tf_conv_15/sequential_5/conv2d_15/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_15/sequential_5/tf_pad_3/Pad, model/tf_conv_15/sequential_5/conv2d_15/Conv2D1, model/tf_conv_15/sequential_5/conv2d_15/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tf_conv_15/sequential_5/conv2d_15/Conv2D;model/tf_conv_15/sequential_5/conv2d_15/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tf_conv_15/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_15/sequential_5/conv2d_15/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tf_conv_15/sequential_5/conv2d_15/Conv2D;model/tf_conv_15/sequential_5/conv2d_15/BiasAdd/ReadVariableOp, model/tf_conv_15/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tf_conv_15/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_15/sequential_5/conv2d_15/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tf_conv_15/sequential_5/conv2d_15/Conv2D;model/tf_conv_15/sequential_5/conv2d_15/BiasAdd/ReadVariableOp, model/tf_conv_15/Sigmoid, model/tf_conv_15/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_2/tf_conv_16/conv2d_16/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/tf_conv_16/conv2d_16/Conv2D, model/tfc3_2/tf_conv_16/conv2d_16/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_2/tf_conv_16/conv2d_16/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/tf_conv_16/conv2d_16/BiasAdd/ReadVariableOp, model/tfc3_2/tf_conv_16/conv2d_16/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_2/tf_conv_16/conv2d_16/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/tf_conv_16/conv2d_16/Conv2D;model/tfc3_2/tf_conv_16/conv2d_16/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_15/mul_1, model/tfc3_2/tf_conv_16/conv2d_16/Conv2D1, model/tfc3_2/tf_conv_16/conv2d_16/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/tf_conv_16/conv2d_16/Conv2D;model/tfc3_2/tf_conv_16/conv2d_16/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_2/tf_conv_16/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/tf_conv_16/conv2d_16/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/tf_conv_16/conv2d_16/Conv2D;model/tfc3_2/tf_conv_16/conv2d_16/BiasAdd/ReadVariableOp, model/tfc3_2/tf_conv_16/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_2/tf_conv_16/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/tf_conv_16/conv2d_16/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/tf_conv_16/conv2d_16/Conv2D;model/tfc3_2/tf_conv_16/conv2d_16/BiasAdd/ReadVariableOp, model/tfc3_2/tf_conv_16/Sigmoid, model/tfc3_2/tf_conv_16/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_19/conv2d_19/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_19/conv2d_19/Conv2D, model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_19/conv2d_19/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_19/conv2d_19/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_19/conv2d_19/BiasAdd/ReadVariableOp, model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_19/conv2d_19/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_19/conv2d_19/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_19/conv2d_19/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_19/conv2d_19/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/tf_conv_16/mul_1, model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_19/conv2d_19/Conv2D1, model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_19/conv2d_19/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_19/conv2d_19/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_19/conv2d_19/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_19/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_19/conv2d_19/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_19/conv2d_19/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_19/conv2d_19/BiasAdd/ReadVariableOp, model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_19/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_19/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_19/conv2d_19/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_19/conv2d_19/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_19/conv2d_19/BiasAdd/ReadVariableOp, model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_19/Sigmoid, model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_19/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_20/conv2d_20/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_20/conv2d_20/Conv2D, model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_20/conv2d_20/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_20/conv2d_20/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_20/conv2d_20/BiasAdd/ReadVariableOp, model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_20/conv2d_20/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_20/conv2d_20/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_20/conv2d_20/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_20/conv2d_20/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_19/mul_1, model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_20/conv2d_20/Conv2D1, model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_20/conv2d_20/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_20/conv2d_20/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_20/conv2d_20/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_20/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_20/conv2d_20/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_20/conv2d_20/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_20/conv2d_20/BiasAdd/ReadVariableOp, model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_20/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_20/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_20/conv2d_20/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_20/conv2d_20/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_20/conv2d_20/BiasAdd/ReadVariableOp, model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_20/Sigmoid, model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_20/mul_1
+Warning: Unsupported TensorFlow Lite semantics for ADD 'model/tfc3_2/sequential_6/tf_bottleneck_3/add'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/tf_conv_16/mul_1, model/tfc3_2/sequential_6/tf_bottleneck_3/tf_conv_20/mul_1, model/tfc3_2/sequential_6/tf_bottleneck_3/add
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_21/conv2d_21/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_21/conv2d_21/Conv2D, model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_21/conv2d_21/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_21/conv2d_21/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_21/conv2d_21/BiasAdd/ReadVariableOp, model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_21/conv2d_21/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_21/conv2d_21/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_21/conv2d_21/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_21/conv2d_21/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_3/add, model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_21/conv2d_21/Conv2D1, model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_21/conv2d_21/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_21/conv2d_21/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_21/conv2d_21/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_21/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_21/conv2d_21/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_21/conv2d_21/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_21/conv2d_21/BiasAdd/ReadVariableOp, model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_21/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_21/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_21/conv2d_21/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_21/conv2d_21/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_21/conv2d_21/BiasAdd/ReadVariableOp, model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_21/Sigmoid, model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_21/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_22/conv2d_22/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_22/conv2d_22/Conv2D, model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_22/conv2d_22/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_22/conv2d_22/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_22/conv2d_22/BiasAdd/ReadVariableOp, model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_22/conv2d_22/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_22/conv2d_22/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_22/conv2d_22/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_22/conv2d_22/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_21/mul_1, model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_22/conv2d_22/Conv2D1, model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_22/conv2d_22/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_22/conv2d_22/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_22/conv2d_22/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_22/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_22/conv2d_22/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_22/conv2d_22/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_22/conv2d_22/BiasAdd/ReadVariableOp, model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_22/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_22/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_22/conv2d_22/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_22/conv2d_22/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_22/conv2d_22/BiasAdd/ReadVariableOp, model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_22/Sigmoid, model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_22/mul_1
+Warning: Unsupported TensorFlow Lite semantics for ADD 'model/tfc3_2/sequential_6/tf_bottleneck_4/add'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_3/add, model/tfc3_2/sequential_6/tf_bottleneck_4/tf_conv_22/mul_1, model/tfc3_2/sequential_6/tf_bottleneck_4/add
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_23/conv2d_23/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_23/conv2d_23/Conv2D, model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_23/conv2d_23/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_23/conv2d_23/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_23/conv2d_23/BiasAdd/ReadVariableOp, model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_23/conv2d_23/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_23/conv2d_23/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_23/conv2d_23/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_23/conv2d_23/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_4/add, model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_23/conv2d_23/Conv2D1, model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_23/conv2d_23/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_23/conv2d_23/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_23/conv2d_23/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_23/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_23/conv2d_23/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_23/conv2d_23/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_23/conv2d_23/BiasAdd/ReadVariableOp, model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_23/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_23/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_23/conv2d_23/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_23/conv2d_23/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_23/conv2d_23/BiasAdd/ReadVariableOp, model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_23/Sigmoid, model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_23/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_24/conv2d_24/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_24/conv2d_24/Conv2D, model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_24/conv2d_24/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_24/conv2d_24/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_24/conv2d_24/BiasAdd/ReadVariableOp, model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_24/conv2d_24/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_24/conv2d_24/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_24/conv2d_24/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_24/conv2d_24/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_23/mul_1, model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_24/conv2d_24/Conv2D1, model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_24/conv2d_24/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_24/conv2d_24/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_24/conv2d_24/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_24/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_24/conv2d_24/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_24/conv2d_24/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_24/conv2d_24/BiasAdd/ReadVariableOp, model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_24/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_24/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_24/conv2d_24/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_24/conv2d_24/Conv2D;model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_24/conv2d_24/BiasAdd/ReadVariableOp, model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_24/Sigmoid, model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_24/mul_1
+Warning: Unsupported TensorFlow Lite semantics for ADD 'model/tfc3_2/sequential_6/tf_bottleneck_5/add'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/sequential_6/tf_bottleneck_4/add, model/tfc3_2/sequential_6/tf_bottleneck_5/tf_conv_24/mul_1, model/tfc3_2/sequential_6/tf_bottleneck_5/add
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_2/tf_conv_17/conv2d_17/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/tf_conv_17/conv2d_17/Conv2D, model/tfc3_2/tf_conv_17/conv2d_17/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_2/tf_conv_17/conv2d_17/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/tf_conv_17/conv2d_17/BiasAdd/ReadVariableOp, model/tfc3_2/tf_conv_17/conv2d_17/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_2/tf_conv_17/conv2d_17/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/tf_conv_17/conv2d_17/Conv2D;model/tfc3_2/tf_conv_17/conv2d_17/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_15/mul_1, model/tfc3_2/tf_conv_17/conv2d_17/Conv2D1, model/tfc3_2/tf_conv_17/conv2d_17/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/tf_conv_17/conv2d_17/Conv2D;model/tfc3_2/tf_conv_17/conv2d_17/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_2/tf_conv_17/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/tf_conv_17/conv2d_17/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/tf_conv_17/conv2d_17/Conv2D;model/tfc3_2/tf_conv_17/conv2d_17/BiasAdd/ReadVariableOp, model/tfc3_2/tf_conv_17/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_2/tf_conv_17/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/tf_conv_17/conv2d_17/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_2/tf_conv_17/conv2d_17/Conv2D;model/tfc3_2/tf_conv_17/conv2d_17/BiasAdd/ReadVariableOp, model/tfc3_2/tf_conv_17/Sigmoid, model/tfc3_2/tf_conv_17/mul_1
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'model/tfc3_2/concat'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/tf_conv_17/mul_1, model/tfc3_2/concat
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_2/tf_conv_18/conv2d_18/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/tf_conv_18/conv2d_18/Conv2D, model/tfc3_2/tf_conv_18/conv2d_18/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_2/tf_conv_18/conv2d_18/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/tf_conv_18/conv2d_18/BiasAdd/ReadVariableOp, model/tfc3_2/tf_conv_18/conv2d_18/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_2/tf_conv_18/conv2d_18/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_2/tf_conv_18/conv2d_18/Conv2D;model/tfc3_2/tf_conv_18/conv2d_18/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/concat, model/tfc3_2/tf_conv_18/conv2d_18/Conv2D1, model/tfc3_2/tf_conv_18/conv2d_18/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_2/tf_conv_18/conv2d_18/Conv2D;model/tfc3_2/tf_conv_18/conv2d_18/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_2/tf_conv_18/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/tf_conv_18/conv2d_18/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_2/tf_conv_18/conv2d_18/Conv2D;model/tfc3_2/tf_conv_18/conv2d_18/BiasAdd/ReadVariableOp, model/tfc3_2/tf_conv_18/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_2/tf_conv_18/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/tf_conv_18/conv2d_18/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_2/tf_conv_18/conv2d_18/Conv2D;model/tfc3_2/tf_conv_18/conv2d_18/BiasAdd/ReadVariableOp, model/tfc3_2/tf_conv_18/Sigmoid, model/tfc3_2/tf_conv_18/mul_1
+Warning: Unsupported TensorFlow Lite semantics for PAD 'model/tf_conv_25/sequential_7/tf_pad_4/Pad'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/tf_conv_18/mul_1, model/tf_conv_25/sequential_7/tf_pad_4/Pad
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_conv_25/sequential_7/conv2d_25/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_25/sequential_7/conv2d_25/Conv2D, model/tf_conv_25/sequential_7/conv2d_25/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_conv_25/sequential_7/conv2d_25/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_25/sequential_7/conv2d_25/BiasAdd/ReadVariableOp, model/tf_conv_25/sequential_7/conv2d_25/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tf_conv_25/sequential_7/conv2d_25/BiasAdd;model/tfc3_7/tf_conv_54/conv2d_54/Conv2D;model/tf_conv_25/sequential_7/conv2d_25/Conv2D;model/tf_conv_25/sequential_7/conv2d_25/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_25/sequential_7/tf_pad_4/Pad, model/tf_conv_25/sequential_7/conv2d_25/Conv2D1, model/tf_conv_25/sequential_7/conv2d_25/BiasAdd;model/tfc3_7/tf_conv_54/conv2d_54/Conv2D;model/tf_conv_25/sequential_7/conv2d_25/Conv2D;model/tf_conv_25/sequential_7/conv2d_25/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tf_conv_25/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_25/sequential_7/conv2d_25/BiasAdd;model/tfc3_7/tf_conv_54/conv2d_54/Conv2D;model/tf_conv_25/sequential_7/conv2d_25/Conv2D;model/tf_conv_25/sequential_7/conv2d_25/BiasAdd/ReadVariableOp, model/tf_conv_25/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tf_conv_25/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_25/sequential_7/conv2d_25/BiasAdd;model/tfc3_7/tf_conv_54/conv2d_54/Conv2D;model/tf_conv_25/sequential_7/conv2d_25/Conv2D;model/tf_conv_25/sequential_7/conv2d_25/BiasAdd/ReadVariableOp, model/tf_conv_25/Sigmoid, model/tf_conv_25/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_3/tf_conv_26/conv2d_26/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_3/tf_conv_26/conv2d_26/Conv2D, model/tfc3_3/tf_conv_26/conv2d_26/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_3/tf_conv_26/conv2d_26/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_3/tf_conv_26/conv2d_26/BiasAdd/ReadVariableOp, model/tfc3_3/tf_conv_26/conv2d_26/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_3/tf_conv_26/conv2d_26/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_3/tf_conv_26/conv2d_26/Conv2D;model/tfc3_3/tf_conv_26/conv2d_26/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_25/mul_1, model/tfc3_3/tf_conv_26/conv2d_26/Conv2D1, model/tfc3_3/tf_conv_26/conv2d_26/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_3/tf_conv_26/conv2d_26/Conv2D;model/tfc3_3/tf_conv_26/conv2d_26/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_3/tf_conv_26/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_3/tf_conv_26/conv2d_26/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_3/tf_conv_26/conv2d_26/Conv2D;model/tfc3_3/tf_conv_26/conv2d_26/BiasAdd/ReadVariableOp, model/tfc3_3/tf_conv_26/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_3/tf_conv_26/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_3/tf_conv_26/conv2d_26/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_3/tf_conv_26/conv2d_26/Conv2D;model/tfc3_3/tf_conv_26/conv2d_26/BiasAdd/ReadVariableOp, model/tfc3_3/tf_conv_26/Sigmoid, model/tfc3_3/tf_conv_26/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_29/conv2d_29/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_29/conv2d_29/Conv2D, model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_29/conv2d_29/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_29/conv2d_29/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_29/conv2d_29/BiasAdd/ReadVariableOp, model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_29/conv2d_29/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_29/conv2d_29/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_29/conv2d_29/Conv2D;model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_29/conv2d_29/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_3/tf_conv_26/mul_1, model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_29/conv2d_29/Conv2D1, model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_29/conv2d_29/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_29/conv2d_29/Conv2D;model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_29/conv2d_29/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_29/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_29/conv2d_29/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_29/conv2d_29/Conv2D;model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_29/conv2d_29/BiasAdd/ReadVariableOp, model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_29/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_29/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_29/conv2d_29/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_29/conv2d_29/Conv2D;model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_29/conv2d_29/BiasAdd/ReadVariableOp, model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_29/Sigmoid, model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_29/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_30/conv2d_30/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_30/conv2d_30/Conv2D, model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_30/conv2d_30/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_30/conv2d_30/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_30/conv2d_30/BiasAdd/ReadVariableOp, model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_30/conv2d_30/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_30/conv2d_30/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_30/conv2d_30/Conv2D;model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_30/conv2d_30/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_29/mul_1, model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_30/conv2d_30/Conv2D1, model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_30/conv2d_30/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_30/conv2d_30/Conv2D;model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_30/conv2d_30/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_30/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_30/conv2d_30/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_30/conv2d_30/Conv2D;model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_30/conv2d_30/BiasAdd/ReadVariableOp, model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_30/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_30/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_30/conv2d_30/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_30/conv2d_30/Conv2D;model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_30/conv2d_30/BiasAdd/ReadVariableOp, model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_30/Sigmoid, model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_30/mul_1
+Warning: Unsupported TensorFlow Lite semantics for ADD 'model/tfc3_3/sequential_8/tf_bottleneck_6/add'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_3/tf_conv_26/mul_1, model/tfc3_3/sequential_8/tf_bottleneck_6/tf_conv_30/mul_1, model/tfc3_3/sequential_8/tf_bottleneck_6/add
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_3/tf_conv_27/conv2d_27/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_3/tf_conv_27/conv2d_27/Conv2D, model/tfc3_3/tf_conv_27/conv2d_27/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_3/tf_conv_27/conv2d_27/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_3/tf_conv_27/conv2d_27/BiasAdd/ReadVariableOp, model/tfc3_3/tf_conv_27/conv2d_27/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_3/tf_conv_27/conv2d_27/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_3/tf_conv_27/conv2d_27/Conv2D;model/tfc3_3/tf_conv_27/conv2d_27/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_25/mul_1, model/tfc3_3/tf_conv_27/conv2d_27/Conv2D1, model/tfc3_3/tf_conv_27/conv2d_27/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_3/tf_conv_27/conv2d_27/Conv2D;model/tfc3_3/tf_conv_27/conv2d_27/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_3/tf_conv_27/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_3/tf_conv_27/conv2d_27/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_3/tf_conv_27/conv2d_27/Conv2D;model/tfc3_3/tf_conv_27/conv2d_27/BiasAdd/ReadVariableOp, model/tfc3_3/tf_conv_27/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_3/tf_conv_27/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_3/tf_conv_27/conv2d_27/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_3/tf_conv_27/conv2d_27/Conv2D;model/tfc3_3/tf_conv_27/conv2d_27/BiasAdd/ReadVariableOp, model/tfc3_3/tf_conv_27/Sigmoid, model/tfc3_3/tf_conv_27/mul_1
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'model/tfc3_3/concat'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_3/tf_conv_27/mul_1, model/tfc3_3/concat
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_3/tf_conv_28/conv2d_28/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_3/tf_conv_28/conv2d_28/Conv2D, model/tfc3_3/tf_conv_28/conv2d_28/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_3/tf_conv_28/conv2d_28/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_3/tf_conv_28/conv2d_28/BiasAdd/ReadVariableOp, model/tfc3_3/tf_conv_28/conv2d_28/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_3/tf_conv_28/conv2d_28/BiasAdd;model/tfc3_7/tf_conv_54/conv2d_54/Conv2D;model/tfc3_3/tf_conv_28/conv2d_28/Conv2D;model/tfc3_3/tf_conv_28/conv2d_28/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_3/concat, model/tfc3_3/tf_conv_28/conv2d_28/Conv2D1, model/tfc3_3/tf_conv_28/conv2d_28/BiasAdd;model/tfc3_7/tf_conv_54/conv2d_54/Conv2D;model/tfc3_3/tf_conv_28/conv2d_28/Conv2D;model/tfc3_3/tf_conv_28/conv2d_28/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_3/tf_conv_28/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_3/tf_conv_28/conv2d_28/BiasAdd;model/tfc3_7/tf_conv_54/conv2d_54/Conv2D;model/tfc3_3/tf_conv_28/conv2d_28/Conv2D;model/tfc3_3/tf_conv_28/conv2d_28/BiasAdd/ReadVariableOp, model/tfc3_3/tf_conv_28/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_3/tf_conv_28/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_3/tf_conv_28/conv2d_28/BiasAdd;model/tfc3_7/tf_conv_54/conv2d_54/Conv2D;model/tfc3_3/tf_conv_28/conv2d_28/Conv2D;model/tfc3_3/tf_conv_28/conv2d_28/BiasAdd/ReadVariableOp, model/tfc3_3/tf_conv_28/Sigmoid, model/tfc3_3/tf_conv_28/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfsppf/tf_conv_31/conv2d_31/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfsppf/tf_conv_31/conv2d_31/Conv2D, model/tfsppf/tf_conv_31/conv2d_31/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfsppf/tf_conv_31/conv2d_31/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfsppf/tf_conv_31/conv2d_31/BiasAdd/ReadVariableOp, model/tfsppf/tf_conv_31/conv2d_31/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfsppf/tf_conv_31/conv2d_31/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfsppf/tf_conv_31/conv2d_31/Conv2D;model/tfsppf/tf_conv_31/conv2d_31/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_3/tf_conv_28/mul_1, model/tfsppf/tf_conv_31/conv2d_31/Conv2D1, model/tfsppf/tf_conv_31/conv2d_31/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfsppf/tf_conv_31/conv2d_31/Conv2D;model/tfsppf/tf_conv_31/conv2d_31/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfsppf/tf_conv_31/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfsppf/tf_conv_31/conv2d_31/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfsppf/tf_conv_31/conv2d_31/Conv2D;model/tfsppf/tf_conv_31/conv2d_31/BiasAdd/ReadVariableOp, model/tfsppf/tf_conv_31/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfsppf/tf_conv_31/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfsppf/tf_conv_31/conv2d_31/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfsppf/tf_conv_31/conv2d_31/Conv2D;model/tfsppf/tf_conv_31/conv2d_31/BiasAdd/ReadVariableOp, model/tfsppf/tf_conv_31/Sigmoid, model/tfsppf/tf_conv_31/mul_1
+Warning: Unsupported TensorFlow Lite semantics for MAX_POOL_2D 'model/tfsppf/max_pooling2d/MaxPool'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfsppf/tf_conv_31/mul_1, model/tfsppf/max_pooling2d/MaxPool
+Warning: Unsupported TensorFlow Lite semantics for MAX_POOL_2D 'model/tfsppf/max_pooling2d/MaxPool_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfsppf/max_pooling2d/MaxPool, model/tfsppf/max_pooling2d/MaxPool_1
+Warning: Unsupported TensorFlow Lite semantics for MAX_POOL_2D 'model/tfsppf/max_pooling2d/MaxPool_2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfsppf/max_pooling2d/MaxPool_1, model/tfsppf/max_pooling2d/MaxPool_2
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'model/tfsppf/concat'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfsppf/max_pooling2d/MaxPool, model/tfsppf/max_pooling2d/MaxPool_1, model/tfsppf/concat
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfsppf/tf_conv_32/conv2d_32/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfsppf/tf_conv_32/conv2d_32/Conv2D, model/tfsppf/tf_conv_32/conv2d_32/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfsppf/tf_conv_32/conv2d_32/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfsppf/tf_conv_32/conv2d_32/BiasAdd/ReadVariableOp, model/tfsppf/tf_conv_32/conv2d_32/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfsppf/tf_conv_32/conv2d_32/BiasAdd;model/tfc3_7/tf_conv_54/conv2d_54/Conv2D;model/tfsppf/tf_conv_32/conv2d_32/Conv2D;model/tfsppf/tf_conv_32/conv2d_32/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfsppf/concat, model/tfsppf/tf_conv_32/conv2d_32/Conv2D1, model/tfsppf/tf_conv_32/conv2d_32/BiasAdd;model/tfc3_7/tf_conv_54/conv2d_54/Conv2D;model/tfsppf/tf_conv_32/conv2d_32/Conv2D;model/tfsppf/tf_conv_32/conv2d_32/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfsppf/tf_conv_32/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfsppf/tf_conv_32/conv2d_32/BiasAdd;model/tfc3_7/tf_conv_54/conv2d_54/Conv2D;model/tfsppf/tf_conv_32/conv2d_32/Conv2D;model/tfsppf/tf_conv_32/conv2d_32/BiasAdd/ReadVariableOp, model/tfsppf/tf_conv_32/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfsppf/tf_conv_32/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfsppf/tf_conv_32/conv2d_32/BiasAdd;model/tfc3_7/tf_conv_54/conv2d_54/Conv2D;model/tfsppf/tf_conv_32/conv2d_32/Conv2D;model/tfsppf/tf_conv_32/conv2d_32/BiasAdd/ReadVariableOp, model/tfsppf/tf_conv_32/Sigmoid, model/tfsppf/tf_conv_32/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_conv_33/conv2d_33/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_33/conv2d_33/Conv2D, model/tf_conv_33/conv2d_33/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_conv_33/conv2d_33/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_33/conv2d_33/BiasAdd/ReadVariableOp, model/tf_conv_33/conv2d_33/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tf_conv_33/conv2d_33/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tf_conv_33/conv2d_33/Conv2D;model/tf_conv_33/conv2d_33/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfsppf/tf_conv_32/mul_1, model/tf_conv_33/conv2d_33/Conv2D1, model/tf_conv_33/conv2d_33/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tf_conv_33/conv2d_33/Conv2D;model/tf_conv_33/conv2d_33/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tf_conv_33/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_33/conv2d_33/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tf_conv_33/conv2d_33/Conv2D;model/tf_conv_33/conv2d_33/BiasAdd/ReadVariableOp, model/tf_conv_33/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tf_conv_33/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_33/conv2d_33/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tf_conv_33/conv2d_33/Conv2D;model/tf_conv_33/conv2d_33/BiasAdd/ReadVariableOp, model/tf_conv_33/Sigmoid, model/tf_conv_33/mul_1
+Warning: Unsupported TensorFlow Lite semantics for RESIZE_NEAREST_NEIGHBOR 'model/tf_upsample/resize/ResizeNearestNeighbor'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_33/mul_1, model/tf_upsample/resize/ResizeNearestNeighbor
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'model/tf_concat/concat'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_2/tf_conv_18/mul_1, model/tf_concat/concat
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_4/tf_conv_34/conv2d_34/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_4/tf_conv_34/conv2d_34/Conv2D, model/tfc3_4/tf_conv_34/conv2d_34/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_4/tf_conv_34/conv2d_34/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_4/tf_conv_34/conv2d_34/BiasAdd/ReadVariableOp, model/tfc3_4/tf_conv_34/conv2d_34/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_4/tf_conv_34/conv2d_34/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_4/tf_conv_34/conv2d_34/Conv2D;model/tfc3_4/tf_conv_34/conv2d_34/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_concat/concat, model/tfc3_4/tf_conv_34/conv2d_34/Conv2D1, model/tfc3_4/tf_conv_34/conv2d_34/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_4/tf_conv_34/conv2d_34/Conv2D;model/tfc3_4/tf_conv_34/conv2d_34/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_4/tf_conv_34/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_4/tf_conv_34/conv2d_34/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_4/tf_conv_34/conv2d_34/Conv2D;model/tfc3_4/tf_conv_34/conv2d_34/BiasAdd/ReadVariableOp, model/tfc3_4/tf_conv_34/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_4/tf_conv_34/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_4/tf_conv_34/conv2d_34/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_4/tf_conv_34/conv2d_34/Conv2D;model/tfc3_4/tf_conv_34/conv2d_34/BiasAdd/ReadVariableOp, model/tfc3_4/tf_conv_34/Sigmoid, model/tfc3_4/tf_conv_34/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_37/conv2d_37/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_37/conv2d_37/Conv2D, model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_37/conv2d_37/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_37/conv2d_37/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_37/conv2d_37/BiasAdd/ReadVariableOp, model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_37/conv2d_37/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_37/conv2d_37/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_37/conv2d_37/Conv2D;model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_37/conv2d_37/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_4/tf_conv_34/mul_1, model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_37/conv2d_37/Conv2D1, model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_37/conv2d_37/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_37/conv2d_37/Conv2D;model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_37/conv2d_37/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_37/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_37/conv2d_37/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_37/conv2d_37/Conv2D;model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_37/conv2d_37/BiasAdd/ReadVariableOp, model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_37/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_37/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_37/conv2d_37/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_37/conv2d_37/Conv2D;model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_37/conv2d_37/BiasAdd/ReadVariableOp, model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_37/Sigmoid, model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_37/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_38/conv2d_38/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_38/conv2d_38/Conv2D, model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_38/conv2d_38/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_38/conv2d_38/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_38/conv2d_38/BiasAdd/ReadVariableOp, model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_38/conv2d_38/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_38/conv2d_38/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_38/conv2d_38/Conv2D;model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_38/conv2d_38/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_37/mul_1, model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_38/conv2d_38/Conv2D1, model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_38/conv2d_38/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_38/conv2d_38/Conv2D;model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_38/conv2d_38/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_38/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_38/conv2d_38/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_38/conv2d_38/Conv2D;model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_38/conv2d_38/BiasAdd/ReadVariableOp, model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_38/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_38/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_38/conv2d_38/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_38/conv2d_38/Conv2D;model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_38/conv2d_38/BiasAdd/ReadVariableOp, model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_38/Sigmoid, model/tfc3_4/sequential_9/tf_bottleneck_7/tf_conv_38/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_4/tf_conv_35/conv2d_35/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_4/tf_conv_35/conv2d_35/Conv2D, model/tfc3_4/tf_conv_35/conv2d_35/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_4/tf_conv_35/conv2d_35/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_4/tf_conv_35/conv2d_35/BiasAdd/ReadVariableOp, model/tfc3_4/tf_conv_35/conv2d_35/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_4/tf_conv_35/conv2d_35/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_4/tf_conv_35/conv2d_35/Conv2D;model/tfc3_4/tf_conv_35/conv2d_35/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_concat/concat, model/tfc3_4/tf_conv_35/conv2d_35/Conv2D1, model/tfc3_4/tf_conv_35/conv2d_35/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_4/tf_conv_35/conv2d_35/Conv2D;model/tfc3_4/tf_conv_35/conv2d_35/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_4/tf_conv_35/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_4/tf_conv_35/conv2d_35/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_4/tf_conv_35/conv2d_35/Conv2D;model/tfc3_4/tf_conv_35/conv2d_35/BiasAdd/ReadVariableOp, model/tfc3_4/tf_conv_35/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_4/tf_conv_35/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_4/tf_conv_35/conv2d_35/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_4/tf_conv_35/conv2d_35/Conv2D;model/tfc3_4/tf_conv_35/conv2d_35/BiasAdd/ReadVariableOp, model/tfc3_4/tf_conv_35/Sigmoid, model/tfc3_4/tf_conv_35/mul_1
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'model/tfc3_4/concat'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_4/tf_conv_35/mul_1, model/tfc3_4/concat
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_4/tf_conv_36/conv2d_36/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_4/tf_conv_36/conv2d_36/Conv2D, model/tfc3_4/tf_conv_36/conv2d_36/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_4/tf_conv_36/conv2d_36/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_4/tf_conv_36/conv2d_36/BiasAdd/ReadVariableOp, model/tfc3_4/tf_conv_36/conv2d_36/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_4/tf_conv_36/conv2d_36/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_4/tf_conv_36/conv2d_36/Conv2D;model/tfc3_4/tf_conv_36/conv2d_36/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_4/concat, model/tfc3_4/tf_conv_36/conv2d_36/Conv2D1, model/tfc3_4/tf_conv_36/conv2d_36/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_4/tf_conv_36/conv2d_36/Conv2D;model/tfc3_4/tf_conv_36/conv2d_36/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_4/tf_conv_36/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_4/tf_conv_36/conv2d_36/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_4/tf_conv_36/conv2d_36/Conv2D;model/tfc3_4/tf_conv_36/conv2d_36/BiasAdd/ReadVariableOp, model/tfc3_4/tf_conv_36/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_4/tf_conv_36/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_4/tf_conv_36/conv2d_36/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_4/tf_conv_36/conv2d_36/Conv2D;model/tfc3_4/tf_conv_36/conv2d_36/BiasAdd/ReadVariableOp, model/tfc3_4/tf_conv_36/Sigmoid, model/tfc3_4/tf_conv_36/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_conv_39/conv2d_39/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_39/conv2d_39/Conv2D, model/tf_conv_39/conv2d_39/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_conv_39/conv2d_39/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_39/conv2d_39/BiasAdd/ReadVariableOp, model/tf_conv_39/conv2d_39/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tf_conv_39/conv2d_39/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tf_conv_39/conv2d_39/Conv2D;model/tf_conv_39/conv2d_39/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_4/tf_conv_36/mul_1, model/tf_conv_39/conv2d_39/Conv2D1, model/tf_conv_39/conv2d_39/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tf_conv_39/conv2d_39/Conv2D;model/tf_conv_39/conv2d_39/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tf_conv_39/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_39/conv2d_39/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tf_conv_39/conv2d_39/Conv2D;model/tf_conv_39/conv2d_39/BiasAdd/ReadVariableOp, model/tf_conv_39/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tf_conv_39/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_39/conv2d_39/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tf_conv_39/conv2d_39/Conv2D;model/tf_conv_39/conv2d_39/BiasAdd/ReadVariableOp, model/tf_conv_39/Sigmoid, model/tf_conv_39/mul_1
+Warning: Unsupported TensorFlow Lite semantics for RESIZE_NEAREST_NEIGHBOR 'model/tf_upsample_1/resize/ResizeNearestNeighbor'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_39/mul_1, model/tf_upsample_1/resize/ResizeNearestNeighbor
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'model/tf_concat_1/concat'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_1/tf_conv_10/mul_1, model/tf_concat_1/concat
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_5/tf_conv_40/conv2d_40/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_5/tf_conv_40/conv2d_40/Conv2D, model/tfc3_5/tf_conv_40/conv2d_40/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_5/tf_conv_40/conv2d_40/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_5/tf_conv_40/conv2d_40/BiasAdd/ReadVariableOp, model/tfc3_5/tf_conv_40/conv2d_40/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_5/tf_conv_40/conv2d_40/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_5/tf_conv_40/conv2d_40/Conv2D;model/tfc3_5/tf_conv_40/conv2d_40/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_concat_1/concat, model/tfc3_5/tf_conv_40/conv2d_40/Conv2D1, model/tfc3_5/tf_conv_40/conv2d_40/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_5/tf_conv_40/conv2d_40/Conv2D;model/tfc3_5/tf_conv_40/conv2d_40/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_5/tf_conv_40/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_5/tf_conv_40/conv2d_40/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_5/tf_conv_40/conv2d_40/Conv2D;model/tfc3_5/tf_conv_40/conv2d_40/BiasAdd/ReadVariableOp, model/tfc3_5/tf_conv_40/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_5/tf_conv_40/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_5/tf_conv_40/conv2d_40/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_5/tf_conv_40/conv2d_40/Conv2D;model/tfc3_5/tf_conv_40/conv2d_40/BiasAdd/ReadVariableOp, model/tfc3_5/tf_conv_40/Sigmoid, model/tfc3_5/tf_conv_40/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_43/conv2d_43/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_43/conv2d_43/Conv2D, model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_43/conv2d_43/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_43/conv2d_43/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_43/conv2d_43/BiasAdd/ReadVariableOp, model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_43/conv2d_43/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_43/conv2d_43/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_43/conv2d_43/Conv2D;model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_43/conv2d_43/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_5/tf_conv_40/mul_1, model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_43/conv2d_43/Conv2D1, model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_43/conv2d_43/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_43/conv2d_43/Conv2D;model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_43/conv2d_43/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_43/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_43/conv2d_43/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_43/conv2d_43/Conv2D;model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_43/conv2d_43/BiasAdd/ReadVariableOp, model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_43/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_43/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_43/conv2d_43/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_43/conv2d_43/Conv2D;model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_43/conv2d_43/BiasAdd/ReadVariableOp, model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_43/Sigmoid, model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_43/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_44/conv2d_44/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_44/conv2d_44/Conv2D, model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_44/conv2d_44/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_44/conv2d_44/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_44/conv2d_44/BiasAdd/ReadVariableOp, model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_44/conv2d_44/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_44/conv2d_44/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_44/conv2d_44/Conv2D;model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_44/conv2d_44/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_43/mul_1, model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_44/conv2d_44/Conv2D1, model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_44/conv2d_44/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_44/conv2d_44/Conv2D;model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_44/conv2d_44/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_44/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_44/conv2d_44/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_44/conv2d_44/Conv2D;model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_44/conv2d_44/BiasAdd/ReadVariableOp, model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_44/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_44/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_44/conv2d_44/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_44/conv2d_44/Conv2D;model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_44/conv2d_44/BiasAdd/ReadVariableOp, model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_44/Sigmoid, model/tfc3_5/sequential_10/tf_bottleneck_8/tf_conv_44/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_5/tf_conv_41/conv2d_41/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_5/tf_conv_41/conv2d_41/Conv2D, model/tfc3_5/tf_conv_41/conv2d_41/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_5/tf_conv_41/conv2d_41/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_5/tf_conv_41/conv2d_41/BiasAdd/ReadVariableOp, model/tfc3_5/tf_conv_41/conv2d_41/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_5/tf_conv_41/conv2d_41/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_5/tf_conv_41/conv2d_41/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_concat_1/concat, model/tfc3_5/tf_conv_41/conv2d_41/Conv2D1, model/tfc3_5/tf_conv_41/conv2d_41/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_5/tf_conv_41/conv2d_41/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_5/tf_conv_41/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_5/tf_conv_41/conv2d_41/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_5/tf_conv_41/conv2d_41/BiasAdd/ReadVariableOp, model/tfc3_5/tf_conv_41/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_5/tf_conv_41/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_5/tf_conv_41/conv2d_41/BiasAdd;model/tfc3_5/tf_conv_41/conv2d_41/Conv2D;model/tfc3_5/tf_conv_41/conv2d_41/BiasAdd/ReadVariableOp, model/tfc3_5/tf_conv_41/Sigmoid, model/tfc3_5/tf_conv_41/mul_1
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'model/tfc3_5/concat'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_5/tf_conv_41/mul_1, model/tfc3_5/concat
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_5/tf_conv_42/conv2d_42/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_5/tf_conv_42/conv2d_42/Conv2D, model/tfc3_5/tf_conv_42/conv2d_42/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_5/tf_conv_42/conv2d_42/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_5/tf_conv_42/conv2d_42/BiasAdd/ReadVariableOp, model/tfc3_5/tf_conv_42/conv2d_42/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_5/tf_conv_42/conv2d_42/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_5/tf_conv_42/conv2d_42/Conv2D;model/tfc3_5/tf_conv_42/conv2d_42/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_5/concat, model/tfc3_5/tf_conv_42/conv2d_42/Conv2D1, model/tfc3_5/tf_conv_42/conv2d_42/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_5/tf_conv_42/conv2d_42/Conv2D;model/tfc3_5/tf_conv_42/conv2d_42/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_5/tf_conv_42/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_5/tf_conv_42/conv2d_42/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_5/tf_conv_42/conv2d_42/Conv2D;model/tfc3_5/tf_conv_42/conv2d_42/BiasAdd/ReadVariableOp, model/tfc3_5/tf_conv_42/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_5/tf_conv_42/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_5/tf_conv_42/conv2d_42/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_5/tf_conv_42/conv2d_42/Conv2D;model/tfc3_5/tf_conv_42/conv2d_42/BiasAdd/ReadVariableOp, model/tfc3_5/tf_conv_42/Sigmoid, model/tfc3_5/tf_conv_42/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_detect/tf_conv2d/conv2d_57/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/tf_conv2d/conv2d_57/Conv2D, model/tf_detect/tf_conv2d/conv2d_57/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_detect/tf_conv2d/conv2d_57/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/tf_conv2d/conv2d_57/BiasAdd/ReadVariableOp, model/tf_detect/tf_conv2d/conv2d_57/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tf_detect/tf_conv2d/conv2d_57/BiasAdd;model/tf_detect/tf_conv2d/conv2d_57/Conv2D;model/tf_detect/tf_conv2d/conv2d_57/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_5/tf_conv_42/mul_1, model/tf_detect/tf_conv2d/conv2d_57/Conv2D1, model/tf_detect/tf_conv2d/conv2d_57/BiasAdd;model/tf_detect/tf_conv2d/conv2d_57/Conv2D;model/tf_detect/tf_conv2d/conv2d_57/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for RESHAPE 'model/tf_detect/Reshape'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/tf_conv2d/conv2d_57/BiasAdd;model/tf_detect/tf_conv2d/conv2d_57/Conv2D;model/tf_detect/tf_conv2d/conv2d_57/BiasAdd/ReadVariableOp, model/tf_detect/Reshape
+Warning: Unsupported TensorFlow Lite semantics for STRIDED_SLICE 'model/tf_detect/strided_slice_31'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/Reshape, model/tf_detect/strided_slice_31
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tf_detect/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/strided_slice_31, model/tf_detect/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_detect/mul_16/y1'. Placing on CPU instead
+ - Input(s) and Output tensors must not be dynamic
+   Op has dynamic tensor(s): model/tf_detect/mul_16/y1
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tf_detect/mul_2'. Placing on CPU instead
+ - Input(s) and Output tensors must not be dynamic
+   Op has dynamic tensor(s): model/tf_detect/mul_16/y1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_detect/sub1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/sub, model/tf_detect/sub1
+Warning: Unsupported TensorFlow Lite semantics for ADD 'model/tf_detect/add'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/mul_2, model/tf_detect/sub1, model/tf_detect/add
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_detect/strided_slice1'. Placing on CPU instead
+ - Input(s) and Output tensors must not be dynamic
+   Op has dynamic tensor(s): model/tf_detect/strided_slice1
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tf_detect/mul_3'. Placing on CPU instead
+ - Input(s) and Output tensors must not be dynamic
+   Op has dynamic tensor(s): model/tf_detect/strided_slice1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_detect/truediv_4;model/tf_detect/Const1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/truediv_4;model/tf_detect/Const, model/tf_detect/truediv_4;model/tf_detect/Const1
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tf_detect/truediv;model/tf_detect/Const'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/mul_3, model/tf_detect/truediv_4;model/tf_detect/Const1, model/tf_detect/truediv;model/tf_detect/Const
+Warning: Unsupported TensorFlow Lite semantics for STRIDED_SLICE 'model/tf_detect/strided_slice_51'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/Reshape, model/tf_detect/strided_slice_51
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tf_detect/Sigmoid_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/strided_slice_51, model/tf_detect/Sigmoid_1
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tf_detect/pow;model/tf_detect/mul_16/y'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/Sigmoid_1, model/tf_detect/Sigmoid_1, model/tf_detect/pow;model/tf_detect/mul_16/y
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_detect/mul_11'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/mul_1, model/tf_detect/mul_11
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tf_detect/mul_4'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/pow;model/tf_detect/mul_16/y, model/tf_detect/mul_11, model/tf_detect/mul_4
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tf_detect/truediv_1;model/tf_detect/Const'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/mul_4, model/tf_detect/truediv_4;model/tf_detect/Const1, model/tf_detect/truediv_1;model/tf_detect/Const
+Warning: Unsupported TensorFlow Lite semantics for STRIDED_SLICE 'model/tf_detect/strided_slice_63'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/Reshape, model/tf_detect/strided_slice_63
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tf_detect/Sigmoid_2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/strided_slice_63, model/tf_detect/Sigmoid_2
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'model/tf_detect/concat'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/truediv_1;model/tf_detect/Const, model/tf_detect/Sigmoid_2, model/tf_detect/concat
+Warning: Unsupported TensorFlow Lite semantics for RESHAPE 'model/tf_detect/Reshape_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/concat, model/tf_detect/Reshape_1
+Warning: Unsupported TensorFlow Lite semantics for PAD 'model/tf_conv_45/sequential_11/tf_pad_5/Pad'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_5/tf_conv_42/mul_1, model/tf_conv_45/sequential_11/tf_pad_5/Pad
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_conv_45/sequential_11/conv2d_45/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_45/sequential_11/conv2d_45/Conv2D, model/tf_conv_45/sequential_11/conv2d_45/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_conv_45/sequential_11/conv2d_45/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_45/sequential_11/conv2d_45/BiasAdd/ReadVariableOp, model/tf_conv_45/sequential_11/conv2d_45/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tf_conv_45/sequential_11/conv2d_45/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tf_conv_45/sequential_11/conv2d_45/Conv2D;model/tf_conv_45/sequential_11/conv2d_45/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_45/sequential_11/tf_pad_5/Pad, model/tf_conv_45/sequential_11/conv2d_45/Conv2D1, model/tf_conv_45/sequential_11/conv2d_45/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tf_conv_45/sequential_11/conv2d_45/Conv2D;model/tf_conv_45/sequential_11/conv2d_45/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tf_conv_45/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_45/sequential_11/conv2d_45/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tf_conv_45/sequential_11/conv2d_45/Conv2D;model/tf_conv_45/sequential_11/conv2d_45/BiasAdd/ReadVariableOp, model/tf_conv_45/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tf_conv_45/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_45/sequential_11/conv2d_45/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tf_conv_45/sequential_11/conv2d_45/Conv2D;model/tf_conv_45/sequential_11/conv2d_45/BiasAdd/ReadVariableOp, model/tf_conv_45/Sigmoid, model/tf_conv_45/mul_1
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'model/tf_concat_2/concat'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_39/mul_1, model/tf_concat_2/concat
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_6/tf_conv_46/conv2d_46/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_6/tf_conv_46/conv2d_46/Conv2D, model/tfc3_6/tf_conv_46/conv2d_46/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_6/tf_conv_46/conv2d_46/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_6/tf_conv_46/conv2d_46/BiasAdd/ReadVariableOp, model/tfc3_6/tf_conv_46/conv2d_46/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_6/tf_conv_46/conv2d_46/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_6/tf_conv_46/conv2d_46/Conv2D;model/tfc3_6/tf_conv_46/conv2d_46/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_concat_2/concat, model/tfc3_6/tf_conv_46/conv2d_46/Conv2D1, model/tfc3_6/tf_conv_46/conv2d_46/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_6/tf_conv_46/conv2d_46/Conv2D;model/tfc3_6/tf_conv_46/conv2d_46/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_6/tf_conv_46/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_6/tf_conv_46/conv2d_46/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_6/tf_conv_46/conv2d_46/Conv2D;model/tfc3_6/tf_conv_46/conv2d_46/BiasAdd/ReadVariableOp, model/tfc3_6/tf_conv_46/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_6/tf_conv_46/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_6/tf_conv_46/conv2d_46/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_6/tf_conv_46/conv2d_46/Conv2D;model/tfc3_6/tf_conv_46/conv2d_46/BiasAdd/ReadVariableOp, model/tfc3_6/tf_conv_46/Sigmoid, model/tfc3_6/tf_conv_46/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_49/conv2d_49/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_49/conv2d_49/Conv2D, model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_49/conv2d_49/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_49/conv2d_49/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_49/conv2d_49/BiasAdd/ReadVariableOp, model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_49/conv2d_49/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_49/conv2d_49/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_49/conv2d_49/Conv2D;model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_49/conv2d_49/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_6/tf_conv_46/mul_1, model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_49/conv2d_49/Conv2D1, model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_49/conv2d_49/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_49/conv2d_49/Conv2D;model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_49/conv2d_49/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_49/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_49/conv2d_49/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_49/conv2d_49/Conv2D;model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_49/conv2d_49/BiasAdd/ReadVariableOp, model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_49/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_49/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_49/conv2d_49/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_49/conv2d_49/Conv2D;model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_49/conv2d_49/BiasAdd/ReadVariableOp, model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_49/Sigmoid, model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_49/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_50/conv2d_50/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_50/conv2d_50/Conv2D, model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_50/conv2d_50/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_50/conv2d_50/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_50/conv2d_50/BiasAdd/ReadVariableOp, model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_50/conv2d_50/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_50/conv2d_50/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_50/conv2d_50/Conv2D;model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_50/conv2d_50/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_49/mul_1, model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_50/conv2d_50/Conv2D1, model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_50/conv2d_50/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_50/conv2d_50/Conv2D;model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_50/conv2d_50/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_50/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_50/conv2d_50/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_50/conv2d_50/Conv2D;model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_50/conv2d_50/BiasAdd/ReadVariableOp, model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_50/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_50/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_50/conv2d_50/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_50/conv2d_50/Conv2D;model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_50/conv2d_50/BiasAdd/ReadVariableOp, model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_50/Sigmoid, model/tfc3_6/sequential_12/tf_bottleneck_9/tf_conv_50/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_6/tf_conv_47/conv2d_47/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_6/tf_conv_47/conv2d_47/Conv2D, model/tfc3_6/tf_conv_47/conv2d_47/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_6/tf_conv_47/conv2d_47/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_6/tf_conv_47/conv2d_47/BiasAdd/ReadVariableOp, model/tfc3_6/tf_conv_47/conv2d_47/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_6/tf_conv_47/conv2d_47/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_6/tf_conv_47/conv2d_47/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_concat_2/concat, model/tfc3_6/tf_conv_47/conv2d_47/Conv2D1, model/tfc3_6/tf_conv_47/conv2d_47/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_6/tf_conv_47/conv2d_47/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_6/tf_conv_47/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_6/tf_conv_47/conv2d_47/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_6/tf_conv_47/conv2d_47/BiasAdd/ReadVariableOp, model/tfc3_6/tf_conv_47/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_6/tf_conv_47/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_6/tf_conv_47/conv2d_47/BiasAdd;model/tfc3_6/tf_conv_47/conv2d_47/Conv2D;model/tfc3_6/tf_conv_47/conv2d_47/BiasAdd/ReadVariableOp, model/tfc3_6/tf_conv_47/Sigmoid, model/tfc3_6/tf_conv_47/mul_1
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'model/tfc3_6/concat'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_6/tf_conv_47/mul_1, model/tfc3_6/concat
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_6/tf_conv_48/conv2d_48/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_6/tf_conv_48/conv2d_48/Conv2D, model/tfc3_6/tf_conv_48/conv2d_48/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_6/tf_conv_48/conv2d_48/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_6/tf_conv_48/conv2d_48/BiasAdd/ReadVariableOp, model/tfc3_6/tf_conv_48/conv2d_48/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_6/tf_conv_48/conv2d_48/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_6/tf_conv_48/conv2d_48/Conv2D;model/tfc3_6/tf_conv_48/conv2d_48/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_6/concat, model/tfc3_6/tf_conv_48/conv2d_48/Conv2D1, model/tfc3_6/tf_conv_48/conv2d_48/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_6/tf_conv_48/conv2d_48/Conv2D;model/tfc3_6/tf_conv_48/conv2d_48/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_6/tf_conv_48/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_6/tf_conv_48/conv2d_48/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_6/tf_conv_48/conv2d_48/Conv2D;model/tfc3_6/tf_conv_48/conv2d_48/BiasAdd/ReadVariableOp, model/tfc3_6/tf_conv_48/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_6/tf_conv_48/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_6/tf_conv_48/conv2d_48/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_6/tf_conv_48/conv2d_48/Conv2D;model/tfc3_6/tf_conv_48/conv2d_48/BiasAdd/ReadVariableOp, model/tfc3_6/tf_conv_48/Sigmoid, model/tfc3_6/tf_conv_48/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_detect/tf_conv2d_1/conv2d_58/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/tf_conv2d_1/conv2d_58/Conv2D, model/tf_detect/tf_conv2d_1/conv2d_58/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_detect/tf_conv2d_1/conv2d_58/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/tf_conv2d_1/conv2d_58/BiasAdd/ReadVariableOp, model/tf_detect/tf_conv2d_1/conv2d_58/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tf_detect/tf_conv2d_1/conv2d_58/BiasAdd;model/tf_detect/tf_conv2d/conv2d_57/Conv2D;model/tf_detect/tf_conv2d_1/conv2d_58/Conv2D;model/tf_detect/tf_conv2d_1/conv2d_58/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_6/tf_conv_48/mul_1, model/tf_detect/tf_conv2d_1/conv2d_58/Conv2D1, model/tf_detect/tf_conv2d_1/conv2d_58/BiasAdd;model/tf_detect/tf_conv2d/conv2d_57/Conv2D;model/tf_detect/tf_conv2d_1/conv2d_58/Conv2D;model/tf_detect/tf_conv2d_1/conv2d_58/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for RESHAPE 'model/tf_detect/Reshape_2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/tf_conv2d_1/conv2d_58/BiasAdd;model/tf_detect/tf_conv2d/conv2d_57/Conv2D;model/tf_detect/tf_conv2d_1/conv2d_58/Conv2D;model/tf_detect/tf_conv2d_1/conv2d_58/BiasAdd/ReadVariableOp, model/tf_detect/Reshape_2
+Warning: Unsupported TensorFlow Lite semantics for STRIDED_SLICE 'model/tf_detect/strided_slice_11'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/Reshape_2, model/tf_detect/strided_slice_11
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tf_detect/Sigmoid_3'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/strided_slice_11, model/tf_detect/Sigmoid_3
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tf_detect/mul_9'. Placing on CPU instead
+ - Input(s) and Output tensors must not be dynamic
+   Op has dynamic tensor(s): model/tf_detect/mul_16/y1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_detect/sub_11'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/sub_1, model/tf_detect/sub_11
+Warning: Unsupported TensorFlow Lite semantics for ADD 'model/tf_detect/add_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/mul_9, model/tf_detect/sub_11, model/tf_detect/add_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_detect/strided_slice_121'. Placing on CPU instead
+ - Input(s) and Output tensors must not be dynamic
+   Op has dynamic tensor(s): model/tf_detect/strided_slice_121
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tf_detect/mul_10'. Placing on CPU instead
+ - Input(s) and Output tensors must not be dynamic
+   Op has dynamic tensor(s): model/tf_detect/strided_slice_121
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tf_detect/truediv_2;model/tf_detect/Const'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/mul_10, model/tf_detect/truediv_4;model/tf_detect/Const1, model/tf_detect/truediv_2;model/tf_detect/Const
+Warning: Unsupported TensorFlow Lite semantics for STRIDED_SLICE 'model/tf_detect/strided_slice_13'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/Reshape_2, model/tf_detect/strided_slice_13
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tf_detect/Sigmoid_4'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/strided_slice_13, model/tf_detect/Sigmoid_4
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tf_detect/pow_1;model/tf_detect/mul_16/y'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/Sigmoid_4, model/tf_detect/Sigmoid_4, model/tf_detect/pow_1;model/tf_detect/mul_16/y
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_detect/mul_81'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/mul_8, model/tf_detect/mul_81
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tf_detect/mul_111'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/pow_1;model/tf_detect/mul_16/y, model/tf_detect/mul_81, model/tf_detect/mul_111
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tf_detect/truediv_3;model/tf_detect/Const'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/mul_111, model/tf_detect/truediv_4;model/tf_detect/Const1, model/tf_detect/truediv_3;model/tf_detect/Const
+Warning: Unsupported TensorFlow Lite semantics for STRIDED_SLICE 'model/tf_detect/strided_slice_14'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/Reshape_2, model/tf_detect/strided_slice_14
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tf_detect/Sigmoid_5'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/strided_slice_14, model/tf_detect/Sigmoid_5
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'model/tf_detect/concat_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/truediv_3;model/tf_detect/Const, model/tf_detect/Sigmoid_5, model/tf_detect/concat_1
+Warning: Unsupported TensorFlow Lite semantics for RESHAPE 'model/tf_detect/Reshape_3'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/concat_1, model/tf_detect/Reshape_3
+Warning: Unsupported TensorFlow Lite semantics for PAD 'model/tf_conv_51/sequential_13/tf_pad_6/Pad'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_6/tf_conv_48/mul_1, model/tf_conv_51/sequential_13/tf_pad_6/Pad
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_conv_51/sequential_13/conv2d_51/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_51/sequential_13/conv2d_51/Conv2D, model/tf_conv_51/sequential_13/conv2d_51/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_conv_51/sequential_13/conv2d_51/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_51/sequential_13/conv2d_51/BiasAdd/ReadVariableOp, model/tf_conv_51/sequential_13/conv2d_51/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tf_conv_51/sequential_13/conv2d_51/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tf_conv_51/sequential_13/conv2d_51/Conv2D;model/tf_conv_51/sequential_13/conv2d_51/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_51/sequential_13/tf_pad_6/Pad, model/tf_conv_51/sequential_13/conv2d_51/Conv2D1, model/tf_conv_51/sequential_13/conv2d_51/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tf_conv_51/sequential_13/conv2d_51/Conv2D;model/tf_conv_51/sequential_13/conv2d_51/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tf_conv_51/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_51/sequential_13/conv2d_51/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tf_conv_51/sequential_13/conv2d_51/Conv2D;model/tf_conv_51/sequential_13/conv2d_51/BiasAdd/ReadVariableOp, model/tf_conv_51/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tf_conv_51/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_51/sequential_13/conv2d_51/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tf_conv_51/sequential_13/conv2d_51/Conv2D;model/tf_conv_51/sequential_13/conv2d_51/BiasAdd/ReadVariableOp, model/tf_conv_51/Sigmoid, model/tf_conv_51/mul_1
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'model/tf_concat_3/concat'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_conv_33/mul_1, model/tf_concat_3/concat
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_7/tf_conv_52/conv2d_52/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_7/tf_conv_52/conv2d_52/Conv2D, model/tfc3_7/tf_conv_52/conv2d_52/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_7/tf_conv_52/conv2d_52/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_7/tf_conv_52/conv2d_52/BiasAdd/ReadVariableOp, model/tfc3_7/tf_conv_52/conv2d_52/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_7/tf_conv_52/conv2d_52/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_7/tf_conv_52/conv2d_52/Conv2D;model/tfc3_7/tf_conv_52/conv2d_52/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_concat_3/concat, model/tfc3_7/tf_conv_52/conv2d_52/Conv2D1, model/tfc3_7/tf_conv_52/conv2d_52/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_7/tf_conv_52/conv2d_52/Conv2D;model/tfc3_7/tf_conv_52/conv2d_52/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_7/tf_conv_52/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_7/tf_conv_52/conv2d_52/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_7/tf_conv_52/conv2d_52/Conv2D;model/tfc3_7/tf_conv_52/conv2d_52/BiasAdd/ReadVariableOp, model/tfc3_7/tf_conv_52/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_7/tf_conv_52/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_7/tf_conv_52/conv2d_52/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_7/tf_conv_52/conv2d_52/Conv2D;model/tfc3_7/tf_conv_52/conv2d_52/BiasAdd/ReadVariableOp, model/tfc3_7/tf_conv_52/Sigmoid, model/tfc3_7/tf_conv_52/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_55/conv2d_55/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_55/conv2d_55/Conv2D, model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_55/conv2d_55/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_55/conv2d_55/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_55/conv2d_55/BiasAdd/ReadVariableOp, model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_55/conv2d_55/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_55/conv2d_55/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_55/conv2d_55/Conv2D;model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_55/conv2d_55/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_7/tf_conv_52/mul_1, model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_55/conv2d_55/Conv2D1, model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_55/conv2d_55/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_55/conv2d_55/Conv2D;model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_55/conv2d_55/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_55/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_55/conv2d_55/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_55/conv2d_55/Conv2D;model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_55/conv2d_55/BiasAdd/ReadVariableOp, model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_55/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_55/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_55/conv2d_55/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_55/conv2d_55/Conv2D;model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_55/conv2d_55/BiasAdd/ReadVariableOp, model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_55/Sigmoid, model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_55/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_56/conv2d_56/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_56/conv2d_56/Conv2D, model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_56/conv2d_56/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_56/conv2d_56/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_56/conv2d_56/BiasAdd/ReadVariableOp, model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_56/conv2d_56/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_56/conv2d_56/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_56/conv2d_56/Conv2D;model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_56/conv2d_56/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_55/mul_1, model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_56/conv2d_56/Conv2D1, model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_56/conv2d_56/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_56/conv2d_56/Conv2D;model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_56/conv2d_56/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_56/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_56/conv2d_56/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_56/conv2d_56/Conv2D;model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_56/conv2d_56/BiasAdd/ReadVariableOp, model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_56/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_56/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_56/conv2d_56/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_56/conv2d_56/Conv2D;model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_56/conv2d_56/BiasAdd/ReadVariableOp, model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_56/Sigmoid, model/tfc3_7/sequential_14/tf_bottleneck_10/tf_conv_56/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_7/tf_conv_53/conv2d_53/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_7/tf_conv_53/conv2d_53/Conv2D, model/tfc3_7/tf_conv_53/conv2d_53/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_7/tf_conv_53/conv2d_53/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_7/tf_conv_53/conv2d_53/BiasAdd/ReadVariableOp, model/tfc3_7/tf_conv_53/conv2d_53/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_7/tf_conv_53/conv2d_53/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_7/tf_conv_53/conv2d_53/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_concat_3/concat, model/tfc3_7/tf_conv_53/conv2d_53/Conv2D1, model/tfc3_7/tf_conv_53/conv2d_53/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_7/tf_conv_53/conv2d_53/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_7/tf_conv_53/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_7/tf_conv_53/conv2d_53/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_7/tf_conv_53/conv2d_53/BiasAdd/ReadVariableOp, model/tfc3_7/tf_conv_53/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_7/tf_conv_53/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_7/tf_conv_53/conv2d_53/BiasAdd;model/tfc3_7/tf_conv_53/conv2d_53/Conv2D;model/tfc3_7/tf_conv_53/conv2d_53/BiasAdd/ReadVariableOp, model/tfc3_7/tf_conv_53/Sigmoid, model/tfc3_7/tf_conv_53/mul_1
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'model/tfc3_7/concat'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_7/tf_conv_53/mul_1, model/tfc3_7/concat
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_7/tf_conv_54/conv2d_54/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_7/tf_conv_54/conv2d_54/Conv2D, model/tfc3_7/tf_conv_54/conv2d_54/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tfc3_7/tf_conv_54/conv2d_54/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_7/tf_conv_54/conv2d_54/BiasAdd/ReadVariableOp, model/tfc3_7/tf_conv_54/conv2d_54/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tfc3_7/tf_conv_54/conv2d_54/BiasAdd;model/tfc3_7/tf_conv_54/conv2d_54/Conv2D;model/tfc3_7/tf_conv_54/conv2d_54/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_7/concat, model/tfc3_7/tf_conv_54/conv2d_54/Conv2D1, model/tfc3_7/tf_conv_54/conv2d_54/BiasAdd;model/tfc3_7/tf_conv_54/conv2d_54/Conv2D;model/tfc3_7/tf_conv_54/conv2d_54/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tfc3_7/tf_conv_54/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_7/tf_conv_54/conv2d_54/BiasAdd;model/tfc3_7/tf_conv_54/conv2d_54/Conv2D;model/tfc3_7/tf_conv_54/conv2d_54/BiasAdd/ReadVariableOp, model/tfc3_7/tf_conv_54/Sigmoid
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tfc3_7/tf_conv_54/mul_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_7/tf_conv_54/conv2d_54/BiasAdd;model/tfc3_7/tf_conv_54/conv2d_54/Conv2D;model/tfc3_7/tf_conv_54/conv2d_54/BiasAdd/ReadVariableOp, model/tfc3_7/tf_conv_54/Sigmoid, model/tfc3_7/tf_conv_54/mul_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_detect/tf_conv2d_2/conv2d_59/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/tf_conv2d_2/conv2d_59/Conv2D, model/tf_detect/tf_conv2d_2/conv2d_59/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_detect/tf_conv2d_2/conv2d_59/BiasAdd/ReadVariableOp1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/tf_conv2d_2/conv2d_59/BiasAdd/ReadVariableOp, model/tf_detect/tf_conv2d_2/conv2d_59/BiasAdd/ReadVariableOp1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/tf_detect/tf_conv2d_2/conv2d_59/BiasAdd;model/tf_detect/tf_conv2d/conv2d_57/Conv2D;model/tf_detect/tf_conv2d_2/conv2d_59/Conv2D;model/tf_detect/tf_conv2d_2/conv2d_59/BiasAdd/ReadVariableOp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tfc3_7/tf_conv_54/mul_1, model/tf_detect/tf_conv2d_2/conv2d_59/Conv2D1, model/tf_detect/tf_conv2d_2/conv2d_59/BiasAdd;model/tf_detect/tf_conv2d/conv2d_57/Conv2D;model/tf_detect/tf_conv2d_2/conv2d_59/Conv2D;model/tf_detect/tf_conv2d_2/conv2d_59/BiasAdd/ReadVariableOp
+Warning: Unsupported TensorFlow Lite semantics for RESHAPE 'model/tf_detect/Reshape_4'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/tf_conv2d_2/conv2d_59/BiasAdd;model/tf_detect/tf_conv2d/conv2d_57/Conv2D;model/tf_detect/tf_conv2d_2/conv2d_59/Conv2D;model/tf_detect/tf_conv2d_2/conv2d_59/BiasAdd/ReadVariableOp, model/tf_detect/Reshape_4
+Warning: Unsupported TensorFlow Lite semantics for STRIDED_SLICE 'model/tf_detect/strided_slice_19'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/Reshape_4, model/tf_detect/strided_slice_19
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tf_detect/Sigmoid_6'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/strided_slice_19, model/tf_detect/Sigmoid_6
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tf_detect/mul_16'. Placing on CPU instead
+ - Input(s) and Output tensors must not be dynamic
+   Op has dynamic tensor(s): model/tf_detect/mul_16/y1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_detect/sub_21'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/sub_2, model/tf_detect/sub_21
+Warning: Unsupported TensorFlow Lite semantics for ADD 'model/tf_detect/add_2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/mul_16, model/tf_detect/sub_21, model/tf_detect/add_2
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_detect/strided_slice_161'. Placing on CPU instead
+ - Input(s) and Output tensors must not be dynamic
+   Op has dynamic tensor(s): model/tf_detect/strided_slice_161
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tf_detect/mul_17'. Placing on CPU instead
+ - Input(s) and Output tensors must not be dynamic
+   Op has dynamic tensor(s): model/tf_detect/strided_slice_161
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tf_detect/truediv_4;model/tf_detect/Const2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/mul_17, model/tf_detect/truediv_4;model/tf_detect/Const1, model/tf_detect/truediv_4;model/tf_detect/Const2
+Warning: Unsupported TensorFlow Lite semantics for STRIDED_SLICE 'model/tf_detect/strided_slice_21'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/Reshape_4, model/tf_detect/strided_slice_21
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tf_detect/Sigmoid_7'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/strided_slice_21, model/tf_detect/Sigmoid_7
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tf_detect/pow_2;model/tf_detect/mul_16/y'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/Sigmoid_7, model/tf_detect/Sigmoid_7, model/tf_detect/pow_2;model/tf_detect/mul_16/y
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf_detect/mul_151'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/mul_15, model/tf_detect/mul_151
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tf_detect/mul_18'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/pow_2;model/tf_detect/mul_16/y, model/tf_detect/mul_151, model/tf_detect/mul_18
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/tf_detect/truediv_5;model/tf_detect/Const'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/mul_18, model/tf_detect/truediv_4;model/tf_detect/Const1, model/tf_detect/truediv_5;model/tf_detect/Const
+Warning: Unsupported TensorFlow Lite semantics for STRIDED_SLICE 'model/tf_detect/strided_slice_22'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/Reshape_4, model/tf_detect/strided_slice_22
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'model/tf_detect/Sigmoid_8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/strided_slice_22, model/tf_detect/Sigmoid_8
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'model/tf_detect/concat_2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/truediv_5;model/tf_detect/Const, model/tf_detect/Sigmoid_8, model/tf_detect/concat_2
+Warning: Unsupported TensorFlow Lite semantics for RESHAPE 'model/tf_detect/Reshape_5'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/concat_2, model/tf_detect/Reshape_5
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'StatefulPartitionedCall:0'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf_detect/Reshape_3, model/tf_detect/Reshape_5, StatefulPartitionedCall:0
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: StridedSlice operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: StridedSlice operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: StridedSlice operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: StridedSlice operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: StridedSlice operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: StridedSlice operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: StridedSlice operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: StridedSlice operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: StridedSlice operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: ResizeNearestNeighbor operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: ResizeNearestNeighbor operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: MaxPool operation is unknown or unsupported, placing on CPU
+Warning: MaxPool operation is unknown or unsupported, placing on CPU
+Warning: MaxPool operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+
+Network summary for yolov5s_fp16
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+
+
+CPU operators = 386 (100.0%)
+NPU operators = 0 (0.0%)
+
+Neural network macs                                 0 MACs/batch
+Network Tops/s                                    nan Tops/s
+
+NPU cycles                                          0 cycles/batch
+SRAM Access cycles                                  0 cycles/batch
+DRAM Access cycles                                  0 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                        0 cycles/batch
+
+Batch Inference time                 0.00 ms,     nan inferences/s (batch size 1)
+

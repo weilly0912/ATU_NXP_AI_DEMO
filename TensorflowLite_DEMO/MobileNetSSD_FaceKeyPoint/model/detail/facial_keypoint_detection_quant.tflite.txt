@@ -1,0 +1,44 @@
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'Identity'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: Identity
+
+Network summary for facial_keypoint_detection_quant
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                381.73 KiB
+Total DRAM used                               6178.58 KiB
+
+CPU operators = 1 (2.2%)
+NPU operators = 45 (97.8%)
+
+Average SRAM bandwidth                           2.15 GB/s
+Input   SRAM bandwidth                           5.04 MB/batch
+Weight  SRAM bandwidth                          12.14 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                          17.20 MB/batch
+Total   SRAM bandwidth            per input     17.20 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           1.48 GB/s
+Input   DRAM bandwidth                           2.43 MB/batch
+Weight  DRAM bandwidth                           5.97 MB/batch
+Output  DRAM bandwidth                           3.46 MB/batch
+Total   DRAM bandwidth                          11.87 MB/batch
+Total   DRAM bandwidth            per input     11.87 MB/inference (batch size 1)
+
+Neural network macs                         398386176 MACs/batch
+Network Tops/s                                   0.10 Tops/s
+
+NPU cycles                                    4263027 cycles/batch
+SRAM Access cycles                             519584 cycles/batch
+DRAM Access cycles                            5313088 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                  7995858 cycles/batch
+
+Batch Inference time                 8.00 ms,  125.06 inferences/s (batch size 1)
+

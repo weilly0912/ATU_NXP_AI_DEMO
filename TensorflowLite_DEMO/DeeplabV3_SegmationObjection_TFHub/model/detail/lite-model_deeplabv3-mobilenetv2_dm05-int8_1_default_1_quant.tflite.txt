@@ -1,0 +1,108 @@
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'sub_7_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: sub_7
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'ResizeBilinear_2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: ResizeBilinear_2
+Info: BATCH_TO_SPACE_ND 'MobilenetV2/expanded_conv_16/depthwise/depthwise/BatchToSpaceND' is a CPU only op
+Warning: DEPTHWISE_CONV_2D 'MobilenetV2/expanded_conv_16/depthwise/depthwise2' is not supported on the NPU. Placing on CPU instead
+ - IFM Tensor batch size must be 1
+   Tensor 'MobilenetV2/expanded_conv_16/depthwise/depthwise/SpaceToBatchND' has batch size: 16
+Info: SPACE_TO_BATCH_ND 'MobilenetV2/expanded_conv_16/depthwise/depthwise/SpaceToBatchND' is a CPU only op
+Info: BATCH_TO_SPACE_ND 'MobilenetV2/expanded_conv_15/depthwise/depthwise/BatchToSpaceND' is a CPU only op
+Warning: DEPTHWISE_CONV_2D 'MobilenetV2/expanded_conv_15/depthwise/depthwise1' is not supported on the NPU. Placing on CPU instead
+ - IFM Tensor batch size must be 1
+   Tensor 'MobilenetV2/expanded_conv_15/depthwise/depthwise/SpaceToBatchND' has batch size: 16
+Info: SPACE_TO_BATCH_ND 'MobilenetV2/expanded_conv_15/depthwise/depthwise/SpaceToBatchND' is a CPU only op
+Info: BATCH_TO_SPACE_ND 'MobilenetV2/expanded_conv_14/depthwise/depthwise/BatchToSpaceND' is a CPU only op
+Warning: DEPTHWISE_CONV_2D 'MobilenetV2/expanded_conv_14/depthwise/depthwise1' is not supported on the NPU. Placing on CPU instead
+ - IFM Tensor batch size must be 1
+   Tensor 'MobilenetV2/expanded_conv_14/depthwise/depthwise/SpaceToBatchND' has batch size: 16
+Info: SPACE_TO_BATCH_ND 'MobilenetV2/expanded_conv_14/depthwise/depthwise/SpaceToBatchND' is a CPU only op
+Info: BATCH_TO_SPACE_ND 'MobilenetV2/expanded_conv_13/depthwise/depthwise/BatchToSpaceND' is a CPU only op
+Warning: DEPTHWISE_CONV_2D 'MobilenetV2/expanded_conv_13/depthwise/depthwise2' is not supported on the NPU. Placing on CPU instead
+ - IFM Tensor batch size must be 1
+   Tensor 'MobilenetV2/expanded_conv_13/depthwise/depthwise/SpaceToBatchND' has batch size: 4
+Info: SPACE_TO_BATCH_ND 'MobilenetV2/expanded_conv_13/depthwise/depthwise/SpaceToBatchND' is a CPU only op
+Info: BATCH_TO_SPACE_ND 'MobilenetV2/expanded_conv_12/depthwise/depthwise/BatchToSpaceND' is a CPU only op
+Warning: DEPTHWISE_CONV_2D 'MobilenetV2/expanded_conv_12/depthwise/depthwise1' is not supported on the NPU. Placing on CPU instead
+ - IFM Tensor batch size must be 1
+   Tensor 'MobilenetV2/expanded_conv_12/depthwise/depthwise/SpaceToBatchND' has batch size: 4
+Info: SPACE_TO_BATCH_ND 'MobilenetV2/expanded_conv_12/depthwise/depthwise/SpaceToBatchND' is a CPU only op
+Info: BATCH_TO_SPACE_ND 'MobilenetV2/expanded_conv_11/depthwise/depthwise/BatchToSpaceND' is a CPU only op
+Warning: DEPTHWISE_CONV_2D 'MobilenetV2/expanded_conv_11/depthwise/depthwise1' is not supported on the NPU. Placing on CPU instead
+ - IFM Tensor batch size must be 1
+   Tensor 'MobilenetV2/expanded_conv_11/depthwise/depthwise/SpaceToBatchND' has batch size: 4
+Info: SPACE_TO_BATCH_ND 'MobilenetV2/expanded_conv_11/depthwise/depthwise/SpaceToBatchND' is a CPU only op
+Info: BATCH_TO_SPACE_ND 'MobilenetV2/expanded_conv_10/depthwise/depthwise/BatchToSpaceND' is a CPU only op
+Warning: DEPTHWISE_CONV_2D 'MobilenetV2/expanded_conv_10/depthwise/depthwise2' is not supported on the NPU. Placing on CPU instead
+ - IFM Tensor batch size must be 1
+   Tensor 'MobilenetV2/expanded_conv_10/depthwise/depthwise/SpaceToBatchND' has batch size: 4
+Info: SPACE_TO_BATCH_ND 'MobilenetV2/expanded_conv_10/depthwise/depthwise/SpaceToBatchND' is a CPU only op
+Info: BATCH_TO_SPACE_ND 'MobilenetV2/expanded_conv_9/depthwise/depthwise/BatchToSpaceND' is a CPU only op
+Warning: DEPTHWISE_CONV_2D 'MobilenetV2/expanded_conv_9/depthwise/depthwise1' is not supported on the NPU. Placing on CPU instead
+ - IFM Tensor batch size must be 1
+   Tensor 'MobilenetV2/expanded_conv_9/depthwise/depthwise/SpaceToBatchND' has batch size: 4
+Info: SPACE_TO_BATCH_ND 'MobilenetV2/expanded_conv_9/depthwise/depthwise/SpaceToBatchND' is a CPU only op
+Info: BATCH_TO_SPACE_ND 'MobilenetV2/expanded_conv_8/depthwise/depthwise/BatchToSpaceND' is a CPU only op
+Warning: DEPTHWISE_CONV_2D 'MobilenetV2/expanded_conv_8/depthwise/depthwise1' is not supported on the NPU. Placing on CPU instead
+ - IFM Tensor batch size must be 1
+   Tensor 'MobilenetV2/expanded_conv_8/depthwise/depthwise/SpaceToBatchND' has batch size: 4
+Info: SPACE_TO_BATCH_ND 'MobilenetV2/expanded_conv_8/depthwise/depthwise/SpaceToBatchND' is a CPU only op
+Info: BATCH_TO_SPACE_ND 'MobilenetV2/expanded_conv_7/depthwise/depthwise/BatchToSpaceND' is a CPU only op
+Warning: DEPTHWISE_CONV_2D 'MobilenetV2/expanded_conv_7/depthwise/depthwise1' is not supported on the NPU. Placing on CPU instead
+ - IFM Tensor batch size must be 1
+   Tensor 'MobilenetV2/expanded_conv_7/depthwise/depthwise/SpaceToBatchND' has batch size: 4
+Info: SPACE_TO_BATCH_ND 'MobilenetV2/expanded_conv_7/depthwise/depthwise/SpaceToBatchND' is a CPU only op
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+
+Network summary for lite-model_deeplabv3-mobilenetv2_dm05-int8_1_default_1_quant
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                378.59 KiB
+Total DRAM used                              28894.81 KiB
+
+CPU operators = 12 (12.5%)
+NPU operators = 84 (87.5%)
+
+Average SRAM bandwidth                           0.80 GB/s
+Input   SRAM bandwidth                          59.10 MB/batch
+Weight  SRAM bandwidth                          47.37 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                         106.52 MB/batch
+Total   SRAM bandwidth            per input    106.52 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           1.16 GB/s
+Input   DRAM bandwidth                          79.28 MB/batch
+Weight  DRAM bandwidth                           0.70 MB/batch
+Output  DRAM bandwidth                          75.32 MB/batch
+Total   DRAM bandwidth                         155.31 MB/batch
+Total   DRAM bandwidth            per input    155.31 MB/inference (batch size 1)
+
+Neural network macs                        3063385476 MACs/batch
+Network Tops/s                                   0.05 Tops/s
+
+NPU cycles                                   65698444 cycles/batch
+SRAM Access cycles                            6493771 cycles/batch
+DRAM Access cycles                          119218144 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                133631777 cycles/batch
+
+Batch Inference time               133.63 ms,    7.48 inferences/s (batch size 1)
+

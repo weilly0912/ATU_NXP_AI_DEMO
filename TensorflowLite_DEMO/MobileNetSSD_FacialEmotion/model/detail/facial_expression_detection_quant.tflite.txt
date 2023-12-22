@@ -1,0 +1,44 @@
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'Identity'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: Identity
+
+Network summary for facial_expression_detection_quant
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                294.97 KiB
+Total DRAM used                               3931.80 KiB
+
+CPU operators = 1 (1.8%)
+NPU operators = 55 (98.2%)
+
+Average SRAM bandwidth                           3.31 GB/s
+Input   SRAM bandwidth                           2.57 MB/batch
+Weight  SRAM bandwidth                           7.70 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                          10.28 MB/batch
+Total   SRAM bandwidth            per input     10.28 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           1.85 GB/s
+Input   DRAM bandwidth                           0.63 MB/batch
+Weight  DRAM bandwidth                           3.99 MB/batch
+Output  DRAM bandwidth                           1.13 MB/batch
+Total   DRAM bandwidth                           5.76 MB/batch
+Total   DRAM bandwidth            per input      5.76 MB/inference (batch size 1)
+
+Neural network macs                         332594958 MACs/batch
+Network Tops/s                                   0.21 Tops/s
+
+NPU cycles                                    2283398 cycles/batch
+SRAM Access cycles                             240127 cycles/batch
+DRAM Access cycles                            1317145 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                  3106693 cycles/batch
+
+Batch Inference time                 3.11 ms,  321.89 inferences/s (batch size 1)
+

@@ -71,10 +71,10 @@ def main():
     parser.add_argument( '-d' ,"--display", default="0")
     parser.add_argument("--save", default="1")
     parser.add_argument( '-t', "--time", default="0")
-    parser.add_argument('--delegate' , default="ethosu", help = 'Please Input vx or xnnpack or ethosu') 
-    parser.add_argument( '-m', '--model' , default="bodypix_concrete.tflite", help='File path of .tflite file.')
-    parser.add_argument("--test_img", default="bodypix_test.png")
-    parser.add_argument("--backgorund", default="London.jpg")
+    parser.add_argument('--delegate' , default="vx", help = 'Please Input vx or xnnpack or ethosu') 
+    parser.add_argument( '-m', '--model' , default="model/bodypix_concrete_quant.tflite", help='File path of .tflite file.')
+    parser.add_argument("--test_img", default="img/man.png")
+    parser.add_argument("--backgorund", default="img/scenes/London.jpg")
     parser.add_argument("--seg_threshold", default="245", help ="may should setting value is 200")
     
     args = parser.parse_args()
@@ -82,8 +82,10 @@ def main():
     if args.camera_format == "V4L2_YUV2_720p" : camera_format = V4L2_YUV2_720p
     if args.camera_format == "V4L2_H264_1080p" : camera_format = V4L2_H264_1080p
     
-    # vela(NPU) 路徑修正
-    if(args.delegate=="ethosu"): args.model = 'output/' + args.model[:-7] + '_vela.tflite'
+    # vela(NPU) 預設路徑修正
+    if(args.delegate=="ethosu"): 
+        if(args.model[-11:]!='vela.tflite') :
+            args.model = args.model[:-7] + '_vela.tflite'
 
     # 載入背景影像
     backgorund_img = cv2.imread(args.backgorund)
@@ -167,8 +169,8 @@ def main():
 
       # 顯示輸出結果
       if args.save == "True" or args.save == "1" :
-          cv2.imwrite( APP_NAME + "-" + args.test_img[:len(args.test_img)-4] + "_" + str(args.backgorund[:-4]) +'_result.jpg', result.astype("uint8"))
-          print("Save Reuslt Image Success , " + APP_NAME + "_" + str(args.backgorund[:-4]) + '_result.jpg')
+          cv2.imwrite( "output/" + APP_NAME + "-" + args.test_img.split("/")[-1][:-4] + "_" + str(args.backgorund.split("/")[-1][:-4]) +'_result.jpg', result.astype("uint8"))
+          print("Save Reuslt Image Success , " + APP_NAME + "_" + str(args.test_img.split("/")[-1][:-4]) + "-" +str(args.backgorund.split("/")[-1][:-4]) + '_result.jpg')
 
       if args.display =="True" or args.display == "1" :
           cv2.imshow('frame', result.astype('uint8'))

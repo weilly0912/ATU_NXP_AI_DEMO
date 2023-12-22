@@ -1,0 +1,49 @@
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'tfl.quantize'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: MobilenetV2/MobilenetV2/input
+Warning: Unsupported TensorFlow Lite semantics for ARG_MAX 'ArgMax'. Placing on CPU instead
+ - Scalar Input tensors are only valid for op type: ADD, EXPAND_DIMS, MAXIMUM, MEAN, MINIMUM, MUL, QUANTIZE, SPLIT, SPLIT_V, SUB
+   Op has scalar input tensor(s): ArgMax/dimension
+Warning: ArgMax operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+
+Network summary for deeplabv3_mnv2_pascal_train_aug_8bit_513x513_quant
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                374.73 KiB
+Total DRAM used                              11042.41 KiB
+
+CPU operators = 2 (2.7%)
+NPU operators = 72 (97.3%)
+
+Average SRAM bandwidth                           1.96 GB/s
+Input   SRAM bandwidth                         158.81 MB/batch
+Weight  SRAM bandwidth                         109.71 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                         268.64 MB/batch
+Total   SRAM bandwidth            per input    268.64 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           2.86 GB/s
+Input   DRAM bandwidth                         243.86 MB/batch
+Weight  DRAM bandwidth                          42.37 MB/batch
+Output  DRAM bandwidth                         104.67 MB/batch
+Total   DRAM bandwidth                         390.94 MB/batch
+Total   DRAM bandwidth            per input    390.94 MB/inference (batch size 1)
+
+Neural network macs                        9381693668 MACs/batch
+Network Tops/s                                   0.14 Tops/s
+
+NPU cycles                                  107710099 cycles/batch
+SRAM Access cycles                           13333304 cycles/batch
+DRAM Access cycles                          106331924 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                136852693 cycles/batch
+
+Batch Inference time               136.85 ms,    7.31 inferences/s (batch size 1)
+

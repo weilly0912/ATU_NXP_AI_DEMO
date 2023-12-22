@@ -1,0 +1,595 @@
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'tfl.quantize'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: input_1
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'onnx_tf_prefix_conv2d__104;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_1;StatefulPartitionedCall/transpose_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_2;StatefulPartitionedCall/transpose_2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_4;StatefulPartitionedCall/transpose_4'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_8;StatefulPartitionedCall/transpose_8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_10;StatefulPartitionedCall/transpose_10'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_16;StatefulPartitionedCall/transpose_16'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_14;StatefulPartitionedCall/transpose_14'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_18;StatefulPartitionedCall/transpose_18'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_22;StatefulPartitionedCall/transpose_22'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_24;StatefulPartitionedCall/transpose_24'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_28;StatefulPartitionedCall/transpose_28'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_30;StatefulPartitionedCall/transpose_30'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_34;StatefulPartitionedCall/transpose_34'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_35;StatefulPartitionedCall/transpose_35'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_36;StatefulPartitionedCall/transpose_36'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_38;StatefulPartitionedCall/transpose_38'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_42;StatefulPartitionedCall/transpose_42'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_44;StatefulPartitionedCall/transpose_44'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_48;StatefulPartitionedCall/transpose_48'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_50;StatefulPartitionedCall/transpose_50'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_54;StatefulPartitionedCall/transpose_54'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_55;StatefulPartitionedCall/transpose_55'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_58;StatefulPartitionedCall/transpose_58'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_62;StatefulPartitionedCall/transpose_62'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_64;StatefulPartitionedCall/transpose_64'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_68;StatefulPartitionedCall/transpose_68'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_70;StatefulPartitionedCall/transpose_70'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_74;StatefulPartitionedCall/transpose_74'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_78;StatefulPartitionedCall/transpose_78'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_84;StatefulPartitionedCall/transpose_84'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_86;StatefulPartitionedCall/transpose_86'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_92;StatefulPartitionedCall/transpose_92'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'onnx_tf_prefix_add_15__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_15__xeno_compat__1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_94;StatefulPartitionedCall/transpose_94'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_103;StatefulPartitionedCall/transpose_103'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_105;StatefulPartitionedCall/transpose_105'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_109;StatefulPartitionedCall/transpose_109'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_111;StatefulPartitionedCall/transpose_111'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_115;StatefulPartitionedCall/transpose_115'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_117;StatefulPartitionedCall/transpose_117'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_121;StatefulPartitionedCall/transpose_121'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_123;StatefulPartitionedCall/transpose_123'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_127;StatefulPartitionedCall/transpose_127'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_128;StatefulPartitionedCall/transpose_128'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_129;StatefulPartitionedCall/transpose_129'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_131;StatefulPartitionedCall/transpose_131'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_135;StatefulPartitionedCall/transpose_135'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_137;StatefulPartitionedCall/transpose_137'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_141;StatefulPartitionedCall/transpose_141'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_143;StatefulPartitionedCall/transpose_143'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_147;StatefulPartitionedCall/transpose_147'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_149;StatefulPartitionedCall/transpose_149'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_153;StatefulPartitionedCall/transpose_153'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_155;StatefulPartitionedCall/transpose_155'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_159;StatefulPartitionedCall/transpose_159'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_160;StatefulPartitionedCall/transpose_160'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_161;StatefulPartitionedCall/transpose_161'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_163;StatefulPartitionedCall/transpose_163'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_167;StatefulPartitionedCall/transpose_167'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_169;StatefulPartitionedCall/transpose_169'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_173;StatefulPartitionedCall/transpose_173'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_175;StatefulPartitionedCall/transpose_175'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_179;StatefulPartitionedCall/transpose_179'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_181;StatefulPartitionedCall/transpose_181'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_185;StatefulPartitionedCall/transpose_185'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_187;StatefulPartitionedCall/transpose_187'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_191;StatefulPartitionedCall/transpose_191'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_192;StatefulPartitionedCall/transpose_192'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_195;StatefulPartitionedCall/transpose_195'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_199;StatefulPartitionedCall/transpose_199'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_201;StatefulPartitionedCall/transpose_201'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_205;StatefulPartitionedCall/transpose_205'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_207;StatefulPartitionedCall/transpose_207'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_211;StatefulPartitionedCall/transpose_211'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_213;StatefulPartitionedCall/transpose_213'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_217;StatefulPartitionedCall/transpose_217'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_219;StatefulPartitionedCall/transpose_219'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_223;StatefulPartitionedCall/transpose_223'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_227;StatefulPartitionedCall/transpose_227'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_231;StatefulPartitionedCall/transpose_231'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_233;StatefulPartitionedCall/transpose_233'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_237;StatefulPartitionedCall/transpose_237'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_239;StatefulPartitionedCall/transpose_239'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_243;StatefulPartitionedCall/transpose_243'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_245;StatefulPartitionedCall/transpose_245'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_249;StatefulPartitionedCall/transpose_249'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_251;StatefulPartitionedCall/transpose_251'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_255;StatefulPartitionedCall/transpose_255'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_259;StatefulPartitionedCall/transpose_259'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_263;StatefulPartitionedCall/transpose_263'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_265;StatefulPartitionedCall/transpose_265'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_269;StatefulPartitionedCall/transpose_269'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_271;StatefulPartitionedCall/transpose_271'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_275;StatefulPartitionedCall/transpose_275'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_277;StatefulPartitionedCall/transpose_277'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_281;StatefulPartitionedCall/transpose_281'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'transpose_283;StatefulPartitionedCall/transpose_283'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transpose_1/perm;StatefulPartitionedCall/transpose_1/perm
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'Identity'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: Identity
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'Identity_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: Identity_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'Identity_2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: Identity_2
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+<nng.Tensor 'onnx_tf_prefix_re_lu;StatefulPartitionedCall/onnx_tf_prefix_re_lu;Add;StatefulPartitionedCall/Add;unknown_2;convolution;StatefulPartitionedCall/convolution;unknown_0' shape=[1, 128, 128, 24] dtype=int8> adding consumer <nng.Operation 'transpose_2;StatefulPartitionedCall/transpose_2' type=Transpose>
+<nng.Tensor 'onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm' shape=[4] dtype=int32> adding consumer <nng.Operation 'transpose_2;StatefulPartitionedCall/transpose_2' type=Transpose>
+<nng.Tensor 'transpose_2;StatefulPartitionedCall/transpose_2' shape=[1, 24, 128, 128] dtype=int8> adding consumer <nng.Operation 'call_main_split_4' type=CustomNpuOp>
+<nng.Tensor 'onnx_tf_prefix_activation;StatefulPartitionedCall/onnx_tf_prefix_activation;onnx_tf_prefix_add__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add__xeno_compat__1' shape=[1, 128, 128, 24] dtype=int8> adding consumer <nng.Operation 'transpose_8;StatefulPartitionedCall/transpose_8' type=Transpose>
+<nng.Tensor 'onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm' shape=[4] dtype=int32> adding consumer <nng.Operation 'transpose_8;StatefulPartitionedCall/transpose_8' type=Transpose>
+<nng.Tensor 'transpose_8;StatefulPartitionedCall/transpose_8' shape=[1, 24, 128, 128] dtype=int8> adding consumer <nng.Operation 'call_main_split_6' type=CustomNpuOp>
+<nng.Tensor 'onnx_tf_prefix_activation_1;StatefulPartitionedCall/onnx_tf_prefix_activation_1;onnx_tf_prefix_add_1__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_1__xeno_compat__1' shape=[1, 128, 128, 24] dtype=int8> adding consumer <nng.Operation 'transpose_14;StatefulPartitionedCall/transpose_14' type=Transpose>
+<nng.Tensor 'onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm' shape=[4] dtype=int32> adding consumer <nng.Operation 'transpose_14;StatefulPartitionedCall/transpose_14' type=Transpose>
+<nng.Tensor 'transpose_14;StatefulPartitionedCall/transpose_14' shape=[1, 24, 128, 128] dtype=int8> adding consumer <nng.Operation 'call_main_split_8' type=CustomNpuOp>
+<nng.Tensor 'onnx_tf_prefix_activation_8;StatefulPartitionedCall/onnx_tf_prefix_activation_8;onnx_tf_prefix_add_8__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_8__xeno_compat__1' shape=[1, 16, 16, 96] dtype=int8> adding consumer <nng.Operation 'transpose_62;StatefulPartitionedCall/transpose_62' type=Transpose>
+<nng.Tensor 'onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm' shape=[4] dtype=int32> adding consumer <nng.Operation 'transpose_62;StatefulPartitionedCall/transpose_62' type=Transpose>
+<nng.Tensor 'transpose_62;StatefulPartitionedCall/transpose_62' shape=[1, 96, 16, 16] dtype=int8> adding consumer <nng.Operation 'call_main_split_24' type=CustomNpuOp>
+<nng.Tensor 'onnx_tf_prefix_activation_9;StatefulPartitionedCall/onnx_tf_prefix_activation_9;onnx_tf_prefix_add_9__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_9__xeno_compat__1' shape=[1, 16, 16, 96] dtype=int8> adding consumer <nng.Operation 'transpose_68;StatefulPartitionedCall/transpose_68' type=Transpose>
+<nng.Tensor 'onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm' shape=[4] dtype=int32> adding consumer <nng.Operation 'transpose_68;StatefulPartitionedCall/transpose_68' type=Transpose>
+<nng.Tensor 'transpose_68;StatefulPartitionedCall/transpose_68' shape=[1, 96, 16, 16] dtype=int8> adding consumer <nng.Operation 'call_main_split_26' type=CustomNpuOp>
+<nng.Tensor 'onnx_tf_prefix_activation_10;StatefulPartitionedCall/onnx_tf_prefix_activation_10;onnx_tf_prefix_add_10__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_10__xeno_compat__1' shape=[1, 16, 16, 96] dtype=int8> adding consumer <nng.Operation 'transpose_74;StatefulPartitionedCall/transpose_74' type=Transpose>
+<nng.Tensor 'onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm' shape=[4] dtype=int32> adding consumer <nng.Operation 'transpose_74;StatefulPartitionedCall/transpose_74' type=Transpose>
+<nng.Tensor 'transpose_74;StatefulPartitionedCall/transpose_74' shape=[1, 96, 16, 16] dtype=int8> adding consumer <nng.Operation 'call_main_split_28' type=CustomNpuOp>
+<nng.Tensor 'onnx_tf_prefix_add_12__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_12__xeno_compat__1' shape=[1, 16, 16, 96] dtype=int8> adding consumer <nng.Operation 'transpose_84;StatefulPartitionedCall/transpose_84' type=Transpose>
+<nng.Tensor 'onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm' shape=[4] dtype=int32> adding consumer <nng.Operation 'transpose_84;StatefulPartitionedCall/transpose_84' type=Transpose>
+<nng.Tensor 'transpose_84;StatefulPartitionedCall/transpose_84' shape=[1, 96, 16, 16] dtype=int8> adding consumer <nng.Operation 'call_main_split_30' type=CustomNpuOp>
+<nng.Tensor 'onnx_tf_prefix_activation_28;StatefulPartitionedCall/onnx_tf_prefix_activation_28;onnx_tf_prefix_add_31__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_31__xeno_compat__1' shape=[1, 8, 8, 288] dtype=int8> adding consumer <nng.Operation 'transpose_199;StatefulPartitionedCall/transpose_199' type=Transpose>
+<nng.Tensor 'onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm' shape=[4] dtype=int32> adding consumer <nng.Operation 'transpose_199;StatefulPartitionedCall/transpose_199' type=Transpose>
+<nng.Tensor 'transpose_199;StatefulPartitionedCall/transpose_199' shape=[1, 288, 8, 8] dtype=int8> adding consumer <nng.Operation 'call_main_split_68' type=CustomNpuOp>
+<nng.Tensor 'onnx_tf_prefix_activation_29;StatefulPartitionedCall/onnx_tf_prefix_activation_29;onnx_tf_prefix_add_32__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_32__xeno_compat__1' shape=[1, 8, 8, 288] dtype=int8> adding consumer <nng.Operation 'transpose_205;StatefulPartitionedCall/transpose_205' type=Transpose>
+<nng.Tensor 'onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm' shape=[4] dtype=int32> adding consumer <nng.Operation 'transpose_205;StatefulPartitionedCall/transpose_205' type=Transpose>
+<nng.Tensor 'transpose_205;StatefulPartitionedCall/transpose_205' shape=[1, 288, 8, 8] dtype=int8> adding consumer <nng.Operation 'call_main_split_70' type=CustomNpuOp>
+<nng.Tensor 'onnx_tf_prefix_activation_30;StatefulPartitionedCall/onnx_tf_prefix_activation_30;onnx_tf_prefix_add_33__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_33__xeno_compat__1' shape=[1, 8, 8, 288] dtype=int8> adding consumer <nng.Operation 'transpose_211;StatefulPartitionedCall/transpose_211' type=Transpose>
+<nng.Tensor 'onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm' shape=[4] dtype=int32> adding consumer <nng.Operation 'transpose_211;StatefulPartitionedCall/transpose_211' type=Transpose>
+<nng.Tensor 'transpose_211;StatefulPartitionedCall/transpose_211' shape=[1, 288, 8, 8] dtype=int8> adding consumer <nng.Operation 'call_main_split_72' type=CustomNpuOp>
+<nng.Tensor 'onnx_tf_prefix_activation_31;StatefulPartitionedCall/onnx_tf_prefix_activation_31;onnx_tf_prefix_add_34__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_34__xeno_compat__1' shape=[1, 8, 8, 288] dtype=int8> adding consumer <nng.Operation 'transpose_217;StatefulPartitionedCall/transpose_217' type=Transpose>
+<nng.Tensor 'onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm' shape=[4] dtype=int32> adding consumer <nng.Operation 'transpose_217;StatefulPartitionedCall/transpose_217' type=Transpose>
+<nng.Tensor 'transpose_217;StatefulPartitionedCall/transpose_217' shape=[1, 288, 8, 8] dtype=int8> adding consumer <nng.Operation 'call_main_split_74' type=CustomNpuOp>
+<nng.Tensor 'onnx_tf_prefix_activation_32;StatefulPartitionedCall/onnx_tf_prefix_activation_32;onnx_tf_prefix_add_35__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_35__xeno_compat__1' shape=[1, 8, 8, 288] dtype=int8> adding consumer <nng.Operation 'transpose_223;StatefulPartitionedCall/transpose_223' type=Transpose>
+<nng.Tensor 'onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm' shape=[4] dtype=int32> adding consumer <nng.Operation 'transpose_223;StatefulPartitionedCall/transpose_223' type=Transpose>
+<nng.Tensor 'transpose_223;StatefulPartitionedCall/transpose_223' shape=[1, 288, 8, 8] dtype=int8> adding consumer <nng.Operation 'call_main_split_76' type=CustomNpuOp>
+<nng.Tensor 'onnx_tf_prefix_activation_33;StatefulPartitionedCall/onnx_tf_prefix_activation_33;onnx_tf_prefix_add_36__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_36__xeno_compat__1' shape=[1, 4, 4, 288] dtype=int8> adding consumer <nng.Operation 'transpose_231;StatefulPartitionedCall/transpose_231' type=Transpose>
+<nng.Tensor 'onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm' shape=[4] dtype=int32> adding consumer <nng.Operation 'transpose_231;StatefulPartitionedCall/transpose_231' type=Transpose>
+<nng.Tensor 'transpose_231;StatefulPartitionedCall/transpose_231' shape=[1, 288, 4, 4] dtype=int8> adding consumer <nng.Operation 'call_main_split_78' type=CustomNpuOp>
+<nng.Tensor 'onnx_tf_prefix_activation_34;StatefulPartitionedCall/onnx_tf_prefix_activation_34;onnx_tf_prefix_add_37__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_37__xeno_compat__1' shape=[1, 4, 4, 288] dtype=int8> adding consumer <nng.Operation 'transpose_237;StatefulPartitionedCall/transpose_237' type=Transpose>
+<nng.Tensor 'onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm' shape=[4] dtype=int32> adding consumer <nng.Operation 'transpose_237;StatefulPartitionedCall/transpose_237' type=Transpose>
+<nng.Tensor 'transpose_237;StatefulPartitionedCall/transpose_237' shape=[1, 288, 4, 4] dtype=int8> adding consumer <nng.Operation 'call_main_split_80' type=CustomNpuOp>
+<nng.Tensor 'onnx_tf_prefix_activation_35;StatefulPartitionedCall/onnx_tf_prefix_activation_35;onnx_tf_prefix_add_38__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_38__xeno_compat__1' shape=[1, 4, 4, 288] dtype=int8> adding consumer <nng.Operation 'transpose_243;StatefulPartitionedCall/transpose_243' type=Transpose>
+<nng.Tensor 'onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm' shape=[4] dtype=int32> adding consumer <nng.Operation 'transpose_243;StatefulPartitionedCall/transpose_243' type=Transpose>
+<nng.Tensor 'transpose_243;StatefulPartitionedCall/transpose_243' shape=[1, 288, 4, 4] dtype=int8> adding consumer <nng.Operation 'call_main_split_82' type=CustomNpuOp>
+<nng.Tensor 'onnx_tf_prefix_activation_36;StatefulPartitionedCall/onnx_tf_prefix_activation_36;onnx_tf_prefix_add_39__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_39__xeno_compat__1' shape=[1, 4, 4, 288] dtype=int8> adding consumer <nng.Operation 'transpose_249;StatefulPartitionedCall/transpose_249' type=Transpose>
+<nng.Tensor 'onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm' shape=[4] dtype=int32> adding consumer <nng.Operation 'transpose_249;StatefulPartitionedCall/transpose_249' type=Transpose>
+<nng.Tensor 'transpose_249;StatefulPartitionedCall/transpose_249' shape=[1, 288, 4, 4] dtype=int8> adding consumer <nng.Operation 'call_main_split_84' type=CustomNpuOp>
+<nng.Tensor 'onnx_tf_prefix_activation_37;StatefulPartitionedCall/onnx_tf_prefix_activation_37;onnx_tf_prefix_add_40__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_40__xeno_compat__1' shape=[1, 4, 4, 288] dtype=int8> adding consumer <nng.Operation 'transpose_255;StatefulPartitionedCall/transpose_255' type=Transpose>
+<nng.Tensor 'onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm' shape=[4] dtype=int32> adding consumer <nng.Operation 'transpose_255;StatefulPartitionedCall/transpose_255' type=Transpose>
+<nng.Tensor 'transpose_255;StatefulPartitionedCall/transpose_255' shape=[1, 288, 4, 4] dtype=int8> adding consumer <nng.Operation 'call_main_split_86' type=CustomNpuOp>
+<nng.Tensor 'onnx_tf_prefix_activation_38;StatefulPartitionedCall/onnx_tf_prefix_activation_38;onnx_tf_prefix_add_41__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_41__xeno_compat__1' shape=[1, 2, 2, 288] dtype=int8> adding consumer <nng.Operation 'transpose_263;StatefulPartitionedCall/transpose_263' type=Transpose>
+<nng.Tensor 'onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm' shape=[4] dtype=int32> adding consumer <nng.Operation 'transpose_263;StatefulPartitionedCall/transpose_263' type=Transpose>
+<nng.Tensor 'transpose_263;StatefulPartitionedCall/transpose_263' shape=[1, 288, 2, 2] dtype=int8> adding consumer <nng.Operation 'call_main_split_88' type=CustomNpuOp>
+<nng.Tensor 'onnx_tf_prefix_activation_39;StatefulPartitionedCall/onnx_tf_prefix_activation_39;onnx_tf_prefix_add_42__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_42__xeno_compat__1' shape=[1, 2, 2, 288] dtype=int8> adding consumer <nng.Operation 'transpose_269;StatefulPartitionedCall/transpose_269' type=Transpose>
+<nng.Tensor 'onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm' shape=[4] dtype=int32> adding consumer <nng.Operation 'transpose_269;StatefulPartitionedCall/transpose_269' type=Transpose>
+<nng.Tensor 'transpose_269;StatefulPartitionedCall/transpose_269' shape=[1, 288, 2, 2] dtype=int8> adding consumer <nng.Operation 'call_main_split_90' type=CustomNpuOp>
+<nng.Tensor 'onnx_tf_prefix_activation_40;StatefulPartitionedCall/onnx_tf_prefix_activation_40;onnx_tf_prefix_add_43__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_43__xeno_compat__1' shape=[1, 2, 2, 288] dtype=int8> adding consumer <nng.Operation 'transpose_275;StatefulPartitionedCall/transpose_275' type=Transpose>
+<nng.Tensor 'onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm' shape=[4] dtype=int32> adding consumer <nng.Operation 'transpose_275;StatefulPartitionedCall/transpose_275' type=Transpose>
+<nng.Tensor 'transpose_275;StatefulPartitionedCall/transpose_275' shape=[1, 288, 2, 2] dtype=int8> adding consumer <nng.Operation 'call_main_split_92' type=CustomNpuOp>
+<nng.Tensor 'onnx_tf_prefix_activation_41;StatefulPartitionedCall/onnx_tf_prefix_activation_41;onnx_tf_prefix_add_44__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_44__xeno_compat__1' shape=[1, 2, 2, 288] dtype=int8> adding consumer <nng.Operation 'transpose_281;StatefulPartitionedCall/transpose_281' type=Transpose>
+<nng.Tensor 'onnx_tf_prefix_conv2d__104/perm;StatefulPartitionedCall/onnx_tf_prefix_conv2d__104/perm' shape=[4] dtype=int32> adding consumer <nng.Operation 'transpose_281;StatefulPartitionedCall/transpose_281' type=Transpose>
+<nng.Tensor 'transpose_281;StatefulPartitionedCall/transpose_281' shape=[1, 288, 2, 2] dtype=int8> adding consumer <nng.Operation 'call_main_split_94' type=CustomNpuOp>
+<nng.Tensor 'transpose_2;StatefulPartitionedCall/transpose_2_npu' shape=[1, 24, 128, 128] dtype=int8> adding consumer <nng.Operation 'Pad_1;StatefulPartitionedCall/Pad_1_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_1;StatefulPartitionedCall/Pad_1_right_0_npu' shape=[1, 24, 128, 2] dtype=int8> adding consumer <nng.Operation 'Pad_1;StatefulPartitionedCall/Pad_1_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'transpose_8;StatefulPartitionedCall/transpose_8_npu' shape=[1, 24, 128, 128] dtype=int8> adding consumer <nng.Operation 'Pad_2;StatefulPartitionedCall/Pad_2_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_2;StatefulPartitionedCall/Pad_2_right_0_npu' shape=[1, 24, 128, 2] dtype=int8> adding consumer <nng.Operation 'Pad_2;StatefulPartitionedCall/Pad_2_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'transpose_14;StatefulPartitionedCall/transpose_14_npu' shape=[1, 24, 128, 128] dtype=int8> adding consumer <nng.Operation 'Pad_3;StatefulPartitionedCall/Pad_3_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_3;StatefulPartitionedCall/Pad_3_right_0_npu' shape=[1, 24, 128, 2] dtype=int8> adding consumer <nng.Operation 'Pad_3;StatefulPartitionedCall/Pad_3_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'onnx_tf_prefix_activation_2;StatefulPartitionedCall/onnx_tf_prefix_activation_2;onnx_tf_prefix_add_2__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_2__xeno_compat__1_cpu' shape=[1, 48, 64, 64] dtype=int8> adding consumer <nng.Operation 'Pad_4;StatefulPartitionedCall/Pad_4_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_4;StatefulPartitionedCall/Pad_4_right_0_npu' shape=[1, 48, 64, 2] dtype=int8> adding consumer <nng.Operation 'Pad_4;StatefulPartitionedCall/Pad_4_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'onnx_tf_prefix_activation_3;StatefulPartitionedCall/onnx_tf_prefix_activation_3;onnx_tf_prefix_add_3__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_3__xeno_compat__1_cpu' shape=[1, 48, 64, 64] dtype=int8> adding consumer <nng.Operation 'Pad_5;StatefulPartitionedCall/Pad_5_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_5;StatefulPartitionedCall/Pad_5_right_0_npu' shape=[1, 48, 64, 2] dtype=int8> adding consumer <nng.Operation 'Pad_5;StatefulPartitionedCall/Pad_5_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'onnx_tf_prefix_activation_4;StatefulPartitionedCall/onnx_tf_prefix_activation_4;onnx_tf_prefix_add_4__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_4__xeno_compat__1_cpu' shape=[1, 48, 64, 64] dtype=int8> adding consumer <nng.Operation 'Pad_6;StatefulPartitionedCall/Pad_6_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_6;StatefulPartitionedCall/Pad_6_right_0_npu' shape=[1, 48, 64, 2] dtype=int8> adding consumer <nng.Operation 'Pad_6;StatefulPartitionedCall/Pad_6_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'onnx_tf_prefix_activation_5;StatefulPartitionedCall/onnx_tf_prefix_activation_5;onnx_tf_prefix_add_5__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_5__xeno_compat__1_cpu' shape=[1, 96, 32, 32] dtype=int8> adding consumer <nng.Operation 'Pad_7;StatefulPartitionedCall/Pad_7_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_7;StatefulPartitionedCall/Pad_7_right_0_npu' shape=[1, 96, 32, 2] dtype=int8> adding consumer <nng.Operation 'Pad_7;StatefulPartitionedCall/Pad_7_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'onnx_tf_prefix_activation_6;StatefulPartitionedCall/onnx_tf_prefix_activation_6;onnx_tf_prefix_add_6__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_6__xeno_compat__1_cpu' shape=[1, 96, 32, 32] dtype=int8> adding consumer <nng.Operation 'Pad_8;StatefulPartitionedCall/Pad_8_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_8;StatefulPartitionedCall/Pad_8_right_0_npu' shape=[1, 96, 32, 2] dtype=int8> adding consumer <nng.Operation 'Pad_8;StatefulPartitionedCall/Pad_8_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'onnx_tf_prefix_activation_7;StatefulPartitionedCall/onnx_tf_prefix_activation_7;onnx_tf_prefix_add_7__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_7__xeno_compat__1_cpu' shape=[1, 96, 32, 32] dtype=int8> adding consumer <nng.Operation 'Pad_9;StatefulPartitionedCall/Pad_9_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_9;StatefulPartitionedCall/Pad_9_right_0_npu' shape=[1, 96, 32, 2] dtype=int8> adding consumer <nng.Operation 'Pad_9;StatefulPartitionedCall/Pad_9_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'transpose_62;StatefulPartitionedCall/transpose_62_npu' shape=[1, 96, 16, 16] dtype=int8> adding consumer <nng.Operation 'Pad_10;StatefulPartitionedCall/Pad_10_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_10;StatefulPartitionedCall/Pad_10_right_0_npu' shape=[1, 96, 16, 2] dtype=int8> adding consumer <nng.Operation 'Pad_10;StatefulPartitionedCall/Pad_10_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'transpose_68;StatefulPartitionedCall/transpose_68_npu' shape=[1, 96, 16, 16] dtype=int8> adding consumer <nng.Operation 'Pad_11;StatefulPartitionedCall/Pad_11_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_11;StatefulPartitionedCall/Pad_11_right_0_npu' shape=[1, 96, 16, 2] dtype=int8> adding consumer <nng.Operation 'Pad_11;StatefulPartitionedCall/Pad_11_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'transpose_74;StatefulPartitionedCall/transpose_74_npu' shape=[1, 96, 16, 16] dtype=int8> adding consumer <nng.Operation 'Pad_12;StatefulPartitionedCall/Pad_12_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_12;StatefulPartitionedCall/Pad_12_right_0_npu' shape=[1, 96, 16, 2] dtype=int8> adding consumer <nng.Operation 'Pad_12;StatefulPartitionedCall/Pad_12_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'transpose_84;StatefulPartitionedCall/transpose_84_npu' shape=[1, 96, 16, 16] dtype=int8> adding consumer <nng.Operation 'Pad_13;StatefulPartitionedCall/Pad_13_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_13;StatefulPartitionedCall/Pad_13_right_0_npu' shape=[1, 96, 16, 2] dtype=int8> adding consumer <nng.Operation 'Pad_13;StatefulPartitionedCall/Pad_13_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'onnx_tf_prefix_add_14__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_14__xeno_compat__1_cpu' shape=[1, 96, 32, 32] dtype=int8> adding consumer <nng.Operation 'Pad_14;StatefulPartitionedCall/Pad_14_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_14;StatefulPartitionedCall/Pad_14_right_0_npu' shape=[1, 96, 32, 2] dtype=int8> adding consumer <nng.Operation 'Pad_14;StatefulPartitionedCall/Pad_14_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'onnx_tf_prefix_add_16__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_16__xeno_compat__1_cpu' shape=[1, 48, 64, 64] dtype=int8> adding consumer <nng.Operation 'Pad_15;StatefulPartitionedCall/Pad_15_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_15;StatefulPartitionedCall/Pad_15_right_0_npu' shape=[1, 48, 64, 2] dtype=int8> adding consumer <nng.Operation 'Pad_15;StatefulPartitionedCall/Pad_15_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'onnx_tf_prefix_activation_14;StatefulPartitionedCall/onnx_tf_prefix_activation_14;onnx_tf_prefix_add_17__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_17__xeno_compat__1_cpu' shape=[1, 48, 64, 64] dtype=int8> adding consumer <nng.Operation 'Pad_16;StatefulPartitionedCall/Pad_16_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_16;StatefulPartitionedCall/Pad_16_right_0_npu' shape=[1, 48, 64, 2] dtype=int8> adding consumer <nng.Operation 'Pad_16;StatefulPartitionedCall/Pad_16_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'onnx_tf_prefix_activation_15;StatefulPartitionedCall/onnx_tf_prefix_activation_15;onnx_tf_prefix_add_18__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_18__xeno_compat__1_cpu' shape=[1, 48, 64, 64] dtype=int8> adding consumer <nng.Operation 'Pad_17;StatefulPartitionedCall/Pad_17_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_17;StatefulPartitionedCall/Pad_17_right_0_npu' shape=[1, 48, 64, 2] dtype=int8> adding consumer <nng.Operation 'Pad_17;StatefulPartitionedCall/Pad_17_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'onnx_tf_prefix_activation_16;StatefulPartitionedCall/onnx_tf_prefix_activation_16;onnx_tf_prefix_add_19__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_19__xeno_compat__1_cpu' shape=[1, 48, 64, 64] dtype=int8> adding consumer <nng.Operation 'Pad_18;StatefulPartitionedCall/Pad_18_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_18;StatefulPartitionedCall/Pad_18_right_0_npu' shape=[1, 48, 64, 2] dtype=int8> adding consumer <nng.Operation 'Pad_18;StatefulPartitionedCall/Pad_18_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'onnx_tf_prefix_activation_17;StatefulPartitionedCall/onnx_tf_prefix_activation_17;onnx_tf_prefix_add_20__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_20__xeno_compat__1_cpu' shape=[1, 48, 64, 64] dtype=int8> adding consumer <nng.Operation 'Pad_19;StatefulPartitionedCall/Pad_19_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_19;StatefulPartitionedCall/Pad_19_right_0_npu' shape=[1, 48, 64, 2] dtype=int8> adding consumer <nng.Operation 'Pad_19;StatefulPartitionedCall/Pad_19_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'onnx_tf_prefix_activation_18;StatefulPartitionedCall/onnx_tf_prefix_activation_18;onnx_tf_prefix_add_21__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_21__xeno_compat__1_cpu' shape=[1, 96, 32, 32] dtype=int8> adding consumer <nng.Operation 'Pad_20;StatefulPartitionedCall/Pad_20_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_20;StatefulPartitionedCall/Pad_20_right_0_npu' shape=[1, 96, 32, 2] dtype=int8> adding consumer <nng.Operation 'Pad_20;StatefulPartitionedCall/Pad_20_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'onnx_tf_prefix_activation_19;StatefulPartitionedCall/onnx_tf_prefix_activation_19;onnx_tf_prefix_add_22__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_22__xeno_compat__1_cpu' shape=[1, 96, 32, 32] dtype=int8> adding consumer <nng.Operation 'Pad_21;StatefulPartitionedCall/Pad_21_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_21;StatefulPartitionedCall/Pad_21_right_0_npu' shape=[1, 96, 32, 2] dtype=int8> adding consumer <nng.Operation 'Pad_21;StatefulPartitionedCall/Pad_21_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'onnx_tf_prefix_activation_20;StatefulPartitionedCall/onnx_tf_prefix_activation_20;onnx_tf_prefix_add_23__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_23__xeno_compat__1_cpu' shape=[1, 96, 32, 32] dtype=int8> adding consumer <nng.Operation 'Pad_22;StatefulPartitionedCall/Pad_22_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_22;StatefulPartitionedCall/Pad_22_right_0_npu' shape=[1, 96, 32, 2] dtype=int8> adding consumer <nng.Operation 'Pad_22;StatefulPartitionedCall/Pad_22_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'onnx_tf_prefix_activation_21;StatefulPartitionedCall/onnx_tf_prefix_activation_21;onnx_tf_prefix_add_24__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_24__xeno_compat__1_cpu' shape=[1, 96, 32, 32] dtype=int8> adding consumer <nng.Operation 'Pad_23;StatefulPartitionedCall/Pad_23_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_23;StatefulPartitionedCall/Pad_23_right_0_npu' shape=[1, 96, 32, 2] dtype=int8> adding consumer <nng.Operation 'Pad_23;StatefulPartitionedCall/Pad_23_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'onnx_tf_prefix_activation_22;StatefulPartitionedCall/onnx_tf_prefix_activation_22;onnx_tf_prefix_add_25__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_25__xeno_compat__1_cpu' shape=[1, 96, 32, 32] dtype=int8> adding consumer <nng.Operation 'Pad_24;StatefulPartitionedCall/Pad_24_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_24;StatefulPartitionedCall/Pad_24_right_0_npu' shape=[1, 96, 32, 2] dtype=int8> adding consumer <nng.Operation 'Pad_24;StatefulPartitionedCall/Pad_24_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'onnx_tf_prefix_activation_23;StatefulPartitionedCall/onnx_tf_prefix_activation_23;onnx_tf_prefix_add_26__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_26__xeno_compat__1_cpu' shape=[1, 288, 16, 16] dtype=int8> adding consumer <nng.Operation 'Pad_25;StatefulPartitionedCall/Pad_25_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_25;StatefulPartitionedCall/Pad_25_right_0_npu' shape=[1, 288, 16, 2] dtype=int8> adding consumer <nng.Operation 'Pad_25;StatefulPartitionedCall/Pad_25_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'onnx_tf_prefix_activation_24;StatefulPartitionedCall/onnx_tf_prefix_activation_24;onnx_tf_prefix_add_27__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_27__xeno_compat__1_cpu' shape=[1, 288, 16, 16] dtype=int8> adding consumer <nng.Operation 'Pad_26;StatefulPartitionedCall/Pad_26_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_26;StatefulPartitionedCall/Pad_26_right_0_npu' shape=[1, 288, 16, 2] dtype=int8> adding consumer <nng.Operation 'Pad_26;StatefulPartitionedCall/Pad_26_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'onnx_tf_prefix_activation_25;StatefulPartitionedCall/onnx_tf_prefix_activation_25;onnx_tf_prefix_add_28__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_28__xeno_compat__1_cpu' shape=[1, 288, 16, 16] dtype=int8> adding consumer <nng.Operation 'Pad_27;StatefulPartitionedCall/Pad_27_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_27;StatefulPartitionedCall/Pad_27_right_0_npu' shape=[1, 288, 16, 2] dtype=int8> adding consumer <nng.Operation 'Pad_27;StatefulPartitionedCall/Pad_27_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'onnx_tf_prefix_activation_26;StatefulPartitionedCall/onnx_tf_prefix_activation_26;onnx_tf_prefix_add_29__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_29__xeno_compat__1_cpu' shape=[1, 288, 16, 16] dtype=int8> adding consumer <nng.Operation 'Pad_28;StatefulPartitionedCall/Pad_28_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_28;StatefulPartitionedCall/Pad_28_right_0_npu' shape=[1, 288, 16, 2] dtype=int8> adding consumer <nng.Operation 'Pad_28;StatefulPartitionedCall/Pad_28_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'onnx_tf_prefix_activation_27;StatefulPartitionedCall/onnx_tf_prefix_activation_27;onnx_tf_prefix_add_30__xeno_compat__1;StatefulPartitionedCall/onnx_tf_prefix_add_30__xeno_compat__1_cpu' shape=[1, 288, 16, 16] dtype=int8> adding consumer <nng.Operation 'Pad_29;StatefulPartitionedCall/Pad_29_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_29;StatefulPartitionedCall/Pad_29_right_0_npu' shape=[1, 288, 16, 2] dtype=int8> adding consumer <nng.Operation 'Pad_29;StatefulPartitionedCall/Pad_29_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'transpose_199;StatefulPartitionedCall/transpose_199_npu' shape=[1, 288, 8, 8] dtype=int8> adding consumer <nng.Operation 'Pad_30;StatefulPartitionedCall/Pad_30_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_30;StatefulPartitionedCall/Pad_30_right_0_npu' shape=[1, 288, 8, 2] dtype=int8> adding consumer <nng.Operation 'Pad_30;StatefulPartitionedCall/Pad_30_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'transpose_205;StatefulPartitionedCall/transpose_205_npu' shape=[1, 288, 8, 8] dtype=int8> adding consumer <nng.Operation 'Pad_31;StatefulPartitionedCall/Pad_31_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_31;StatefulPartitionedCall/Pad_31_right_0_npu' shape=[1, 288, 8, 2] dtype=int8> adding consumer <nng.Operation 'Pad_31;StatefulPartitionedCall/Pad_31_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'transpose_211;StatefulPartitionedCall/transpose_211_npu' shape=[1, 288, 8, 8] dtype=int8> adding consumer <nng.Operation 'Pad_32;StatefulPartitionedCall/Pad_32_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_32;StatefulPartitionedCall/Pad_32_right_0_npu' shape=[1, 288, 8, 2] dtype=int8> adding consumer <nng.Operation 'Pad_32;StatefulPartitionedCall/Pad_32_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'transpose_217;StatefulPartitionedCall/transpose_217_npu' shape=[1, 288, 8, 8] dtype=int8> adding consumer <nng.Operation 'Pad_33;StatefulPartitionedCall/Pad_33_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_33;StatefulPartitionedCall/Pad_33_right_0_npu' shape=[1, 288, 8, 2] dtype=int8> adding consumer <nng.Operation 'Pad_33;StatefulPartitionedCall/Pad_33_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'transpose_223;StatefulPartitionedCall/transpose_223_npu' shape=[1, 288, 8, 8] dtype=int8> adding consumer <nng.Operation 'Pad_34;StatefulPartitionedCall/Pad_34_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_34;StatefulPartitionedCall/Pad_34_right_0_npu' shape=[1, 288, 8, 2] dtype=int8> adding consumer <nng.Operation 'Pad_34;StatefulPartitionedCall/Pad_34_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'transpose_231;StatefulPartitionedCall/transpose_231_npu' shape=[1, 288, 4, 4] dtype=int8> adding consumer <nng.Operation 'Pad_35;StatefulPartitionedCall/Pad_35_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_35;StatefulPartitionedCall/Pad_35_right_0_npu' shape=[1, 288, 4, 2] dtype=int8> adding consumer <nng.Operation 'Pad_35;StatefulPartitionedCall/Pad_35_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'transpose_237;StatefulPartitionedCall/transpose_237_npu' shape=[1, 288, 4, 4] dtype=int8> adding consumer <nng.Operation 'Pad_36;StatefulPartitionedCall/Pad_36_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_36;StatefulPartitionedCall/Pad_36_right_0_npu' shape=[1, 288, 4, 2] dtype=int8> adding consumer <nng.Operation 'Pad_36;StatefulPartitionedCall/Pad_36_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'transpose_243;StatefulPartitionedCall/transpose_243_npu' shape=[1, 288, 4, 4] dtype=int8> adding consumer <nng.Operation 'Pad_37;StatefulPartitionedCall/Pad_37_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_37;StatefulPartitionedCall/Pad_37_right_0_npu' shape=[1, 288, 4, 2] dtype=int8> adding consumer <nng.Operation 'Pad_37;StatefulPartitionedCall/Pad_37_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'transpose_249;StatefulPartitionedCall/transpose_249_npu' shape=[1, 288, 4, 4] dtype=int8> adding consumer <nng.Operation 'Pad_38;StatefulPartitionedCall/Pad_38_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_38;StatefulPartitionedCall/Pad_38_right_0_npu' shape=[1, 288, 4, 2] dtype=int8> adding consumer <nng.Operation 'Pad_38;StatefulPartitionedCall/Pad_38_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'transpose_255;StatefulPartitionedCall/transpose_255_npu' shape=[1, 288, 4, 4] dtype=int8> adding consumer <nng.Operation 'Pad_39;StatefulPartitionedCall/Pad_39_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_39;StatefulPartitionedCall/Pad_39_right_0_npu' shape=[1, 288, 4, 2] dtype=int8> adding consumer <nng.Operation 'Pad_39;StatefulPartitionedCall/Pad_39_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'transpose_263;StatefulPartitionedCall/transpose_263_npu' shape=[1, 288, 2, 2] dtype=int8> adding consumer <nng.Operation 'Pad_40;StatefulPartitionedCall/Pad_40_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_40;StatefulPartitionedCall/Pad_40_right_0_npu' shape=[1, 288, 2, 2] dtype=int8> adding consumer <nng.Operation 'Pad_40;StatefulPartitionedCall/Pad_40_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'transpose_269;StatefulPartitionedCall/transpose_269_npu' shape=[1, 288, 2, 2] dtype=int8> adding consumer <nng.Operation 'Pad_41;StatefulPartitionedCall/Pad_41_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_41;StatefulPartitionedCall/Pad_41_right_0_npu' shape=[1, 288, 2, 2] dtype=int8> adding consumer <nng.Operation 'Pad_41;StatefulPartitionedCall/Pad_41_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'transpose_275;StatefulPartitionedCall/transpose_275_npu' shape=[1, 288, 2, 2] dtype=int8> adding consumer <nng.Operation 'Pad_42;StatefulPartitionedCall/Pad_42_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_42;StatefulPartitionedCall/Pad_42_right_0_npu' shape=[1, 288, 2, 2] dtype=int8> adding consumer <nng.Operation 'Pad_42;StatefulPartitionedCall/Pad_42_concat2_avgpool' type=AvgPool>
+<nng.Tensor 'transpose_281;StatefulPartitionedCall/transpose_281_npu' shape=[1, 288, 2, 2] dtype=int8> adding consumer <nng.Operation 'Pad_43;StatefulPartitionedCall/Pad_43_concat1_avgpool' type=AvgPool>
+<nng.Tensor 'Pad_43;StatefulPartitionedCall/Pad_43_right_0_npu' shape=[1, 288, 2, 2] dtype=int8> adding consumer <nng.Operation 'Pad_43;StatefulPartitionedCall/Pad_43_concat2_avgpool' type=AvgPool>
+
+Network summary for handskeleton_new_quant
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                376.91 KiB
+Total DRAM used                               8738.23 KiB
+
+CPU operators = 81 (14.6%)
+NPU operators = 474 (85.4%)
+
+Average SRAM bandwidth                           0.17 GB/s
+Input   SRAM bandwidth                          23.59 MB/batch
+Weight  SRAM bandwidth                          17.81 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                          41.56 MB/batch
+Total   SRAM bandwidth            per input     41.56 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           0.57 GB/s
+Input   DRAM bandwidth                          68.71 MB/batch
+Weight  DRAM bandwidth                           2.06 MB/batch
+Output  DRAM bandwidth                          65.84 MB/batch
+Total   DRAM bandwidth                         136.61 MB/batch
+Total   DRAM bandwidth            per input    136.61 MB/inference (batch size 1)
+
+Neural network macs                         945960750 MACs/batch
+Network Tops/s                                   0.01 Tops/s
+
+NPU cycles                                   95030225 cycles/batch
+SRAM Access cycles                            4775632 cycles/batch
+DRAM Access cycles                          236382751 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                239479002 cycles/batch
+
+Batch Inference time               239.48 ms,    4.18 inferences/s (batch size 1)
+

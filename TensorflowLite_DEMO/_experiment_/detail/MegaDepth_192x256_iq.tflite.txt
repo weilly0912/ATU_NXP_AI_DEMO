@@ -1,0 +1,48 @@
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'tfl.quantize'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: serving_default_input_1:0
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'StatefulPartitionedCall:0'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: StatefulPartitionedCall:0
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+
+Network summary for MegaDepth_192x256_iq
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                383.97 KiB
+Total DRAM used                              15754.83 KiB
+
+CPU operators = 2 (0.8%)
+NPU operators = 256 (99.2%)
+
+Average SRAM bandwidth                           1.89 GB/s
+Input   SRAM bandwidth                         203.57 MB/batch
+Weight  SRAM bandwidth                         158.68 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                         362.32 MB/batch
+Total   SRAM bandwidth            per input    362.32 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           1.98 GB/s
+Input   DRAM bandwidth                         110.97 MB/batch
+Weight  DRAM bandwidth                         141.43 MB/batch
+Output  DRAM bandwidth                         126.74 MB/batch
+Total   DRAM bandwidth                         379.14 MB/batch
+Total   DRAM bandwidth            per input    379.14 MB/inference (batch size 1)
+
+Neural network macs                       30244405248 MACs/batch
+Network Tops/s                                   0.32 Tops/s
+
+NPU cycles                                  178003186 cycles/batch
+SRAM Access cycles                           15506624 cycles/batch
+DRAM Access cycles                           99484987 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                191683507 cycles/batch
+
+Batch Inference time               191.68 ms,    5.22 inferences/s (batch size 1)
+

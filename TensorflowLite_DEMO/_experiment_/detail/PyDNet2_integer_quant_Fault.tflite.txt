@@ -1,0 +1,41 @@
+
+Network summary for fruit-detect-int8
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                384.00 KiB
+Total DRAM used                               7236.38 KiB
+
+CPU operators = 0 (0.0%)
+NPU operators = 268 (100.0%)
+
+Average SRAM bandwidth                           2.11 GB/s
+Input   SRAM bandwidth                          24.90 MB/batch
+Weight  SRAM bandwidth                          20.98 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                          45.98 MB/batch
+Total   SRAM bandwidth            per input     45.98 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           1.60 GB/s
+Input   DRAM bandwidth                          11.28 MB/batch
+Weight  DRAM bandwidth                           6.21 MB/batch
+Output  DRAM bandwidth                          17.36 MB/batch
+Total   DRAM bandwidth                          34.87 MB/batch
+Total   DRAM bandwidth            per input     34.87 MB/inference (batch size 1)
+
+Neural network macs                        1275042048 MACs/batch
+Network Tops/s                                   0.12 Tops/s
+
+NPU cycles                                   15333239 cycles/batch
+SRAM Access cycles                            2601160 cycles/batch
+DRAM Access cycles                           11143304 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                 21749306 cycles/batch
+
+Batch Inference time                21.75 ms,   45.98 inferences/s (batch size 1)
+

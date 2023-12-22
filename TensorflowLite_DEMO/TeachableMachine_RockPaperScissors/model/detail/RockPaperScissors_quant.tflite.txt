@@ -1,0 +1,41 @@
+
+Network summary for RockPaperScissors_quant
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                378.20 KiB
+Total DRAM used                               1005.23 KiB
+
+CPU operators = 0 (0.0%)
+NPU operators = 100 (100.0%)
+
+Average SRAM bandwidth                           1.22 GB/s
+Input   SRAM bandwidth                           5.29 MB/batch
+Weight  SRAM bandwidth                           1.36 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                           6.74 MB/batch
+Total   SRAM bandwidth            per input      6.74 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           0.89 GB/s
+Input   DRAM bandwidth                           0.31 MB/batch
+Weight  DRAM bandwidth                           0.62 MB/batch
+Output  DRAM bandwidth                           3.94 MB/batch
+Total   DRAM bandwidth                           4.87 MB/batch
+Total   DRAM bandwidth            per input      4.87 MB/inference (batch size 1)
+
+Neural network macs                          58347468 MACs/batch
+Network Tops/s                                   0.02 Tops/s
+
+NPU cycles                                    1761430 cycles/batch
+SRAM Access cycles                             518132 cycles/batch
+DRAM Access cycles                            4208785 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                  5501752 cycles/batch
+
+Batch Inference time                 5.50 ms,  181.76 inferences/s (batch size 1)
+

@@ -1,0 +1,278 @@
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/tf.nn.relu6/Relu6;model/model/batch_normalization/FusedBatchNormV3;model/model/batch_normalization_1/FusedBatchNormV3;model/model/depthwise_conv2d/depthwise;model/model/conv2d_9/Conv2D;model/model/conv2d/Conv2D'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: input_1, model/model/conv2d/Conv2D_reshape, model/model/tf.nn.relu6/Relu6;model/model/batch_normalization/FusedBatchNormV3;model/model/batch_normalization_1/FusedBatchNormV3;model/model/depthwise_conv2d/depthwise;model/model/conv2d_9/Conv2D;model/model/conv2d/Conv2D
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'model/model/tf.nn.relu6_1/Relu6;model/model/batch_normalization_1/FusedBatchNormV3;model/model/depthwise_conv2d/depthwise;model/model/conv2d_9/Conv2D'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6/Relu6;model/model/batch_normalization/FusedBatchNormV3;model/model/batch_normalization_1/FusedBatchNormV3;model/model/depthwise_conv2d/depthwise;model/model/conv2d_9/Conv2D;model/model/conv2d/Conv2D, model/model/batch_normalization_1/FusedBatchNormV3;model/model/depthwise_conv2d/depthwise;model/model/conv2d_9/Conv2D_reshape, model/model/tf.nn.relu6_1/Relu6;model/model/batch_normalization_1/FusedBatchNormV3;model/model/depthwise_conv2d/depthwise;model/model/conv2d_9/Conv2D
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/batch_normalization_2/FusedBatchNormV3;model/model/conv2d_1/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_1/Relu6;model/model/batch_normalization_1/FusedBatchNormV3;model/model/depthwise_conv2d/depthwise;model/model/conv2d_9/Conv2D, model/model/conv2d_1/Conv2D_reshape, model/model/batch_normalization_2/FusedBatchNormV3;model/model/conv2d_1/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/tf.nn.relu6_2/Relu6;model/model/batch_normalization_3/FusedBatchNormV3;model/model/batch_normalization_4/FusedBatchNormV3;model/model/depthwise_conv2d_1/depthwise;model/model/conv2d_2/Conv2D'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/batch_normalization_2/FusedBatchNormV3;model/model/conv2d_1/Conv2D1, model/model/conv2d_2/Conv2D_reshape, model/model/tf.nn.relu6_2/Relu6;model/model/batch_normalization_3/FusedBatchNormV3;model/model/batch_normalization_4/FusedBatchNormV3;model/model/depthwise_conv2d_1/depthwise;model/model/conv2d_2/Conv2D
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'model/model/tf.nn.relu6_3/Relu6;model/model/batch_normalization_4/FusedBatchNormV3;model/model/depthwise_conv2d_1/depthwise'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_2/Relu6;model/model/batch_normalization_3/FusedBatchNormV3;model/model/batch_normalization_4/FusedBatchNormV3;model/model/depthwise_conv2d_1/depthwise;model/model/conv2d_2/Conv2D, model/model/batch_normalization_4/FusedBatchNormV3;model/model/depthwise_conv2d_1/depthwise_reshape, model/model/tf.nn.relu6_3/Relu6;model/model/batch_normalization_4/FusedBatchNormV3;model/model/depthwise_conv2d_1/depthwise
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/batch_normalization_5/FusedBatchNormV3;model/model/conv2d_5/Conv2D;model/model/conv2d_3/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_3/Relu6;model/model/batch_normalization_4/FusedBatchNormV3;model/model/depthwise_conv2d_1/depthwise, model/model/conv2d_3/Conv2D_reshape, model/model/batch_normalization_5/FusedBatchNormV3;model/model/conv2d_5/Conv2D;model/model/conv2d_3/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/tf.nn.relu6_4/Relu6;model/model/batch_normalization_6/FusedBatchNormV3;model/model/batch_normalization_10/FusedBatchNormV3;model/model/depthwise_conv2d_3/depthwise;model/model/conv2d_29/Conv2D;model/model/conv2d_4/Conv2D'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/batch_normalization_5/FusedBatchNormV3;model/model/conv2d_5/Conv2D;model/model/conv2d_3/Conv2D1, model/model/conv2d_4/Conv2D_reshape, model/model/tf.nn.relu6_4/Relu6;model/model/batch_normalization_6/FusedBatchNormV3;model/model/batch_normalization_10/FusedBatchNormV3;model/model/depthwise_conv2d_3/depthwise;model/model/conv2d_29/Conv2D;model/model/conv2d_4/Conv2D
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'model/model/tf.nn.relu6_5/Relu6;model/model/batch_normalization_7/FusedBatchNormV3;model/model/batch_normalization_10/FusedBatchNormV3;model/model/depthwise_conv2d_3/depthwise;model/model/conv2d_29/Conv2D;model/model/depthwise_conv2d_2/depthwise'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_4/Relu6;model/model/batch_normalization_6/FusedBatchNormV3;model/model/batch_normalization_10/FusedBatchNormV3;model/model/depthwise_conv2d_3/depthwise;model/model/conv2d_29/Conv2D;model/model/conv2d_4/Conv2D, model/model/batch_normalization_7/FusedBatchNormV3;model/model/depthwise_conv2d_2/depthwise;model/model/conv2d_29/Conv2D_reshape, model/model/tf.nn.relu6_5/Relu6;model/model/batch_normalization_7/FusedBatchNormV3;model/model/batch_normalization_10/FusedBatchNormV3;model/model/depthwise_conv2d_3/depthwise;model/model/conv2d_29/Conv2D;model/model/depthwise_conv2d_2/depthwise
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/batch_normalization_8/FusedBatchNormV3;model/model/conv2d_5/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_5/Relu6;model/model/batch_normalization_7/FusedBatchNormV3;model/model/batch_normalization_10/FusedBatchNormV3;model/model/depthwise_conv2d_3/depthwise;model/model/conv2d_29/Conv2D;model/model/depthwise_conv2d_2/depthwise, model/model/conv2d_5/Conv2D_reshape, model/model/batch_normalization_8/FusedBatchNormV3;model/model/conv2d_5/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for ADD 'model/model/tf.__operators__.add/AddV2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/batch_normalization_8/FusedBatchNormV3;model/model/conv2d_5/Conv2D1, model/model/batch_normalization_5/FusedBatchNormV3;model/model/conv2d_5/Conv2D;model/model/conv2d_3/Conv2D1, model/model/tf.__operators__.add/AddV2
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/tf.nn.relu6_6/Relu6;model/model/batch_normalization_9/FusedBatchNormV3;model/model/batch_normalization_10/FusedBatchNormV3;model/model/depthwise_conv2d_3/depthwise;model/model/conv2d_29/Conv2D;model/model/conv2d_6/Conv2D'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.__operators__.add/AddV2, model/model/conv2d_6/Conv2D_reshape, model/model/tf.nn.relu6_6/Relu6;model/model/batch_normalization_9/FusedBatchNormV3;model/model/batch_normalization_10/FusedBatchNormV3;model/model/depthwise_conv2d_3/depthwise;model/model/conv2d_29/Conv2D;model/model/conv2d_6/Conv2D
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'model/model/tf.nn.relu6_7/Relu6;model/model/batch_normalization_10/FusedBatchNormV3;model/model/depthwise_conv2d_3/depthwise;model/model/conv2d_29/Conv2D'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_6/Relu6;model/model/batch_normalization_9/FusedBatchNormV3;model/model/batch_normalization_10/FusedBatchNormV3;model/model/depthwise_conv2d_3/depthwise;model/model/conv2d_29/Conv2D;model/model/conv2d_6/Conv2D, model/model/batch_normalization_10/FusedBatchNormV3;model/model/depthwise_conv2d_3/depthwise;model/model/conv2d_29/Conv2D_reshape, model/model/tf.nn.relu6_7/Relu6;model/model/batch_normalization_10/FusedBatchNormV3;model/model/depthwise_conv2d_3/depthwise;model/model/conv2d_29/Conv2D
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/batch_normalization_11/FusedBatchNormV3;model/model/conv2d_9/Conv2D;model/model/conv2d_7/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_7/Relu6;model/model/batch_normalization_10/FusedBatchNormV3;model/model/depthwise_conv2d_3/depthwise;model/model/conv2d_29/Conv2D, model/model/conv2d_7/Conv2D_reshape, model/model/batch_normalization_11/FusedBatchNormV3;model/model/conv2d_9/Conv2D;model/model/conv2d_7/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/tf.nn.relu6_8/Relu6;model/model/batch_normalization_12/FusedBatchNormV3;model/model/batch_normalization_16/FusedBatchNormV3;model/model/depthwise_conv2d_5/depthwise;model/model/conv2d_31/Conv2D;model/model/conv2d_8/Conv2D'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/batch_normalization_11/FusedBatchNormV3;model/model/conv2d_9/Conv2D;model/model/conv2d_7/Conv2D1, model/model/conv2d_8/Conv2D_reshape, model/model/tf.nn.relu6_8/Relu6;model/model/batch_normalization_12/FusedBatchNormV3;model/model/batch_normalization_16/FusedBatchNormV3;model/model/depthwise_conv2d_5/depthwise;model/model/conv2d_31/Conv2D;model/model/conv2d_8/Conv2D
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'model/model/tf.nn.relu6_9/Relu6;model/model/batch_normalization_13/FusedBatchNormV3;model/model/batch_normalization_16/FusedBatchNormV3;model/model/depthwise_conv2d_5/depthwise;model/model/conv2d_31/Conv2D;model/model/depthwise_conv2d_4/depthwise'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_8/Relu6;model/model/batch_normalization_12/FusedBatchNormV3;model/model/batch_normalization_16/FusedBatchNormV3;model/model/depthwise_conv2d_5/depthwise;model/model/conv2d_31/Conv2D;model/model/conv2d_8/Conv2D, model/model/batch_normalization_13/FusedBatchNormV3;model/model/depthwise_conv2d_4/depthwise;model/model/conv2d_31/Conv2D_reshape, model/model/tf.nn.relu6_9/Relu6;model/model/batch_normalization_13/FusedBatchNormV3;model/model/batch_normalization_16/FusedBatchNormV3;model/model/depthwise_conv2d_5/depthwise;model/model/conv2d_31/Conv2D;model/model/depthwise_conv2d_4/depthwise
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/batch_normalization_14/FusedBatchNormV3;model/model/conv2d_9/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_9/Relu6;model/model/batch_normalization_13/FusedBatchNormV3;model/model/batch_normalization_16/FusedBatchNormV3;model/model/depthwise_conv2d_5/depthwise;model/model/conv2d_31/Conv2D;model/model/depthwise_conv2d_4/depthwise, model/model/conv2d_9/Conv2D_reshape, model/model/batch_normalization_14/FusedBatchNormV3;model/model/conv2d_9/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for ADD 'model/model/tf.__operators__.add_1/AddV2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/batch_normalization_14/FusedBatchNormV3;model/model/conv2d_9/Conv2D1, model/model/batch_normalization_11/FusedBatchNormV3;model/model/conv2d_9/Conv2D;model/model/conv2d_7/Conv2D1, model/model/tf.__operators__.add_1/AddV2
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/tf.nn.relu6_10/Relu6;model/model/batch_normalization_15/FusedBatchNormV3;model/model/batch_normalization_16/FusedBatchNormV3;model/model/depthwise_conv2d_5/depthwise;model/model/conv2d_31/Conv2D;model/model/conv2d_10/Conv2D'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.__operators__.add_1/AddV2, model/model/conv2d_10/Conv2D_reshape, model/model/tf.nn.relu6_10/Relu6;model/model/batch_normalization_15/FusedBatchNormV3;model/model/batch_normalization_16/FusedBatchNormV3;model/model/depthwise_conv2d_5/depthwise;model/model/conv2d_31/Conv2D;model/model/conv2d_10/Conv2D
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'model/model/tf.nn.relu6_11/Relu6;model/model/batch_normalization_16/FusedBatchNormV3;model/model/depthwise_conv2d_5/depthwise;model/model/conv2d_31/Conv2D'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_10/Relu6;model/model/batch_normalization_15/FusedBatchNormV3;model/model/batch_normalization_16/FusedBatchNormV3;model/model/depthwise_conv2d_5/depthwise;model/model/conv2d_31/Conv2D;model/model/conv2d_10/Conv2D, model/model/batch_normalization_16/FusedBatchNormV3;model/model/depthwise_conv2d_5/depthwise;model/model/conv2d_31/Conv2D_reshape, model/model/tf.nn.relu6_11/Relu6;model/model/batch_normalization_16/FusedBatchNormV3;model/model/depthwise_conv2d_5/depthwise;model/model/conv2d_31/Conv2D
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/batch_normalization_17/FusedBatchNormV3;model/model/conv2d_15/Conv2D;model/model/conv2d_11/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_11/Relu6;model/model/batch_normalization_16/FusedBatchNormV3;model/model/depthwise_conv2d_5/depthwise;model/model/conv2d_31/Conv2D, model/model/conv2d_11/Conv2D_reshape, model/model/batch_normalization_17/FusedBatchNormV3;model/model/conv2d_15/Conv2D;model/model/conv2d_11/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/tf.nn.relu6_12/Relu6;model/model/batch_normalization_18/FusedBatchNormV3;model/model/batch_normalization_25/FusedBatchNormV3;model/model/depthwise_conv2d_8/depthwise;model/model/conv2d_12/Conv2D'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/batch_normalization_17/FusedBatchNormV3;model/model/conv2d_15/Conv2D;model/model/conv2d_11/Conv2D1, model/model/conv2d_12/Conv2D_reshape, model/model/tf.nn.relu6_12/Relu6;model/model/batch_normalization_18/FusedBatchNormV3;model/model/batch_normalization_25/FusedBatchNormV3;model/model/depthwise_conv2d_8/depthwise;model/model/conv2d_12/Conv2D
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'model/model/tf.nn.relu6_13/Relu6;model/model/batch_normalization_19/FusedBatchNormV3;model/model/batch_normalization_25/FusedBatchNormV3;model/model/depthwise_conv2d_8/depthwise;model/model/depthwise_conv2d_6/depthwise'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_12/Relu6;model/model/batch_normalization_18/FusedBatchNormV3;model/model/batch_normalization_25/FusedBatchNormV3;model/model/depthwise_conv2d_8/depthwise;model/model/conv2d_12/Conv2D, model/model/batch_normalization_19/FusedBatchNormV3;model/model/depthwise_conv2d_6/depthwise;model/model/depthwise_conv2d_8/depthwise_reshape, model/model/tf.nn.relu6_13/Relu6;model/model/batch_normalization_19/FusedBatchNormV3;model/model/batch_normalization_25/FusedBatchNormV3;model/model/depthwise_conv2d_8/depthwise;model/model/depthwise_conv2d_6/depthwise
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/batch_normalization_20/FusedBatchNormV3;model/model/conv2d_15/Conv2D;model/model/conv2d_13/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_13/Relu6;model/model/batch_normalization_19/FusedBatchNormV3;model/model/batch_normalization_25/FusedBatchNormV3;model/model/depthwise_conv2d_8/depthwise;model/model/depthwise_conv2d_6/depthwise, model/model/conv2d_13/Conv2D_reshape, model/model/batch_normalization_20/FusedBatchNormV3;model/model/conv2d_15/Conv2D;model/model/conv2d_13/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for ADD 'model/model/tf.__operators__.add_2/AddV2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/batch_normalization_20/FusedBatchNormV3;model/model/conv2d_15/Conv2D;model/model/conv2d_13/Conv2D1, model/model/batch_normalization_17/FusedBatchNormV3;model/model/conv2d_15/Conv2D;model/model/conv2d_11/Conv2D1, model/model/tf.__operators__.add_2/AddV2
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/tf.nn.relu6_14/Relu6;model/model/batch_normalization_21/FusedBatchNormV3;model/model/batch_normalization_25/FusedBatchNormV3;model/model/depthwise_conv2d_8/depthwise;model/model/conv2d_14/Conv2D'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.__operators__.add_2/AddV2, model/model/conv2d_14/Conv2D_reshape, model/model/tf.nn.relu6_14/Relu6;model/model/batch_normalization_21/FusedBatchNormV3;model/model/batch_normalization_25/FusedBatchNormV3;model/model/depthwise_conv2d_8/depthwise;model/model/conv2d_14/Conv2D
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'model/model/tf.nn.relu6_15/Relu6;model/model/batch_normalization_22/FusedBatchNormV3;model/model/batch_normalization_25/FusedBatchNormV3;model/model/depthwise_conv2d_8/depthwise;model/model/depthwise_conv2d_7/depthwise'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_14/Relu6;model/model/batch_normalization_21/FusedBatchNormV3;model/model/batch_normalization_25/FusedBatchNormV3;model/model/depthwise_conv2d_8/depthwise;model/model/conv2d_14/Conv2D, model/model/batch_normalization_22/FusedBatchNormV3;model/model/depthwise_conv2d_7/depthwise;model/model/depthwise_conv2d_8/depthwise_reshape, model/model/tf.nn.relu6_15/Relu6;model/model/batch_normalization_22/FusedBatchNormV3;model/model/batch_normalization_25/FusedBatchNormV3;model/model/depthwise_conv2d_8/depthwise;model/model/depthwise_conv2d_7/depthwise
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/batch_normalization_23/FusedBatchNormV3;model/model/conv2d_15/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_15/Relu6;model/model/batch_normalization_22/FusedBatchNormV3;model/model/batch_normalization_25/FusedBatchNormV3;model/model/depthwise_conv2d_8/depthwise;model/model/depthwise_conv2d_7/depthwise, model/model/conv2d_15/Conv2D_reshape, model/model/batch_normalization_23/FusedBatchNormV3;model/model/conv2d_15/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for ADD 'model/model/tf.__operators__.add_3/AddV2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/batch_normalization_23/FusedBatchNormV3;model/model/conv2d_15/Conv2D1, model/model/tf.__operators__.add_2/AddV2, model/model/tf.__operators__.add_3/AddV2
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/tf.nn.relu6_16/Relu6;model/model/batch_normalization_24/FusedBatchNormV3;model/model/batch_normalization_25/FusedBatchNormV3;model/model/depthwise_conv2d_8/depthwise;model/model/conv2d_16/Conv2D'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.__operators__.add_3/AddV2, model/model/conv2d_16/Conv2D_reshape, model/model/tf.nn.relu6_16/Relu6;model/model/batch_normalization_24/FusedBatchNormV3;model/model/batch_normalization_25/FusedBatchNormV3;model/model/depthwise_conv2d_8/depthwise;model/model/conv2d_16/Conv2D
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'model/model/tf.nn.relu6_17/Relu6;model/model/batch_normalization_25/FusedBatchNormV3;model/model/depthwise_conv2d_8/depthwise'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_16/Relu6;model/model/batch_normalization_24/FusedBatchNormV3;model/model/batch_normalization_25/FusedBatchNormV3;model/model/depthwise_conv2d_8/depthwise;model/model/conv2d_16/Conv2D, model/model/batch_normalization_25/FusedBatchNormV3;model/model/depthwise_conv2d_8/depthwise_reshape, model/model/tf.nn.relu6_17/Relu6;model/model/batch_normalization_25/FusedBatchNormV3;model/model/depthwise_conv2d_8/depthwise
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/batch_normalization_26/FusedBatchNormV3;model/model/conv2d_21/Conv2D;model/model/conv2d_17/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_17/Relu6;model/model/batch_normalization_25/FusedBatchNormV3;model/model/depthwise_conv2d_8/depthwise, model/model/conv2d_17/Conv2D_reshape, model/model/batch_normalization_26/FusedBatchNormV3;model/model/conv2d_21/Conv2D;model/model/conv2d_17/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/tf.nn.relu6_18/Relu6;model/model/batch_normalization_27/FusedBatchNormV3;model/model/batch_normalization_34/FusedBatchNormV3;model/model/depthwise_conv2d_11/depthwise;model/model/conv2d_18/Conv2D'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/batch_normalization_26/FusedBatchNormV3;model/model/conv2d_21/Conv2D;model/model/conv2d_17/Conv2D1, model/model/conv2d_18/Conv2D_reshape, model/model/tf.nn.relu6_18/Relu6;model/model/batch_normalization_27/FusedBatchNormV3;model/model/batch_normalization_34/FusedBatchNormV3;model/model/depthwise_conv2d_11/depthwise;model/model/conv2d_18/Conv2D
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'model/model/tf.nn.relu6_19/Relu6;model/model/batch_normalization_28/FusedBatchNormV3;model/model/batch_normalization_34/FusedBatchNormV3;model/model/depthwise_conv2d_11/depthwise;model/model/depthwise_conv2d_9/depthwise'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_18/Relu6;model/model/batch_normalization_27/FusedBatchNormV3;model/model/batch_normalization_34/FusedBatchNormV3;model/model/depthwise_conv2d_11/depthwise;model/model/conv2d_18/Conv2D, model/model/batch_normalization_28/FusedBatchNormV3;model/model/depthwise_conv2d_9/depthwise;model/model/depthwise_conv2d_11/depthwise_reshape, model/model/tf.nn.relu6_19/Relu6;model/model/batch_normalization_28/FusedBatchNormV3;model/model/batch_normalization_34/FusedBatchNormV3;model/model/depthwise_conv2d_11/depthwise;model/model/depthwise_conv2d_9/depthwise
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/batch_normalization_29/FusedBatchNormV3;model/model/conv2d_21/Conv2D;model/model/conv2d_19/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_19/Relu6;model/model/batch_normalization_28/FusedBatchNormV3;model/model/batch_normalization_34/FusedBatchNormV3;model/model/depthwise_conv2d_11/depthwise;model/model/depthwise_conv2d_9/depthwise, model/model/conv2d_19/Conv2D_reshape, model/model/batch_normalization_29/FusedBatchNormV3;model/model/conv2d_21/Conv2D;model/model/conv2d_19/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for ADD 'model/model/tf.__operators__.add_4/AddV2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/batch_normalization_29/FusedBatchNormV3;model/model/conv2d_21/Conv2D;model/model/conv2d_19/Conv2D1, model/model/batch_normalization_26/FusedBatchNormV3;model/model/conv2d_21/Conv2D;model/model/conv2d_17/Conv2D1, model/model/tf.__operators__.add_4/AddV2
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/tf.nn.relu6_20/Relu6;model/model/batch_normalization_30/FusedBatchNormV3;model/model/batch_normalization_34/FusedBatchNormV3;model/model/depthwise_conv2d_11/depthwise;model/model/conv2d_20/Conv2D'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.__operators__.add_4/AddV2, model/model/conv2d_20/Conv2D_reshape, model/model/tf.nn.relu6_20/Relu6;model/model/batch_normalization_30/FusedBatchNormV3;model/model/batch_normalization_34/FusedBatchNormV3;model/model/depthwise_conv2d_11/depthwise;model/model/conv2d_20/Conv2D
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'model/model/tf.nn.relu6_21/Relu6;model/model/batch_normalization_31/FusedBatchNormV3;model/model/batch_normalization_34/FusedBatchNormV3;model/model/depthwise_conv2d_11/depthwise;model/model/depthwise_conv2d_10/depthwise'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_20/Relu6;model/model/batch_normalization_30/FusedBatchNormV3;model/model/batch_normalization_34/FusedBatchNormV3;model/model/depthwise_conv2d_11/depthwise;model/model/conv2d_20/Conv2D, model/model/batch_normalization_31/FusedBatchNormV3;model/model/depthwise_conv2d_10/depthwise;model/model/depthwise_conv2d_11/depthwise_reshape, model/model/tf.nn.relu6_21/Relu6;model/model/batch_normalization_31/FusedBatchNormV3;model/model/batch_normalization_34/FusedBatchNormV3;model/model/depthwise_conv2d_11/depthwise;model/model/depthwise_conv2d_10/depthwise
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/batch_normalization_32/FusedBatchNormV3;model/model/conv2d_21/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_21/Relu6;model/model/batch_normalization_31/FusedBatchNormV3;model/model/batch_normalization_34/FusedBatchNormV3;model/model/depthwise_conv2d_11/depthwise;model/model/depthwise_conv2d_10/depthwise, model/model/conv2d_21/Conv2D_reshape, model/model/batch_normalization_32/FusedBatchNormV3;model/model/conv2d_21/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for ADD 'model/model/tf.__operators__.add_5/AddV2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/batch_normalization_32/FusedBatchNormV3;model/model/conv2d_21/Conv2D1, model/model/tf.__operators__.add_4/AddV2, model/model/tf.__operators__.add_5/AddV2
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/tf.nn.relu6_22/Relu6;model/model/batch_normalization_33/FusedBatchNormV3;model/model/batch_normalization_34/FusedBatchNormV3;model/model/depthwise_conv2d_11/depthwise;model/model/conv2d_22/Conv2D'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.__operators__.add_5/AddV2, model/model/conv2d_22/Conv2D_reshape, model/model/tf.nn.relu6_22/Relu6;model/model/batch_normalization_33/FusedBatchNormV3;model/model/batch_normalization_34/FusedBatchNormV3;model/model/depthwise_conv2d_11/depthwise;model/model/conv2d_22/Conv2D
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'model/model/tf.nn.relu6_23/Relu6;model/model/batch_normalization_34/FusedBatchNormV3;model/model/depthwise_conv2d_11/depthwise'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_22/Relu6;model/model/batch_normalization_33/FusedBatchNormV3;model/model/batch_normalization_34/FusedBatchNormV3;model/model/depthwise_conv2d_11/depthwise;model/model/conv2d_22/Conv2D, model/model/batch_normalization_34/FusedBatchNormV3;model/model/depthwise_conv2d_11/depthwise_reshape, model/model/tf.nn.relu6_23/Relu6;model/model/batch_normalization_34/FusedBatchNormV3;model/model/depthwise_conv2d_11/depthwise
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/batch_normalization_35/FusedBatchNormV3;model/model/conv2d_29/Conv2D;model/model/conv2d_23/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_23/Relu6;model/model/batch_normalization_34/FusedBatchNormV3;model/model/depthwise_conv2d_11/depthwise, model/model/conv2d_23/Conv2D_reshape, model/model/batch_normalization_35/FusedBatchNormV3;model/model/conv2d_29/Conv2D;model/model/conv2d_23/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/tf.nn.relu6_24/Relu6;model/model/batch_normalization_36/FusedBatchNormV3;model/model/batch_normalization_47/FusedBatchNormV3;model/model/depthwise_conv2d_16/depthwise;model/model/conv2d_24/Conv2D'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/batch_normalization_35/FusedBatchNormV3;model/model/conv2d_29/Conv2D;model/model/conv2d_23/Conv2D1, model/model/conv2d_24/Conv2D_reshape, model/model/tf.nn.relu6_24/Relu6;model/model/batch_normalization_36/FusedBatchNormV3;model/model/batch_normalization_47/FusedBatchNormV3;model/model/depthwise_conv2d_16/depthwise;model/model/conv2d_24/Conv2D
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'model/model/tf.nn.relu6_25/Relu6;model/model/batch_normalization_37/FusedBatchNormV3;model/model/batch_normalization_47/FusedBatchNormV3;model/model/depthwise_conv2d_16/depthwise;model/model/depthwise_conv2d_12/depthwise'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_24/Relu6;model/model/batch_normalization_36/FusedBatchNormV3;model/model/batch_normalization_47/FusedBatchNormV3;model/model/depthwise_conv2d_16/depthwise;model/model/conv2d_24/Conv2D, model/model/batch_normalization_37/FusedBatchNormV3;model/model/depthwise_conv2d_12/depthwise;model/model/depthwise_conv2d_16/depthwise_reshape, model/model/tf.nn.relu6_25/Relu6;model/model/batch_normalization_37/FusedBatchNormV3;model/model/batch_normalization_47/FusedBatchNormV3;model/model/depthwise_conv2d_16/depthwise;model/model/depthwise_conv2d_12/depthwise
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/batch_normalization_38/FusedBatchNormV3;model/model/conv2d_29/Conv2D;model/model/conv2d_25/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_25/Relu6;model/model/batch_normalization_37/FusedBatchNormV3;model/model/batch_normalization_47/FusedBatchNormV3;model/model/depthwise_conv2d_16/depthwise;model/model/depthwise_conv2d_12/depthwise, model/model/conv2d_25/Conv2D_reshape, model/model/batch_normalization_38/FusedBatchNormV3;model/model/conv2d_29/Conv2D;model/model/conv2d_25/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for ADD 'model/model/tf.__operators__.add_6/AddV2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/batch_normalization_38/FusedBatchNormV3;model/model/conv2d_29/Conv2D;model/model/conv2d_25/Conv2D1, model/model/batch_normalization_35/FusedBatchNormV3;model/model/conv2d_29/Conv2D;model/model/conv2d_23/Conv2D1, model/model/tf.__operators__.add_6/AddV2
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/tf.nn.relu6_26/Relu6;model/model/batch_normalization_39/FusedBatchNormV3;model/model/batch_normalization_47/FusedBatchNormV3;model/model/depthwise_conv2d_16/depthwise;model/model/conv2d_26/Conv2D'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.__operators__.add_6/AddV2, model/model/conv2d_26/Conv2D_reshape, model/model/tf.nn.relu6_26/Relu6;model/model/batch_normalization_39/FusedBatchNormV3;model/model/batch_normalization_47/FusedBatchNormV3;model/model/depthwise_conv2d_16/depthwise;model/model/conv2d_26/Conv2D
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'model/model/tf.nn.relu6_27/Relu6;model/model/batch_normalization_40/FusedBatchNormV3;model/model/batch_normalization_47/FusedBatchNormV3;model/model/depthwise_conv2d_16/depthwise;model/model/depthwise_conv2d_13/depthwise'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_26/Relu6;model/model/batch_normalization_39/FusedBatchNormV3;model/model/batch_normalization_47/FusedBatchNormV3;model/model/depthwise_conv2d_16/depthwise;model/model/conv2d_26/Conv2D, model/model/batch_normalization_40/FusedBatchNormV3;model/model/depthwise_conv2d_13/depthwise;model/model/depthwise_conv2d_16/depthwise_reshape, model/model/tf.nn.relu6_27/Relu6;model/model/batch_normalization_40/FusedBatchNormV3;model/model/batch_normalization_47/FusedBatchNormV3;model/model/depthwise_conv2d_16/depthwise;model/model/depthwise_conv2d_13/depthwise
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/batch_normalization_41/FusedBatchNormV3;model/model/conv2d_29/Conv2D;model/model/conv2d_27/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_27/Relu6;model/model/batch_normalization_40/FusedBatchNormV3;model/model/batch_normalization_47/FusedBatchNormV3;model/model/depthwise_conv2d_16/depthwise;model/model/depthwise_conv2d_13/depthwise, model/model/conv2d_27/Conv2D_reshape, model/model/batch_normalization_41/FusedBatchNormV3;model/model/conv2d_29/Conv2D;model/model/conv2d_27/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for ADD 'model/model/tf.__operators__.add_7/AddV2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/batch_normalization_41/FusedBatchNormV3;model/model/conv2d_29/Conv2D;model/model/conv2d_27/Conv2D1, model/model/tf.__operators__.add_6/AddV2, model/model/tf.__operators__.add_7/AddV2
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/tf.nn.relu6_28/Relu6;model/model/batch_normalization_42/FusedBatchNormV3;model/model/batch_normalization_47/FusedBatchNormV3;model/model/depthwise_conv2d_16/depthwise;model/model/conv2d_28/Conv2D'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.__operators__.add_7/AddV2, model/model/conv2d_28/Conv2D_reshape, model/model/tf.nn.relu6_28/Relu6;model/model/batch_normalization_42/FusedBatchNormV3;model/model/batch_normalization_47/FusedBatchNormV3;model/model/depthwise_conv2d_16/depthwise;model/model/conv2d_28/Conv2D
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'model/model/tf.nn.relu6_29/Relu6;model/model/batch_normalization_43/FusedBatchNormV3;model/model/batch_normalization_47/FusedBatchNormV3;model/model/depthwise_conv2d_16/depthwise;model/model/depthwise_conv2d_14/depthwise'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_28/Relu6;model/model/batch_normalization_42/FusedBatchNormV3;model/model/batch_normalization_47/FusedBatchNormV3;model/model/depthwise_conv2d_16/depthwise;model/model/conv2d_28/Conv2D, model/model/batch_normalization_43/FusedBatchNormV3;model/model/depthwise_conv2d_14/depthwise;model/model/depthwise_conv2d_16/depthwise_reshape, model/model/tf.nn.relu6_29/Relu6;model/model/batch_normalization_43/FusedBatchNormV3;model/model/batch_normalization_47/FusedBatchNormV3;model/model/depthwise_conv2d_16/depthwise;model/model/depthwise_conv2d_14/depthwise
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/batch_normalization_44/FusedBatchNormV3;model/model/conv2d_29/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_29/Relu6;model/model/batch_normalization_43/FusedBatchNormV3;model/model/batch_normalization_47/FusedBatchNormV3;model/model/depthwise_conv2d_16/depthwise;model/model/depthwise_conv2d_14/depthwise, model/model/conv2d_29/Conv2D_reshape, model/model/batch_normalization_44/FusedBatchNormV3;model/model/conv2d_29/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for ADD 'model/model/tf.__operators__.add_8/AddV2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/batch_normalization_44/FusedBatchNormV3;model/model/conv2d_29/Conv2D1, model/model/tf.__operators__.add_7/AddV2, model/model/tf.__operators__.add_8/AddV2
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/tf.nn.relu6_30/Relu6;model/model/batch_normalization_45/FusedBatchNormV3;model/model/batch_normalization_47/FusedBatchNormV3;model/model/depthwise_conv2d_16/depthwise;model/model/conv2d_30/Conv2D'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.__operators__.add_8/AddV2, model/model/conv2d_30/Conv2D_reshape, model/model/tf.nn.relu6_30/Relu6;model/model/batch_normalization_45/FusedBatchNormV3;model/model/batch_normalization_47/FusedBatchNormV3;model/model/depthwise_conv2d_16/depthwise;model/model/conv2d_30/Conv2D
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'model/model/tf.nn.relu6_31/Relu6;model/model/batch_normalization_46/FusedBatchNormV3;model/model/depthwise_conv2d_15/depthwise;model/model/depthwise_conv2d_16/depthwise'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_30/Relu6;model/model/batch_normalization_45/FusedBatchNormV3;model/model/batch_normalization_47/FusedBatchNormV3;model/model/depthwise_conv2d_16/depthwise;model/model/conv2d_30/Conv2D, model/model/batch_normalization_46/FusedBatchNormV3;model/model/depthwise_conv2d_15/depthwise;model/model/depthwise_conv2d_16/depthwise_reshape, model/model/tf.nn.relu6_31/Relu6;model/model/batch_normalization_46/FusedBatchNormV3;model/model/depthwise_conv2d_15/depthwise;model/model/depthwise_conv2d_16/depthwise
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'model/model/tf.nn.relu6_32/Relu6;model/model/batch_normalization_47/FusedBatchNormV3;model/model/depthwise_conv2d_16/depthwise'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_31/Relu6;model/model/batch_normalization_46/FusedBatchNormV3;model/model/depthwise_conv2d_15/depthwise;model/model/depthwise_conv2d_16/depthwise, model/model/batch_normalization_47/FusedBatchNormV3;model/model/depthwise_conv2d_16/depthwise_reshape, model/model/tf.nn.relu6_32/Relu6;model/model/batch_normalization_47/FusedBatchNormV3;model/model/depthwise_conv2d_16/depthwise
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'model/model/conv2d_31/Conv2D1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/tf.nn.relu6_32/Relu6;model/model/batch_normalization_47/FusedBatchNormV3;model/model/depthwise_conv2d_16/depthwise, model/model/conv2d_31/Conv2D_reshape, model/model/conv2d_31/Conv2D1
+Warning: Unsupported TensorFlow Lite semantics for RESHAPE 'model/model/flatten/Reshape'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/conv2d_31/Conv2D1, model/model/flatten/Reshape
+Warning: Unsupported TensorFlow Lite semantics for FULLY_CONNECTED 'Identity'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/flatten/Reshape, model/model/conv_landmarks/MatMul_reshape, Identity
+Warning: Unsupported TensorFlow Lite semantics for FULLY_CONNECTED 'model/model/conv_handflag/MatMul;model/model/conv_handflag/BiasAdd'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/flatten/Reshape, model/model/conv_handflag/MatMul_reshape, model/model/conv_handflag/MatMul;model/model/conv_handflag/BiasAdd
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'Identity_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/conv_handflag/MatMul;model/model/conv_handflag/BiasAdd, Identity_1
+Warning: Unsupported TensorFlow Lite semantics for FULLY_CONNECTED 'model/model/conv_handedness/MatMul;model/model/conv_handedness/BiasAdd'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/flatten/Reshape, model/model/conv_handedness/MatMul_reshape, model/model/conv_handedness/MatMul;model/model/conv_handedness/BiasAdd
+Warning: Unsupported TensorFlow Lite semantics for LOGISTIC 'Identity_2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/model/conv_handedness/MatMul;model/model/conv_handedness/BiasAdd, Identity_2
+Warning: FullyConnected operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: FullyConnected operation is unknown or unsupported, placing on CPU
+Warning: Sigmoid operation is unknown or unsupported, placing on CPU
+Warning: FullyConnected operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+
+Network summary for hand_landmark_mediapipe_quant
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+
+
+CPU operators = 64 (100.0%)
+NPU operators = 0 (0.0%)
+
+Neural network macs                                 0 MACs/batch
+Network Tops/s                                    nan Tops/s
+
+NPU cycles                                          0 cycles/batch
+SRAM Access cycles                                  0 cycles/batch
+DRAM Access cycles                                  0 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                        0 cycles/batch
+
+Batch Inference time                 0.00 ms,     nan inferences/s (batch size 1)
+

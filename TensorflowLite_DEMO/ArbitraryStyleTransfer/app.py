@@ -110,27 +110,29 @@ def main():
   parser.add_argument("--save", default="1")
   parser.add_argument( '-t', "--time", default="0")
   parser.add_argument('--delegate' , default="xnnpack", help = 'Please Input nnapi or xnnpack')
-  parser.add_argument( '-m', '--model' , default="magenta_arbitrary-image-stylization-v1-256_int8_transfer_1.tflite", help='File path of .tflite file.')
-  parser.add_argument( '-mf', '--model_feature' , default="magenta_arbitrary-image-stylization-v1-256_int8_prediction_1.tflite", help='File path of .tflite file.')
-  parser.add_argument("--test_img", default="belfry.jpg")
+  parser.add_argument( '-m', '--model' , default="model/magenta_arbitrary-image-stylization-v1-256_transfer_1_quant.tflite", help='File path of .tflite file.')
+  parser.add_argument( '-mf', '--model_feature' , default="model/magenta_arbitrary-image-stylization-v1-256_prediction_1_quant.tflite", help='File path of .tflite file.')
+  parser.add_argument("--test_img", default="img/belfry.jpg")
   
   args = parser.parse_args()
   if args.camera_format == "V4L2_YUV2_480p" : camera_format = V4L2_YUV2_480p
   if args.camera_format == "V4L2_YUV2_720p" : camera_format = V4L2_YUV2_720p
   if args.camera_format == "V4L2_H264_1080p" : camera_format = V4L2_H264_1080p
 
-  # vela(NPU) 路徑修正
+  # vela(NPU) 預設路徑修正
   if(args.delegate=="ethosu"): 
-    args.model = 'output/' + args.model[:-7] + '_vela.tflite'
-    args.model_feature = 'output/' + args.model_feature[:-7] + '_vela.tflite'
+    if(args.model[-11:]!='vela.tflite') :
+        args.model = args.model[:-7] + '_vela.tflite'
+    if(args.model_feature[-11:]!='vela.tflite') :
+        args.model_feature =  args.model_feature[:-7] + '_vela.tflite'
 
 
   # (1) 讓解譯器學習各種風格
-  style_bottleneck_style23   = StyleEncoder(args.model_feature , "StyleDataSets/style23.jpg",args.delegate)
-  style_bottleneck_VanGogh   = StyleEncoder(args.model_feature , "StyleDataSets/VanGogh_Star.jpg",args.delegate)
-  style_bottleneck_sketch    = StyleEncoder(args.model_feature , "StyleDataSets/sketch.jpg",args.delegate)
-  style_bottleneck_waterpaint= StyleEncoder(args.model_feature , "StyleDataSets/waterpaint.jpg",args.delegate)
-  style_bottleneck_colpencil = StyleEncoder(args.model_feature , "StyleDataSets/towers_1916_sq.jpg",args.delegate)
+  style_bottleneck_style23   = StyleEncoder(args.model_feature , "img/sytle/style23.jpg",args.delegate)
+  style_bottleneck_VanGogh   = StyleEncoder(args.model_feature , "img/sytle/VanGogh_Star.jpg",args.delegate)
+  style_bottleneck_sketch    = StyleEncoder(args.model_feature , "img/sytle/sketch.jpg",args.delegate)
+  style_bottleneck_waterpaint= StyleEncoder(args.model_feature , "img/sytle/waterpaint.jpg",args.delegate)
+  style_bottleneck_colpencil = StyleEncoder(args.model_feature , "img/sytle/towers_1916_sq.jpg",args.delegate)
 
   # (2) 調用任一已學習風格的解譯器
   style_bottleneck = style_bottleneck_VanGogh 
@@ -193,8 +195,8 @@ def main():
 
     # 顯示結果
     if args.save == "True" or args.save == "1" :
-      cv2.imwrite( APP_NAME + "-" + args.test_img[:len(args.test_img)-4] +'_result.jpg', result.astype("uint8"))
-      print("Save Reuslt Image Success , " + APP_NAME + "-" +  args.test_img[:len(args.test_img)-4] + '_result.jpg')
+      cv2.imwrite( "output/" + APP_NAME + "-" + args.test_img.split("/")[-1][:-4] +'_result.jpg', result.astype("uint8"))
+      print("Save Reuslt Image Success , " + APP_NAME + "-" +  args.test_img.split("/")[-1][:-4] + '_result.jpg')
 
     if args.display =="True" or args.display == "1" :
       cv2.imshow('result', result.astype("uint8"))

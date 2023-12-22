@@ -1,0 +1,45 @@
+Warning: Unsupported TensorFlow Lite semantics for TRANSPOSE 'model/tf.compat.v1.transpose/transpose'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf.compat.v1.transpose/transpose/perm
+Warning: Transpose operation is unknown or unsupported, placing on CPU
+
+Network summary for face_recognizer_fast_27ms
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                378.00 KiB
+Total DRAM used                              10197.27 KiB
+
+CPU operators = 1 (0.7%)
+NPU operators = 144 (99.3%)
+
+Average SRAM bandwidth                           1.37 GB/s
+Input   SRAM bandwidth                          22.23 MB/batch
+Weight  SRAM bandwidth                          12.45 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                          34.78 MB/batch
+Total   SRAM bandwidth            per input     34.78 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           2.25 GB/s
+Input   DRAM bandwidth                          23.15 MB/batch
+Weight  DRAM bandwidth                           7.89 MB/batch
+Output  DRAM bandwidth                          25.92 MB/batch
+Total   DRAM bandwidth                          56.96 MB/batch
+Total   DRAM bandwidth            per input     56.96 MB/inference (batch size 1)
+
+Neural network macs                         579219328 MACs/batch
+Network Tops/s                                   0.05 Tops/s
+
+NPU cycles                                   16570377 cycles/batch
+SRAM Access cycles                            2215680 cycles/batch
+DRAM Access cycles                           17961975 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                 25303151 cycles/batch
+
+Batch Inference time                25.30 ms,   39.52 inferences/s (batch size 1)
+

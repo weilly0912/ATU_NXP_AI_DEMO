@@ -77,21 +77,23 @@ def main():
     parser.add_argument( '-d' ,"--display", default="0")
     parser.add_argument("--save", default="1")
     parser.add_argument( '-t', "--time", default="0")  
-    parser.add_argument('--delegate' , default="ethosu", help = 'Please Input vx or xnnpack or ethosu')  
-    parser.add_argument( '-m', '--model' , default="quant_coco-tiny-v3-relu.tflite", help='File path of .tflite file.')
+    parser.add_argument('--delegate' , default="vx", help = 'Please Input vx or xnnpack or ethosu')  
+    parser.add_argument( '-m', '--model' , default="model/coco-tiny-v3-relu_quant.tflite", help='File path of .tflite file.')
     parser.add_argument('--model_input_type' , default="uint8")
-    parser.add_argument("--anchors" , default="coco_labels.txt", help="Anchors file.")
-    parser.add_argument('--labels'  , default="coco_labels.txt", help='File path of labels file.')
+    parser.add_argument("--anchors" , default="label/coco_labels.txt", help="Anchors file.")
+    parser.add_argument('--labels'  , default="label/coco_labels.txt", help='File path of labels file.')
     parser.add_argument('--threshold',default="0.5")
-    parser.add_argument('--test_img', default="dog.bmp", help='File path of labels file.')
+    parser.add_argument('--test_img', default="img/dog.bmp", help='File path of labels file.')
     
     args = parser.parse_args()
     if args.camera_format == "V4L2_YUV2_480p" : camera_format = V4L2_YUV2_480p
     if args.camera_format == "V4L2_YUV2_720p" : camera_format = V4L2_YUV2_720p
     if args.camera_format == "V4L2_H264_1080p" : camera_format = V4L2_H264_1080p
     
-    # vela(NPU) 路徑修正
-    if(args.delegate=="ethosu"): args.model = 'output/' + args.model[:-7] + '_vela.tflite'
+    # vela(NPU) 預設路徑修正
+    if(args.delegate=="ethosu"): 
+        if(args.model[-11:]!='vela.tflite') :
+            args.model = args.model[:-7] + '_vela.tflite'
 
     # 載入標籤
     labels  = load_labels(args.labels)
@@ -197,8 +199,8 @@ def main():
 
       # 顯示輸出結果
       if args.save == "True" or args.save == "1" :
-          cv2.imwrite( APP_NAME + "-" + args.test_img[:len(args.test_img)-4] +'_result.jpg', frame.astype("uint8"))
-          print("Save Reuslt Image Success , " + APP_NAME +  "-" + args.test_img[:len(args.test_img)-4] +'_result.jpg')
+          cv2.imwrite( "output/" + APP_NAME + "-" + args.test_img.split("/")[-1][:-4] +'_result.jpg', frame.astype("uint8"))
+          print("Save Reuslt Image Success , " + APP_NAME +  "-" + args.test_img.split("/")[-1][:-4] +'_result.jpg')
 
       if args.display =="True" or args.display == "1" :
           cv2.imshow('frame', frame.astype('uint8'))

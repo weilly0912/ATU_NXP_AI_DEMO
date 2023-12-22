@@ -1,0 +1,139 @@
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'serving_default_input_1_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: serving_default_input_1
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'functional_1/tf_op_layer_concat_9/concat_9;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_concat_9/concat_9'. Placing on CPU instead
+ - The size of the OFM axis must match the sum of all IFM axis defined by the axis attribute
+   Op has axis=1, ofm_shape=[1, 1, 2] and the list of mismatching inputs are: Tensor 'functional_1/tf_op_layer_Reshape_6/Reshape_6;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Reshape_6/Reshape_6' has shape: [1, 1, 2], Tensor 'functional_1/tf_op_layer_Reshape_7/Reshape_7;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Reshape_7/Reshape_7_requantized' has shape: [1, 1, 2], Tensor 'functional_1/tf_op_layer_Reshape_8/Reshape_8;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Reshape_8/Reshape_8_requantized' has shape: [1, 1, 2]
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'functional_1/tf_op_layer_split_3/split_3;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_split_3/split_31_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: functional_1/tf_op_layer_split_3/split_3;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_split_3/split_31_float
+Warning: Unsupported TensorFlow Lite semantics for EXP 'functional_1/tf_op_layer_Exp/Exp;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Exp/Exp'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: functional_1/tf_op_layer_split_3/split_3;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_split_3/split_31_float, functional_1/tf_op_layer_Exp/Exp;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Exp/Exp
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'functional_1/tf_op_layer_Exp/Exp;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Exp/Exp_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: functional_1/tf_op_layer_Exp/Exp;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Exp/Exp
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'functional_1/tf_op_layer_split_3/split_3;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_split_3/split_34_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: functional_1/tf_op_layer_split_3/split_3;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_split_3/split_34_float
+Warning: Unsupported TensorFlow Lite semantics for EXP 'functional_1/tf_op_layer_Exp_1/Exp_1;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Exp_1/Exp_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: functional_1/tf_op_layer_split_3/split_3;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_split_3/split_34_float, functional_1/tf_op_layer_Exp_1/Exp_1;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Exp_1/Exp_1
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'functional_1/tf_op_layer_Exp_1/Exp_1;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Exp_1/Exp_1_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: functional_1/tf_op_layer_Exp_1/Exp_1;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Exp_1/Exp_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'functional_1/tf_op_layer_split_3/split_3;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_split_3/split_37_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: functional_1/tf_op_layer_split_3/split_3;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_split_3/split_37_float
+Warning: Unsupported TensorFlow Lite semantics for EXP 'functional_1/tf_op_layer_Exp_2/Exp_2;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Exp_2/Exp_2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: functional_1/tf_op_layer_split_3/split_3;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_split_3/split_37_float, functional_1/tf_op_layer_Exp_2/Exp_2;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Exp_2/Exp_2
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'functional_1/tf_op_layer_Exp_2/Exp_2;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Exp_2/Exp_2_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: functional_1/tf_op_layer_Exp_2/Exp_2;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Exp_2/Exp_2
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'functional_1/tf_op_layer_concat_8/concat_8;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_concat_8/concat_8'. Placing on CPU instead
+ - The size of the OFM axis must match the sum of all IFM axis defined by the axis attribute
+   Op has axis=1, ofm_shape=[1, 1, 2] and the list of mismatching inputs are: Tensor 'functional_1/tf_op_layer_Reshape_3/Reshape_3;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Reshape_3/Reshape_3' has shape: [1, 1, 2], Tensor 'functional_1/tf_op_layer_Reshape_4/Reshape_4;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Reshape_4/Reshape_4_requantized' has shape: [1, 1, 2], Tensor 'functional_1/tf_op_layer_Reshape_5/Reshape_5;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Reshape_5/Reshape_5_requantized' has shape: [1, 1, 2]
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'functional_1/tf_op_layer_concat_13/concat_13;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_concat_13/concat_13'. Placing on CPU instead
+ - The size of the OFM axis must match the sum of all IFM axis defined by the axis attribute
+   Op has axis=1, ofm_shape=[1, 1, 2] and the list of mismatching inputs are: Tensor 'functional_1/tf_op_layer_Reshape_15/Reshape_15;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Reshape_15/Reshape_15_requantized' has shape: [1, 1, 2], Tensor 'functional_1/tf_op_layer_Reshape_16/Reshape_16;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Reshape_16/Reshape_16_requantized' has shape: [1, 1, 2], Tensor 'functional_1/tf_op_layer_Reshape_17/Reshape_17;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Reshape_17/Reshape_17' has shape: [1, 1, 2]
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'functional_1/tf_op_layer_split_4/split_4;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_split_4/split_41_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: functional_1/tf_op_layer_split_4/split_4;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_split_4/split_41_float
+Warning: Unsupported TensorFlow Lite semantics for EXP 'functional_1/tf_op_layer_Exp_3/Exp_3;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Exp_3/Exp_3'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: functional_1/tf_op_layer_split_4/split_4;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_split_4/split_41_float, functional_1/tf_op_layer_Exp_3/Exp_3;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Exp_3/Exp_3
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'functional_1/tf_op_layer_Exp_3/Exp_3;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Exp_3/Exp_3_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: functional_1/tf_op_layer_Exp_3/Exp_3;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Exp_3/Exp_3
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'functional_1/tf_op_layer_split_4/split_4;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_split_4/split_44_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: functional_1/tf_op_layer_split_4/split_4;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_split_4/split_44_float
+Warning: Unsupported TensorFlow Lite semantics for EXP 'functional_1/tf_op_layer_Exp_4/Exp_4;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Exp_4/Exp_4'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: functional_1/tf_op_layer_split_4/split_4;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_split_4/split_44_float, functional_1/tf_op_layer_Exp_4/Exp_4;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Exp_4/Exp_4
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'functional_1/tf_op_layer_Exp_4/Exp_4;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Exp_4/Exp_4_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: functional_1/tf_op_layer_Exp_4/Exp_4;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Exp_4/Exp_4
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'functional_1/tf_op_layer_split_4/split_4;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_split_4/split_47_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: functional_1/tf_op_layer_split_4/split_4;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_split_4/split_47_float
+Warning: Unsupported TensorFlow Lite semantics for EXP 'functional_1/tf_op_layer_Exp_5/Exp_5;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Exp_5/Exp_5'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: functional_1/tf_op_layer_split_4/split_4;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_split_4/split_47_float, functional_1/tf_op_layer_Exp_5/Exp_5;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Exp_5/Exp_5
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'functional_1/tf_op_layer_Exp_5/Exp_5;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Exp_5/Exp_5_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: functional_1/tf_op_layer_Exp_5/Exp_5;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Exp_5/Exp_5
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'functional_1/tf_op_layer_concat_12/concat_12;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_concat_12/concat_12'. Placing on CPU instead
+ - The size of the OFM axis must match the sum of all IFM axis defined by the axis attribute
+   Op has axis=1, ofm_shape=[1, 1, 2] and the list of mismatching inputs are: Tensor 'functional_1/tf_op_layer_Reshape_12/Reshape_12;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Reshape_12/Reshape_12_requantized' has shape: [1, 1, 2], Tensor 'functional_1/tf_op_layer_Reshape_13/Reshape_13;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Reshape_13/Reshape_13_requantized' has shape: [1, 1, 2], Tensor 'functional_1/tf_op_layer_Reshape_14/Reshape_14;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Reshape_14/Reshape_14' has shape: [1, 1, 2]
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'StatefulPartitionedCall_int8'. Placing on CPU instead
+ - The size of the OFM axis must match the sum of all IFM axis defined by the axis attribute
+   Op has axis=1, ofm_shape=[1, 1, 4] and the list of mismatching inputs are: Tensor 'functional_1/tf_op_layer_concat_10/concat_10;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_concat_10/concat_10_requantized' has shape: [1, 1, 4], Tensor 'functional_1/tf_op_layer_concat_14/concat_14;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_concat_14/concat_14' has shape: [1, 1, 4]
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'StatefulPartitionedCall'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: StatefulPartitionedCall
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'functional_1/tf_op_layer_concat_7/concat_7;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_concat_7/concat_7'. Placing on CPU instead
+ - The size of the OFM axis must match the sum of all IFM axis defined by the axis attribute
+   Op has axis=1, ofm_shape=[1, 1, 3] and the list of mismatching inputs are: Tensor 'functional_1/tf_op_layer_Reshape/Reshape;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Reshape/Reshape_requantized' has shape: [1, 1, 3], Tensor 'functional_1/tf_op_layer_Reshape_1/Reshape_1;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Reshape_1/Reshape_1_requantized' has shape: [1, 1, 3], Tensor 'functional_1/tf_op_layer_Reshape_2/Reshape_2;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Reshape_2/Reshape_2' has shape: [1, 1, 3]
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'functional_1/tf_op_layer_concat_11/concat_11;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_concat_11/concat_11'. Placing on CPU instead
+ - The size of the OFM axis must match the sum of all IFM axis defined by the axis attribute
+   Op has axis=1, ofm_shape=[1, 1, 3] and the list of mismatching inputs are: Tensor 'functional_1/tf_op_layer_Reshape_9/Reshape_9;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Reshape_9/Reshape_9' has shape: [1, 1, 3], Tensor 'functional_1/tf_op_layer_Reshape_10/Reshape_10;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Reshape_10/Reshape_10_requantized' has shape: [1, 1, 3], Tensor 'functional_1/tf_op_layer_Reshape_11/Reshape_11;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_Reshape_11/Reshape_11_requantized' has shape: [1, 1, 3]
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'StatefulPartitionedCall:1_int8'. Placing on CPU instead
+ - The size of the OFM axis must match the sum of all IFM axis defined by the axis attribute
+   Op has axis=1, ofm_shape=[1, 1, 3] and the list of mismatching inputs are: Tensor 'functional_1/tf_op_layer_concat_7/concat_7;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_concat_7/concat_7_requantized' has shape: [1, 1, 3], Tensor 'functional_1/tf_op_layer_concat_11/concat_11;StatefulPartitionedCall/StatefulPartitionedCall/functional_1/tf_op_layer_concat_11/concat_11' has shape: [1, 1, 3]
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'StatefulPartitionedCall:1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: StatefulPartitionedCall:1
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+
+Network summary for yolov4tiny-416-OmniXR_quant
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                382.75 KiB
+Total DRAM used                               7697.97 KiB
+
+CPU operators = 13 (8.1%)
+NPU operators = 147 (91.9%)
+
+Average SRAM bandwidth                           2.11 GB/s
+Input   SRAM bandwidth                          16.43 MB/batch
+Weight  SRAM bandwidth                          54.45 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                          70.91 MB/batch
+Total   SRAM bandwidth            per input     70.91 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           1.30 GB/s
+Input   DRAM bandwidth                          21.09 MB/batch
+Weight  DRAM bandwidth                           5.22 MB/batch
+Output  DRAM bandwidth                          17.38 MB/batch
+Total   DRAM bandwidth                          43.70 MB/batch
+Total   DRAM bandwidth            per input     43.70 MB/inference (batch size 1)
+
+Neural network macs                        3706881191 MACs/batch
+Network Tops/s                                   0.22 Tops/s
+
+NPU cycles                                   27336469 cycles/batch
+SRAM Access cycles                            1669739 cycles/batch
+DRAM Access cycles                           16741585 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                 33553581 cycles/batch
+
+Batch Inference time                33.55 ms,   29.80 inferences/s (batch size 1)
+

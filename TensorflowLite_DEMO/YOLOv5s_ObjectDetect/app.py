@@ -244,10 +244,15 @@ def main():
     parser.add_argument( '-d' ,"--display", default="0")
     parser.add_argument("--save", default="1")
     parser.add_argument( '-t', "--time", default="0")
-    parser.add_argument('--delegate' , default="ethosu", help = 'Please Input vx or xnnpack or ethosu')  
-    parser.add_argument( '-m', '--model'   , default="yolov5s-NXP.tflite", help='File path of .tflite file.')
-    parser.add_argument("--test_img", default="zidane.jpg")
+    parser.add_argument('--delegate' , default="vx", help = 'Please Input vx or xnnpack or ethosu')  
+    parser.add_argument( '-m', '--model'   , default="model/yolov5s-nxp_quant.tflite", help='File path of .tflite file.')
+    parser.add_argument("--test_img", default="img/zidane.jpg")
     args = parser.parse_args()
+
+    # vela(NPU) 預設路徑修正
+    if(args.delegate=="ethosu"): 
+        if(args.model[-11:]!='vela.tflite') :
+            args.model = args.model[:-7] + '_vela.tflite'
 
     # 解析解譯器資訊
     interpreter = InferenceDelegate(args.model,args.delegate)
@@ -258,7 +263,7 @@ def main():
     height   = input_details[0]['shape'][1]
     nChannel = input_details[0]['shape'][3]
     scale, zero_point = input_details[0]['quantization']
-    #print(scale)
+
 
     # 先行進行暖開機
     if (input_details[0]['dtype']==np.uint8) : 
@@ -349,8 +354,8 @@ def main():
 
       # 顯示輸出結果
       if args.save == "True" or args.save == "1" :
-          cv2.imwrite( APP_NAME + "-" + args.test_img[:len(args.test_img)-4] +'_result.jpg', frame.astype("uint8"))
-          print("Save Reuslt Image Success , " + APP_NAME + args.test_img[:len(args.test_img)-4] + '_result.jpg')
+          cv2.imwrite( "output/" + APP_NAME + "-" + args.test_img.split("/")[-1][:-4] +'_result.jpg', frame.astype("uint8"))
+          print("Save Reuslt Image Success , " + APP_NAME + args.test_img.split("/")[-1][:-4] + '_result.jpg')
 
       if args.display =="True" or args.display == "1" :
           cv2.imshow('frame', frame.astype('uint8'))

@@ -1,0 +1,44 @@
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'Identity'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: Identity
+
+Network summary for facial_ethnicity_detection_quant
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                345.55 KiB
+Total DRAM used                                109.62 KiB
+
+CPU operators = 1 (2.5%)
+NPU operators = 39 (97.5%)
+
+Average SRAM bandwidth                           2.68 GB/s
+Input   SRAM bandwidth                           0.86 MB/batch
+Weight  SRAM bandwidth                           0.59 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                           1.45 MB/batch
+Total   SRAM bandwidth            per input      1.45 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           0.88 GB/s
+Input   DRAM bandwidth                           0.00 MB/batch
+Weight  DRAM bandwidth                           0.10 MB/batch
+Output  DRAM bandwidth                           0.37 MB/batch
+Total   DRAM bandwidth                           0.48 MB/batch
+Total   DRAM bandwidth            per input      0.48 MB/inference (batch size 1)
+
+Neural network macs                          26016364 MACs/batch
+Network Tops/s                                   0.10 Tops/s
+
+NPU cycles                                     377363 cycles/batch
+SRAM Access cycles                              78296 cycles/batch
+DRAM Access cycles                             184063 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                   540677 cycles/batch
+
+Batch Inference time                 0.54 ms, 1849.53 inferences/s (batch size 1)
+

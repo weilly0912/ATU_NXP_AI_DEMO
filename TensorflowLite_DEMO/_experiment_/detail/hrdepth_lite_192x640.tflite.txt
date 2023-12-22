@@ -1,0 +1,149 @@
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'tfl.quantize'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: serving_default_0a:0
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'StatefulPartitionedCall:0'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: StatefulPartitionedCall:0
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'StatefulPartitionedCall:3'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: StatefulPartitionedCall:3
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'StatefulPartitionedCall:2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: StatefulPartitionedCall:2
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'StatefulPartitionedCall:1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: StatefulPartitionedCall:1
+Info: MIRROR_PAD 'model/tf.compat.v1.pad_4/MirrorPad' is a CPU only op
+Info: ELU 'model/tf.nn.elu_1/Elu' is a CPU only op
+Info: MIRROR_PAD 'model/tf.compat.v1.pad_1/MirrorPad' is a CPU only op
+Info: ELU 'model/tf.nn.elu/Elu' is a CPU only op
+Info: MIRROR_PAD 'model/tf.compat.v1.pad/MirrorPad' is a CPU only op
+Info: ELU 'model/tf.nn.elu_3/Elu' is a CPU only op
+Info: MIRROR_PAD 'model/tf.compat.v1.pad_3/MirrorPad' is a CPU only op
+Info: ELU 'model/tf.nn.elu_2/Elu' is a CPU only op
+Info: MIRROR_PAD 'model/tf.compat.v1.pad_2/MirrorPad' is a CPU only op
+Info: MIRROR_PAD 'model/tf.compat.v1.pad_21/MirrorPad' is a CPU only op
+Info: ELU 'model/tf.nn.elu_17/Elu' is a CPU only op
+Info: MIRROR_PAD 'model/tf.compat.v1.pad_20/MirrorPad' is a CPU only op
+Info: ELU 'model/tf.nn.elu_16/Elu' is a CPU only op
+Info: MIRROR_PAD 'model/tf.compat.v1.pad_18/MirrorPad' is a CPU only op
+Info: ELU 'model/tf.nn.elu_9/Elu' is a CPU only op
+Info: MIRROR_PAD 'model/tf.compat.v1.pad_10/MirrorPad' is a CPU only op
+Info: ELU 'model/tf.nn.elu_4/Elu' is a CPU only op
+Info: ELU 'model/tf.nn.elu_6/Elu' is a CPU only op
+Info: MIRROR_PAD 'model/tf.compat.v1.pad_7/MirrorPad' is a CPU only op
+Info: ELU 'model/tf.nn.elu_5/Elu' is a CPU only op
+Info: MIRROR_PAD 'model/tf.compat.v1.pad_6/MirrorPad' is a CPU only op
+Info: ELU 'model/tf.nn.elu_8/Elu' is a CPU only op
+Info: MIRROR_PAD 'model/tf.compat.v1.pad_9/MirrorPad' is a CPU only op
+Info: ELU 'model/tf.nn.elu_7/Elu' is a CPU only op
+Info: MIRROR_PAD 'model/tf.compat.v1.pad_8/MirrorPad' is a CPU only op
+Warning: MEAN 'model/tf.math.reduce_mean_10/Mean' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 7680
+Info: ELU 'model/tf.nn.elu_11/Elu' is a CPU only op
+Info: MIRROR_PAD 'model/tf.compat.v1.pad_13/MirrorPad' is a CPU only op
+Info: ELU 'model/tf.nn.elu_10/Elu' is a CPU only op
+Info: MIRROR_PAD 'model/tf.compat.v1.pad_12/MirrorPad' is a CPU only op
+Info: ELU 'model/tf.nn.elu_13/Elu' is a CPU only op
+Info: MIRROR_PAD 'model/tf.compat.v1.pad_15/MirrorPad' is a CPU only op
+Info: ELU 'model/tf.nn.elu_12/Elu' is a CPU only op
+Info: MIRROR_PAD 'model/tf.compat.v1.pad_14/MirrorPad' is a CPU only op
+Info: ELU 'model/tf.nn.elu_15/Elu' is a CPU only op
+Info: MIRROR_PAD 'model/tf.compat.v1.pad_17/MirrorPad' is a CPU only op
+Info: ELU 'model/tf.nn.elu_14/Elu' is a CPU only op
+Info: MIRROR_PAD 'model/tf.compat.v1.pad_16/MirrorPad' is a CPU only op
+Warning: MEAN 'model/tf.math.reduce_mean_11/Mean' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 30720
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Elu operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Elu operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: Elu operation is unknown or unsupported, placing on CPU
+Warning: Elu operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: Elu operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Elu operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: Elu operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Elu operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Elu operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: Elu operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: Elu operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Elu operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Elu operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: Elu operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Elu operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Elu operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Elu operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Elu operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+
+Network summary for hrdepth_lite_192x640
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                383.80 KiB
+Total DRAM used                               9863.70 KiB
+
+CPU operators = 50 (18.7%)
+NPU operators = 217 (81.3%)
+
+Average SRAM bandwidth                           0.62 GB/s
+Input   SRAM bandwidth                          32.75 MB/batch
+Weight  SRAM bandwidth                          16.87 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                          49.78 MB/batch
+Total   SRAM bandwidth            per input     49.78 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           1.05 GB/s
+Input   DRAM bandwidth                          38.29 MB/batch
+Weight  DRAM bandwidth                           3.24 MB/batch
+Output  DRAM bandwidth                          43.23 MB/batch
+Total   DRAM bandwidth                          84.82 MB/batch
+Total   DRAM bandwidth            per input     84.82 MB/inference (batch size 1)
+
+Neural network macs                        1234080352 MACs/batch
+Network Tops/s                                   0.03 Tops/s
+
+NPU cycles                                   35786658 cycles/batch
+SRAM Access cycles                            3344968 cycles/batch
+DRAM Access cycles                           70875784 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                 80788990 cycles/batch
+
+Batch Inference time                80.79 ms,   12.38 inferences/s (batch size 1)
+

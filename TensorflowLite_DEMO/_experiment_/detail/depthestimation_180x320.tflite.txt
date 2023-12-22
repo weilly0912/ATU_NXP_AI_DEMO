@@ -1,0 +1,113 @@
+Warning: Unsupported TensorFlow Lite semantics for MINIMUM 'model/tf.math.minimum/Minimum'. Placing on CPU instead
+ - Input(s) and Output tensors must not be dynamic
+   Op has dynamic tensor(s): Const_1_requantized
+Warning: Unsupported TensorFlow Lite semantics for MINIMUM 'model/tf.math.minimum_1/Minimum'. Placing on CPU instead
+ - Input(s) and Output tensors must not be dynamic
+   Op has dynamic tensor(s): Const_1_requantized
+Warning: Unsupported TensorFlow Lite semantics for MINIMUM 'model/tf.math.minimum_2/Minimum'. Placing on CPU instead
+ - Input(s) and Output tensors must not be dynamic
+   Op has dynamic tensor(s): Const_1_requantized
+Warning: Unsupported TensorFlow Lite semantics for MINIMUM 'model/tf.math.minimum_3/Minimum'. Placing on CPU instead
+ - Input(s) and Output tensors must not be dynamic
+   Op has dynamic tensor(s): Const_1_requantized
+Warning: Unsupported TensorFlow Lite semantics for MINIMUM 'model/tf.math.minimum_4/Minimum'. Placing on CPU instead
+ - Input(s) and Output tensors must not be dynamic
+   Op has dynamic tensor(s): Const_1_requantized
+Warning: Unsupported TensorFlow Lite semantics for MINIMUM 'model/tf.math.minimum_5/Minimum'. Placing on CPU instead
+ - Input(s) and Output tensors must not be dynamic
+   Op has dynamic tensor(s): Const_1_requantized
+Warning: Unsupported TensorFlow Lite semantics for MINIMUM 'model/tf.math.minimum_6/Minimum'. Placing on CPU instead
+ - Input(s) and Output tensors must not be dynamic
+   Op has dynamic tensor(s): Const_1_requantized
+Warning: Unsupported TensorFlow Lite semantics for MINIMUM 'model/tf.math.minimum_7/Minimum'. Placing on CPU instead
+ - Input(s) and Output tensors must not be dynamic
+   Op has dynamic tensor(s): Const_1_requantized
+Warning: Unsupported TensorFlow Lite semantics for MINIMUM 'model/tf.math.minimum_8/Minimum'. Placing on CPU instead
+ - Input(s) and Output tensors must not be dynamic
+   Op has dynamic tensor(s): Const_1_requantized
+Warning: Unsupported TensorFlow Lite semantics for MINIMUM 'model/tf.math.minimum_9/Minimum'. Placing on CPU instead
+ - Input(s) and Output tensors must not be dynamic
+   Op has dynamic tensor(s): Const_1_requantized
+Warning: Unsupported TensorFlow Lite semantics for MINIMUM 'model/tf.math.minimum_10/Minimum'. Placing on CPU instead
+ - Input(s) and Output tensors must not be dynamic
+   Op has dynamic tensor(s): Const_1_requantized
+Warning: Unsupported TensorFlow Lite semantics for MINIMUM 'model/tf.math.minimum_11/Minimum'. Placing on CPU instead
+ - Input(s) and Output tensors must not be dynamic
+   Op has dynamic tensor(s): Const_1_requantized
+Warning: RESIZE_BILINEAR 'model/tf.compat.v1.image.resize_images_2/resize/ResizeBilinear' is not supported on the NPU. Placing on CPU instead
+ - The width and height of the IFM and OFM must match one of the following criteria:
+        IFM W and H must both be 1
+        IFM must match OFM
+        W and H scaling must be equal and OFM W-1 and H-1 must be 2x/4x/8x IFM W-1 and H-1, if align_corners is True
+        W and H scaling must be equal and OFM W and H must be 2x/4x/8x IFM W and H, if align_corners is False
+   Op has ifm_shape=[1, 23, 40, 96], ofm_shape=[1, 45, 80, 96] and align_corners=False
+Warning: RESIZE_BILINEAR 'model/tf.compat.v1.image.resize_images_1/resize/ResizeBilinear' is not supported on the NPU. Placing on CPU instead
+ - The width and height of the IFM and OFM must match one of the following criteria:
+        IFM W and H must both be 1
+        IFM must match OFM
+        W and H scaling must be equal and OFM W-1 and H-1 must be 2x/4x/8x IFM W-1 and H-1, if align_corners is True
+        W and H scaling must be equal and OFM W and H must be 2x/4x/8x IFM W and H, if align_corners is False
+   Op has ifm_shape=[1, 12, 20, 192], ofm_shape=[1, 23, 40, 192] and align_corners=False
+Warning: RESIZE_BILINEAR 'model/tf.compat.v1.image.resize_images/resize/ResizeBilinear' is not supported on the NPU. Placing on CPU instead
+ - The width and height of the IFM and OFM must match one of the following criteria:
+        IFM W and H must both be 1
+        IFM must match OFM
+        W and H scaling must be equal and OFM W-1 and H-1 must be 2x/4x/8x IFM W-1 and H-1, if align_corners is True
+        W and H scaling must be equal and OFM W and H must be 2x/4x/8x IFM W and H, if align_corners is False
+   Op has ifm_shape=[1, 8, 12, 768], ofm_shape=[1, 6, 10, 768] and align_corners=False
+Warning: Minimum operation is unknown or unsupported, placing on CPU
+Warning: Minimum operation is unknown or unsupported, placing on CPU
+Warning: Minimum operation is unknown or unsupported, placing on CPU
+Warning: Minimum operation is unknown or unsupported, placing on CPU
+Warning: ResizeBilinear operation is unknown or unsupported, placing on CPU
+Warning: Minimum operation is unknown or unsupported, placing on CPU
+Warning: Minimum operation is unknown or unsupported, placing on CPU
+Warning: ResizeBilinear operation is unknown or unsupported, placing on CPU
+Warning: Minimum operation is unknown or unsupported, placing on CPU
+Warning: Minimum operation is unknown or unsupported, placing on CPU
+Warning: Minimum operation is unknown or unsupported, placing on CPU
+Warning: Minimum operation is unknown or unsupported, placing on CPU
+Warning: Minimum operation is unknown or unsupported, placing on CPU
+Warning: Minimum operation is unknown or unsupported, placing on CPU
+Warning: ResizeBilinear operation is unknown or unsupported, placing on CPU
+
+Network summary for depthestimation_180x320
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                383.62 KiB
+Total DRAM used                              15276.39 KiB
+
+CPU operators = 15 (7.7%)
+NPU operators = 181 (92.3%)
+
+Average SRAM bandwidth                           1.44 GB/s
+Input   SRAM bandwidth                          26.23 MB/batch
+Weight  SRAM bandwidth                          54.84 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                          81.27 MB/batch
+Total   SRAM bandwidth            per input     81.27 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           1.15 GB/s
+Input   DRAM bandwidth                          21.65 MB/batch
+Weight  DRAM bandwidth                          12.14 MB/batch
+Output  DRAM bandwidth                          30.86 MB/batch
+Total   DRAM bandwidth                          64.66 MB/batch
+Total   DRAM bandwidth            per input     64.66 MB/inference (batch size 1)
+
+Neural network macs                        3162413760 MACs/batch
+Network Tops/s                                   0.11 Tops/s
+
+NPU cycles                                   31315861 cycles/batch
+SRAM Access cycles                            2684696 cycles/batch
+DRAM Access cycles                           46793962 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                 56393287 cycles/batch
+
+Batch Inference time                56.39 ms,   17.73 inferences/s (batch size 1)
+

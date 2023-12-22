@@ -101,9 +101,10 @@ def label_to_color_image(label):
   return colormap[label]
 
 def InferenceDelegate( model, delegate ):
-    ext_delegate = [ tflite.load_delegate("/usr/lib/libvx_delegate.so") ]
     if (delegate=="vx") :
-        interpreter = tflite.Interpreter(model, experimental_delegates=ext_delegate)
+        interpreter = tflite.Interpreter(model, experimental_delegates=[ tflite.load_delegate("/usr/lib/libvx_delegate.so") ])
+    elif(delegate=="ethosu"):
+        interpreter = tflite.Interpreter(model, experimental_delegates=[tflite.load_delegate("/usr/lib/libethosu_delegate.so")])
     elif(delegate=="xnnpack"):
         interpreter = tflite.Interpreter(model)
     else :
@@ -208,22 +209,31 @@ def main():
     parser.add_argument( '-d' ,"--display", default="0")
     parser.add_argument("--save", default="1")
     parser.add_argument( '-t', "--time", default="0")
-    parser.add_argument('--delegate' , default="ethosu", help = 'Please Input vx or xnnpack or ethosu') 
-    parser.add_argument("--test_img", default="car.jpg")
+    parser.add_argument( '-m', '--model' , default="model/detect_ssdmobilnetv3_quant.tflite", help='File path of .tflite(Delect) file.') 
+    parser.add_argument( '-mf', '--model_feature' , default="model/deeplabv3_mnv2_pascal_train_256x256_quant.tflite", help='File path of .tflite(Delect) file.') 
+    parser.add_argument('--delegate' , default="vx", help = 'Please Input vx or xnnpack or ethosu') 
+    parser.add_argument("--test_img", default="img/car.jpg")
     
     args = parser.parse_args()
     if args.camera_format == "V4L2_YUV2_480p" : camera_format = V4L2_YUV2_480p
     if args.camera_format == "V4L2_YUV2_720p" : camera_format = V4L2_YUV2_720p
     if args.camera_format == "V4L2_H264_1080p" : camera_format = V4L2_H264_1080p
-    
+
+    # vela(NPU) 預設路徑修正
+    if(args.delegate=="ethosu"): 
+        if(args.model[-11:]!='vela.tflite') :
+            args.model = args.model[:-7] + '_vela.tflite'
+        if(args.model_feature[-11:]!='vela.tflite') :
+            args.model_feature =  args.model_feature[:-7] + '_vela.tflite'
+
     # 載入標籤
-    labels = load_labels("coco_labels.txt")
+    labels = load_labels("label/coco_labels.txt")
 
     # 載入繪圖顏色資訊
     color_byseg = generate_colors(labels)
 
     # 解析解譯器資訊 (DeeplabV3_SegmationObjection)
-    interpreterSegmatation = InferenceDelegate("deeplabv3_mnv2_pascal_train_256x256.tflite",args.delegate)
+    interpreterSegmatation = InferenceDelegate(args.model_feature,args.delegate)
     interpreterSegmatation.allocate_tensors() 
     input_details_segmatation  = interpreterSegmatation.get_input_details()
     output_details_segmatation = interpreterSegmatation.get_output_details()
@@ -232,7 +242,7 @@ def main():
     nChannel_segmatation = input_details_segmatation[0]['shape'][3]
 
     # 解析解譯器資訊 (MobileNet_ObjectDetection)
-    interpreterObjectDetection = InferenceDelegate("detect.tflite",args.delegate)
+    interpreterObjectDetection = InferenceDelegate(args.model,args.delegate)
     interpreterObjectDetection.allocate_tensors() 
     input_details_objectDetection  = interpreterObjectDetection.get_input_details()
     output_details_objectDetection = interpreterObjectDetection.get_output_details()
@@ -308,8 +318,8 @@ def main():
   
         # 顯示輸出結果
         if args.save == "True" or args.save == "1" :
-            cv2.imwrite( APP_NAME + "-" + args.test_img[:len(args.test_img)-4] +'_result.jpg', image_result.astype("uint8"))
-            print("Save Reuslt Image Success , " + APP_NAME + "-" +  args.test_img[:len(args.test_img)-4] + '_result.jpg')
+            cv2.imwrite( "output/" + APP_NAME + "-" + args.test_img.split("/")[-1][:-4] +'_result.jpg', image_result.astype("uint8"))
+            print("Save Reuslt Image Success , " + APP_NAME + "-" +  args.test_img.split("/")[-1][:-4] + '_result.jpg')
 
         if args.display =="True" or args.display == "1" :
 

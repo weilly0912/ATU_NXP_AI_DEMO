@@ -1,0 +1,51 @@
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'input_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: input
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'classificators'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: classificators
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'regressors'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: regressors
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+
+Network summary for blazeface_quant
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                257.39 KiB
+Total DRAM used                                434.28 KiB
+
+CPU operators = 3 (3.3%)
+NPU operators = 88 (96.7%)
+
+Average SRAM bandwidth                           1.46 GB/s
+Input   SRAM bandwidth                           2.92 MB/batch
+Weight  SRAM bandwidth                           0.58 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                           3.52 MB/batch
+Total   SRAM bandwidth            per input      3.52 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           1.38 GB/s
+Input   DRAM bandwidth                           0.68 MB/batch
+Weight  DRAM bandwidth                           0.12 MB/batch
+Output  DRAM bandwidth                           2.54 MB/batch
+Total   DRAM bandwidth                           3.34 MB/batch
+Total   DRAM bandwidth            per input      3.34 MB/inference (batch size 1)
+
+Neural network macs                          31656576 MACs/batch
+Network Tops/s                                   0.03 Tops/s
+
+NPU cycles                                    2147052 cycles/batch
+SRAM Access cycles                             664798 cycles/batch
+DRAM Access cycles                             847488 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                  2417741 cycles/batch
+
+Batch Inference time                 2.42 ms,  413.61 inferences/s (batch size 1)
+

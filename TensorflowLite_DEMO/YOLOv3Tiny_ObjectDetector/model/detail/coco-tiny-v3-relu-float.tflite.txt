@@ -1,0 +1,71 @@
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'input_1_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: input_1
+Warning: Unsupported TensorFlow Lite semantics for STRIDED_SLICE 'model/up_sampling2d/strided_slice2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/up_sampling2d/Shape, model/up_sampling2d/strided_slice2
+Warning: Unsupported TensorFlow Lite semantics for MUL 'model/up_sampling2d/mul'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/up_sampling2d/strided_slice2, model/up_sampling2d/Const, model/up_sampling2d/mul
+Warning: Unsupported TensorFlow Lite semantics for CONCATENATION 'model/concatenate/concat'. Placing on CPU instead
+ - All Input dimensions must match OFM dimension in all axes except the one defined by the axis attribute
+   Op has axis=3, ofm_shape=[1, 26, 26, 384] and the list of mismatching inputs are: Tensor 'model/up_sampling2d/resize/ResizeNearestNeighbor_requantized' has shape: [1, 1, 1, 128]
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'Identity'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: Identity
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'Identity_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: Identity_1
+Warning: RESIZE_NEAREST_NEIGHBOR 'model/up_sampling2d/resize/ResizeNearestNeighbor' is not supported on the NPU. Placing on CPU instead
+ - The width and height of the IFM and OFM must match one of the following criteria:
+        IFM W and H must both be 1
+        IFM must match OFM
+        W and H scaling must be equal and OFM W-1 and H-1 must be 2x/4x/8x IFM W-1 and H-1, if align_corners is True
+        W and H scaling must be equal and OFM W and H must be 2x/4x/8x IFM W and H, if align_corners is False
+   Op has ifm_shape=[1, 13, 13, 128], ofm_shape=[1, 1, 1, 128] and align_corners=False
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: ResizeNearestNeighbor operation is unknown or unsupported, placing on CPU
+Warning: Mul operation is unknown or unsupported, placing on CPU
+Warning: StridedSlice operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+
+Network summary for coco-tiny-v3-relu-float
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                383.38 KiB
+Total DRAM used                              10240.92 KiB
+
+CPU operators = 7 (25.0%)
+NPU operators = 21 (75.0%)
+
+Average SRAM bandwidth                           2.87 GB/s
+Input   SRAM bandwidth                          15.63 MB/batch
+Weight  SRAM bandwidth                          46.81 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                          62.47 MB/batch
+Total   SRAM bandwidth            per input     62.47 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           1.20 GB/s
+Input   DRAM bandwidth                          10.75 MB/batch
+Weight  DRAM bandwidth                           7.74 MB/batch
+Output  DRAM bandwidth                           7.59 MB/batch
+Total   DRAM bandwidth                          26.08 MB/batch
+Total   DRAM bandwidth            per input     26.08 MB/inference (batch size 1)
+
+Neural network macs                        2788191872 MACs/batch
+Network Tops/s                                   0.26 Tops/s
+
+NPU cycles                                   18250936 cycles/batch
+SRAM Access cycles                            1395888 cycles/batch
+DRAM Access cycles                           11463572 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                 21734901 cycles/batch
+
+Batch Inference time                21.73 ms,   46.01 inferences/s (batch size 1)
+

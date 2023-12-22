@@ -1,0 +1,166 @@
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'input_photo_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: input_photo
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'depthwise_3_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise_3_float
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'depthwise2_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise2_float
+Warning: Unsupported TensorFlow Lite semantics for DIV 'truediv_2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: truediv_2
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'truediv_2_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: truediv_2
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'depthwise_1_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise_1_float
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'depthwise2_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise2_float
+Warning: Unsupported TensorFlow Lite semantics for DIV 'truediv'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: truediv
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'truediv_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: truediv
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'depthwise_2_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise_2_float
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'depthwise2_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise2_float
+Warning: Unsupported TensorFlow Lite semantics for DIV 'truediv_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: truediv_1
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'truediv_1_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: truediv_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'sub_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: sub_float
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'depthwise_4_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise_4_float
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'depthwise2_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise2_float
+Warning: Unsupported TensorFlow Lite semantics for DIV 'truediv_3'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: truediv_3
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'truediv_3_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: truediv_3
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'truediv_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: truediv
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'truediv_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: truediv
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'add_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: add_float
+Warning: Unsupported TensorFlow Lite semantics for DIV 'truediv_4'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: truediv_4
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'truediv_4_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: truediv_4
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'depthwise_5_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise_5_float
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'depthwise2_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise2_float
+Warning: Unsupported TensorFlow Lite semantics for DIV 'truediv_5'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: truediv_5
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'truediv_5_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: truediv_5
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'truediv_1_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: truediv_1
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'truediv_4_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: truediv_4
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'truediv_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: truediv
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'depthwise_62_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise_62_float
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'depthwise2_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise2_float
+Warning: Unsupported TensorFlow Lite semantics for DIV 'truediv_6'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: truediv_6
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'truediv_6_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: truediv_6
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'final_output'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: final_output
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: Div operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: Div operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: Div operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: Div operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: Div operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: Div operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: Div operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+
+Network summary for lite-model_cartoongan_int8_299ms
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                377.70 KiB
+Total DRAM used                              26816.36 KiB
+
+CPU operators = 35 (44.3%)
+NPU operators = 44 (55.7%)
+
+Average SRAM bandwidth                           1.42 GB/s
+Input   SRAM bandwidth                         182.53 MB/batch
+Weight  SRAM bandwidth                         264.40 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                         446.94 MB/batch
+Total   SRAM bandwidth            per input    446.94 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           1.34 GB/s
+Input   DRAM bandwidth                         303.43 MB/batch
+Weight  DRAM bandwidth                           1.37 MB/batch
+Output  DRAM bandwidth                         115.34 MB/batch
+Total   DRAM bandwidth                         420.14 MB/batch
+Total   DRAM bandwidth            per input    420.14 MB/inference (batch size 1)
+
+Neural network macs                       32760397824 MACs/batch
+Network Tops/s                                   0.21 Tops/s
+
+NPU cycles                                  193488522 cycles/batch
+SRAM Access cycles                           12915200 cycles/batch
+DRAM Access cycles                          245567419 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                314676130 cycles/batch
+
+Batch Inference time               314.68 ms,    3.18 inferences/s (batch size 1)
+

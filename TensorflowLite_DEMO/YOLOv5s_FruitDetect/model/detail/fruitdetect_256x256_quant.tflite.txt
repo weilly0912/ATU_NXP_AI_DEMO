@@ -1,0 +1,48 @@
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'x_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: x
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'Identity'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: Identity
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+
+Network summary for fruitdetect_256x256_quant
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                384.00 KiB
+Total DRAM used                               7244.09 KiB
+
+CPU operators = 2 (0.7%)
+NPU operators = 304 (99.3%)
+
+Average SRAM bandwidth                           2.22 GB/s
+Input   SRAM bandwidth                          24.45 MB/batch
+Weight  SRAM bandwidth                          21.03 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                          45.58 MB/batch
+Total   SRAM bandwidth            per input     45.58 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           1.68 GB/s
+Input   DRAM bandwidth                          11.04 MB/batch
+Weight  DRAM bandwidth                           6.22 MB/batch
+Output  DRAM bandwidth                          17.12 MB/batch
+Total   DRAM bandwidth                          34.41 MB/batch
+Total   DRAM bandwidth            per input     34.41 MB/inference (batch size 1)
+
+Neural network macs                        1275706496 MACs/batch
+Network Tops/s                                   0.12 Tops/s
+
+NPU cycles                                   15519225 cycles/batch
+SRAM Access cycles                            2559770 cycles/batch
+DRAM Access cycles                           10460637 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                 20494735 cycles/batch
+
+Batch Inference time                20.49 ms,   48.79 inferences/s (batch size 1)
+

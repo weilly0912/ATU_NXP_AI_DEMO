@@ -1,0 +1,44 @@
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'Identity'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: Identity
+
+Network summary for facial_age_detection_quant
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                325.20 KiB
+Total DRAM used                                701.16 KiB
+
+CPU operators = 1 (11.1%)
+NPU operators = 8 (88.9%)
+
+Average SRAM bandwidth                           1.84 GB/s
+Input   SRAM bandwidth                           0.86 MB/batch
+Weight  SRAM bandwidth                           0.34 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                           1.21 MB/batch
+Total   SRAM bandwidth            per input      1.21 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           1.66 GB/s
+Input   DRAM bandwidth                           0.00 MB/batch
+Weight  DRAM bandwidth                           0.72 MB/batch
+Output  DRAM bandwidth                           0.36 MB/batch
+Total   DRAM bandwidth                           1.09 MB/batch
+Total   DRAM bandwidth            per input      1.09 MB/inference (batch size 1)
+
+Neural network macs                          19010554 MACs/batch
+Network Tops/s                                   0.06 Tops/s
+
+NPU cycles                                     454623 cycles/batch
+SRAM Access cycles                              77466 cycles/batch
+DRAM Access cycles                             354669 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                   656228 cycles/batch
+
+Batch Inference time                 0.66 ms, 1523.86 inferences/s (batch size 1)
+

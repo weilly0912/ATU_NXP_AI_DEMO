@@ -120,20 +120,22 @@ def main():
     parser.add_argument("--save", default="1")
     parser.add_argument( '-t', "--time", default="0")
     parser.add_argument('--delegate' , default="vx", help = 'Please Input vx or xnnpack or ethosu') 
-    parser.add_argument( '-m', '--model' , default="mobilenetssd_facedetect_uint8_quant.tflite", help='File path of .tflite(Delect) file.') 
-    parser.add_argument( '-mf', '--model_feature' , default="sface.tflite", help='File path of .tflite(Recognition) file.') 
+    parser.add_argument( '-m', '--model' , default="model/mobilenetssd_facedetect_uint8_quant.tflite", help='File path of .tflite(Delect) file.') 
+    parser.add_argument( '-mf', '--model_feature' , default="model/sface_quant.tflite", help='File path of .tflite(Recognition) file.') 
     parser.add_argument("--IoU", default="0.4")
-    parser.add_argument("--test_img", default="test/WeillyLi_1.jpg")
+    parser.add_argument("--test_img", default="img/BillGates_1.jpg")
     
     args = parser.parse_args()
     if args.camera_format == "V4L2_YUV2_480p" : camera_format = V4L2_YUV2_480p
     if args.camera_format == "V4L2_YUV2_720p" : camera_format = V4L2_YUV2_720p
     if args.camera_format == "V4L2_H264_1080p" : camera_format = V4L2_H264_1080p
 
-    # vela(NPU) 路徑修正
+    # vela(NPU) 預設路徑修正
     if(args.delegate=="ethosu"): 
-        args.model = 'output/' + args.model[:-7] + '_vela.tflite'
-        args.model_feature = 'output/' + args.model_feature[:-7] + '_vela.tflite'
+        if(args.model[-11:]!='vela.tflite') :
+            args.model = args.model[:-7] + '_vela.tflite'
+        if(args.model_feature[-11:]!='vela.tflite') :
+            args.model_feature = args.model_feature[:-7] + '_vela.tflite'
 
     # 解析解譯器資訊 (人臉位置檢測)
     interpreterFaceExtractor = InferenceDelegate(args.model,args.delegate)
@@ -156,7 +158,7 @@ def main():
     iFaceRecognition_output_nChannel= interpreterFaceRecognition_output_details[0]['shape'][1]
 
     # 建立樣本比對人臉識別資訊 
-    database_folder = "database/"
+    database_folder = "img/database/"
     database_path = [os.path.join(database_folder, f) for f in os.listdir(database_folder)]
     DataBase_Image = []
     DataBase_Feature  = []
@@ -279,8 +281,8 @@ def main():
 
       # 顯示輸出結果
       if args.save == "True" or args.save == "1" :
-          cv2.imwrite( APP_NAME + "-" + args.test_img[5:len(args.test_img)-4] +'_result.jpg', frame.astype("uint8"))
-          print("Save Reuslt Image Success , " + APP_NAME + "-" +  args.test_img[5:len(args.test_img)-4] + '_result.jpg')
+          cv2.imwrite( "output/" + APP_NAME + "-" + args.test_img.split("/")[-1][:-4] +'_result.jpg', frame.astype("uint8"))
+          print("Save Reuslt Image Success , " + APP_NAME + "-" +  args.test_img.split("/")[-1][:-4] + '_result.jpg')
 
       if args.display =="True" or args.display == "1" :
           cv2.imshow('frame', frame.astype('uint8'))

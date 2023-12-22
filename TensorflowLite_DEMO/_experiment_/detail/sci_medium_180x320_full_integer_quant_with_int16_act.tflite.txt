@@ -1,0 +1,59 @@
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'inputs_0_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: inputs_0_float
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'model/tf.clip_by_value/clip_by_value_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf.clip_by_value/clip_by_value_float
+Warning: Unsupported TensorFlow Lite semantics for DIV 'model/tf.math.divide/truediv'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf.math.divide/truediv
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'model/tf.math.divide/truediv_int16'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: model/tf.math.divide/truediv
+Warning: Unsupported TensorFlow Lite semantics for MINIMUM 'model/output/clip_by_value/Minimum'. Placing on CPU instead
+ - Input(s) and Output tensors must not be dynamic
+   Op has dynamic tensor(s): model/output/clip_by_value/Minimum/y_requantized
+Warning: Minimum operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: Div operation is unknown or unsupported, placing on CPU
+
+Network summary for sci_medium_180x320_full_integer_quant_with_int16_act
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                380.19 KiB
+Total DRAM used                               4624.42 KiB
+
+CPU operators = 5 (25.0%)
+NPU operators = 15 (75.0%)
+
+Average SRAM bandwidth                           0.28 GB/s
+Input   SRAM bandwidth                           7.49 MB/batch
+Weight  SRAM bandwidth                           0.11 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                           7.60 MB/batch
+Total   SRAM bandwidth            per input      7.60 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           1.23 GB/s
+Input   DRAM bandwidth                          15.20 MB/batch
+Weight  DRAM bandwidth                           0.00 MB/batch
+Output  DRAM bandwidth                          17.63 MB/batch
+Total   DRAM bandwidth                          32.82 MB/batch
+Total   DRAM bandwidth            per input     32.82 MB/inference (batch size 1)
+
+Neural network macs                          14688000 MACs/batch
+Network Tops/s                                   0.00 Tops/s
+
+NPU cycles                                    3653446 cycles/batch
+SRAM Access cycles                             698400 cycles/batch
+DRAM Access cycles                           26532014 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                 26762346 cycles/batch
+
+Batch Inference time                26.76 ms,   37.37 inferences/s (batch size 1)
+

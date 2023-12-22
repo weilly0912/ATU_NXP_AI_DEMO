@@ -1,0 +1,41 @@
+
+Network summary for hardhat-256_quant
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                384.00 KiB
+Total DRAM used                               7222.25 KiB
+
+CPU operators = 0 (0.0%)
+NPU operators = 266 (100.0%)
+
+Average SRAM bandwidth                           2.11 GB/s
+Input   SRAM bandwidth                          24.67 MB/batch
+Weight  SRAM bandwidth                          20.89 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                          45.66 MB/batch
+Total   SRAM bandwidth            per input     45.66 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           1.59 GB/s
+Input   DRAM bandwidth                          11.26 MB/batch
+Weight  DRAM bandwidth                           6.20 MB/batch
+Output  DRAM bandwidth                          16.95 MB/batch
+Total   DRAM bandwidth                          34.43 MB/batch
+Total   DRAM bandwidth            per input     34.43 MB/inference (batch size 1)
+
+Neural network macs                        1267821824 MACs/batch
+Network Tops/s                                   0.12 Tops/s
+
+NPU cycles                                   15079352 cycles/batch
+SRAM Access cycles                            2474052 cycles/batch
+DRAM Access cycles                           11052646 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                 21614844 cycles/batch
+
+Batch Inference time                21.61 ms,   46.26 inferences/s (batch size 1)
+

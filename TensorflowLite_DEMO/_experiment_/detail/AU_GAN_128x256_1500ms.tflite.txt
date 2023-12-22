@@ -1,0 +1,216 @@
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'tfl.quantize'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: test_A
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'generatorA2B_2/Tanh'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: generatorA2B_2/Tanh
+Info: MIRROR_PAD 'generatorA2B_2/MirrorPad_1' is a CPU only op
+Info: MIRROR_PAD 'generatorA2B_2/MirrorPad' is a CPU only op
+Warning: MEAN 'generatorA2B_2/g_e1_bn/moments/mean' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 32768
+Info: RSQRT 'generatorA2B_2/g_e1_bn/Rsqrt' is a CPU only op
+Warning: MEAN 'generatorA2B_2/g_e1_bn/moments/variance' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 32768
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_e1_bn/moments/SquaredDifference' is a CPU only op
+Warning: MEAN 'generatorA2B_2/g_e2_bn/moments/mean' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 8192
+Info: RSQRT 'generatorA2B_2/g_e2_bn/Rsqrt' is a CPU only op
+Warning: MEAN 'generatorA2B_2/g_e2_bn/moments/variance' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 8192
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_e2_bn/moments/SquaredDifference' is a CPU only op
+Info: RSQRT 'generatorA2B_2/g_e3_bn/Rsqrt' is a CPU only op
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_e3_bn/moments/SquaredDifference' is a CPU only op
+Info: RSQRT 'generatorA2B_2/g_r1_bn1/Rsqrt' is a CPU only op
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_r1_bn1/moments/SquaredDifference' is a CPU only op
+Info: RSQRT 'generatorA2B_2/g_r1_bn2/Rsqrt' is a CPU only op
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_r1_bn2/moments/SquaredDifference' is a CPU only op
+Info: RSQRT 'generatorA2B_2/g_r2_bn1/Rsqrt' is a CPU only op
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_r2_bn1/moments/SquaredDifference' is a CPU only op
+Info: RSQRT 'generatorA2B_2/g_r2_bn2/Rsqrt' is a CPU only op
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_r2_bn2/moments/SquaredDifference' is a CPU only op
+Info: RSQRT 'generatorA2B_2/g_r3_bn1/Rsqrt' is a CPU only op
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_r3_bn1/moments/SquaredDifference' is a CPU only op
+Info: RSQRT 'generatorA2B_2/g_r3_bn2/Rsqrt' is a CPU only op
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_r3_bn2/moments/SquaredDifference' is a CPU only op
+Info: RSQRT 'generatorA2B_2/g_r4_bn1/Rsqrt' is a CPU only op
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_r4_bn1/moments/SquaredDifference' is a CPU only op
+Info: RSQRT 'generatorA2B_2/g_r4_bn2/Rsqrt' is a CPU only op
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_r4_bn2/moments/SquaredDifference' is a CPU only op
+Info: RSQRT 'generatorA2B_2/g_t1/res1/g_t1_in1/Rsqrt' is a CPU only op
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_t1/res1/g_t1_in1/moments/SquaredDifference' is a CPU only op
+Info: RSQRT 'generatorA2B_2/g_t1/res2/g_t1_in2/Rsqrt' is a CPU only op
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_t1/res2/g_t1_in2/moments/SquaredDifference' is a CPU only op
+Info: RSQRT 'generatorA2B_2/g_t2/res1/g_t2_in1/Rsqrt' is a CPU only op
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_t2/res1/g_t2_in1/moments/SquaredDifference' is a CPU only op
+Info: RSQRT 'generatorA2B_2/g_t2/res2/g_t2_in2/Rsqrt' is a CPU only op
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_t2/res2/g_t2_in2/moments/SquaredDifference' is a CPU only op
+Info: RSQRT 'generatorA2B_2/g_t3/res1/g_t3_in1/Rsqrt' is a CPU only op
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_t3/res1/g_t3_in1/moments/SquaredDifference' is a CPU only op
+Info: RSQRT 'generatorA2B_2/g_t3/res2/g_t3_in2/Rsqrt' is a CPU only op
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_t3/res2/g_t3_in2/moments/SquaredDifference' is a CPU only op
+Info: RSQRT 'generatorA2B_2/g_t4/res1/g_t4_in1/Rsqrt' is a CPU only op
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_t4/res1/g_t4_in1/moments/SquaredDifference' is a CPU only op
+Info: RSQRT 'generatorA2B_2/g_t4/res2/g_t4_in2/Rsqrt' is a CPU only op
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_t4/res2/g_t4_in2/moments/SquaredDifference' is a CPU only op
+Info: RSQRT 'generatorA2B_2/g_r6_bn1/Rsqrt' is a CPU only op
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_r6_bn1/moments/SquaredDifference' is a CPU only op
+Info: RSQRT 'generatorA2B_2/g_r6_bn2/Rsqrt' is a CPU only op
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_r6_bn2/moments/SquaredDifference' is a CPU only op
+Info: RSQRT 'generatorA2B_2/g_r7_bn1/Rsqrt' is a CPU only op
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_r7_bn1/moments/SquaredDifference' is a CPU only op
+Info: RSQRT 'generatorA2B_2/g_r7_bn2/Rsqrt' is a CPU only op
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_r7_bn2/moments/SquaredDifference' is a CPU only op
+Info: RSQRT 'generatorA2B_2/g_r8_bn1/Rsqrt' is a CPU only op
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_r8_bn1/moments/SquaredDifference' is a CPU only op
+Info: RSQRT 'generatorA2B_2/g_r8_bn2/Rsqrt' is a CPU only op
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_r8_bn2/moments/SquaredDifference' is a CPU only op
+Info: RSQRT 'generatorA2B_2/g_r9_bn1/Rsqrt' is a CPU only op
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_r9_bn1/moments/SquaredDifference' is a CPU only op
+Info: RSQRT 'generatorA2B_2/g_r9_bn2/Rsqrt' is a CPU only op
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_r9_bn2/moments/SquaredDifference' is a CPU only op
+Warning: MEAN 'generatorA2B_2/g_d1_bn/moments/mean' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 8192
+Info: RSQRT 'generatorA2B_2/g_d1_bn/Rsqrt' is a CPU only op
+Warning: MEAN 'generatorA2B_2/g_d1_bn/moments/variance' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 8192
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_d1_bn/moments/SquaredDifference' is a CPU only op
+Warning: MEAN 'generatorA2B_2/g_d2_bn/moments/mean' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 32768
+Info: RSQRT 'generatorA2B_2/g_d2_bn/Rsqrt' is a CPU only op
+Warning: MEAN 'generatorA2B_2/g_d2_bn/moments/variance' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 32768
+Info: SQUARED_DIFFERENCE 'generatorA2B_2/g_d2_bn/moments/SquaredDifference' is a CPU only op
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+
+Network summary for AU_GAN_128x256_1500ms
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                384.00 KiB
+Total DRAM used                              20861.70 KiB
+
+CPU operators = 70 (22.8%)
+NPU operators = 237 (77.2%)
+
+Average SRAM bandwidth                           0.45 GB/s
+Input   SRAM bandwidth                         112.11 MB/batch
+Weight  SRAM bandwidth                         144.92 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                         257.18 MB/batch
+Total   SRAM bandwidth            per input    257.18 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           1.22 GB/s
+Input   DRAM bandwidth                         349.53 MB/batch
+Weight  DRAM bandwidth                         238.31 MB/batch
+Output  DRAM bandwidth                         103.40 MB/batch
+Total   DRAM bandwidth                         691.28 MB/batch
+Total   DRAM bandwidth            per input    691.28 MB/inference (batch size 1)
+
+Neural network macs                       35673604096 MACs/batch
+Network Tops/s                                   0.13 Tops/s
+
+NPU cycles                                  256142759 cycles/batch
+SRAM Access cycles                            8811648 cycles/batch
+DRAM Access cycles                          520508059 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                565855961 cycles/batch
+
+Batch Inference time               565.86 ms,    1.77 inferences/s (batch size 1)
+

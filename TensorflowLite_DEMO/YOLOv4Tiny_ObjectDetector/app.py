@@ -147,12 +147,12 @@ def main():
     parser.add_argument( '-d' ,"--display", default="0")
     parser.add_argument("--save", default="1")
     parser.add_argument( '-t', "--time", default="0")    
-    parser.add_argument('--delegate' , default="ethosu", help = 'Please Input vx or xnnpack or ethosu') 
-    parser.add_argument( '-m', '--model' , default="yolov4tiny-416-Quant_OmniXR.tflite", help='File path of .tflite file.')
+    parser.add_argument('--delegate' , default="vx", help = 'Please Input vx or xnnpack or ethosu') 
+    parser.add_argument( '-m', '--model' , default="model/yolov4tiny-416-OmniXR_quant.tflite", help='File path of .tflite file.')
     parser.add_argument('--model_input_type' , default="float32")
     parser.add_argument('--iou_threshold',default="0.45")
     parser.add_argument('--score_threshold',default="0.25")
-    parser.add_argument('--test_img', default="test01.jpg", help='File path of labels file.')
+    parser.add_argument('--test_img', default="img/test01.jpg", help='File path of labels file.')
     
     args = parser.parse_args()
 
@@ -255,8 +255,8 @@ def main():
 
       # 顯示輸出結果
       if args.save == "True" or args.save == "1" :
-          cv2.imwrite( APP_NAME + "-" + args.test_img[:len(args.test_img)-4] +'_result.jpg', frame.astype("uint8"))
-          print("Save Reuslt Image Success , " + APP_NAME + "-" +  args.test_img[:len(args.test_img)-4] + '_result.jpg')
+          cv2.imwrite( "output/" + APP_NAME + "-" + args.test_img.split("/")[-1][:-4] +'_result.jpg', frame.astype("uint8"))
+          print("Save Reuslt Image Success , " + APP_NAME + "-" +  args.test_img.split("/")[-1][:-4] + '_result.jpg')
 
       if args.display =="True" or args.display == "1" :
           cv2.imshow('frame', frame.astype('uint8'))

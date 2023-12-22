@@ -1,0 +1,81 @@
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'tfl.quantize'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: serving_default_audio:0
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'yamnet_frames/tf_op_layer_RFFT/RFFT;yamnet_frames/tf_op_layer_RFFT/RFFT31'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: yamnet_frames/tf_op_layer_RFFT/RFFT;yamnet_frames/tf_op_layer_RFFT/RFFT31
+Warning: Unsupported TensorFlow Lite semantics for RFFT2D 'yamnet_frames/tf_op_layer_RFFT/RFFT;yamnet_frames/tf_op_layer_RFFT/RFFT4'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: yamnet_frames/tf_op_layer_RFFT/RFFT;yamnet_frames/tf_op_layer_RFFT/RFFT4
+Warning: Unsupported TensorFlow Lite semantics for RESHAPE 'yamnet_frames/tf_op_layer_RFFT/RFFT;yamnet_frames/tf_op_layer_RFFT/RFFT5'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: yamnet_frames/tf_op_layer_RFFT/RFFT;yamnet_frames/tf_op_layer_RFFT/RFFT4, yamnet_frames/tf_op_layer_RFFT/RFFT;yamnet_frames/tf_op_layer_RFFT/RFFT5
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'tfl.dequantize'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: tfl.dequantize
+Warning: Unsupported TensorFlow Lite semantics for LOG 'yamnet_frames/tf_op_layer_Log/Log;yamnet_frames/tf_op_layer_Log/Log'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: yamnet_frames/tf_op_layer_Log/Log;yamnet_frames/tf_op_layer_Log/Log
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'tfl.quantize1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: yamnet_frames/tf_op_layer_Log/Log;yamnet_frames/tf_op_layer_Log/Log
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'StatefulPartitionedCall:0'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: StatefulPartitionedCall:0
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'StatefulPartitionedCall:1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: StatefulPartitionedCall:1
+Info: GATHER 'yamnet_frames/tf_op_layer_GatherV2_1/GatherV2_1;yamnet_frames/tf_op_layer_GatherV2_1/GatherV2_1;yamnet_frames/tf_op_layer_GatherV2/GatherV2/axis;yamnet_frames/tf_op_layer_GatherV2/GatherV2/axis' is a CPU only op
+Info: COMPLEX_ABS 'yamnet_frames/tf_op_layer_ComplexAbs/ComplexAbs;yamnet_frames/tf_op_layer_ComplexAbs/ComplexAbs' is a CPU only op
+Warning: PAD 'yamnet_frames/tf_op_layer_Pad_1/Pad_1;yamnet_frames/tf_op_layer_Pad_1/Pad_1' is not supported on the NPU. Placing on CPU instead
+ - The padding tensor must have the shape [3,2] or [4,2]
+   The pad tensor has the shape: [2, 2]
+Info: GATHER 'yamnet_frames/tf_op_layer_GatherV2/GatherV2;yamnet_frames/tf_op_layer_GatherV2/GatherV2;yamnet_frames/tf_op_layer_GatherV2/GatherV2/axis;yamnet_frames/tf_op_layer_GatherV2/GatherV2/axis' is a CPU only op
+Warning: GatherV2 operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: Log operation is unknown or unsupported, placing on CPU
+Warning: ComplexAbs operation is unknown or unsupported, placing on CPU
+Warning: Rfft2D operation is unknown or unsupported, placing on CPU
+Warning: GatherV2 operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+
+Network summary for brids-classification_quant
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                227.12 KiB
+Total DRAM used                               3856.77 KiB
+
+CPU operators = 13 (16.5%)
+NPU operators = 66 (83.5%)
+
+Average SRAM bandwidth                           4.86 GB/s
+Input   SRAM bandwidth                           1.11 MB/batch
+Weight  SRAM bandwidth                           6.06 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                           7.30 MB/batch
+Total   SRAM bandwidth            per input      7.30 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           2.96 GB/s
+Input   DRAM bandwidth                           0.18 MB/batch
+Weight  DRAM bandwidth                           3.51 MB/batch
+Output  DRAM bandwidth                           0.74 MB/batch
+Total   DRAM bandwidth                           4.44 MB/batch
+Total   DRAM bandwidth            per input      4.44 MB/inference (batch size 1)
+
+Neural network macs                          70826234 MACs/batch
+Network Tops/s                                   0.09 Tops/s
+
+NPU cycles                                    1218055 cycles/batch
+SRAM Access cycles                             146413 cycles/batch
+DRAM Access cycles                             524743 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                  1500271 cycles/batch
+
+Batch Inference time                 1.50 ms,  666.55 inferences/s (batch size 1)
+

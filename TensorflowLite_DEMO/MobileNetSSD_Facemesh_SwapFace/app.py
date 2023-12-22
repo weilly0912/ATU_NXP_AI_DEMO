@@ -243,12 +243,12 @@ def main():
     parser.add_argument( '-d' ,"--display", default="0")
     parser.add_argument("--save", default="1")
     parser.add_argument( '-t', "--time", default="0")
-    parser.add_argument('--delegate' , default="ethosu", help = 'Please Input vx or xnnpack or ethosu') 
+    parser.add_argument('--delegate' , default="vx", help = 'Please Input vx or xnnpack or ethosu') 
     parser.add_argument("--point_size", default="1")
     parser.add_argument("--IoU", default="0.6")
-    parser.add_argument("--model", default="mobilenetssd_facedetect_uint8_quant.tflite", help="Using mobilenetssd_facedetect.tflite can be accucy result")
-    parser.add_argument("--model_feature", default="facemesh_weight_int8.tflite", help="Using facemesh_weight_flot.tflite can be accucy result")
-    parser.add_argument("--test_img", default="licenseface.jpg")
+    parser.add_argument("--model", default="model/mobilenetssd_facedetect_uint8_quant.tflite", help="Using mobilenetssd_facedetect.tflite can be accucy result")
+    parser.add_argument("--model_feature", default="model/facemesh_weight_quant.tflite", help="Using facemesh_weight_flot.tflite can be accucy result")
+    parser.add_argument("--test_img", default="img/licenseface.jpg")
     parser.add_argument("--offset_y", default="15")
     
     args = parser.parse_args()
@@ -256,10 +256,12 @@ def main():
     if args.camera_format == "V4L2_YUV2_720p" : camera_format = V4L2_YUV2_720p
     if args.camera_format == "V4L2_H264_1080p" : camera_format = V4L2_H264_1080p
 
-    # vela(NPU) 路徑修正
+    # vela(NPU) 預設路徑修正
     if(args.delegate=="ethosu"): 
-        args.model = 'output/' + args.model[:-7] + '_vela.tflite'
-        args.model_feature = 'output/' + args.model_feature[:-7] + '_vela.tflite'
+        if(args.model[-11:]!='vela.tflite') :
+            args.model = args.model[:-7] + '_vela.tflite'
+        if(args.model_feature[-11:]!='vela.tflite') :
+            args.model_feature = args.model_feature[:-7] + '_vela.tflite'
         
     # 解析解譯器資訊 (人臉位置檢測)
     interpreterFaceExtractor = InferenceDelegate(args.model,args.delegate)
@@ -284,7 +286,7 @@ def main():
     interpreterFaceMesh.invoke()
 
     # 預先載入替換的臉孔 (Lena)
-    mask_lena = cv2.imread("Mask_Lena.jpg")
+    mask_lena = cv2.imread("img/Mask_Lena.jpg")
     mask_lena = cv2.cvtColor(mask_lena, cv2.COLOR_BGR2RGB)
     mask_input_data = cv2.resize(mask_lena, (iFaceMesh_input_width, iFaceMesh_input_height)).astype("float32")
     mask_input_data = (mask_input_data)/255
@@ -417,8 +419,8 @@ def main():
 
       # 顯示輸出結果
       if args.save == "True" or args.save == "1" :
-          cv2.imwrite( APP_NAME + "-" + args.test_img[:len(args.test_img)-4] +'_result.jpg', frame.astype("uint8"))
-          print("Save Reuslt Image Success , " + APP_NAME + "-" +  args.test_img[:len(args.test_img)-4] + '_result.jpg')
+          cv2.imwrite( "output/" + APP_NAME + "-" + args.test_img.split("/")[-1][:-4] +'_result.jpg', frame.astype("uint8"))
+          print("Save Reuslt Image Success , " + APP_NAME + "-" +  args.test_img.split("/")[-1][:-4] + '_result.jpg')
 
       if args.display =="True" or args.display == "1" :
           cv2.imshow('frame', frame.astype('uint8'))

@@ -136,13 +136,13 @@ def main():
     parser.add_argument("--save", default="1")
     parser.add_argument( '-t', "--time", default="0")
     parser.add_argument('--delegate' , default="vx", help = 'Please Input vx or xnnpack or ethosu') 
-    parser.add_argument("-m","--model", default="mobilenetssd_facedetect_uint8_quant.tflite", help="Using facemesh_weight_flot.tflite can be accucy result")
-    parser.add_argument("-mf1","--model_feature_1", default='model_62x62_integer_quant.tflite', help="Using facemesh_weight_flot.tflite can be accucy result")
-    parser.add_argument("-mf2","--model_feature_2", default='facial_gender_detection.tflite', help="Using facemesh_weight_flot.tflite can be accucy result")
-    parser.add_argument("-mf3","--model_feature_3", default='facial_ethnicity_detection.tflite', help="Using facemesh_weight_flot.tflite can be accucy result")
-    parser.add_argument("-mf4","--model_feature_4", default='facial_shape_detection.tflite', help="Using facemesh_weight_flot.tflite can be accucy result")
+    parser.add_argument("-m","--model", default="model/mobilenetssd_facedetect_uint8_quant.tflite", help="Using float.tflite can be accucy result")
+    parser.add_argument("-mf1","--model_feature_1", default='model/model_62x62_integer_quant.tflite', help="Using float.tflite can be accucy result")
+    parser.add_argument("-mf2","--model_feature_2", default='model/facial_gender_detection_quant.tflite', help="Using float.tflite can be accucy result")
+    parser.add_argument("-mf3","--model_feature_3", default='model/facial_age_detection_quant.tflite', help="Using float.tflite can be accucy result")
+    parser.add_argument("-mf4","--model_feature_4", default='model/facial_shape_detection_quant.tflite', help="Using float.tflite can be accucy result")
     parser.add_argument("--IoU", default="0.6")
-    parser.add_argument("--test_img", default="Oldman.jpg")
+    parser.add_argument("--test_img", default="img/Oldman.jpg")
     parser.add_argument("--offset_y", default="-20")
     
     args = parser.parse_args()
@@ -150,13 +150,18 @@ def main():
     if args.camera_format == "V4L2_YUV2_720p" : camera_format = V4L2_YUV2_720p
     if args.camera_format == "V4L2_H264_1080p" : camera_format = V4L2_H264_1080p
 
-    # vela(NPU) 路徑修正
+    # vela(NPU) 預設路徑修正
     if(args.delegate=="ethosu"): 
-        args.model = 'output/' + args.model[:-7] + '_vela.tflite'
-        args.model_feature_1 = 'output/' + args.model_feature_1[:-7] + '_vela.tflite'
-        args.model_feature_2 = 'output/' + args.model_feature_2[:-7] + '_vela.tflite'
-        args.model_feature_3 = 'output/' + args.model_feature_3[:-7] + '_vela.tflite'
-        args.model_feature_4 = 'output/' + args.model_feature_4[:-7] + '_vela.tflite'
+        if(args.model[-11:]!='vela.tflite') :
+            args.model = args.model[:-7] + '_vela.tflite'
+        if(args.model_feature_1[-11:]!='vela.tflite') :
+            args.model_feature_1 = args.model_feature_1[:-7] + '_vela.tflite'
+        if(args.model_feature_2[-11:]!='vela.tflite') :
+            args.model_feature_2 = args.model_feature_2[:-7] + '_vela.tflite'
+        if(args.model_feature_3[-11:]!='vela.tflite') :
+            args.model_feature_3 = args.model_feature_3[:-7] + '_vela.tflite'      
+        if(args.model_feature_4[-11:]!='vela.tflite') :
+            args.model_feature_4 = args.model_feature_4[:-7] + '_vela.tflite'  
 
     # 解析解譯器資訊 (人臉位置檢測)
     interpreterFaceExtractor = InferenceDelegate(args.model,args.delegate)
@@ -339,8 +344,8 @@ def main():
 
       # 顯示輸出結果
       if args.save == "True" or args.save == "1" :
-          cv2.imwrite( APP_NAME + "-" + args.test_img[:len(args.test_img)-4] +'_result.jpg', frame.astype("uint8"))
-          print("Save Reuslt Image Success , " + APP_NAME + "-" +  args.test_img[:len(args.test_img)-4] + '_result.jpg')
+          cv2.imwrite( "output/" + APP_NAME + "-" + args.test_img.split("/")[-1][:-4] +'_result.jpg', frame.astype("uint8"))
+          print("Save Reuslt Image Success , " + APP_NAME + "-" +  args.test_img.split("/")[-1][:-4] + '_result.jpg')
 
       if args.display =="True" or args.display == "1" :
           cv2.imshow('frame', frame.astype('uint8'))

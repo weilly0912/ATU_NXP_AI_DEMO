@@ -1,0 +1,65 @@
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'x_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: x
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'Identity'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: Identity
+Warning: STRIDED_SLICE 'model/tf_focus/strided_slice' is not supported on the NPU. Placing on CPU instead
+ - All Strides values must be 1
+   Op has strides values [1 2 2 1]
+Warning: STRIDED_SLICE 'model/tf_focus/strided_slice_1' is not supported on the NPU. Placing on CPU instead
+ - All Strides values must be 1
+   Op has strides values [1 2 2 1]
+Warning: STRIDED_SLICE 'model/tf_focus/strided_slice_2' is not supported on the NPU. Placing on CPU instead
+ - All Strides values must be 1
+   Op has strides values [1 2 2 1]
+Warning: STRIDED_SLICE 'model/tf_focus/strided_slice_3' is not supported on the NPU. Placing on CPU instead
+ - All Strides values must be 1
+   Op has strides values [1 2 2 1]
+Warning: ConcatTFLite operation is unknown or unsupported, placing on CPU
+Warning: StridedSlice operation is unknown or unsupported, placing on CPU
+Warning: StridedSlice operation is unknown or unsupported, placing on CPU
+Warning: StridedSlice operation is unknown or unsupported, placing on CPU
+Warning: StridedSlice operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+
+Network summary for yolov5_pcb_real_256x256_quant
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                384.00 KiB
+Total DRAM used                               7259.11 KiB
+
+CPU operators = 7 (2.2%)
+NPU operators = 312 (97.8%)
+
+Average SRAM bandwidth                           2.42 GB/s
+Input   SRAM bandwidth                          25.81 MB/batch
+Weight  SRAM bandwidth                          21.27 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                          47.17 MB/batch
+Total   SRAM bandwidth            per input     47.17 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           1.75 GB/s
+Input   DRAM bandwidth                          10.67 MB/batch
+Weight  DRAM bandwidth                           6.24 MB/batch
+Output  DRAM bandwidth                          17.31 MB/batch
+Total   DRAM bandwidth                          34.24 MB/batch
+Total   DRAM bandwidth            per input     34.24 MB/inference (batch size 1)
+
+Neural network macs                        1314447424 MACs/batch
+Network Tops/s                                   0.13 Tops/s
+
+NPU cycles                                   15658036 cycles/batch
+SRAM Access cycles                            2592411 cycles/batch
+DRAM Access cycles                            8697036 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                 19519646 cycles/batch
+
+Batch Inference time                19.52 ms,   51.23 inferences/s (batch size 1)
+

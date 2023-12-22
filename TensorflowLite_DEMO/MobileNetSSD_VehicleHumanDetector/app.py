@@ -96,10 +96,10 @@ def main():
     parser.add_argument( '-d' ,"--display", default="0")
     parser.add_argument("--save", default="1")
     parser.add_argument( '-t', "--time", default="0")  
-    parser.add_argument('--delegate' , default="ethosu", help = 'Please Input vx or xnnpack or ethosu')   
-    parser.add_argument( '-m', '--model'   , default="detect.tflite", help='File path of .tflite file.')
-    parser.add_argument('--labels'  , default="coco_labels.txt", help='File path of labels file.')
-    parser.add_argument('--test_img', default="CarPeople.jpg", help='File path of labels file.')
+    parser.add_argument('--delegate' , default="vx", help = 'Please Input vx or xnnpack or ethosu')   
+    parser.add_argument( '-m', '--model'   , default="model/detect_ssdmobilenetv3_quant.tflite", help='File path of .tflite file.')
+    parser.add_argument('--labels'  , default="label/coco_labels.txt", help='File path of labels file.')
+    parser.add_argument('--test_img', default="img/CarPeople.jpg", help='File path of labels file.')
     parser.add_argument('--count_line', default="100" )
     
     args = parser.parse_args()
@@ -107,8 +107,10 @@ def main():
     if args.camera_format == "V4L2_YUV2_720p" : camera_format = V4L2_YUV2_720p
     if args.camera_format == "V4L2_H264_1080p" : camera_format = V4L2_H264_1080p
 
-   # vela(NPU) 路徑修正
-    if(args.delegate=="ethosu"): args.model = 'output/' + args.model[:-7] + '_vela.tflite'
+    # vela(NPU) 預設路徑修正
+    if(args.delegate=="ethosu"): 
+        if(args.model[-11:]!='vela.tflite') :
+            args.model = args.model[:-7] + '_vela.tflite'
 
     # 載入標籤
     labels = load_labels(args.labels)
@@ -219,8 +221,8 @@ def main():
       
       # 顯示輸出結果
       if args.save == "True" or args.save == "1" :
-          cv2.imwrite( APP_NAME + "-" + args.test_img[:len(args.test_img)-4] +'_result.jpg', frame.astype("uint8"))
-          print("Save Reuslt Image Success , " + APP_NAME + "-" +  args.test_img[:len(args.test_img)-4] + '_result.jpg')
+          cv2.imwrite( "output/" + APP_NAME + "-" + args.test_img.split("/")[-1][:-4] +'_result.jpg', frame.astype("uint8"))
+          print("Save Reuslt Image Success , " + APP_NAME + "-" +  args.test_img.split("/")[-1][:-4] + '_result.jpg')
 
       if args.display =="True" or args.display == "1" :
           cv2.imshow('frame', frame.astype('uint8'))

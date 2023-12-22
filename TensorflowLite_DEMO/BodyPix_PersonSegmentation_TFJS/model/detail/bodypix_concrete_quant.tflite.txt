@@ -1,0 +1,69 @@
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'tfl.quantize'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: sub_2
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'MobilenetV1/displacement_bwd_2/BiasAdd'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: MobilenetV1/displacement_bwd_2/BiasAdd
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'MobilenetV1/displacement_fwd_2/BiasAdd'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: MobilenetV1/displacement_fwd_2/BiasAdd
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'float_heatmaps'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: float_heatmaps
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'float_long_offsets'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: float_long_offsets
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'float_part_heatmaps'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: float_part_heatmaps
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'float_part_offsets'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: float_part_offsets
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'float_segments'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: float_segments
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'float_short_offsets'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: float_short_offsets
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+
+Network summary for bodypix_concrete_quant
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                384.00 KiB
+Total DRAM used                               4959.55 KiB
+
+CPU operators = 9 (19.6%)
+NPU operators = 37 (80.4%)
+
+Average SRAM bandwidth                           2.53 GB/s
+Input   SRAM bandwidth                          33.45 MB/batch
+Weight  SRAM bandwidth                          10.99 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                          44.46 MB/batch
+Total   SRAM bandwidth            per input     44.46 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           2.99 GB/s
+Input   DRAM bandwidth                          16.89 MB/batch
+Weight  DRAM bandwidth                          14.37 MB/batch
+Output  DRAM bandwidth                          21.28 MB/batch
+Total   DRAM bandwidth                          52.60 MB/batch
+Total   DRAM bandwidth            per input     52.60 MB/inference (batch size 1)
+
+Neural network macs                        1837348752 MACs/batch
+Network Tops/s                                   0.21 Tops/s
+
+NPU cycles                                   13052105 cycles/batch
+SRAM Access cycles                            3030750 cycles/batch
+DRAM Access cycles                           14133640 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                 17566651 cycles/batch
+
+Batch Inference time                17.57 ms,   56.93 inferences/s (batch size 1)
+

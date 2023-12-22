@@ -41,7 +41,7 @@ eye_slope = 60
 
 # Mask
 variances = [0.1, 0.2]
-priors = np.reshape(np.loadtxt('priors.txt'), (9949, 4))
+priors = np.reshape(np.loadtxt('label/priors.txt'), (9949, 4))
 labels_facemask =  {0: 'Mask', 1: 'NoMask'}
 
 # CAMERA
@@ -180,11 +180,11 @@ def main():
     parser.add_argument( '-d' ,"--display", default="0")
     parser.add_argument("--save", default="1")
     parser.add_argument( '-t', "--time", default="0")
-    parser.add_argument('--delegate' , default="ethosu", help = 'Please Input vx or xnnpack or ethosu') 
-    parser.add_argument('-m',"--model", default="mobilenet_ssd_v2_coco_quant_postprocess.tflite")
-    parser.add_argument('-mf',"--model_feature", default="facemask_int8.tflite")
+    parser.add_argument('--delegate' , default="vx", help = 'Please Input vx or xnnpack or ethosu') 
+    parser.add_argument('-m',"--model", default="model/mobilenet_ssd_v2_coco_quant.tflite")
+    parser.add_argument('-mf',"--model_feature", default="model/facemask_quant.tflite")
     parser.add_argument("--IoU", default="0.6")
-    parser.add_argument("--test_img", default="crowd.jpg")
+    parser.add_argument("--test_img", default="img/crowd.jpg")
     parser.add_argument("--social_distance", default="1")
     parser.add_argument("--mask_detector", default="1")
     parser.add_argument("--fontsize", default="1.5")
@@ -194,8 +194,12 @@ def main():
     if args.camera_format == "V4L2_YUV2_720p" : camera_format = V4L2_YUV2_720p
     if args.camera_format == "V4L2_H264_1080p" : camera_format = V4L2_H264_1080p
 
-    # vela(NPU) 路徑修正
-    if(args.delegate=="ethosu"): args.model = 'output/' + args.model[:-7] + '_vela.tflite'
+    # vela(NPU) 預設路徑修正
+    if(args.delegate=="ethosu"): 
+        if(args.model[-11:]!='vela.tflite') :
+            args.model = args.model[:-7] + '_vela.tflite'
+        if(args.model_feature[-11:]!='vela.tflite') :
+            args.model_feature = args.model_feature[:-7] + '_vela.tflite'
 
     # 解析解譯器資訊 (人臉位置檢測)
     interpreterPersonExtractor = InferenceDelegate(args.model,args.delegate)
@@ -377,8 +381,8 @@ def main():
       
       # 顯示輸出結果
       if args.save == "True" or args.save == "1" :
-          cv2.imwrite( APP_NAME + "-" + args.test_img[:len(args.test_img)-4] +'_result.jpg', result.astype("uint8"))
-          print("Save Reuslt Image Success , " + APP_NAME + "-" +  args.test_img[:len(args.test_img)-4] + '_result.jpg')
+          cv2.imwrite( "output/" + APP_NAME + "-" + args.test_img.split("/")[-1][:-4] +'_result.jpg', result.astype("uint8"))
+          print("Save Reuslt Image Success , " + APP_NAME + "-" +  args.test_img.split("/")[-1][:-4] + '_result.jpg')
 
       if args.display =="True" or args.display == "1" :
           cv2.imshow('frame', result.astype('uint8'))

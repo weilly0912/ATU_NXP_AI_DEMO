@@ -61,12 +61,17 @@ def main():
     parser.add_argument( '-d' ,"--display", default="0")
     parser.add_argument("--save", default="0")
     parser.add_argument( '-t', "--time", default="0")
-    parser.add_argument('--delegate' , default="ethosu", help = 'Please Input vx or xnnpack or ethosu') 
-    parser.add_argument( '-m', '--model'   , default="my_birds_model.tflite", help='File path of .tflite file.')
-    parser.add_argument('--labels'  , default="label.txt", help='File path of labels file.')
-    parser.add_argument('--test_audio', default="XC563091.wav", help='File path of labels file.')
+    parser.add_argument('--delegate' , default="vx", help = 'Please Input vx or xnnpack or ethosu') 
+    parser.add_argument( '-m', '--model'   , default="model/brids-classification.tflite", help='File path of .tflite file.')
+    parser.add_argument('--labels'  , default="label/label.txt", help='File path of labels file.')
+    parser.add_argument('--test_audio', default="audio/XC563091.wav", help='File path of labels file.')
     args = parser.parse_args()
     print("TFLite doesn't support complex and can't generate spectrogram using it.")
+
+    # vela(NPU) 預設路徑修正
+    if(args.delegate=="ethosu"): 
+        if(args.model[-11:]!='vela.tflite') :
+            args.model = args.model[:-7] + '_vela.tflite'
 
     # 載入標籤
     labels = load_labels(args.labels)
@@ -126,11 +131,11 @@ def main():
     mean_results = results_np.mean(axis=0)
     result_index = mean_results.argmax()
     print(f'Mean result: {test_data_label[result_index]} -> {mean_results[result_index]}')
+    print( "Note : this demo isn't use NPU.")
 
     if args.time =="True" or args.time == "1" :
         print( APP_NAME + " Inference Time = ", (interpreter_time_accumulation)*1000 , " ms" )
-
-    
+        
 if __name__ == "__main__":
     main()
  

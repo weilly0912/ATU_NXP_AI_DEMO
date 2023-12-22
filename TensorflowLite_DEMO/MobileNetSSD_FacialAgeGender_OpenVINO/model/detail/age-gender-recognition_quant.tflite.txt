@@ -1,0 +1,47 @@
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'Identity'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: Identity
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'Identity_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: Identity_1
+
+Network summary for age-gender-recognition_quant
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                349.89 KiB
+Total DRAM used                               1606.12 KiB
+
+CPU operators = 2 (3.8%)
+NPU operators = 50 (96.2%)
+
+Average SRAM bandwidth                           3.43 GB/s
+Input   SRAM bandwidth                           0.92 MB/batch
+Weight  SRAM bandwidth                           3.13 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                           4.06 MB/batch
+Total   SRAM bandwidth            per input      4.06 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           1.74 GB/s
+Input   DRAM bandwidth                           0.02 MB/batch
+Weight  DRAM bandwidth                           1.59 MB/batch
+Output  DRAM bandwidth                           0.43 MB/batch
+Total   DRAM bandwidth                           2.06 MB/batch
+Total   DRAM bandwidth            per input      2.06 MB/inference (batch size 1)
+
+Neural network macs                          47367504 MACs/batch
+Network Tops/s                                   0.08 Tops/s
+
+NPU cycles                                     845128 cycles/batch
+SRAM Access cycles                              82528 cycles/batch
+DRAM Access cycles                             416733 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                  1182731 cycles/batch
+
+Batch Inference time                 1.18 ms,  845.50 inferences/s (batch size 1)
+

@@ -1,0 +1,65 @@
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'MobilenetV1/displacement_bwd_2/BiasAdd'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: MobilenetV1/displacement_bwd_2/BiasAdd
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'MobilenetV1/displacement_fwd_2/BiasAdd'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: MobilenetV1/displacement_fwd_2/BiasAdd
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'float_heatmaps'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: float_heatmaps
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'float_long_offsets'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: float_long_offsets
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'float_part_heatmaps'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: float_part_heatmaps
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'float_part_offsets'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: float_part_offsets
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'float_segments'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: float_segments
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'float_short_offsets'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: float_short_offsets
+
+Network summary for bodypix_quant
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                  8.44 KiB
+Total DRAM used                               1305.06 KiB
+
+CPU operators = 8 (17.0%)
+NPU operators = 39 (83.0%)
+
+Average SRAM bandwidth                           0.41 GB/s
+Input   SRAM bandwidth                           0.02 MB/batch
+Weight  SRAM bandwidth                           0.11 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                           0.15 MB/batch
+Total   SRAM bandwidth            per input      0.15 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           3.39 GB/s
+Input   DRAM bandwidth                           0.00 MB/batch
+Weight  DRAM bandwidth                           1.24 MB/batch
+Output  DRAM bandwidth                           0.01 MB/batch
+Total   DRAM bandwidth                           1.28 MB/batch
+Total   DRAM bandwidth            per input      1.28 MB/inference (batch size 1)
+
+Neural network macs                           1292163 MACs/batch
+Network Tops/s                                   0.01 Tops/s
+
+NPU cycles                                     251560 cycles/batch
+SRAM Access cycles                               5337 cycles/batch
+DRAM Access cycles                             322020 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                   378505 cycles/batch
+
+Batch Inference time                 0.38 ms, 2641.97 inferences/s (batch size 1)
+

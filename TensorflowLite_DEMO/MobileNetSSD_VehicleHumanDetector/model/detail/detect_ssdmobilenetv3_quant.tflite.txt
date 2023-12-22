@@ -1,0 +1,45 @@
+Warning: Unsupported TensorFlow Lite semantics for CUSTOM 'TFLite_Detection_PostProcess'. Placing on CPU instead
+ - Input(s) and Output tensors must not be dynamic
+   Op has dynamic tensor(s): TFLite_Detection_PostProcess, TFLite_Detection_PostProcess:1, TFLite_Detection_PostProcess:2, TFLite_Detection_PostProcess:3
+Warning: Custom operation is unknown or unsupported, placing on CPU
+
+Network summary for detect_ssdmobilenetv3_quant
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                377.97 KiB
+Total DRAM used                               4741.75 KiB
+
+CPU operators = 1 (1.6%)
+NPU operators = 60 (98.4%)
+
+Average SRAM bandwidth                           3.03 GB/s
+Input   SRAM bandwidth                          15.75 MB/batch
+Weight  SRAM bandwidth                          12.12 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                          28.00 MB/batch
+Total   SRAM bandwidth            per input     28.00 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           2.16 GB/s
+Input   DRAM bandwidth                           8.06 MB/batch
+Weight  DRAM bandwidth                           3.09 MB/batch
+Output  DRAM bandwidth                           8.78 MB/batch
+Total   DRAM bandwidth                          19.94 MB/batch
+Total   DRAM bandwidth            per input     19.94 MB/inference (batch size 1)
+
+Neural network macs                         733989186 MACs/batch
+Network Tops/s                                   0.16 Tops/s
+
+NPU cycles                                    7408851 cycles/batch
+SRAM Access cycles                            1725082 cycles/batch
+DRAM Access cycles                            5218503 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                  9235309 cycles/batch
+
+Batch Inference time                 9.24 ms,  108.28 inferences/s (batch size 1)
+

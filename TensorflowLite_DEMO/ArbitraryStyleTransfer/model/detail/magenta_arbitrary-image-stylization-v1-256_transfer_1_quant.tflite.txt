@@ -1,0 +1,706 @@
+Warning: Unsupported TensorFlow Lite semantics for MIRROR_PAD 'transformer/contract/MirrorPad'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/contract/MirrorPad
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/contract/MirrorPad_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/contract/MirrorPad
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/contract/conv1/Relu_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/contract/conv1/Relu_float
+Warning: Unsupported TensorFlow Lite semantics for MIRROR_PAD 'transformer/contract/MirrorPad_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/contract/MirrorPad_1
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/contract/MirrorPad_1_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/contract/MirrorPad_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/contract/conv2/Relu_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/contract/conv2/Relu_float
+Warning: Unsupported TensorFlow Lite semantics for MIRROR_PAD 'transformer/contract/MirrorPad_2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/contract/MirrorPad_2
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/contract/MirrorPad_2_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/contract/MirrorPad_2
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/contract/conv3/Relu_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/contract/conv3/Relu_float
+Warning: Unsupported TensorFlow Lite semantics for MIRROR_PAD 'transformer/residual/residual1/MirrorPad'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual1/MirrorPad
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual1/MirrorPad_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual1/MirrorPad
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual1/conv1/Conv2D_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual1/conv1/Conv2D_float
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual1/conv1/StyleNorm/moments/mean_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual1/conv1/StyleNorm/moments/mean_float
+Warning: Unsupported TensorFlow Lite semantics for SQUARED_DIFFERENCE 'transformer/residual/residual1/conv1/StyleNorm/moments/SquaredDifference'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual1/conv1/StyleNorm/moments/SquaredDifference
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual1/conv1/StyleNorm/moments/SquaredDifference_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual1/conv1/StyleNorm/moments/SquaredDifference
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual1/conv1/StyleNorm/batchnorm/add_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual1/conv1/StyleNorm/batchnorm/add_float
+Warning: Unsupported TensorFlow Lite semantics for RSQRT 'transformer/residual/residual1/conv1/StyleNorm/batchnorm/Rsqrt'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual1/conv1/StyleNorm/batchnorm/Rsqrt
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual1/conv1/StyleNorm/batchnorm/Rsqrt_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual1/conv1/StyleNorm/batchnorm/Rsqrt
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'mobilenet_conv/Conv/BiasAdd_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: mobilenet_conv/Conv/BiasAdd
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual1/conv1/Relu_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual1/conv1/Relu_float
+Warning: Unsupported TensorFlow Lite semantics for MIRROR_PAD 'transformer/residual/residual1/MirrorPad_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual1/MirrorPad_1
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual1/MirrorPad_1_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual1/MirrorPad_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual1/conv2/Conv2D_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual1/conv2/Conv2D_float
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual1/conv2/StyleNorm/moments/mean_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual1/conv2/StyleNorm/moments/mean_float
+Warning: Unsupported TensorFlow Lite semantics for SQUARED_DIFFERENCE 'transformer/residual/residual1/conv2/StyleNorm/moments/SquaredDifference'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual1/conv2/StyleNorm/moments/SquaredDifference
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual1/conv2/StyleNorm/moments/SquaredDifference_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual1/conv2/StyleNorm/moments/SquaredDifference
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual1/conv2/StyleNorm/batchnorm/add_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual1/conv2/StyleNorm/batchnorm/add_float
+Warning: Unsupported TensorFlow Lite semantics for RSQRT 'transformer/residual/residual1/conv2/StyleNorm/batchnorm/Rsqrt'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual1/conv2/StyleNorm/batchnorm/Rsqrt
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual1/conv2/StyleNorm/batchnorm/Rsqrt_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual1/conv2/StyleNorm/batchnorm/Rsqrt
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual1/add_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual1/add_float
+Warning: Unsupported TensorFlow Lite semantics for MIRROR_PAD 'transformer/residual/residual2/MirrorPad'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual2/MirrorPad
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual2/MirrorPad_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual2/MirrorPad
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual2/conv1/Conv2D_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual2/conv1/Conv2D_float
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual2/conv1/StyleNorm/moments/mean_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual2/conv1/StyleNorm/moments/mean_float
+Warning: Unsupported TensorFlow Lite semantics for SQUARED_DIFFERENCE 'transformer/residual/residual2/conv1/StyleNorm/moments/SquaredDifference'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual2/conv1/StyleNorm/moments/SquaredDifference
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual2/conv1/StyleNorm/moments/SquaredDifference_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual2/conv1/StyleNorm/moments/SquaredDifference
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual2/conv1/StyleNorm/batchnorm/add_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual2/conv1/StyleNorm/batchnorm/add_float
+Warning: Unsupported TensorFlow Lite semantics for RSQRT 'transformer/residual/residual2/conv1/StyleNorm/batchnorm/Rsqrt'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual2/conv1/StyleNorm/batchnorm/Rsqrt
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual2/conv1/StyleNorm/batchnorm/Rsqrt_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual2/conv1/StyleNorm/batchnorm/Rsqrt
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual2/conv1/Relu_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual2/conv1/Relu_float
+Warning: Unsupported TensorFlow Lite semantics for MIRROR_PAD 'transformer/residual/residual2/MirrorPad_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual2/MirrorPad_1
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual2/MirrorPad_1_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual2/MirrorPad_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual2/conv2/Conv2D_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual2/conv2/Conv2D_float
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual2/conv2/StyleNorm/moments/mean_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual2/conv2/StyleNorm/moments/mean_float
+Warning: Unsupported TensorFlow Lite semantics for SQUARED_DIFFERENCE 'transformer/residual/residual2/conv2/StyleNorm/moments/SquaredDifference'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual2/conv2/StyleNorm/moments/SquaredDifference
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual2/conv2/StyleNorm/moments/SquaredDifference_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual2/conv2/StyleNorm/moments/SquaredDifference
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual2/conv2/StyleNorm/batchnorm/add_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual2/conv2/StyleNorm/batchnorm/add_float
+Warning: Unsupported TensorFlow Lite semantics for RSQRT 'transformer/residual/residual2/conv2/StyleNorm/batchnorm/Rsqrt'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual2/conv2/StyleNorm/batchnorm/Rsqrt
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual2/conv2/StyleNorm/batchnorm/Rsqrt_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual2/conv2/StyleNorm/batchnorm/Rsqrt
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual2/add_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual2/add_float
+Warning: Unsupported TensorFlow Lite semantics for MIRROR_PAD 'transformer/residual/residual3/MirrorPad'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual3/MirrorPad
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual3/MirrorPad_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual3/MirrorPad
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual3/conv1/Conv2D_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual3/conv1/Conv2D_float
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual3/conv1/StyleNorm/moments/mean_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual3/conv1/StyleNorm/moments/mean_float
+Warning: Unsupported TensorFlow Lite semantics for SQUARED_DIFFERENCE 'transformer/residual/residual3/conv1/StyleNorm/moments/SquaredDifference'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual3/conv1/StyleNorm/moments/SquaredDifference
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual3/conv1/StyleNorm/moments/SquaredDifference_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual3/conv1/StyleNorm/moments/SquaredDifference
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual3/conv1/StyleNorm/batchnorm/add_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual3/conv1/StyleNorm/batchnorm/add_float
+Warning: Unsupported TensorFlow Lite semantics for RSQRT 'transformer/residual/residual3/conv1/StyleNorm/batchnorm/Rsqrt'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual3/conv1/StyleNorm/batchnorm/Rsqrt
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual3/conv1/StyleNorm/batchnorm/Rsqrt_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual3/conv1/StyleNorm/batchnorm/Rsqrt
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual3/conv1/Relu_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual3/conv1/Relu_float
+Warning: Unsupported TensorFlow Lite semantics for MIRROR_PAD 'transformer/residual/residual3/MirrorPad_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual3/MirrorPad_1
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual3/MirrorPad_1_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual3/MirrorPad_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual3/conv2/Conv2D_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual3/conv2/Conv2D_float
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual3/conv2/StyleNorm/moments/mean_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual3/conv2/StyleNorm/moments/mean_float
+Warning: Unsupported TensorFlow Lite semantics for SQUARED_DIFFERENCE 'transformer/residual/residual3/conv2/StyleNorm/moments/SquaredDifference'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual3/conv2/StyleNorm/moments/SquaredDifference
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual3/conv2/StyleNorm/moments/SquaredDifference_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual3/conv2/StyleNorm/moments/SquaredDifference
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual3/conv2/StyleNorm/batchnorm/add_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual3/conv2/StyleNorm/batchnorm/add_float
+Warning: Unsupported TensorFlow Lite semantics for RSQRT 'transformer/residual/residual3/conv2/StyleNorm/batchnorm/Rsqrt'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual3/conv2/StyleNorm/batchnorm/Rsqrt
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual3/conv2/StyleNorm/batchnorm/Rsqrt_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual3/conv2/StyleNorm/batchnorm/Rsqrt
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual3/add_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual3/add_float
+Warning: Unsupported TensorFlow Lite semantics for MIRROR_PAD 'transformer/residual/residual4/MirrorPad'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual4/MirrorPad
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual4/MirrorPad_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual4/MirrorPad
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual4/conv1/Conv2D_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual4/conv1/Conv2D_float
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual4/conv1/StyleNorm/moments/mean_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual4/conv1/StyleNorm/moments/mean_float
+Warning: Unsupported TensorFlow Lite semantics for SQUARED_DIFFERENCE 'transformer/residual/residual4/conv1/StyleNorm/moments/SquaredDifference'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual4/conv1/StyleNorm/moments/SquaredDifference
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual4/conv1/StyleNorm/moments/SquaredDifference_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual4/conv1/StyleNorm/moments/SquaredDifference
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual4/conv1/StyleNorm/batchnorm/add_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual4/conv1/StyleNorm/batchnorm/add_float
+Warning: Unsupported TensorFlow Lite semantics for RSQRT 'transformer/residual/residual4/conv1/StyleNorm/batchnorm/Rsqrt'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual4/conv1/StyleNorm/batchnorm/Rsqrt
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual4/conv1/StyleNorm/batchnorm/Rsqrt_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual4/conv1/StyleNorm/batchnorm/Rsqrt
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual4/conv1/Relu_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual4/conv1/Relu_float
+Warning: Unsupported TensorFlow Lite semantics for MIRROR_PAD 'transformer/residual/residual4/MirrorPad_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual4/MirrorPad_1
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual4/MirrorPad_1_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual4/MirrorPad_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual4/conv2/Conv2D_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual4/conv2/Conv2D_float
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual4/conv2/StyleNorm/moments/mean_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual4/conv2/StyleNorm/moments/mean_float
+Warning: Unsupported TensorFlow Lite semantics for SQUARED_DIFFERENCE 'transformer/residual/residual4/conv2/StyleNorm/moments/SquaredDifference'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual4/conv2/StyleNorm/moments/SquaredDifference
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual4/conv2/StyleNorm/moments/SquaredDifference_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual4/conv2/StyleNorm/moments/SquaredDifference
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual4/conv2/StyleNorm/batchnorm/add_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual4/conv2/StyleNorm/batchnorm/add_float
+Warning: Unsupported TensorFlow Lite semantics for RSQRT 'transformer/residual/residual4/conv2/StyleNorm/batchnorm/Rsqrt'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual4/conv2/StyleNorm/batchnorm/Rsqrt
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual4/conv2/StyleNorm/batchnorm/Rsqrt_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual4/conv2/StyleNorm/batchnorm/Rsqrt
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual4/add_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual4/add_float
+Warning: Unsupported TensorFlow Lite semantics for MIRROR_PAD 'transformer/residual/residual5/MirrorPad'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual5/MirrorPad
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual5/MirrorPad_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual5/MirrorPad
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual5/conv1/Conv2D_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual5/conv1/Conv2D_float
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual5/conv1/StyleNorm/moments/mean_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual5/conv1/StyleNorm/moments/mean_float
+Warning: Unsupported TensorFlow Lite semantics for SQUARED_DIFFERENCE 'transformer/residual/residual5/conv1/StyleNorm/moments/SquaredDifference'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual5/conv1/StyleNorm/moments/SquaredDifference
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual5/conv1/StyleNorm/moments/SquaredDifference_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual5/conv1/StyleNorm/moments/SquaredDifference
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual5/conv1/StyleNorm/batchnorm/add_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual5/conv1/StyleNorm/batchnorm/add_float
+Warning: Unsupported TensorFlow Lite semantics for RSQRT 'transformer/residual/residual5/conv1/StyleNorm/batchnorm/Rsqrt'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual5/conv1/StyleNorm/batchnorm/Rsqrt
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual5/conv1/StyleNorm/batchnorm/Rsqrt_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual5/conv1/StyleNorm/batchnorm/Rsqrt
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual5/conv1/Relu_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual5/conv1/Relu_float
+Warning: Unsupported TensorFlow Lite semantics for MIRROR_PAD 'transformer/residual/residual5/MirrorPad_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual5/MirrorPad_1
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual5/MirrorPad_1_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual5/MirrorPad_1
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual5/conv2/Conv2D_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual5/conv2/Conv2D_float
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual5/conv2/StyleNorm/moments/mean_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual5/conv2/StyleNorm/moments/mean_float
+Warning: Unsupported TensorFlow Lite semantics for SQUARED_DIFFERENCE 'transformer/residual/residual5/conv2/StyleNorm/moments/SquaredDifference'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual5/conv2/StyleNorm/moments/SquaredDifference
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual5/conv2/StyleNorm/moments/SquaredDifference_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual5/conv2/StyleNorm/moments/SquaredDifference
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual5/conv2/StyleNorm/batchnorm/add_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual5/conv2/StyleNorm/batchnorm/add_float
+Warning: Unsupported TensorFlow Lite semantics for RSQRT 'transformer/residual/residual5/conv2/StyleNorm/batchnorm/Rsqrt'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual5/conv2/StyleNorm/batchnorm/Rsqrt
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/residual/residual5/conv2/StyleNorm/batchnorm/Rsqrt_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual5/conv2/StyleNorm/batchnorm/Rsqrt
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/residual/residual5/add_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual5/add_float
+Warning: Unsupported TensorFlow Lite semantics for RESIZE_NEAREST_NEIGHBOR 'transformer/expand/conv1/ResizeNearestNeighbor'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/residual/residual5/add_float, transformer/expand/conv1/ResizeNearestNeighbor
+Warning: Unsupported TensorFlow Lite semantics for MIRROR_PAD 'transformer/expand/conv1/MirrorPad'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv1/MirrorPad
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/expand/conv1/MirrorPad_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv1/MirrorPad
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/expand/conv1/conv/Conv2D_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv1/conv/Conv2D_float
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/expand/conv1/conv/StyleNorm/moments/mean_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv1/conv/StyleNorm/moments/mean_float
+Warning: Unsupported TensorFlow Lite semantics for SQUARED_DIFFERENCE 'transformer/expand/conv1/conv/StyleNorm/moments/SquaredDifference'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv1/conv/StyleNorm/moments/SquaredDifference
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/expand/conv1/conv/StyleNorm/moments/SquaredDifference_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv1/conv/StyleNorm/moments/SquaredDifference
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/expand/conv1/conv/StyleNorm/batchnorm/add_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv1/conv/StyleNorm/batchnorm/add_float
+Warning: Unsupported TensorFlow Lite semantics for RSQRT 'transformer/expand/conv1/conv/StyleNorm/batchnorm/Rsqrt'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv1/conv/StyleNorm/batchnorm/Rsqrt
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/expand/conv1/conv/StyleNorm/batchnorm/Rsqrt_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv1/conv/StyleNorm/batchnorm/Rsqrt
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/expand/conv1/conv/Relu_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv1/conv/Relu_float
+Warning: Unsupported TensorFlow Lite semantics for RESIZE_NEAREST_NEIGHBOR 'transformer/expand/conv2/ResizeNearestNeighbor'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv1/conv/Relu_float, transformer/expand/conv2/ResizeNearestNeighbor
+Warning: Unsupported TensorFlow Lite semantics for MIRROR_PAD 'transformer/expand/conv2/MirrorPad'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv2/MirrorPad
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/expand/conv2/MirrorPad_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv2/MirrorPad
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/expand/conv2/conv/Conv2D_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv2/conv/Conv2D_float
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/expand/conv2/conv/StyleNorm/moments/mean_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv2/conv/StyleNorm/moments/mean_float
+Warning: Unsupported TensorFlow Lite semantics for SQUARED_DIFFERENCE 'transformer/expand/conv2/conv/StyleNorm/moments/SquaredDifference'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv2/conv/StyleNorm/moments/SquaredDifference
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/expand/conv2/conv/StyleNorm/moments/SquaredDifference_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv2/conv/StyleNorm/moments/SquaredDifference
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/expand/conv2/conv/StyleNorm/batchnorm/add_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv2/conv/StyleNorm/batchnorm/add_float
+Warning: Unsupported TensorFlow Lite semantics for RSQRT 'transformer/expand/conv2/conv/StyleNorm/batchnorm/Rsqrt'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv2/conv/StyleNorm/batchnorm/Rsqrt
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/expand/conv2/conv/StyleNorm/batchnorm/Rsqrt_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv2/conv/StyleNorm/batchnorm/Rsqrt
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/expand/conv2/conv/Relu_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv2/conv/Relu_float
+Warning: Unsupported TensorFlow Lite semantics for RESIZE_NEAREST_NEIGHBOR 'transformer/expand/conv3/ResizeNearestNeighbor'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv2/conv/Relu_float, transformer/expand/conv3/ResizeNearestNeighbor
+Warning: Unsupported TensorFlow Lite semantics for MIRROR_PAD 'transformer/expand/conv3/MirrorPad'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv3/MirrorPad
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/expand/conv3/MirrorPad_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv3/MirrorPad
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/expand/conv3/conv/Conv2D_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv3/conv/Conv2D_float
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/expand/conv3/conv/StyleNorm/moments/mean_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv3/conv/StyleNorm/moments/mean_float
+Warning: Unsupported TensorFlow Lite semantics for SQUARED_DIFFERENCE 'transformer/expand/conv3/conv/StyleNorm/moments/SquaredDifference'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv3/conv/StyleNorm/moments/SquaredDifference
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/expand/conv3/conv/StyleNorm/moments/SquaredDifference_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv3/conv/StyleNorm/moments/SquaredDifference
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/expand/conv3/conv/StyleNorm/batchnorm/add_float'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv3/conv/StyleNorm/batchnorm/add_float
+Warning: Unsupported TensorFlow Lite semantics for RSQRT 'transformer/expand/conv3/conv/StyleNorm/batchnorm/Rsqrt'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv3/conv/StyleNorm/batchnorm/Rsqrt
+Warning: Unsupported TensorFlow Lite semantics for QUANTIZE 'transformer/expand/conv3/conv/StyleNorm/batchnorm/Rsqrt_int8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv3/conv/StyleNorm/batchnorm/Rsqrt
+Warning: Unsupported TensorFlow Lite semantics for DEQUANTIZE 'transformer/expand/conv3/conv/Sigmoid'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: transformer/expand/conv3/conv/Sigmoid
+Warning: MEAN 'transformer/residual/residual1/conv1/StyleNorm/moments/variance' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 9216
+Warning: MEAN 'transformer/residual/residual1/conv1/StyleNorm/moments/mean' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 9216
+Warning: MEAN 'transformer/residual/residual1/conv2/StyleNorm/moments/variance' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 9216
+Warning: MEAN 'transformer/residual/residual1/conv2/StyleNorm/moments/mean' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 9216
+Warning: MEAN 'transformer/residual/residual2/conv1/StyleNorm/moments/variance' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 9216
+Warning: MEAN 'transformer/residual/residual2/conv1/StyleNorm/moments/mean' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 9216
+Warning: MEAN 'transformer/residual/residual2/conv2/StyleNorm/moments/variance' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 9216
+Warning: MEAN 'transformer/residual/residual2/conv2/StyleNorm/moments/mean' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 9216
+Warning: MEAN 'transformer/residual/residual3/conv1/StyleNorm/moments/variance' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 9216
+Warning: MEAN 'transformer/residual/residual3/conv1/StyleNorm/moments/mean' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 9216
+Warning: MEAN 'transformer/residual/residual3/conv2/StyleNorm/moments/variance' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 9216
+Warning: MEAN 'transformer/residual/residual3/conv2/StyleNorm/moments/mean' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 9216
+Warning: MEAN 'transformer/residual/residual4/conv1/StyleNorm/moments/variance' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 9216
+Warning: MEAN 'transformer/residual/residual4/conv1/StyleNorm/moments/mean' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 9216
+Warning: MEAN 'transformer/residual/residual4/conv2/StyleNorm/moments/variance' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 9216
+Warning: MEAN 'transformer/residual/residual4/conv2/StyleNorm/moments/mean' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 9216
+Warning: MEAN 'transformer/residual/residual5/conv1/StyleNorm/moments/variance' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 9216
+Warning: MEAN 'transformer/residual/residual5/conv1/StyleNorm/moments/mean' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 9216
+Warning: MEAN 'transformer/residual/residual5/conv2/StyleNorm/moments/variance' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 9216
+Warning: MEAN 'transformer/residual/residual5/conv2/StyleNorm/moments/mean' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 9216
+Warning: MEAN 'transformer/expand/conv1/conv/StyleNorm/moments/variance' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 36864
+Warning: MEAN 'transformer/expand/conv1/conv/StyleNorm/moments/mean' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 4096 when:
+        IFM and OFM have different scale or zero point; or
+        'keep_dims' is True
+   Product of height and width is 36864
+Warning: MEAN 'transformer/expand/conv2/conv/StyleNorm/moments/variance' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 65536
+   Product of height and width is 147456
+Warning: MEAN 'transformer/expand/conv2/conv/StyleNorm/moments/mean' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 65536
+   Product of height and width is 147456
+Warning: MEAN 'transformer/expand/conv3/conv/StyleNorm/moments/variance' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 65536
+   Product of height and width is 147456
+Warning: MEAN 'transformer/expand/conv3/conv/StyleNorm/moments/mean' is not supported on the NPU. Placing on CPU instead
+ - Product of height and width must be no greater than 65536
+   Product of height and width is 147456
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: ResizeNearestNeighbor operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: ResizeNearestNeighbor operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: ResizeNearestNeighbor operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: Rsqrt operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: SquaredDifference operation is unknown or unsupported, placing on CPU
+Warning: Mean operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+Warning: MirrorPad operation is unknown or unsupported, placing on CPU
+Warning: Quantize operation is unknown or unsupported, placing on CPU
+
+Network summary for magenta_arbitrary-image-stylization-v1-256_transfer_1_quant
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+Design peak SRAM bandwidth                      16.00 GB/s
+Design peak DRAM bandwidth                       3.75 GB/s
+
+Total SRAM used                                288.06 KiB
+Total DRAM used                              18751.34 KiB
+
+CPU operators = 169 (57.5%)
+NPU operators = 125 (42.5%)
+
+Average SRAM bandwidth                           0.24 GB/s
+Input   SRAM bandwidth                          17.84 MB/batch
+Weight  SRAM bandwidth                          15.33 MB/batch
+Output  SRAM bandwidth                           0.00 MB/batch
+Total   SRAM bandwidth                          33.17 MB/batch
+Total   SRAM bandwidth            per input     33.17 MB/inference (batch size 1)
+
+Average DRAM bandwidth                           0.43 GB/s
+Input   DRAM bandwidth                          37.93 MB/batch
+Weight  DRAM bandwidth                           0.19 MB/batch
+Output  DRAM bandwidth                          22.12 MB/batch
+Total   DRAM bandwidth                          60.25 MB/batch
+Total   DRAM bandwidth            per input     60.25 MB/inference (batch size 1)
+
+Neural network macs                        1847398168 MACs/batch
+Network Tops/s                                   0.03 Tops/s
+
+NPU cycles                                   32026306 cycles/batch
+SRAM Access cycles                            1392254 cycles/batch
+DRAM Access cycles                          139264738 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                140372866 cycles/batch
+
+Batch Inference time               140.37 ms,    7.12 inferences/s (batch size 1)
+

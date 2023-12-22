@@ -1,0 +1,408 @@
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'conv2d_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: input_1, conv2d_1/Kernel_reshape, conv2d_1
+Warning: Unsupported TensorFlow Lite semantics for PRELU 'p_re_lu_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: conv2d_1, p_re_lu_1/Alpha, p_re_lu_1
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'depthwise_conv2d_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_1, depthwise_conv2d_1/Kernel_reshape, depthwise_conv2d_1
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'conv2d_2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise_conv2d_1, conv2d_2/Kernel_reshape, conv2d_2
+Warning: Unsupported TensorFlow Lite semantics for ADD 'add_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_1, conv2d_2, add_1
+Warning: Unsupported TensorFlow Lite semantics for PRELU 'p_re_lu_2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: add_1, p_re_lu_2/Alpha, p_re_lu_2
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'depthwise_conv2d_2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_2, depthwise_conv2d_2/Kernel_reshape, depthwise_conv2d_2
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'conv2d_3'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise_conv2d_2, conv2d_3/Kernel_reshape, conv2d_3
+Warning: Unsupported TensorFlow Lite semantics for ADD 'add_2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_2, conv2d_3, add_2
+Warning: Unsupported TensorFlow Lite semantics for PRELU 'p_re_lu_3'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: add_2, p_re_lu_3/Alpha, p_re_lu_3
+Warning: Unsupported TensorFlow Lite semantics for MAX_POOL_2D 'max_pooling2d_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_3, max_pooling2d_1
+Warning: Unsupported TensorFlow Lite semantics for PAD 'channel_padding_1'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: max_pooling2d_1, channel_padding_1
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'depthwise_conv2d_3'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_3, depthwise_conv2d_3/Kernel_reshape, depthwise_conv2d_3
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'conv2d_4'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise_conv2d_3, conv2d_4/Kernel_reshape, conv2d_4
+Warning: Unsupported TensorFlow Lite semantics for ADD 'add_3'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: channel_padding_1, conv2d_4, add_3
+Warning: Unsupported TensorFlow Lite semantics for PRELU 'p_re_lu_4'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: add_3, p_re_lu_4/Alpha, p_re_lu_4
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'depthwise_conv2d_4'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_4, depthwise_conv2d_4/Kernel_reshape, depthwise_conv2d_4
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'conv2d_5'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise_conv2d_4, conv2d_5/Kernel_reshape, conv2d_5
+Warning: Unsupported TensorFlow Lite semantics for ADD 'add_4'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_4, conv2d_5, add_4
+Warning: Unsupported TensorFlow Lite semantics for PRELU 'p_re_lu_5'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: add_4, p_re_lu_5/Alpha, p_re_lu_5
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'depthwise_conv2d_5'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_5, depthwise_conv2d_5/Kernel_reshape, depthwise_conv2d_5
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'conv2d_6'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise_conv2d_5, conv2d_6/Kernel_reshape, conv2d_6
+Warning: Unsupported TensorFlow Lite semantics for ADD 'add_5'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_5, conv2d_6, add_5
+Warning: Unsupported TensorFlow Lite semantics for PRELU 'p_re_lu_6'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: add_5, p_re_lu_6/Alpha, p_re_lu_6
+Warning: Unsupported TensorFlow Lite semantics for MAX_POOL_2D 'max_pooling2d_2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_6, max_pooling2d_2
+Warning: Unsupported TensorFlow Lite semantics for PAD 'channel_padding_2'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: max_pooling2d_2, channel_padding_2
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'depthwise_conv2d_6'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_6, depthwise_conv2d_6/Kernel_reshape, depthwise_conv2d_6
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'conv2d_7'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise_conv2d_6, conv2d_7/Kernel_reshape, conv2d_7
+Warning: Unsupported TensorFlow Lite semantics for ADD 'add_6'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: channel_padding_2, conv2d_7, add_6
+Warning: Unsupported TensorFlow Lite semantics for PRELU 'p_re_lu_7'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: add_6, p_re_lu_7/Alpha, p_re_lu_7
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'depthwise_conv2d_7'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_7, depthwise_conv2d_7/Kernel_reshape, depthwise_conv2d_7
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'conv2d_8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise_conv2d_7, conv2d_8/Kernel_reshape, conv2d_8
+Warning: Unsupported TensorFlow Lite semantics for ADD 'add_7'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_7, conv2d_8, add_7
+Warning: Unsupported TensorFlow Lite semantics for PRELU 'p_re_lu_8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: add_7, p_re_lu_8/Alpha, p_re_lu_8
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'depthwise_conv2d_8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_8, depthwise_conv2d_8/Kernel_reshape, depthwise_conv2d_8
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'conv2d_9'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise_conv2d_8, conv2d_9/Kernel_reshape, conv2d_9
+Warning: Unsupported TensorFlow Lite semantics for ADD 'add_8'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_8, conv2d_9, add_8
+Warning: Unsupported TensorFlow Lite semantics for PRELU 'p_re_lu_9'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: add_8, p_re_lu_9/Alpha, p_re_lu_9
+Warning: Unsupported TensorFlow Lite semantics for MAX_POOL_2D 'max_pooling2d_3'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_9, max_pooling2d_3
+Warning: Unsupported TensorFlow Lite semantics for PAD 'channel_padding_3'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: max_pooling2d_3, channel_padding_3
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'depthwise_conv2d_9'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_9, depthwise_conv2d_9/Kernel_reshape, depthwise_conv2d_9
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'conv2d_10'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise_conv2d_9, conv2d_10/Kernel_reshape, conv2d_10
+Warning: Unsupported TensorFlow Lite semantics for ADD 'add_9'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: channel_padding_3, conv2d_10, add_9
+Warning: Unsupported TensorFlow Lite semantics for PRELU 'p_re_lu_10'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: add_9, p_re_lu_10/Alpha, p_re_lu_10
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'depthwise_conv2d_10'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_10, depthwise_conv2d_10/Kernel_reshape, depthwise_conv2d_10
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'conv2d_11'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise_conv2d_10, conv2d_11/Kernel_reshape, conv2d_11
+Warning: Unsupported TensorFlow Lite semantics for ADD 'add_10'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_10, conv2d_11, add_10
+Warning: Unsupported TensorFlow Lite semantics for PRELU 'p_re_lu_11'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: add_10, p_re_lu_11/Alpha, p_re_lu_11
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'depthwise_conv2d_11'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_11, depthwise_conv2d_11/Kernel_reshape, depthwise_conv2d_11
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'conv2d_12'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise_conv2d_11, conv2d_12/Kernel_reshape, conv2d_12
+Warning: Unsupported TensorFlow Lite semantics for ADD 'add_11'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_11, conv2d_12, add_11
+Warning: Unsupported TensorFlow Lite semantics for PRELU 'p_re_lu_12'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: add_11, p_re_lu_12/Alpha, p_re_lu_12
+Warning: Unsupported TensorFlow Lite semantics for MAX_POOL_2D 'max_pooling2d_4'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_12, max_pooling2d_4
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'depthwise_conv2d_12'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_12, depthwise_conv2d_12/Kernel_reshape, depthwise_conv2d_12
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'conv2d_13'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise_conv2d_12, conv2d_13/Kernel_reshape, conv2d_13
+Warning: Unsupported TensorFlow Lite semantics for ADD 'add_12'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: max_pooling2d_4, conv2d_13, add_12
+Warning: Unsupported TensorFlow Lite semantics for PRELU 'p_re_lu_13'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: add_12, p_re_lu_13/Alpha, p_re_lu_13
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'depthwise_conv2d_13'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_13, depthwise_conv2d_13/Kernel_reshape, depthwise_conv2d_13
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'conv2d_14'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise_conv2d_13, conv2d_14/Kernel_reshape, conv2d_14
+Warning: Unsupported TensorFlow Lite semantics for ADD 'add_13'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_13, conv2d_14, add_13
+Warning: Unsupported TensorFlow Lite semantics for PRELU 'p_re_lu_14'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: add_13, p_re_lu_14/Alpha, p_re_lu_14
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'depthwise_conv2d_14'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_14, depthwise_conv2d_14/Kernel_reshape, depthwise_conv2d_14
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'conv2d_15'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise_conv2d_14, conv2d_15/Kernel_reshape, conv2d_15
+Warning: Unsupported TensorFlow Lite semantics for ADD 'add_14'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_14, conv2d_15, add_14
+Warning: Unsupported TensorFlow Lite semantics for PRELU 'p_re_lu_15'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: add_14, p_re_lu_15/Alpha, p_re_lu_15
+Warning: Unsupported TensorFlow Lite semantics for MAX_POOL_2D 'max_pooling2d_5'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_15, max_pooling2d_5
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'depthwise_conv2d_15'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_15, depthwise_conv2d_15/Kernel_reshape, depthwise_conv2d_15
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'conv2d_16'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise_conv2d_15, conv2d_16/Kernel_reshape, conv2d_16
+Warning: Unsupported TensorFlow Lite semantics for ADD 'add_15'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: max_pooling2d_5, conv2d_16, add_15
+Warning: Unsupported TensorFlow Lite semantics for PRELU 'p_re_lu_16'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: add_15, p_re_lu_16/Alpha, p_re_lu_16
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'depthwise_conv2d_16'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_16, depthwise_conv2d_16/Kernel_reshape, depthwise_conv2d_16
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'conv2d_17'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise_conv2d_16, conv2d_17/Kernel_reshape, conv2d_17
+Warning: Unsupported TensorFlow Lite semantics for ADD 'add_16'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_16, conv2d_17, add_16
+Warning: Unsupported TensorFlow Lite semantics for PRELU 'p_re_lu_17'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: add_16, p_re_lu_17/Alpha, p_re_lu_17
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'depthwise_conv2d_17'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_17, depthwise_conv2d_17/Kernel_reshape, depthwise_conv2d_17
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'conv2d_18'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise_conv2d_17, conv2d_18/Kernel_reshape, conv2d_18
+Warning: Unsupported TensorFlow Lite semantics for ADD 'add_17'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_17, conv2d_18, add_17
+Warning: Unsupported TensorFlow Lite semantics for PRELU 'p_re_lu_18'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: add_17, p_re_lu_18/Alpha, p_re_lu_18
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'conv2d_19'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_18, conv2d_19/Kernel_reshape, conv2d_19
+Warning: Unsupported TensorFlow Lite semantics for PRELU 'p_re_lu_19'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: conv2d_19, p_re_lu_19/Alpha, p_re_lu_19
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'depthwise_conv2d_18'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_19, depthwise_conv2d_18/Kernel_reshape, depthwise_conv2d_18
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'conv2d_20'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise_conv2d_18, conv2d_20/Kernel_reshape, conv2d_20
+Warning: Unsupported TensorFlow Lite semantics for ADD 'add_18'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_19, conv2d_20, add_18
+Warning: Unsupported TensorFlow Lite semantics for PRELU 'p_re_lu_20'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: add_18, p_re_lu_20/Alpha, p_re_lu_20
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'conv2d_21'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_20, conv2d_21/Kernel_reshape, conv2d_21
+Warning: Unsupported TensorFlow Lite semantics for MAX_POOL_2D 'max_pooling2d_7'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_15, max_pooling2d_7
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'depthwise_conv2d_23'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_15, depthwise_conv2d_23/Kernel_reshape, depthwise_conv2d_23
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'conv2d_28'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise_conv2d_23, conv2d_28/Kernel_reshape, conv2d_28
+Warning: Unsupported TensorFlow Lite semantics for ADD 'add_23'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: max_pooling2d_7, conv2d_28, add_23
+Warning: Unsupported TensorFlow Lite semantics for PRELU 'p_re_lu_26'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: add_23, p_re_lu_26/Alpha, p_re_lu_26
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'conv2d_29'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_26, conv2d_29/Kernel_reshape, conv2d_29
+Warning: Unsupported TensorFlow Lite semantics for PRELU 'p_re_lu_27'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: conv2d_29, p_re_lu_27/Alpha, p_re_lu_27
+Warning: Unsupported TensorFlow Lite semantics for DEPTHWISE_CONV_2D 'depthwise_conv2d_24'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_27, depthwise_conv2d_24/Kernel_reshape, depthwise_conv2d_24
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'conv2d_30'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: depthwise_conv2d_24, conv2d_30/Kernel_reshape, conv2d_30
+Warning: Unsupported TensorFlow Lite semantics for ADD 'add_24'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_27, conv2d_30, add_24
+Warning: Unsupported TensorFlow Lite semantics for PRELU 'p_re_lu_28'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: add_24, p_re_lu_28/Alpha, p_re_lu_28
+Warning: Unsupported TensorFlow Lite semantics for CONV_2D 'conv2d_31'. Placing on CPU instead
+ - Input(s), Output and Weight tensors must have quantization parameters
+   Op has tensors with missing quantization parameters: p_re_lu_28, conv2d_31/Kernel_reshape, conv2d_31
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Prelu operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Prelu operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Prelu operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Prelu operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Prelu operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: MaxPool operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Prelu operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Prelu operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Prelu operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: MaxPool operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Prelu operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Prelu operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Prelu operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: MaxPool operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Prelu operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Prelu operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Prelu operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: MaxPool operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Prelu operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Prelu operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Prelu operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: MaxPool operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Prelu operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Prelu operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Prelu operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: MaxPool operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Prelu operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Prelu operation is unknown or unsupported, placing on CPU
+Warning: Add operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+Warning: DepthwiseConv2DBias operation is unknown or unsupported, placing on CPU
+Warning: Prelu operation is unknown or unsupported, placing on CPU
+Warning: Conv2DBias operation is unknown or unsupported, placing on CPU
+
+Network summary for facemesh_weight_float
+Accelerator configuration               Ethos_U65_256
+System configuration                 internal-default
+Memory mode                          internal-default
+Accelerator clock                                1000 MHz
+
+
+CPU operators = 97 (100.0%)
+NPU operators = 0 (0.0%)
+
+Neural network macs                                 0 MACs/batch
+Network Tops/s                                    nan Tops/s
+
+NPU cycles                                          0 cycles/batch
+SRAM Access cycles                                  0 cycles/batch
+DRAM Access cycles                                  0 cycles/batch
+On-chip Flash Access cycles                         0 cycles/batch
+Off-chip Flash Access cycles                        0 cycles/batch
+Total cycles                                        0 cycles/batch
+
+Batch Inference time                 0.00 ms,     nan inferences/s (batch size 1)
+
