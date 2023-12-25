@@ -1,11 +1,20 @@
-﻿﻿# Python-Tensorflow Lite-DEMO 
-  
+
+## NXP AI DEMO
+
+---
+
+
+### NXP i.MX8M Plus Platform
+
 使用情境 : NXP i.MX8M Plus Platform with VerSlicon Vivante NPU [官網](https://www.verisilicon.com/en/IPPortfolio/VivanteNPUIP)
 
 * 用法一 (影像輸入) : python3 app.py --display 1 --delegate "vx"
 
 * 用法二 (攝鏡頭輸入)  : python3 app.py --display 1 --save 0 --camera 1 --delegate "vx"
 
+</br>
+
+### NXP i.MX 93 Platform
 
 使用情境 : NXP i.MX 93 Platform with ARM NPU [官網](https://www.arm.com/zh-TW/products/silicon-ip-cpu/ethos/ethos-u65)
 
@@ -13,9 +22,14 @@
 
 * 用法二 (攝鏡頭輸入)  : python3 app.py --display 1 --save 0 --camera 1 --delegate "ethous"
 
+</br>
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Yocto BSP Base on Version L6.1.36.1.0.0
+### Release Note
+(1) Yocto BSP Base on Version L6.1.36.1.0.0. </br>
+(2) YOLOv8 series can't inference by using ethos-U . </br>
+(3) YOLOv5 series can't inference by using VIP8000 , but BSP 5.x had work. </br>
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
